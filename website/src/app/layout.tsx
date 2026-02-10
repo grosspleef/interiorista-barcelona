@@ -9,7 +9,7 @@ export const metadata: Metadata = {
       'Interiorista Barcelona - Colectivo de interioristas y arquitectos de interior en Barcelona',
   },
   description:
-    'Colectivo de más de 25 interioristas y arquitectos de interior en Barcelona. Interiorismo, reformas integrales, decoración y diseño de espacios comerciales.',
+    'Colectivo de más de 25 interioristas y arquitectos en Barcelona. Interiorismo, decoración, home staging, interiorismo comercial y rehabilitación.',
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

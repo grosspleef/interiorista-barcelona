@@ -3,11 +3,11 @@ import { type Metadata } from 'next'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import { FadeIn } from '@/components/FadeIn'
 import { LocalExpertise } from '@/components/LocalExpertise'
 import { NeighborhoodsSection } from '@/components/NeighborhoodsSection'
+import { ProjectShowcase } from '@/components/ProjectShowcase'
 import { RootLayout } from '@/components/RootLayout'
-import { SectionIntro } from '@/components/SectionIntro'
 import { ServicesGrid } from '@/components/ServicesGrid'
 import { StatList, StatListItem } from '@/components/StatList'
 import { TestimonialSlider } from '@/components/TestimonialSlider'
@@ -36,27 +36,27 @@ const projects = [
     description:
       'Transformación completa de un piso de 120m² en el Eixample, combinando elementos modernistas con diseño contemporáneo.',
     year: '2024',
-    category: 'Reforma integral',
+    category: 'Interiorismo',
   },
   {
     title: 'Diseño restaurante Born',
     description:
       'Interiorismo completo para un restaurante de cocina mediterránea en el corazón del Born.',
     year: '2024',
-    category: 'Diseño comercial',
+    category: 'Interiorismo comercial',
   },
   {
     title: 'Ático contemporáneo Sarrià',
     description:
       'Diseño de interiores para un ático de lujo con vistas panorámicas en Sarrià-Sant Gervasi.',
     year: '2023',
-    category: 'Interiorismo',
+    category: 'Decoración de interiores',
   },
 ]
 
 export const metadata: Metadata = {
   description:
-    'Colectivo de más de 25 interioristas y arquitectos de interior en Barcelona. Interiorismo, reformas integrales, decoración y diseño de espacios comerciales.',
+    'Colectivo de más de 25 interioristas y arquitectos en Barcelona. Interiorismo, decoración, home staging, interiorismo comercial y rehabilitación.',
 }
 
 export default function Home() {
@@ -86,11 +86,19 @@ export default function Home() {
             },
             knowsAbout: [
               'Interiorismo',
-              'Reformas integrales',
-              'Arquitectura de interiores',
               'Decoración',
+              'Asesoramiento compra vivienda',
+              'Compra sobre plano',
               'Home staging',
-              'Diseño comercial',
+              'Interiorismo accesible',
+              'Arquitecto',
+              'Ampliación de vivienda',
+              'Interiorismo comercial',
+              'Reforma de oficinas',
+              'Licitaciones de arquitectura',
+              'Rehabilitación energética',
+              'Reforma de masías',
+              'Paisajismo',
             ],
           }),
         }}
@@ -103,8 +111,8 @@ export default function Home() {
             Tu colectivo de interioristas en Barcelona.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Más de 25 profesionales especializados en interiorismo, reformas
-            integrales, decoración y arquitectura de interiores.
+            Más de 25 profesionales especializados en interiorismo,
+            decoración, home staging, interiorismo comercial y rehabilitación.
           </p>
           <div className="mt-8">
             <Button href="/contacto/">Pedir presupuesto</Button>
@@ -129,41 +137,12 @@ export default function Home() {
       <ServicesGrid />
 
       {/* 5. Proyectos destacados */}
-      <SectionIntro
+      <ProjectShowcase
         eyebrow="Proyectos"
         title="Nuestros últimos proyectos de interiorismo"
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>
-          Descubre una selección de proyectos realizados por los miembros de
-          nuestro colectivo en Barcelona.
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {projects.map((project) => (
-            <FadeIn key={project.title} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
-                <p className="flex gap-x-2 text-sm text-neutral-950">
-                  <time dateTime={project.year} className="font-semibold">
-                    {project.year}
-                  </time>
-                  <span className="text-neutral-300" aria-hidden="true">
-                    /
-                  </span>
-                  <span>{project.category}</span>
-                </p>
-                <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                  {project.title}
-                </p>
-                <p className="mt-4 text-base text-neutral-600">
-                  {project.description}
-                </p>
-              </article>
-            </FadeIn>
-          ))}
-        </FadeInStagger>
-      </Container>
+        subtitle="Descubre una selección de proyectos realizados por los miembros de nuestro colectivo en Barcelona."
+        projects={projects}
+      />
 
       {/* 5b. Expertise locale SEO */}
       <LocalExpertise />

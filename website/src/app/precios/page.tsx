@@ -20,26 +20,27 @@ type ServicePricing = {
 }
 
 const servicePricing: ServicePricing[] = [
+  // — Interiorismo (6) —
   {
-    id: 'interiorismo',
+    id: 'arquitectura-interiores',
     name: 'Interiorismo',
     description:
-      'Servicio integral de interiorismo para viviendas en Barcelona. Desde la primera consulta gratuita hasta el seguimiento de obra, te acompañamos en cada etapa de tu proyecto.',
-    href: '/interiorista/',
+      'Proyectos de arquitectura interior que transforman la distribución y estructura de tu espacio. Intervenciones que requieren proyecto técnico y visado.',
+    href: '/arquitectura-interiores/',
     ctaLabel: 'Ver servicio de interiorismo',
-    image: { src: imageWhiteboard, shape: 0 },
+    image: { src: imageMeeting, shape: 2 },
     tiers: [
       {
         name: 'Consulta inicial',
-        price: 'Gratuita',
+        price: '90 €/h',
         description:
-          'Primera visita a tu domicilio para evaluar el espacio, entender tus necesidades y definir el alcance del proyecto.',
+          'Sesión de asesoramiento técnico con un arquitecto. Importe descontado si se contrata el proyecto completo.',
       },
       {
-        name: 'Proyecto de interiorismo',
+        name: 'Proyecto de arquitectura de interiores',
         price: 'Desde 60 €/m²',
         description:
-          'Proyecto completo: planos, 3D, selección de materiales y mobiliario. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',
+          'Proyecto visado: redistribución, planos técnicos, memorias y gestión de licencias. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',
         highlighted: true,
       },
       {
@@ -51,71 +52,11 @@ const servicePricing: ServicePricing[] = [
     ],
   },
   {
-    id: 'reformas-integrales',
-    name: 'Reformas integrales',
-    description:
-      'Reforma integral de pisos y viviendas en Barcelona. Gestionamos todo el proceso: diseño, permisos, obra y acabados, con un único interlocutor.',
-    href: '/reformas-integrales/',
-    ctaLabel: 'Ver servicio de reformas',
-    image: { src: imageLaptop, shape: 1 },
-    tiers: [
-      {
-        name: 'Consulta inicial',
-        price: 'Gratuita',
-        description:
-          'Visita al inmueble, toma de medidas y primera estimación del alcance y presupuesto de la reforma.',
-      },
-      {
-        name: 'Proyecto de reforma',
-        price: 'Desde 50 €/m²',
-        description:
-          'Proyecto técnico completo con planos, presupuesto detallado y planificación. ≤40 m²: 65 €/m² · 41-80 m²: 60 €/m² · 81-120 m²: 55 €/m² · ≥121 m²: 50 €/m².',
-        highlighted: true,
-      },
-      {
-        name: 'Dirección de obra',
-        price: '10 % del presupuesto',
-        description:
-          'Gestión integral de la reforma: coordinación de gremios, control de plazos, supervisión de calidad y tramitaciones.',
-      },
-    ],
-  },
-  {
-    id: 'arquitectura-interiores',
-    name: 'Arquitectura de interiores',
-    description:
-      'Proyectos de arquitectura interior que transforman la distribución y estructura de tu espacio. Intervenciones que requieren proyecto técnico y visado.',
-    href: '/arquitecto-interiores/',
-    ctaLabel: 'Ver servicio de arquitectura',
-    image: { src: imageMeeting, shape: 2 },
-    tiers: [
-      {
-        name: 'Consulta inicial',
-        price: '90 €/h',
-        description:
-          'Sesión de asesoramiento técnico con un arquitecto. Importe descontado si se contrata el proyecto completo.',
-      },
-      {
-        name: 'Proyecto de arquitectura',
-        price: 'Desde 70 €/m²',
-        description:
-          'Proyecto visado: redistribución, planos técnicos, memorias y gestión de licencias. ≤40 m²: 90 €/m² · 41-80 m²: 80 €/m² · 81-120 m²: 75 €/m² · ≥121 m²: 70 €/m².',
-        highlighted: true,
-      },
-      {
-        name: 'Dirección de ejecución',
-        price: '9 % del presupuesto',
-        description:
-          'Dirección facultativa, certificados de final de obra e inspecciones técnicas durante toda la ejecución.',
-      },
-    ],
-  },
-  {
-    id: 'decoracion',
+    id: 'decoracion-interiores',
     name: 'Decoración',
     description:
       'Servicio de decoración de interiores para renovar la imagen de tu hogar sin obra. Selección de mobiliario, textiles, iluminación y complementos.',
-    href: '/decorador-interiores/',
+    href: '/decoracion-interiores/',
     ctaLabel: 'Ver servicio de decoración',
     image: { src: imageWhiteboard, shape: 0 },
     tiers: [
@@ -137,6 +78,54 @@ const servicePricing: ServicePricing[] = [
         price: 'Desde 450 €/media jornada',
         description:
           'Recepción de pedidos, montaje de mobiliario y styling final. Media jornada: 450 € · Jornada completa: 800 €.',
+      },
+    ],
+  },
+  {
+    id: 'asesoria-compra-vivienda',
+    name: 'Asesoramiento compra vivienda',
+    description:
+      'Evaluación técnica y estética de un inmueble antes de la compra. Te acompañamos para tomar la mejor decisión.',
+    href: '/asesoria-compra-vivienda/',
+    ctaLabel: 'Ver servicio de asesoría',
+    image: { src: imageLaptop, shape: 1 },
+    tiers: [
+      {
+        name: 'Contravisita de asesoramiento',
+        price: 'Desde 150 €',
+        description:
+          'Visita al inmueble con un interiorista para evaluar el potencial de redistribución, el estado de las instalaciones y estimar el coste de una posible reforma.',
+        highlighted: true,
+      },
+      {
+        name: 'Informe técnico',
+        price: 'Desde 350 €',
+        description:
+          'Informe escrito con evaluación del estado del inmueble, estimación de costes de reforma y recomendaciones.',
+      },
+    ],
+  },
+  {
+    id: 'compra-sobre-plano',
+    name: 'Compra sobre plano',
+    description:
+      'Acompañamiento en la compra de obra nueva: revisión de planos, selección de acabados y personalización de tu futura vivienda.',
+    href: '/compra-sobre-plano/',
+    ctaLabel: 'Ver servicio de compra sobre plano',
+    image: { src: imageWhiteboard, shape: 0 },
+    tiers: [
+      {
+        name: 'Asesoramiento de compra',
+        price: 'Desde 200 €',
+        description:
+          'Revisión de los planos del promotor, análisis de la distribución y asesoramiento sobre las opciones de personalización disponibles.',
+        highlighted: true,
+      },
+      {
+        name: 'Acompañamiento completo',
+        price: 'Consultar',
+        description:
+          'Seguimiento del proceso de compra: selección de acabados, visitas de obra y verificación de la entrega final.',
       },
     ],
   },
@@ -165,12 +154,91 @@ const servicePricing: ServicePricing[] = [
     ],
   },
   {
-    id: 'diseno-comercial',
-    name: 'Diseño comercial',
+    id: 'interiorismo-accesible',
+    name: 'Interiorismo accesible',
     description:
-      'Diseño de interiores para locales comerciales, restaurantes, oficinas y espacios de retail en Barcelona. Proyectos que potencian tu marca y la experiencia del cliente.',
-    href: '/diseno-comercial/',
-    ctaLabel: 'Ver servicio de diseño comercial',
+      'Diseño de interiores adaptado a personas con movilidad reducida. Soluciones funcionales y estéticas para una vivienda accesible.',
+    href: '/interiorismo-accesible/',
+    ctaLabel: 'Ver servicio de accesibilidad',
+    image: { src: imageMeeting, shape: 2 },
+    tiers: [
+      {
+        name: 'Diagnóstico de accesibilidad',
+        price: 'Desde 150 €',
+        description:
+          'Visita a domicilio para evaluar las barreras arquitectónicas y proponer soluciones de adaptación del espacio.',
+        highlighted: true,
+      },
+      {
+        name: 'Proyecto de adaptación',
+        price: 'Consultar',
+        description:
+          'Proyecto completo de adaptación: redistribución, selección de equipamiento específico y seguimiento de obra.',
+      },
+    ],
+  },
+  // — Arquitectura (7) —
+  {
+    id: 'arquitecto',
+    name: 'Arquitecto',
+    description:
+      'Proyectos arquitectónicos residenciales y de obra nueva. Diseño, proyecto técnico visado y dirección de obra.',
+    href: '/arquitecto/',
+    ctaLabel: 'Ver servicio de arquitectura',
+    image: { src: imageWhiteboard, shape: 0 },
+    tiers: [
+      {
+        name: 'Consulta inicial',
+        price: '90 €/h',
+        description:
+          'Sesión de asesoramiento con un arquitecto para evaluar la viabilidad de tu proyecto.',
+      },
+      {
+        name: 'Proyecto de arquitectura',
+        price: 'Desde 70 €/m²',
+        description:
+          'Proyecto visado completo: anteproyecto, proyecto básico, proyecto ejecutivo y gestión de licencias. ≤80 m²: 90 €/m² · 81-150 m²: 80 €/m² · ≥151 m²: 70 €/m².',
+        highlighted: true,
+      },
+      {
+        name: 'Dirección de obra',
+        price: '9 % del presupuesto',
+        description:
+          'Dirección facultativa, certificados y supervisión técnica hasta la entrega final.',
+      },
+    ],
+  },
+  {
+    id: 'ampliacion-vivienda',
+    name: 'Ampliación de vivienda',
+    description:
+      'Extensiones, sobrelevaciones y agrandamiento de espacios. Proyecto técnico y gestión de licencias urbanísticas.',
+    href: '/ampliacion-vivienda/',
+    ctaLabel: 'Ver servicio de ampliación',
+    image: { src: imageLaptop, shape: 1 },
+    tiers: [
+      {
+        name: 'Estudio de viabilidad',
+        price: 'Desde 300 €',
+        description:
+          'Análisis de la normativa urbanística, estudio de la estructura existente y evaluación de las opciones de ampliación.',
+        highlighted: true,
+      },
+      {
+        name: 'Proyecto de ampliación',
+        price: 'Consultar',
+        description:
+          'Proyecto visado, gestión de licencias y dirección de obra para la ampliación de tu vivienda.',
+      },
+    ],
+  },
+  {
+    id: 'interiorismo-comercial',
+    name: 'Interiorismo comercial',
+    description:
+      'Diseño de interiores para restaurantes, hoteles, locales comerciales y espacios de retail en Barcelona.',
+    href: '/interiorismo-comercial/',
+    ctaLabel: 'Ver servicio de interiorismo comercial',
     image: { src: imageMeeting, shape: 2 },
     tiers: [
       {
@@ -194,6 +262,132 @@ const servicePricing: ServicePricing[] = [
       },
     ],
   },
+  {
+    id: 'reforma-oficinas',
+    name: 'Reforma de oficinas',
+    description:
+      'Reforma y diseño de oficinas, coworking y espacios de trabajo. Proyectos que optimizan la productividad y el bienestar laboral.',
+    href: '/reforma-oficinas/',
+    ctaLabel: 'Ver servicio de reforma de oficinas',
+    image: { src: imageWhiteboard, shape: 0 },
+    tiers: [
+      {
+        name: 'Consulta inicial',
+        price: 'Gratuita',
+        description:
+          'Análisis del espacio, comprensión de la cultura de empresa y primeras propuestas de distribución.',
+      },
+      {
+        name: 'Proyecto de oficina',
+        price: 'Desde 60 €/m²',
+        description:
+          'Proyecto integral: space planning, diseño de zonas de trabajo, salas de reuniones y zonas comunes.',
+        highlighted: true,
+      },
+      {
+        name: 'Dirección de obra',
+        price: '8 % del presupuesto',
+        description:
+          'Coordinación de la ejecución y control de calidad hasta la entrega del espacio.',
+      },
+    ],
+  },
+  {
+    id: 'licitaciones-arquitectura',
+    name: 'Licitaciones de arquitectura',
+    description:
+      'Licitaciones, concursos de arquitectura y proyectos de equipamientos públicos. Experiencia en pliegos y procesos de licitación.',
+    href: '/licitaciones-arquitectura/',
+    ctaLabel: 'Ver servicio de licitaciones',
+    image: { src: imageLaptop, shape: 1 },
+    tiers: [
+      {
+        name: 'Asesoramiento en licitación',
+        price: 'Consultar',
+        description:
+          'Análisis del pliego de condiciones, preparación de la documentación técnica y estrategia de propuesta.',
+        highlighted: true,
+      },
+      {
+        name: 'Proyecto de concurso',
+        price: 'Consultar',
+        description:
+          'Desarrollo del proyecto completo: memoria, planos, presupuesto y documentación administrativa.',
+      },
+    ],
+  },
+  {
+    id: 'rehabilitacion-energetica',
+    name: 'Rehabilitación energética',
+    description:
+      'Mejora de la eficiencia energética de edificios: aislamiento, ventilación, certificación energética y acceso a subvenciones.',
+    href: '/rehabilitacion-energetica/',
+    ctaLabel: 'Ver servicio de rehabilitación energética',
+    image: { src: imageMeeting, shape: 2 },
+    tiers: [
+      {
+        name: 'Auditoría energética',
+        price: 'Desde 400 €',
+        description:
+          'Diagnóstico del estado energético del edificio o vivienda con propuestas de mejora priorizadas.',
+        highlighted: true,
+      },
+      {
+        name: 'Proyecto de rehabilitación',
+        price: 'Consultar',
+        description:
+          'Proyecto técnico de mejora energética: aislamiento, ventilación, carpintería y gestión de subvenciones.',
+      },
+    ],
+  },
+  {
+    id: 'reforma-masias',
+    name: 'Reforma de masías',
+    description:
+      'Reforma y rehabilitación de masías catalanas tradicionales. Respeto del patrimonio con confort contemporáneo.',
+    href: '/reforma-masias/',
+    ctaLabel: 'Ver servicio de reforma de masías',
+    image: { src: imageWhiteboard, shape: 0 },
+    tiers: [
+      {
+        name: 'Estudio de viabilidad',
+        price: 'Desde 500 €',
+        description:
+          'Visita a la finca, diagnóstico estructural, análisis de la normativa urbanística y estimación presupuestaria.',
+        highlighted: true,
+      },
+      {
+        name: 'Proyecto de rehabilitación',
+        price: 'Consultar',
+        description:
+          'Proyecto completo: consolidación estructural, instalaciones, interiorismo y paisajismo.',
+      },
+    ],
+  },
+  {
+    id: 'paisajismo',
+    name: 'Paisajismo',
+    description:
+      'Diseño de jardines, terrazas y espacios exteriores. Proyectos de paisajismo que integran vegetación, materiales y funcionalidad.',
+    href: '/paisajismo/',
+    ctaLabel: 'Ver servicio de paisajismo',
+    image: { src: imageLaptop, shape: 1 },
+    tiers: [
+      {
+        name: 'Consulta inicial',
+        price: 'Desde 150 €',
+        description:
+          'Visita al espacio exterior, análisis de las condiciones (orientación, suelo, clima) y primeras propuestas de diseño.',
+        highlighted: true,
+      },
+      {
+        name: 'Proyecto de paisajismo',
+        price: 'Consultar',
+        description:
+          'Proyecto completo: plano de plantación, selección de especies, diseño de hardscape, iluminación exterior y seguimiento de ejecución.',
+      },
+    ],
+  },
 ]
 
 const tocItems = servicePricing.map(({ id, name }) => ({ id, name }))
@@ -201,7 +395,7 @@ const tocItems = servicePricing.map(({ id, name }) => ({ id, name }))
 export const metadata: Metadata = {
   title: 'Precios interiorismo Barcelona | Tarifas transparentes',
   description:
-    'Descubre los precios de nuestros servicios de interiorismo en Barcelona. Tarifas transparentes para interiorismo, reformas integrales, decoración, home staging y diseño comercial.',
+    'Descubre los precios de nuestros servicios de interiorismo y arquitectura en Barcelona. Tarifas transparentes para interiorismo, decoración, home staging, interiorismo comercial y rehabilitación.',
 }
 
 export default function Precios() {

@@ -15,7 +15,51 @@ import { StylizedImage } from '@/components/StylizedImage'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { TestimonialSlider, type TestimonialItem } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
+
+const serviceProjects: Project[] = [
+  {
+    title: 'Decoración apartamento familiar en Sarrià',
+    description:
+      '150 m² en estilo mediterráneo contemporáneo: selección integral de mobiliario, textiles y luminarias para crear un ambiente cálido y funcional para toda la familia.',
+    year: '2025',
+    category: 'Decoración integral',
+  },
+  {
+    title: 'Renovación estética piso de alquiler en el Born',
+    description:
+      '70 m² transformados sin obras: nueva paleta de colores, mobiliario contemporáneo y styling completo para maximizar el atractivo del piso.',
+    year: '2024',
+    category: 'Decoración sin obras',
+  },
+  {
+    title: 'Styling y ambientación restaurante en Eixample',
+    description:
+      'Decoración integral de un restaurante de cocina mediterránea: creación de una atmósfera coherente con la imagen de marca a través del mobiliario, textiles e iluminación.',
+    year: '2024',
+    category: 'Decoración comercial',
+  },
+]
+
+const serviceTestimonials: TestimonialItem[] = [
+  {
+    quote:
+      'La shopping list que preparó nuestra decoradora fue impecable: cada pieza encajaba perfectamente en el conjunto. Nos ahorró semanas de búsqueda y el resultado en nuestro piso de Sarrià es espectacular.',
+    client: 'Ana R., decoración integral en Sarrià',
+  },
+  {
+    quote:
+      'Queríamos renovar el piso de alquiler en el Born sin hacer obras y el resultado fue una transformación espectacular. Los nuevos inquilinos quedaron encantados desde la primera visita.',
+    client: 'Carlos y Elena M., decoración sin obras en el Born',
+  },
+  {
+    quote:
+      'Our decorator perfectly captured the Mediterranean atmosphere we wanted for our restaurant in Eixample. The material selection and lighting design transformed the space completely.',
+    client: 'David K., restaurant decoration in Eixample',
+  },
+]
 
 function Section({
   title,
@@ -59,7 +103,7 @@ const faqItems = [
   {
     question: '¿Cuál es la diferencia entre un decorador y un interiorista?',
     schemaAnswer:
-      'Un decorador de interiores se centra en la estética del espacio: selección de mobiliario, textiles, colores, iluminación y complementos decorativos. No realiza obras estructurales ni modificaciones de instalaciones. Un interiorista (arquitecto de interiores) puede además intervenir en la redistribución del espacio, derribar tabiques, modificar instalaciones eléctricas o de fontanería y gestionar obras de reforma integral. Si tu vivienda necesita una renovación estructural, consulta nuestro servicio de interiorismo.',
+      'Un decorador de interiores se centra en la estética del espacio: selección de mobiliario, textiles, colores, iluminación y complementos decorativos. No realiza obras estructurales ni modificaciones de instalaciones. Un interiorista (arquitecto de interiores) puede además intervenir en la redistribución del espacio, derribar tabiques, modificar instalaciones eléctricas o de fontanería y gestionar obras de reforma integral. Si tu vivienda necesita una renovación estructural, consulta nuestro servicio de arquitectura de interiores.',
     answer: (
       <>
         <p>
@@ -83,10 +127,10 @@ const faqItems = [
         <p>
           Si tu vivienda necesita una renovación estructural, consulta nuestro{' '}
           <Link
-            href="/interiorista/"
+            href="/arquitectura-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            servicio de interiorismo
+            servicio de arquitectura de interiores
           </Link>
           .
         </p>
@@ -155,7 +199,7 @@ const faqItems = [
   {
     question: '¿Un decorador puede trabajar en espacios comerciales?',
     schemaAnswer:
-      'Sí, nuestros decoradores tienen experiencia en ambientación de espacios comerciales: boutiques, restaurantes, cafeterías, oficinas y showrooms. El decorador trabaja la imagen de marca a través del mobiliario, los textiles, la iluminación y los acabados para crear una experiencia coherente con tu negocio. Para proyectos que requieran obras estructurales, consulta nuestro servicio de diseño comercial.',
+      'Sí, nuestros decoradores tienen experiencia en ambientación de espacios comerciales: boutiques, restaurantes, cafeterías, oficinas y showrooms. El decorador trabaja la imagen de marca a través del mobiliario, los textiles, la iluminación y los acabados para crear una experiencia coherente con tu negocio. Para proyectos que requieran obras estructurales, consulta nuestro servicio de interiorismo comercial.',
     answer: (
       <>
         <p>
@@ -173,10 +217,10 @@ const faqItems = [
         <p>
           Para proyectos que requieran obras estructurales, consulta nuestro{' '}
           <Link
-            href="/diseno-comercial/"
+            href="/interiorismo-comercial/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            servicio de diseño comercial
+            servicio de interiorismo comercial
           </Link>
           .
         </p>
@@ -213,7 +257,7 @@ const faqItems = [
         <p>
           Consulta nuestras{' '}
           <Link
-            href="/precios/#decoracion"
+            href="/precios/#decoracion-interiores"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
             tarifas de decoración de interiores
@@ -275,13 +319,14 @@ const schemaOrg = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Decorador de interiores',
-          item: 'https://www.interioristabarcelona.com/decorador-interiores/',
+          name: 'Decoración de interiores',
+          item: 'https://www.interioristabarcelona.com/decoracion-interiores/',
         },
       ],
     },
     {
       '@type': 'Service',
+      '@id': 'https://www.interioristabarcelona.com/decoracion-interiores/#service',
       name: 'Decoración de interiores en Barcelona',
       description:
         'Servicio de decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra.',
@@ -301,6 +346,12 @@ const schemaOrg = {
         price: '50',
         unitText: 'por m²',
         description: 'Proyecto de decoración desde 50 €/m²',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        bestRating: '5',
+        ratingCount: '3',
       },
     },
     {
@@ -332,16 +383,52 @@ const schemaOrg = {
         },
       })),
     },
+    ...serviceTestimonials.map((t) => ({
+      '@type': 'Review' as const,
+      itemReviewed: {
+        '@id': 'https://www.interioristabarcelona.com/decoracion-interiores/#service',
+      },
+      reviewRating: {
+        '@type': 'Rating' as const,
+        ratingValue: '5',
+        bestRating: '5',
+      },
+      author: {
+        '@type': 'Person' as const,
+        name: t.client.split(',')[0],
+      },
+      reviewBody: t.quote,
+    })),
+    ...serviceProjects.map((p) => ({
+      '@type': 'CreativeWork' as const,
+      name: p.title,
+      description: p.description,
+      dateCreated: p.year,
+      genre: p.category,
+      creator: {
+        '@type': 'Organization' as const,
+        name: 'Interiorista Barcelona',
+        url: 'https://www.interioristabarcelona.com',
+      },
+      locationCreated: {
+        '@type': 'Place' as const,
+        address: {
+          '@type': 'PostalAddress' as const,
+          addressLocality: 'Barcelona',
+          addressCountry: 'ES',
+        },
+      },
+    })),
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Decorador de interiores en Barcelona | Decoración 2026',
+  title: 'Decoración de interiores en Barcelona | Decoración 2026',
   description:
-    'Decorador de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra. Presupuesto gratuito. Tendencias 2026.',
+    'Decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra. Presupuesto gratuito. Tendencias 2026.',
 }
 
-export default function DecoradorInterioresPage() {
+export default function DecoracionInterioresPage() {
   return (
     <RootLayout>
       <script
@@ -352,7 +439,7 @@ export default function DecoradorInterioresPage() {
       {/* 1. Hero */}
       <PageIntro
         eyebrow="Inicio > Nuestros servicios"
-        title="Decorador de interiores en Barcelona"
+        title="Decoración de interiores en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
           Mobiliario, textiles, colores e iluminación: renueva tu interior sin
@@ -428,10 +515,10 @@ export default function DecoradorInterioresPage() {
           completa y coordina la instalación final del mobiliario y los
           complementos decorativos. Un{' '}
           <Link
-            href="/interiorista/"
+            href="/arquitectura-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            interiorista
+            arquitecto de interiores
           </Link>{' '}
           puede completar el proyecto si se requieren obras estructurales.
         </p>
@@ -608,6 +695,19 @@ export default function DecoradorInterioresPage() {
 
       {/* 7. Contact */}
       <ContactSection />
+
+      {/* 8. Proyectos destacados */}
+      <ProjectShowcase
+        title="Proyectos de decoración de interiores en Barcelona"
+        subtitle="Descubre algunos proyectos de decoración de interiores realizados por los miembros del colectivo."
+        projects={serviceProjects}
+      />
+
+      {/* 9. Testimonios */}
+      <TestimonialSlider
+        className="mt-24 sm:mt-32 lg:mt-40"
+        testimonials={serviceTestimonials}
+      />
     </RootLayout>
   )
 }

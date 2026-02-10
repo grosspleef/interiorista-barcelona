@@ -21,6 +21,7 @@ import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
+import { services, servicePathPrefixes } from '@/lib/services'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -29,31 +30,11 @@ const RootLayoutContext = createContext<{
 
 const serviciosDropdown = {
   label: 'Servicios',
-  href: '/interiorista/',
-  columns: [
-    {
-      title: 'Interiorismo',
-      links: [
-        { label: 'Interiorista', href: '/interiorista/' },
-        { label: 'Decorador', href: '/decorador-interiores/' },
-        { label: 'Reformas integrales', href: '/reformas-integrales/' },
-        { label: 'Reforma cocina', href: '/reforma-cocina/' },
-        { label: 'Reforma baño', href: '/reforma-bano/' },
-        { label: 'Diseño comercial', href: '/diseno-comercial/' },
-        { label: 'Diseño oficinas', href: '/diseno-oficinas/' },
-        { label: 'Home staging', href: '/home-staging/' },
-      ],
-    },
-    {
-      title: 'Arquitectura',
-      links: [
-        { label: 'Arquitecto', href: '/arquitecto/' },
-        { label: 'Arq. de interiores', href: '/arquitecto-interiores/' },
-        { label: 'Ampliación vivienda', href: '/ampliacion-vivienda/' },
-        { label: 'Proyectos públicos', href: '/proyectos-publicos/' },
-      ],
-    },
-  ],
+  href: '/arquitectura-interiores/',
+  links: services.map((s) => ({
+    label: s.shortName,
+    href: s.href,
+  })),
 }
 
 const navLinks = [
@@ -138,14 +119,9 @@ function Header() {
                 aria-expanded={desktopServiciosOpen}
                 className={clsx(
                   'flex items-center gap-x-1 text-sm font-semibold transition',
-                  pathname.startsWith('/interiorista') ||
-                    pathname.startsWith('/decorador') ||
-                    pathname.startsWith('/reforma') ||
-                    pathname.startsWith('/diseno') ||
-                    pathname.startsWith('/home-staging') ||
-                    pathname.startsWith('/arquitecto') ||
-                    pathname.startsWith('/ampliacion') ||
-                    pathname.startsWith('/proyectos-publicos')
+                  servicePathPrefixes.some((prefix) =>
+                    pathname.startsWith(`/${prefix}`),
+                  )
                     ? 'text-neutral-950'
                     : 'text-neutral-600 hover:text-neutral-950',
                 )}
@@ -168,32 +144,23 @@ function Header() {
                     transition={{ duration: 0.15 }}
                     className="absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 rounded-lg border border-neutral-950/10 bg-white p-6 shadow-lg"
                   >
-                    <div className="flex gap-x-10">
-                      {serviciosDropdown.columns.map((column) => (
-                        <div key={column.title} className="min-w-[180px]">
-                          <p className="mb-3 text-xs font-bold uppercase tracking-wider text-neutral-400">
-                            {column.title}
-                          </p>
-                          <ul className="space-y-2">
-                            {column.links.map((link) => (
-                              <li key={link.href}>
-                                <Link
-                                  href={link.href}
-                                  className={clsx(
-                                    'block whitespace-nowrap text-sm transition',
-                                    pathname === link.href
-                                      ? 'font-semibold text-neutral-950'
-                                      : 'text-neutral-600 hover:text-neutral-950',
-                                  )}
-                                >
-                                  {link.label}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                    <ul className="space-y-2">
+                      {serviciosDropdown.links.map((link) => (
+                        <li key={link.href}>
+                          <Link
+                            href={link.href}
+                            className={clsx(
+                              'block whitespace-nowrap text-sm transition',
+                              pathname === link.href
+                                ? 'font-semibold text-neutral-950'
+                                : 'text-neutral-600 hover:text-neutral-950',
+                            )}
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -269,32 +236,23 @@ function Header() {
                       transition={{ duration: 0.15 }}
                       className="overflow-hidden"
                     >
-                      <div className="pl-4 pt-3">
-                        {serviciosDropdown.columns.map((column) => (
-                          <div key={column.title} className="mb-3 last:mb-0">
-                            <p className="mb-2 text-xs font-bold uppercase tracking-wider text-neutral-400">
-                              {column.title}
-                            </p>
-                            <ul className="space-y-2">
-                              {column.links.map((link) => (
-                                <li key={link.href}>
-                                  <Link
-                                    href={link.href}
-                                    className={clsx(
-                                      'block text-sm transition',
-                                      pathname === link.href
-                                        ? 'font-semibold text-neutral-950'
-                                        : 'text-neutral-600 hover:text-neutral-950',
-                                    )}
-                                  >
-                                    {link.label}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
+                      <ul className="space-y-2 pl-4 pt-3">
+                        {serviciosDropdown.links.map((link) => (
+                          <li key={link.href}>
+                            <Link
+                              href={link.href}
+                              className={clsx(
+                                'block text-sm transition',
+                                pathname === link.href
+                                  ? 'font-semibold text-neutral-950'
+                                  : 'text-neutral-600 hover:text-neutral-950',
+                              )}
+                            >
+                              {link.label}
+                            </Link>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </motion.div>
                   )}
                 </AnimatePresence>

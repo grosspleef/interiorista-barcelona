@@ -3,37 +3,15 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
+import { services } from '@/lib/services'
 
 const navigation = [
   {
-    title: 'Interiorismo',
-    links: [
-      { title: 'Interiorista', href: '/interiorista/' },
-      { title: 'Decorador', href: '/decorador-interiores/' },
-      { title: 'Reformas integrales', href: '/reformas-integrales/' },
-      { title: 'Reforma cocina', href: '/reforma-cocina/' },
-      { title: 'Reforma baño', href: '/reforma-bano/' },
-      { title: 'Diseño comercial', href: '/diseno-comercial/' },
-      { title: 'Diseño oficinas', href: '/diseno-oficinas/' },
-      { title: 'Home staging', href: '/home-staging/' },
-      {
-        title: (
-          <>
-            Ver todos <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/interiorista/',
-      },
-    ],
-  },
-  {
-    title: 'Arquitectura',
-    links: [
-      { title: 'Arquitecto', href: '/arquitecto/' },
-      { title: 'Arq. de interiores', href: '/arquitecto-interiores/' },
-      { title: 'Ampliación vivienda', href: '/ampliacion-vivienda/' },
-      { title: 'Proyectos públicos', href: '/proyectos-publicos/' },
-    ],
+    title: 'Servicios',
+    links: services.map((s) => ({
+      title: s.shortName,
+      href: s.href,
+    })),
   },
   {
     title: 'Zonas',
@@ -70,7 +48,7 @@ const navigation = [
 function Navigation() {
   return (
     <nav>
-      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
         {navigation.map((section, sectionIndex) => (
           <li key={sectionIndex}>
             <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
