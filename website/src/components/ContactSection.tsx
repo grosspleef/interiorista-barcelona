@@ -20,7 +20,7 @@ function TextInput({
         id={id}
         {...props}
         placeholder=" "
-        className="peer block w-full rounded-xl border border-neutral-300 bg-white px-4 pt-8 pb-2 text-sm/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
+        className="peer block w-full rounded-xl border border-neutral-950 bg-white px-4 pt-8 pb-2 text-sm/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
       />
       <label
         htmlFor={id}
@@ -46,7 +46,7 @@ function TextAreaInput({
         {...props}
         placeholder=" "
         rows={3}
-        className="peer block w-full rounded-xl border border-neutral-300 bg-white px-4 pt-8 pb-2 text-sm/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
+        className="peer block w-full rounded-xl border border-neutral-950 bg-white px-4 pt-8 pb-2 text-sm/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
       />
       <label
         htmlFor={id}
@@ -62,14 +62,14 @@ function TextAreaInput({
 export function ContactSection() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <FadeIn className="-mx-6 rounded-4xl bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-24 md:px-12">
+      <FadeIn className="-mx-6 rounded-4xl border border-neutral-950 bg-white px-6 py-20 sm:mx-0 sm:py-24 md:px-12">
         <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 gap-x-12 gap-y-12 lg:grid-cols-2">
             <div>
-              <h2 className="font-display text-3xl font-medium text-balance text-white sm:text-4xl">
+              <h2 className="font-display text-3xl font-medium text-balance text-neutral-950 sm:text-4xl">
                 ¿Tienes un proyecto en mente?
               </h2>
-              <p className="mt-4 text-sm/6 text-white/60">
+              <p className="mt-4 text-sm/6 text-neutral-950">
                 Te agradecemos que compartas los detalles de tu proyecto a
                 través del formulario a continuación. Al recibir tu solicitud,
                 nos pondremos en contacto contigo para hablar de tu proyecto y
@@ -132,7 +132,7 @@ export function ContactSection() {
                     name="timeSlot"
                   />
                 </div>
-                <Button type="submit" invert className="mt-8">
+                <Button type="submit" className="mt-8">
                   Enviar solicitud
                 </Button>
               </form>
