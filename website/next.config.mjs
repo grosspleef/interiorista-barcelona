@@ -14,6 +14,20 @@ import { unifiedConditional } from 'unified-conditional'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  async redirects() {
+    return [
+      {
+        source: '/equipo/',
+        destination: '/quienes-somos/',
+        permanent: true,
+      },
+      {
+        source: '/arquitectura-interiores/',
+        destination: '/diseno-interiores/',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 function remarkMDXLayout(source, metaName) {

@@ -188,10 +188,10 @@ const faqItems = [
           Tu interiorista ya conoce el inmueble y puede iniciar directamente el
           proyecto de{' '}
           <Link
-            href="/arquitectura-interiores/"
+            href="/diseno-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            arquitectura de interiores
+            diseño de interiores
           </Link>
           : redistribución, selección de materiales y coordinación de obra. Es
           la continuación natural del asesoramiento previo a la compra.
@@ -518,10 +518,10 @@ export default function AsesoriaCompraViviendaPage() {
           tomar la mejor decisión. Si decides comprar, tu interiorista puede
           encargarse directamente del proyecto de{' '}
           <Link
-            href="/arquitectura-interiores/"
+            href="/diseno-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            arquitectura de interiores
+            diseño de interiores
           </Link>{' '}
           o de la{' '}
           <Link

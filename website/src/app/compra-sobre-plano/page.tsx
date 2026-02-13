@@ -517,10 +517,10 @@ export default function CompraSobrePlanoPage() {
           amueblar tu nueva vivienda, tu interiorista puede encargarse
           directamente del proyecto de{' '}
           <Link
-            href="/arquitectura-interiores/"
+            href="/diseno-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            arquitectura de interiores
+            diseño de interiores
           </Link>{' '}
           o de la{' '}
           <Link

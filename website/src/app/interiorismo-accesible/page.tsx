@@ -123,10 +123,10 @@ const faqItems = [
         <p>
           Descubre también nuestro{' '}
           <Link
-            href="/arquitectura-interiores/"
+            href="/diseno-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            servicio de arquitectura de interiores
+            servicio de diseño de interiores
           </Link>
           .
         </p>
@@ -220,10 +220,10 @@ const faqItems = [
         <p>
           Descubre nuestro{' '}
           <Link
-            href="/arquitectura-interiores/"
+            href="/diseno-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            servicio de arquitectura de interiores
+            servicio de diseño de interiores
           </Link>{' '}
           para proyectos de reforma integral.
         </p>

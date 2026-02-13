@@ -22,11 +22,11 @@ type ServicePricing = {
 const servicePricing: ServicePricing[] = [
   // — Interiorismo (6) —
   {
-    id: 'arquitectura-interiores',
+    id: 'diseno-interiores',
     name: 'Interiorismo',
     description:
-      'Proyectos de arquitectura interior que transforman la distribución y estructura de tu espacio. Intervenciones que requieren proyecto técnico y visado.',
-    href: '/arquitectura-interiores/',
+      'Proyectos de diseño de interiores que transforman la distribución y estructura de tu espacio. Intervenciones que requieren proyecto técnico y visado.',
+    href: '/diseno-interiores/',
     ctaLabel: 'Ver servicio de interiorismo',
     image: { src: imageMeeting, shape: 2 },
     tiers: [
@@ -37,7 +37,7 @@ const servicePricing: ServicePricing[] = [
           'Sesión de asesoramiento técnico con un arquitecto. Importe descontado si se contrata el proyecto completo.',
       },
       {
-        name: 'Proyecto de arquitectura de interiores',
+        name: 'Proyecto de diseño de interiores',
         price: 'Desde 60 €/m²',
         description:
           'Proyecto visado: redistribución, planos técnicos, memorias y gestión de licencias. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',

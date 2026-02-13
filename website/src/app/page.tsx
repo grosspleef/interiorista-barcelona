@@ -71,7 +71,7 @@ export default function Home() {
             '@type': 'Organization',
             name: 'Interiorista Barcelona',
             description:
-              'Colectivo de interioristas y arquitectos de interior en Barcelona',
+              'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
             url: 'https://www.interioristabarcelona.com',
             address: {
               '@type': 'PostalAddress',

@@ -247,10 +247,10 @@ const faqItems = [
           Si buscas un servicio de interiorismo residencial, consulta nuestra
           página de{' '}
           <Link
-            href="/arquitectura-interiores/"
+            href="/diseno-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            arquitectura de interiores
+            diseño de interiores
           </Link>
           .
         </p>

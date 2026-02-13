@@ -14,31 +14,29 @@ const navigation = [
     })),
   },
   {
-    title: 'Zonas',
+    title: 'Ciudades',
     links: [
-      { title: 'Barcelona', href: '/interiorista-eixample/' },
-      { title: 'Sant Cugat', href: '/interiorista-sant-cugat/' },
-      { title: 'Sabadell', href: '/interiorista-sabadell/' },
-      { title: 'Terrassa', href: '/interiorista-terrassa/' },
-      { title: 'Eixample', href: '/interiorista-eixample/' },
-      { title: 'Gràcia', href: '/interiorista-gracia/' },
-      {
-        title: (
-          <>
-            Ver todas <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/zonas/',
-      },
+      { title: 'Barcelona', href: '/' },
+      { title: 'Madrid', href: '#' },
+      { title: 'Valencia', href: '#' },
+      { title: 'Sevilla', href: '#' },
+      { title: 'Málaga', href: '#' },
+      { title: 'Bilbao', href: '#' },
+      { title: 'Zaragoza', href: '#' },
+      { title: 'Palma de Mallorca', href: '#' },
+      { title: 'Alicante', href: '#' },
+      { title: 'San Sebastián', href: '#' },
+      { title: 'A Coruña', href: '#' },
+      { title: 'Granada', href: '#' },
     ],
   },
   {
     title: 'Recursos',
     links: [
       { title: 'Proyectos', href: '/proyectos/' },
-      { title: 'Antes y después', href: '/antes-despues/' },
       { title: 'Precios', href: '/precios/' },
       { title: 'Opiniones', href: '/opiniones/' },
+      { title: 'Quiénes somos', href: '/quienes-somos/' },
       { title: 'Preguntas frecuentes', href: '/preguntas-frecuentes/' },
       { title: 'Contacto', href: '/contacto/' },
     ],

@@ -477,10 +477,10 @@ export default function PaisajismoPage() {
           la ejecución hasta la entrega final. Si el proyecto requiere obra
           estructural, un{' '}
           <Link
-            href="/arquitectura-interiores/"
+            href="/diseno-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            arquitecto de interiores
+            diseñador de interiores
           </Link>{' '}
           puede completar la intervención. Para jardines de masías catalanas,
           consulta nuestro servicio de{' '}

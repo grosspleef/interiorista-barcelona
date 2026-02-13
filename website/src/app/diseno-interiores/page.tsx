@@ -32,7 +32,7 @@ const serviceProjects: Project[] = [
     description:
       '85 m² con terraza: optimización de la luz natural, redistribución de espacios y creación de una conexión fluida entre interior y exterior.',
     year: '2024',
-    category: 'Arquitectura de interiores',
+    category: 'Diseño de interiores',
   },
   {
     title: 'Transformación loft industrial en Poblenou',
@@ -52,7 +52,7 @@ const serviceTestimonials: TestimonialItem[] = [
   {
     quote:
       'Vivir en una finca regia en Gràcia tiene sus retos, pero nuestra interiorista supo redistribuir el espacio de forma ingeniosa, aprovechando cada metro cuadrado y respetando los elementos originales.',
-    client: 'Laura S., arquitectura de interiores en Gràcia',
+    client: 'Laura S., diseño de interiores en Gràcia',
   },
   {
     quote:
@@ -103,11 +103,11 @@ const faqItems = [
   {
     question: '¿Dónde intervenís en Barcelona y alrededores?',
     schemaAnswer:
-      'Nuestras prestaciones de arquitectura de interiores se realizan en Barcelona ciudad y en las principales ciudades del área metropolitana. Intervenimos en los principales barrios de Barcelona: Eixample, Gràcia, El Born, Sarrià, Poblenou, Les Corts, Sant Andreu y Sants-Montjuïc. También intervenimos en las ciudades del área metropolitana: Sant Cugat, Sabadell, Castelldefels, Sitges, Badalona, L\'Hospitalet de Llobregat y alrededores. Contacta con nosotros para solicitar un presupuesto gratuito.',
+      'Nuestras prestaciones de diseño de interiores se realizan en Barcelona ciudad y en las principales ciudades del área metropolitana. Intervenimos en los principales barrios de Barcelona: Eixample, Gràcia, El Born, Sarrià, Poblenou, Les Corts, Sant Andreu y Sants-Montjuïc. También intervenimos en las ciudades del área metropolitana: Sant Cugat, Sabadell, Castelldefels, Sitges, Badalona, L\'Hospitalet de Llobregat y alrededores. Contacta con nosotros para solicitar un presupuesto gratuito.',
     answer: (
       <>
         <p>
-          Nuestras prestaciones de arquitectura de interiores se realizan en{' '}
+          Nuestras prestaciones de diseño de interiores se realizan en{' '}
           <strong className="font-semibold text-neutral-950">
             Barcelona ciudad
           </strong>{' '}
@@ -171,7 +171,7 @@ const faqItems = [
     question:
       '¿Un interiorista puede encargarse de un proyecto de ampliación?',
     schemaAnswer:
-      'Sí, un interiorista puede encargarse de proyectos de ampliación de menos de 20 m²: extensiones, sobrelevaciones, modificaciones de fachada o cambios de destino del local. En Barcelona, estos proyectos están sujetos a la normativa urbanística del Plan General Metropolitano (PGM) y pueden requerir licencias específicas del Ayuntamiento. Tu interiorista se encarga de verificar la viabilidad y gestionar los trámites necesarios. Consulta nuestras tarifas de arquitectura de interiores.',
+      'Sí, un interiorista puede encargarse de proyectos de ampliación de menos de 20 m²: extensiones, sobrelevaciones, modificaciones de fachada o cambios de destino del local. En Barcelona, estos proyectos están sujetos a la normativa urbanística del Plan General Metropolitano (PGM) y pueden requerir licencias específicas del Ayuntamiento. Tu interiorista se encarga de verificar la viabilidad y gestionar los trámites necesarios. Consulta nuestras tarifas de diseño de interiores.',
     answer: (
       <>
         <p>
@@ -192,10 +192,10 @@ const faqItems = [
         <p>
           Consulta nuestras{' '}
           <Link
-            href="/precios/#arquitectura-interiores"
+            href="/precios/#diseno-interiores"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            tarifas de arquitectura de interiores
+            tarifas de diseño de interiores
           </Link>
           .
         </p>
@@ -329,17 +329,17 @@ const schemaOrg = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Arquitectura de interiores',
-          item: 'https://www.interioristabarcelona.com/arquitectura-interiores/',
+          name: 'Diseño de interiores',
+          item: 'https://www.interioristabarcelona.com/diseno-interiores/',
         },
       ],
     },
     {
       '@type': 'Service',
-      '@id': 'https://www.interioristabarcelona.com/arquitectura-interiores/#service',
-      name: 'Arquitectura de interiores en Barcelona',
+      '@id': 'https://www.interioristabarcelona.com/diseno-interiores/#service',
+      name: 'Diseño de interiores en Barcelona',
       description:
-        'Servicio de arquitectura de interiores en Barcelona: concepción, optimización, reforma parcial o completa de tu interior por interioristas titulados.',
+        'Servicio de diseño de interiores en Barcelona: concepción, optimización, reforma parcial o completa de tu interior por diseñadores de interiores titulados.',
       provider: {
         '@type': 'Organization',
         name: 'Interiorista Barcelona',
@@ -349,7 +349,7 @@ const schemaOrg = {
         '@type': 'City',
         name: 'Barcelona',
       },
-      serviceType: 'Arquitectura de interiores',
+      serviceType: 'Diseño de interiores',
       offers: {
         '@type': 'Offer',
         priceCurrency: 'EUR',
@@ -369,7 +369,7 @@ const schemaOrg = {
       name: 'Interiorista Barcelona',
       url: 'https://www.interioristabarcelona.com',
       description:
-        'Colectivo de interioristas y arquitectos de interior en Barcelona',
+        'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Carrer de Mallorca, 237',
@@ -396,7 +396,7 @@ const schemaOrg = {
     ...serviceTestimonials.map((t) => ({
       '@type': 'Review' as const,
       itemReviewed: {
-        '@id': 'https://www.interioristabarcelona.com/arquitectura-interiores/#service',
+        '@id': 'https://www.interioristabarcelona.com/diseno-interiores/#service',
       },
       reviewRating: {
         '@type': 'Rating' as const,
@@ -433,12 +433,12 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Arquitectura de interiores en Barcelona | Interiorismo 2026',
+  title: 'Diseño de interiores en Barcelona | Diseñador de interiores 2026',
   description:
-    '¿Buscas un arquitecto de interiores en Barcelona? Nuestros interioristas titulados te acompañan en tu proyecto de arquitectura de interiores, reforma o reestructuración de tu piso o casa en Barcelona y alrededores.',
+    '¿Buscas un diseñador de interiores en Barcelona? Nuestros interioristas titulados te acompañan en tu proyecto de diseño de interiores, reforma o reestructuración de tu piso o casa en Barcelona y alrededores.',
 }
 
-export default function ArquitecturaInterioresPage() {
+export default function DisenoInterioresPage() {
   return (
     <RootLayout>
       <script
@@ -449,14 +449,14 @@ export default function ArquitecturaInterioresPage() {
       {/* 1. Hero */}
       <PageIntro
         eyebrow="Inicio > Nuestros servicios"
-        title="Arquitectura de interiores en Barcelona"
+        title="Diseño de interiores en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
           Transformación estructural de espacios con visión arquitectónica
         </p>
         <p className="mt-6">
-          Desde 2006, los interioristas y arquitectos de interior del colectivo
-          te asisten en tu proyecto de arquitectura de interiores, reforma o reestructuración
+          Desde 2006, los interioristas y diseñadores de interiores del colectivo
+          te asisten en tu proyecto de diseño de interiores, reforma o reestructuración
           de tu piso o casa en Barcelona y alrededores.
         </p>
         <div className="mt-8">
@@ -464,14 +464,14 @@ export default function ArquitecturaInterioresPage() {
         </div>
       </PageIntro>
 
-      {/* 2. ¿Por qué contratar un arquitecto de interiores en Barcelona? */}
+      {/* 2. ¿Por qué contratar un diseñador de interiores en Barcelona? */}
       <SectionIntro
         eyebrow="Ventajas"
-        title="¿Por qué contratar un arquitecto de interiores en Barcelona?"
+        title="¿Por qué contratar un diseñador de interiores en Barcelona?"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          El arquitecto de interiores titulado te acompaña en cada etapa de tu proyecto de
+          El diseñador de interiores titulado te acompaña en cada etapa de tu proyecto de
           reforma, desde la concepción hasta la entrega de las llaves.
         </p>
       </SectionIntro>
@@ -509,14 +509,14 @@ export default function ArquitecturaInterioresPage() {
         </GridList>
       </Container>
 
-      {/* 3. Tu colaboración con un arquitecto de interiores */}
+      {/* 3. Tu colaboración con un diseñador de interiores */}
       <SectionIntro
         eyebrow="Colaboración"
-        title="Tu colaboración con un arquitecto de interiores"
+        title="Tu colaboración con un diseñador de interiores"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          El arquitecto de interiores te acompaña en la reflexión de tu proyecto de reforma
+          El diseñador de interiores te acompaña en la reflexión de tu proyecto de reforma
           en Barcelona y alrededores: desde la escucha de tus deseos
           (presupuesto, estética y estilo de vida) en el marco de un estudio,
           hasta el seguimiento y la coordinación de la obra de reforma.
@@ -526,12 +526,12 @@ export default function ArquitecturaInterioresPage() {
       {/* 4. Proceso en 3 etapas */}
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
-          title="Visita consejo con tu arquitecto de interiores"
+          title="Visita consejo con tu diseñador de interiores"
           image={{ src: imageWhiteboard }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
-              Desde la primera visita, el arquitecto de interiores trabaja contigo en tu
+              Desde la primera visita, el diseñador de interiores trabaja contigo en tu
               domicilio en Barcelona. Te escucha para comprender tus necesidades
               y aporta soluciones inmediatas.
             </p>
@@ -559,7 +559,7 @@ export default function ArquitecturaInterioresPage() {
         </Section>
 
         <Section
-          title="Estudio del proyecto de arquitectura de interiores"
+          title="Estudio del proyecto de diseño de interiores"
           image={{ src: imageLaptop, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
@@ -642,9 +642,9 @@ export default function ArquitecturaInterioresPage() {
       {/* 5. Tarifas */}
       <div className="mt-24 sm:mt-32 lg:mt-40">
         <PricingBlock
-          id="tarifas-arquitectura-interiores"
-          name="Tarifas de arquitectura de interiores"
-          description="Servicio integral de arquitectura de interiores para viviendas en Barcelona. Desde la primera consulta gratuita hasta el seguimiento de obra, te acompañamos en cada etapa de tu proyecto."
+          id="tarifas-diseno-interiores"
+          name="Tarifas de diseño de interiores"
+          description="Servicio integral de diseño de interiores para viviendas en Barcelona. Desde la primera consulta gratuita hasta el seguimiento de obra, te acompañamos en cada etapa de tu proyecto."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
           image={{ src: imageWhiteboard, shape: 0 }}
@@ -657,7 +657,7 @@ export default function ArquitecturaInterioresPage() {
                 'Primera visita a tu domicilio para evaluar el espacio, entender tus necesidades y definir el alcance del proyecto.',
             },
             {
-              name: 'Proyecto de arquitectura de interiores',
+              name: 'Proyecto de diseño de interiores',
               price: 'Desde 60 €/m²',
               description:
                 'Proyecto completo: planos, 3D, selección de materiales y mobiliario. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',
@@ -676,12 +676,12 @@ export default function ArquitecturaInterioresPage() {
       {/* 6. FAQ */}
       <SectionIntro
         eyebrow="FAQ"
-        title="Preguntas frecuentes sobre arquitectura de interiores en Barcelona"
+        title="Preguntas frecuentes sobre diseño de interiores en Barcelona"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
           Respondemos a las preguntas más habituales sobre nuestros servicios de
-          arquitectura de interiores.
+          diseño de interiores.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -695,8 +695,8 @@ export default function ArquitecturaInterioresPage() {
 
       {/* 8. Proyectos destacados */}
       <ProjectShowcase
-        title="Proyectos de arquitectura de interiores en Barcelona"
-        subtitle="Descubre algunos proyectos de arquitectura de interiores realizados por los miembros del colectivo."
+        title="Proyectos de diseño de interiores en Barcelona"
+        subtitle="Descubre algunos proyectos de diseño de interiores realizados por los miembros del colectivo."
         projects={serviceProjects}
       />
 

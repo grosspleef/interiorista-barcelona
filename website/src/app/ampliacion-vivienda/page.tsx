@@ -588,7 +588,7 @@ export default function AmpliacionViviendaPage() {
           <GridListItem title="Proyecto a medida">
             Diseño personalizado por{' '}
             <Link
-              href="/arquitectura-interiores/"
+              href="/diseno-interiores/"
               className="font-semibold text-neutral-950 underline hover:text-neutral-700"
             >
               interioristas titulados

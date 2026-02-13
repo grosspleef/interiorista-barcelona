@@ -8,12 +8,12 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    id: 'arquitectura-interiores',
+    id: 'diseno-interiores',
     name: 'Interiorismo',
     shortName: 'Interiorismo',
     description:
-      'Transformación estructural de espacios con visión arquitectónica',
-    href: '/arquitectura-interiores/',
+      'Diseño de interiores integral: redistribución, reforma y transformación de tu hogar en Barcelona',
+    href: '/diseno-interiores/',
   },
   {
     id: 'decoracion-interiores',

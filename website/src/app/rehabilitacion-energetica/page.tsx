@@ -544,7 +544,7 @@ export default function RehabilitacionEnergeticaPage() {
           <GridListItem title="Obras de reforma planificadas">
             Si ya tienes prevista una{' '}
             <Link
-              href="/arquitectura-interiores/"
+              href="/diseno-interiores/"
               className="font-semibold text-neutral-950 underline hover:text-neutral-700"
             >
               reforma integral

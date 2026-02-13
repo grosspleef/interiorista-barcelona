@@ -127,10 +127,10 @@ const faqItems = [
         <p>
           Si tu vivienda necesita una renovación estructural, consulta nuestro{' '}
           <Link
-            href="/arquitectura-interiores/"
+            href="/diseno-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            servicio de arquitectura de interiores
+            servicio de diseño de interiores
           </Link>
           .
         </p>
@@ -515,10 +515,10 @@ export default function DecoracionInterioresPage() {
           completa y coordina la instalación final del mobiliario y los
           complementos decorativos. Un{' '}
           <Link
-            href="/arquitectura-interiores/"
+            href="/diseno-interiores/"
             className="font-semibold text-neutral-950 underline hover:text-neutral-700"
           >
-            arquitecto de interiores
+            diseñador de interiores
           </Link>{' '}
           puede completar el proyecto si se requieren obras estructurales.
         </p>

@@ -30,7 +30,7 @@ const RootLayoutContext = createContext<{
 
 const serviciosDropdown = {
   label: 'Servicios',
-  href: '/arquitectura-interiores/',
+  href: '/diseno-interiores/',
   links: services.map((s) => ({
     label: s.shortName,
     href: s.href,
@@ -39,7 +39,7 @@ const serviciosDropdown = {
 
 const navLinks = [
   { href: '/proyectos/', label: 'Proyectos' },
-  { href: '/equipo/', label: 'Equipo' },
+  { href: '/quienes-somos/', label: 'Quiénes somos' },
   { href: '/precios/', label: 'Precios' },
 ]
 
@@ -173,7 +173,7 @@ function Header() {
                 href={link.href}
                 className={clsx(
                   'text-sm font-semibold transition',
-                  pathname === link.href
+                  pathname.startsWith(link.href)
                     ? 'text-neutral-950'
                     : 'text-neutral-600 hover:text-neutral-950',
                 )}
@@ -265,7 +265,7 @@ function Header() {
                   href={link.href}
                   className={clsx(
                     'text-sm font-semibold transition',
-                    pathname === link.href
+                    pathname.startsWith(link.href)
                       ? 'text-neutral-950'
                       : 'text-neutral-600 hover:text-neutral-950',
                   )}
