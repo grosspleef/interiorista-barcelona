@@ -11,6 +11,9 @@ import { RootLayout } from '@/components/RootLayout'
 import { ServicesGrid } from '@/components/ServicesGrid'
 import { StatList, StatListItem } from '@/components/StatList'
 import { TestimonialSlider } from '@/components/TestimonialSlider'
+import imageLaptop from '@/images/laptop.jpg'
+import imageMeeting from '@/images/meeting.jpg'
+import imageWhiteboard from '@/images/whiteboard.jpg'
 
 const testimonials = [
   {
@@ -25,8 +28,8 @@ const testimonials = [
   },
   {
     quote:
-      'As expats, we were nervous about renovating in a new country. Our designer made the whole process seamless — from permits to final styling. We love our new apartment in Born.',
-    client: 'Sarah & Tom W., apartamento en el Born',
+      'Como expatriados, nos daba miedo reformar en un país nuevo. Nuestra diseñadora hizo que todo el proceso fuera muy sencillo, desde los permisos hasta la decoración final. Estamos encantados con nuestro nuevo piso en el Born.',
+    client: 'Sarah & Tom W., reforma de apartamento en el Born',
   },
 ]
 
@@ -37,6 +40,7 @@ const projects = [
       'Transformación completa de un piso de 120m² en el Eixample, combinando elementos modernistas con diseño contemporáneo.',
     year: '2024',
     category: 'Interiorismo',
+    image: imageLaptop,
   },
   {
     title: 'Diseño restaurante Born',
@@ -44,6 +48,7 @@ const projects = [
       'Interiorismo completo para un restaurante de cocina mediterránea en el corazón del Born.',
     year: '2024',
     category: 'Interiorismo comercial',
+    image: imageMeeting,
   },
   {
     title: 'Ático contemporáneo Sarrià',
@@ -51,6 +56,7 @@ const projects = [
       'Diseño de interiores para un ático de lujo con vistas panorámicas en Sarrià-Sant Gervasi.',
     year: '2023',
     category: 'Decoración de interiores',
+    image: imageWhiteboard,
   },
 ]
 

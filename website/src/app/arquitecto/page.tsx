@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       '220 m² de construcción nueva con estructura de hormigón y fachada ventilada. Diseño bioclimático con orientación sur y certificación energética A.',
     year: '2025',
     category: 'Construcción nueva',
+    image: imageLaptop,
   },
   {
     title: 'Ampliación y rehabilitación de masía en el Maresme',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       '350 m² de rehabilitación integral con ampliación contemporánea de 80 m². Respeto de la estructura original en piedra con intervención moderna.',
     year: '2024',
     category: 'Rehabilitación',
+    image: imageMeeting,
   },
   {
     title: 'Sobrelevación de edificio plurifamiliar en Gràcia',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       'Adición de 2 plantas sobre edificio existente: 160 m² de nueva construcción con estructura metálica ligera y fachada de zinc.',
     year: '2024',
     category: 'Ampliación vertical',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,8 +62,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'We needed an architect who could handle the complex Barcelona building permits for our rooftop extension. The whole process from blueprints to the final handover was managed professionally and on schedule.',
-    client: 'Richard & Anna M., building extension in Gràcia',
+      'Necesitábamos un arquitecto que pudiera gestionar los complejos permisos de obra de Barcelona para nuestra ampliación de ático. Todo el proceso, desde los planos hasta la entrega final, se gestionó de forma profesional y dentro del plazo.',
+    client: 'Richard & Anna M., ampliación de edificio en Gràcia',
   },
 ]
 

@@ -26,6 +26,7 @@ const serviceProjects: Project[] = [
       '130 m² en finca regia: apertura cocina-salón, recuperación de suelos hidráulicos originales y redistribución completa respetando los elementos modernistas.',
     year: '2025',
     category: 'Reforma integral',
+    image: imageLaptop,
   },
   {
     title: 'Rehabilitación de ático en Gràcia',
@@ -33,6 +34,7 @@ const serviceProjects: Project[] = [
       '85 m² con terraza: optimización de la luz natural, redistribución de espacios y creación de una conexión fluida entre interior y exterior.',
     year: '2024',
     category: 'Diseño de interiores',
+    image: imageMeeting,
   },
   {
     title: 'Transformación loft industrial en Poblenou',
@@ -40,6 +42,7 @@ const serviceProjects: Project[] = [
       '110 m² con entreplantas: integración de materiales industriales originales, nueva distribución en dos niveles y diseño de espacios diáfanos.',
     year: '2024',
     category: 'Reforma integral',
+    image: imageWhiteboard,
   },
 ]
 
@@ -56,8 +59,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'As expats, we were worried about navigating permits and coordinating trades in Barcelona. Our designer handled everything — from the initial plans to the final handover. Our loft in Poblenou is exactly what we dreamed of.',
-    client: 'James & Sophie T., loft renovation in Poblenou',
+      'Como expatriados, nos preocupaba gestionar los permisos y coordinar los gremios en Barcelona. Nuestra diseñadora se encargó de todo, desde los planos iniciales hasta la entrega final. Nuestro loft en Poblenou es exactamente lo que soñábamos.',
+    client: 'James & Sophie T., reforma de loft en Poblenou',
   },
 ]
 

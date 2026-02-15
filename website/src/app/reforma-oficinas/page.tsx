@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       '350 m² de oficina open space: salas agile, phone booths, zona break con cocina equipada y mobiliario ergonómico para 60 puestos de trabajo.',
     year: '2025',
     category: 'Oficinas',
+    image: imageLaptop,
   },
   {
     title: 'Despacho de abogados en Eixample',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       '180 m² de despacho profesional: despachos privados con acústica reforzada, sala de juntas para 14 personas y recepción corporativa.',
     year: '2024',
     category: 'Oficinas',
+    image: imageMeeting,
   },
   {
     title: 'Coworking en Gràcia',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       '280 m² de espacio de coworking: hot desking, salas de reuniones modulares, cabinas telefónicas, terraza comunitaria y zona lounge.',
     year: '2024',
     category: 'Coworking',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,8 +62,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'Opening a coworking space in Barcelona seemed daunting with all the permits and regulations. Our designer handled the licencia de obras, coordinated every trade, and delivered a beautiful, functional space on time and on budget. The design quality speaks for itself.',
-    client: 'James W., coworking founder in Gràcia',
+      'Abrir un espacio de coworking en Barcelona parecía complicado con todos los permisos y normativas. Nuestra diseñadora gestionó la licencia de obras, coordinó todos los gremios y nos entregó un espacio bonito y funcional, dentro de plazo y presupuesto. La calidad del diseño habla por sí sola.',
+    client: 'James W., fundador de coworking en Gràcia',
   },
 ]
 

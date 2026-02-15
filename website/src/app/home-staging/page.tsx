@@ -32,6 +32,7 @@ const serviceProjects: Project[] = [
       '95 m² preparado para venta: despersonalización, redistribución del mobiliario existente y styling completo. Vendido en 12 días al precio de salida.',
     year: '2025',
     category: 'Home staging residencial',
+    image: imageLaptop,
   },
   {
     title: 'Staging apartamento turístico en El Born',
@@ -39,6 +40,7 @@ const serviceProjects: Project[] = [
       '55 m² de staging para alquiler vacacional: mobiliario de alquiler, textiles mediterráneos y fotografía profesional. Ocupación +35 % respecto al trimestre anterior.',
     year: '2024',
     category: 'Staging alquiler',
+    image: imageMeeting,
   },
   {
     title: 'Home staging ático en Sarrià',
@@ -46,6 +48,7 @@ const serviceProjects: Project[] = [
       '140 m² con terraza: posicionamiento premium, mobiliario de diseño alquilado y reportaje fotográfico profesional. Vendido un 10 % por encima del precio inicial.',
     year: '2024',
     category: 'Home staging premium',
+    image: imageWhiteboard,
   },
 ]
 
@@ -62,8 +65,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'We needed to sell our apartment in Gràcia before relocating. The staging team transformed it in just two days — it looked like a magazine cover. Sold in 10 days, above asking price.',
-    client: 'Emily & David W., property sale in Gràcia',
+      'Necesitábamos vender nuestro piso en Gràcia antes de mudarnos. El equipo de home staging lo transformó en solo dos días — parecía la portada de una revista. Se vendió en 10 días, por encima del precio de salida.',
+    client: 'Emily & David W., venta de propiedad en Gràcia',
   },
 ]
 

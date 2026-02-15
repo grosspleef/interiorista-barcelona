@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       '420 m² en edificio de 1905: aislamiento SATE en patio interior, sustitución de ventanas con protección del patrimonio, aerotermia centralizada y certificación energética de E a B.',
     year: '2025',
     category: 'Rehabilitación energética integral',
+    image: imageLaptop,
   },
   {
     title: 'Mejora energética de piso pasante en Gràcia',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       '95 m² con doble orientación: aislamiento interior con lana mineral, ventanas de altas prestaciones, VMC doble flujo e instalación solar fotovoltaica en cubierta comunitaria.',
     year: '2024',
     category: 'Rehabilitación energética vivienda',
+    image: imageMeeting,
   },
   {
     title: 'Rehabilitación integral de cubierta y envolvente en Poblenou',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       'Comunidad de 12 viviendas: aislamiento de cubierta plana con cubierta verde, SATE en fachada posterior, sustitución de carpinterías y reducción del 62% en consumo energético.',
     year: '2024',
     category: 'Rehabilitación energética comunitaria',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,8 +62,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      "We wanted to improve our flat's energy efficiency but were worried about the heritage restrictions in our Eixample building. Our designer found solutions that respected the façade while dramatically improving insulation and comfort. The EU grants covered 60% of the cost.",
-    client: 'David & Sarah K., energy retrofit in Eixample',
+      'Queríamos mejorar la eficiencia energética de nuestro piso, pero nos preocupaban las restricciones patrimoniales de nuestro edificio en el Eixample. Nuestra diseñadora encontró soluciones que respetaban la fachada y mejoraban drásticamente el aislamiento y el confort. Las ayudas europeas cubrieron el 60 % del coste.',
+    client: 'David & Sarah K., rehabilitación energética en el Eixample',
   },
 ]
 

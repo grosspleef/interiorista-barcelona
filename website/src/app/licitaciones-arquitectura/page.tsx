@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       '450 m² de reforma integral con criterios de accesibilidad PMR y eficiencia energética. Espacio polivalente para actividades comunitarias y culturales.',
     year: '2025',
     category: 'Equipamiento cultural',
+    image: imageLaptop,
   },
   {
     title: 'Interiorismo de biblioteca pública en Poblenou',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       '800 m² de diseño interior con espacio polivalente, zona infantil, mediateca y sala de estudio. Iluminación natural optimizada y materiales sostenibles.',
     year: '2024',
     category: 'Equipamiento educativo',
+    image: imageMeeting,
   },
   {
     title: 'Rehabilitación de mercado municipal en el Born',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       '1.200 m² de rehabilitación patrimonial con estructura metálica original preservada. Integración de criterios de sostenibilidad y eficiencia energética.',
     year: '2024',
     category: 'Patrimonio público',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,7 +62,7 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'We partnered with the collective on a public tender for an international school facility in Barcelona. Their expertise in Spanish public procurement procedures and bilingual project documentation made the process remarkably smooth.',
+      'Colaboramos con el colectivo en una licitación pública para un centro escolar internacional en Barcelona. Su experiencia en procedimientos de contratación pública española y documentación bilingüe hizo que el proceso fuera extraordinariamente fluido.',
     client: 'International School Foundation, Barcelona',
   },
 ]

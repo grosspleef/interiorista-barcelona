@@ -41,12 +41,20 @@ const navigation = [
       { title: 'Contacto', href: '/contacto/' },
     ],
   },
+  {
+    title: 'Legal',
+    links: [
+      { title: 'Aviso legal', href: '/aviso-legal/' },
+      { title: 'Condiciones de uso', href: '/condiciones-uso/' },
+      { title: 'Política de cookies', href: '/politica-cookies/' },
+    ],
+  },
 ]
 
 function Navigation() {
   return (
     <nav>
-      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-4">
         {navigation.map((section, sectionIndex) => (
           <li key={sectionIndex}>
             <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">

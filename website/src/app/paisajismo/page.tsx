@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       '35 m², diseño mediterráneo con pérgola, jardineras de aromáticas y sistema de riego por goteo.',
     year: '2025',
     category: 'Terraza urbana',
+    image: imageLaptop,
   },
   {
     title: 'Jardín de masía en Sant Cugat',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       '400 m², restauración de jardín con piscina, olivos centenarios y zona de huerto.',
     year: '2024',
     category: 'Jardín residencial',
+    image: imageMeeting,
   },
   {
     title: 'Patio interior de finca modernista en Gràcia',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       '25 m², jardín vertical y fuente ornamental. Transformación de patio en desuso en oasis vegetal.',
     year: '2024',
     category: 'Patio interior',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,8 +62,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      "We wanted to create a green rooftop terrace in our Eixample building. The landscape designer selected drought-resistant plants and designed an irrigation system that works perfectly with Barcelona's climate. Absolutely love it.",
-    client: 'Sarah M., rooftop terrace in Eixample',
+      'Queríamos crear una terraza verde en la azotea de nuestro edificio del Eixample. La paisajista seleccionó plantas resistentes a la sequía y diseñó un sistema de riego que funciona perfectamente con el clima de Barcelona. Nos encanta el resultado.',
+    client: 'Sarah M., terraza en azotea en el Eixample',
   },
 ]
 

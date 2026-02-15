@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       'Cerramiento de 45 m² de terraza en ático con estructura de aluminio y vidrio de control solar. Integración de sistema de ventilación cruzada y suelo radiante. Licencia de obra mayor tramitada en 3 meses.',
     year: '2025',
     category: 'Cerramiento de terraza',
+    image: imageLaptop,
   },
   {
     title: 'Unión de dos pisos en el Eixample',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       'Unificación de dos viviendas contiguas de 75 m² cada una mediante apertura de muro de carga con refuerzo estructural. Nueva distribución de 150 m² con 3 dormitorios y zona de día diáfana.',
     year: '2024',
     category: 'Unión de pisos',
+    image: imageMeeting,
   },
   {
     title: 'Altillo habitable en loft de Poblenou',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       'Construcción de altillo de 28 m² en loft industrial con altura libre de 4,5 m. Estructura metálica autoportante, escalera diseñada a medida y nueva cédula de habitabilidad.',
     year: '2024',
     category: 'Altillo habitable',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,8 +62,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'We bought a loft in Poblenou with amazing ceiling height but not enough rooms. The team built a mezzanine that doubled our usable space. The building permit process was handled entirely by them — stress-free.',
-    client: 'James & Sophie K., mezzanine extension in Poblenou',
+      'Compramos un loft en Poblenou con una altura de techo increíble pero sin suficientes habitaciones. El equipo construyó un altillo que duplicó nuestro espacio útil. La gestión de la licencia de obras la llevaron ellos íntegramente — sin estrés.',
+    client: 'James & Sophie K., ampliación con altillo en Poblenou',
   },
 ]
 

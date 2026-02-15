@@ -26,6 +26,7 @@ const serviceProjects: Project[] = [
       '95 m² en finca regia: detección del estado de las bajantes, evaluación del potencial de redistribución y estimación del coste de reforma integral.',
     year: '2025',
     category: 'Asesoramiento compra',
+    image: imageLaptop,
   },
   {
     title: 'Evaluación técnica dúplex en Gràcia',
@@ -33,6 +34,7 @@ const serviceProjects: Project[] = [
       '120 m² con informe técnico completo: análisis estructural, estado de las instalaciones, estimación desglosada de costes y esquema de redistribución.',
     year: '2025',
     category: 'Informe técnico',
+    image: imageMeeting,
   },
   {
     title: 'Asesoramiento compra local comercial en Poblenou',
@@ -40,6 +42,7 @@ const serviceProjects: Project[] = [
       '200 m² para restauración: verificación de la normativa de actividades, evaluación de las instalaciones y estimación del coste de adecuación.',
     year: '2024',
     category: 'Asesoramiento comercial',
+    image: imageWhiteboard,
   },
 ]
 
@@ -56,8 +59,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'As an expat buying property in Poblenou, the technical report gave me complete peace of mind. The designer identified issues I would never have spotted and provided a clear cost breakdown for the renovation.',
-    client: 'Michael B., property purchase in Poblenou',
+      'Como expatriado comprando una propiedad en Poblenou, el informe técnico me dio una tranquilidad total. La diseñadora identificó problemas que yo nunca habría detectado y me proporcionó un desglose claro de los costes de la reforma.',
+    client: 'Michael B., compra de propiedad en Poblenou',
   },
 ]
 

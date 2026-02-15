@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       'Masía de 650 m² con consolidación de muros de piedra, restauración de bóveda catalana, nuevo forjado de cubierta con aislamiento, cocina y baños contemporáneos integrando piedra original y mobiliario a medida.',
     year: '2025',
     category: 'Reforma integral de masía',
+    image: imageLaptop,
   },
   {
     title: 'Conversión de masía agrícola en vivienda familiar en el Maresme',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       '420 m² de antiguo almacén agrícola transformado en vivienda unifamiliar: cambio de uso, refuerzo estructural con perfiles metálicos ocultos, recuperación de vigas de madera originales y jardín mediterráneo.',
     year: '2024',
     category: 'Conversión de masía',
+    image: imageMeeting,
   },
   {
     title: 'Reforma de masía con mejora energética en el Penedès',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       'Masía de 380 m² con aislamiento térmico compatible con muros de piedra, aerotermia, suelo radiante, carpintería de madera con doble acristalamiento y restauración de la chimenea y escalera de piedra originales.',
     year: '2024',
     category: 'Reforma y eficiencia energética',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,8 +62,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'We bought a 17th-century farmhouse outside Barcelona and needed specialists who understood traditional Catalan construction. The team preserved the stone walls and vaulted ceilings while creating a completely modern interior. They handled all the permits and coordinated the stonemasons and carpenters beautifully.',
-    client: 'James & Emily W., farmhouse renovation in Penedès',
+      'Compramos una masía del siglo XVII en las afueras de Barcelona y necesitábamos especialistas que entendieran la construcción tradicional catalana. El equipo conservó los muros de piedra y los techos abovedados mientras creaba un interior completamente moderno. Gestionaron todos los permisos y coordinaron a los canteros y carpinteros de maravilla.',
+    client: 'James & Emily W., reforma de masía en el Penedès',
   },
 ]
 

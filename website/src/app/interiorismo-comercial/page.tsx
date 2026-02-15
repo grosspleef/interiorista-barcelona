@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       '180 m² en local con bóvedas de piedra: diseño de barra abierta a cocina, iluminación ambiental, mobiliario a medida y tramitación de licencia de actividad incluida.',
     year: '2025',
     category: 'Restauración',
+    image: imageLaptop,
   },
   {
     title: 'Boutique hotel 12 habitaciones en Eixample',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       '420 m² en edificio modernista: rehabilitación de elementos catalogados, diseño de habitaciones con identidad propia, zonas comunes y cumplimiento normativo hotelero.',
     year: '2024',
     category: 'Hostelería',
+    image: imageMeeting,
   },
   {
     title: 'Flagship store en Passeig de Gràcia',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       '95 m² de retail de alta gama: diseño de escaparate, circuito de cliente optimizado, iluminación comercial y mobiliario expositivo a medida.',
     year: '2024',
     category: 'Retail',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,8 +62,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'As foreigners opening a coffee shop in Poblenou, we had no idea about licencia de actividad or local regulations. Our designer handled every permit, coordinated all the trades, and delivered a space that meets both Barcelona standards and international expectations. Highly recommended.',
-    client: 'David & Emma K., coffee shop in Poblenou',
+      'Como extranjeros abriendo una cafetería en Poblenou, no teníamos ni idea sobre la licencia de actividad ni la normativa local. Nuestra diseñadora gestionó todos los permisos, coordinó todos los gremios y nos entregó un espacio que cumple tanto con los estándares de Barcelona como con las expectativas internacionales. Totalmente recomendable.',
+    client: 'David & Emma K., cafetería en Poblenou',
   },
 ]
 

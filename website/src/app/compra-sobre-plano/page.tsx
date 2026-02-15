@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       '85 m²: selección de acabados y redistribución de cocina en promoción de obra nueva. Acompañamiento completo desde la firma de arras hasta la entrega.',
     year: '2025',
     category: 'Compra sobre plano',
+    image: imageLaptop,
   },
   {
     title: 'Acompañamiento compra sobre plano en Poblenou',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       '110 m²: modificaciones solicitadas al promotor, redistribución del salón-cocina e inspección pre-entrega con acta de reservas.',
     year: '2025',
     category: 'Obra nueva',
+    image: imageMeeting,
   },
   {
     title: 'Asesoramiento acabados dúplex en Sant Cugat',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       '150 m²: selección de pavimentos, revestimientos y diseño de cocina a medida en colaboración con la promotora.',
     year: '2024',
     category: 'Personalización acabados',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,8 +62,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'As an expat buying off-plan in Barcelona, the whole process felt overwhelming. Our interior designer guided us through every step — from reviewing the floor plans to selecting finishes and attending the pre-delivery inspection. Absolutely worth it.',
-    client: 'James W., off-plan purchase in Poblenou',
+      'Como expatriado comprando sobre plano en Barcelona, todo el proceso resultaba abrumador. Nuestra interiorista nos guio en cada paso, desde la revisión de los planos hasta la selección de acabados y la inspección previa a la entrega. Totalmente recomendable.',
+    client: 'James W., compra sobre plano en Poblenou',
   },
 ]
 

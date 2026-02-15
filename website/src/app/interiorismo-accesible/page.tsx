@@ -29,6 +29,7 @@ const serviceProjects: Project[] = [
       '95 m² adaptados para persona con movilidad reducida: puertas ensanchadas a 80 cm, ducha enrasada con asiento abatible, cocina con encimera regulable en altura y sistema domótico de control por voz.',
     year: '2025',
     category: 'Adaptación integral',
+    image: imageLaptop,
   },
   {
     title: 'Baño adaptado y cocina accesible en Gràcia',
@@ -36,6 +37,7 @@ const serviceProjects: Project[] = [
       'Reforma de baño y cocina para pareja de 75 años: plato de ducha antideslizante, barras de apoyo, grifería termostática y muebles de cocina con cajones extraíbles. Subvencionado por la Generalitat de Catalunya.',
     year: '2024',
     category: 'Baño y cocina adaptados',
+    image: imageMeeting,
   },
   {
     title: 'Domótica accesible en ático de Sarrià',
@@ -43,6 +45,7 @@ const serviceProjects: Project[] = [
       'Adaptación completa para persona con Parkinson: control vocal de iluminación, persianas y climatización, sensores de caída en baño y dormitorio, y automatización de accesos.',
     year: '2024',
     category: 'Domótica accesible',
+    image: imageWhiteboard,
   },
 ]
 
@@ -59,8 +62,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'My father moved to Barcelona and needed a wheelchair-accessible flat in Sarrià. The team delivered a renovation that is both beautiful and functional — wide corridors, an adapted bathroom and smart home controls. They handled everything, including the permits.',
-    client: 'Sarah & Michael K., accessible renovation in Sarrià',
+      'Mi padre se mudó a Barcelona y necesitaba un piso adaptado para silla de ruedas en Sarrià. El equipo realizó una reforma bonita y funcional a la vez — pasillos anchos, un baño adaptado y domótica. Se encargaron de todo, incluidos los permisos.',
+    client: 'Sarah & Michael K., reforma accesible en Sarrià',
   },
 ]
 

@@ -1,6 +1,8 @@
 import { type Metadata } from 'next'
 
 import { ContactSection } from '@/components/ContactSection'
+import { Container } from '@/components/Container'
+import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { PricingBlock, type PricingTier } from '@/components/PricingBlock'
 import { PricingTableOfContents } from '@/components/PricingTableOfContents'
@@ -177,7 +179,7 @@ const servicePricing: ServicePricing[] = [
       },
     ],
   },
-  // — Arquitectura (7) —
+  // — Arquitectura (4) —
   {
     id: 'arquitecto',
     name: 'Arquitecto',
@@ -205,30 +207,6 @@ const servicePricing: ServicePricing[] = [
         price: '9 % del presupuesto',
         description:
           'Dirección facultativa, certificados y supervisión técnica hasta la entrega final.',
-      },
-    ],
-  },
-  {
-    id: 'ampliacion-vivienda',
-    name: 'Ampliación de vivienda',
-    description:
-      'Extensiones, sobrelevaciones y agrandamiento de espacios. Proyecto técnico y gestión de licencias urbanísticas.',
-    href: '/ampliacion-vivienda/',
-    ctaLabel: 'Ver servicio de ampliación',
-    image: { src: imageLaptop, shape: 1 },
-    tiers: [
-      {
-        name: 'Estudio de viabilidad',
-        price: 'Desde 300 €',
-        description:
-          'Análisis de la normativa urbanística, estudio de la estructura existente y evaluación de las opciones de ampliación.',
-        highlighted: true,
-      },
-      {
-        name: 'Proyecto de ampliación',
-        price: 'Consultar',
-        description:
-          'Proyecto visado, gestión de licencias y dirección de obra para la ampliación de tu vivienda.',
       },
     ],
   },
@@ -289,78 +267,6 @@ const servicePricing: ServicePricing[] = [
         price: '8 % del presupuesto',
         description:
           'Coordinación de la ejecución y control de calidad hasta la entrega del espacio.',
-      },
-    ],
-  },
-  {
-    id: 'licitaciones-arquitectura',
-    name: 'Licitaciones de arquitectura',
-    description:
-      'Licitaciones, concursos de arquitectura y proyectos de equipamientos públicos. Experiencia en pliegos y procesos de licitación.',
-    href: '/licitaciones-arquitectura/',
-    ctaLabel: 'Ver servicio de licitaciones',
-    image: { src: imageLaptop, shape: 1 },
-    tiers: [
-      {
-        name: 'Asesoramiento en licitación',
-        price: 'Consultar',
-        description:
-          'Análisis del pliego de condiciones, preparación de la documentación técnica y estrategia de propuesta.',
-        highlighted: true,
-      },
-      {
-        name: 'Proyecto de concurso',
-        price: 'Consultar',
-        description:
-          'Desarrollo del proyecto completo: memoria, planos, presupuesto y documentación administrativa.',
-      },
-    ],
-  },
-  {
-    id: 'rehabilitacion-energetica',
-    name: 'Rehabilitación energética',
-    description:
-      'Mejora de la eficiencia energética de edificios: aislamiento, ventilación, certificación energética y acceso a subvenciones.',
-    href: '/rehabilitacion-energetica/',
-    ctaLabel: 'Ver servicio de rehabilitación energética',
-    image: { src: imageMeeting, shape: 2 },
-    tiers: [
-      {
-        name: 'Auditoría energética',
-        price: 'Desde 400 €',
-        description:
-          'Diagnóstico del estado energético del edificio o vivienda con propuestas de mejora priorizadas.',
-        highlighted: true,
-      },
-      {
-        name: 'Proyecto de rehabilitación',
-        price: 'Consultar',
-        description:
-          'Proyecto técnico de mejora energética: aislamiento, ventilación, carpintería y gestión de subvenciones.',
-      },
-    ],
-  },
-  {
-    id: 'reforma-masias',
-    name: 'Reforma de masías',
-    description:
-      'Reforma y rehabilitación de masías catalanas tradicionales. Respeto del patrimonio con confort contemporáneo.',
-    href: '/reforma-masias/',
-    ctaLabel: 'Ver servicio de reforma de masías',
-    image: { src: imageWhiteboard, shape: 0 },
-    tiers: [
-      {
-        name: 'Estudio de viabilidad',
-        price: 'Desde 500 €',
-        description:
-          'Visita a la finca, diagnóstico estructural, análisis de la normativa urbanística y estimación presupuestaria.',
-        highlighted: true,
-      },
-      {
-        name: 'Proyecto de rehabilitación',
-        price: 'Consultar',
-        description:
-          'Proyecto completo: consolidación estructural, instalaciones, interiorismo y paisajismo.',
       },
     ],
   },
@@ -471,6 +377,32 @@ export default function Precios() {
           />
         ))}
       </div>
+
+      <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <FadeIn>
+          <div className="rounded-2xl border border-neutral-200 bg-neutral-50 px-6 py-8 sm:px-10 sm:py-12">
+            <h3 className="font-display text-base font-semibold text-neutral-950">
+              Información sobre nuestras tarifas
+            </h3>
+            <p className="mt-4 text-sm text-neutral-700">
+              Las tarifas indicadas son orientativas y pueden variar en función
+              de la complejidad de tu proyecto. La consulta inicial es gratuita y
+              sin compromiso: tras analizar tus necesidades, te entregaremos un
+              presupuesto personalizado y detallado.
+            </p>
+            <p className="mt-4 text-sm text-neutral-700">
+              Nuestros servicios de interiorismo, arquitectura, decoración y
+              paisajismo se realizan en Barcelona ciudad y municipios
+              colindantes: L&#39;Hospitalet de Llobregat, Badalona, Santa
+              Coloma de Gramenet, Sant Adrià de Besòs, Esplugues de Llobregat,
+              Cornellà de Llobregat, Sant Joan Despí, Sant Just Desvern,
+              Castelldefels, Gavà, Sitges y Sant Cugat del Vallès (lista no
+              exhaustiva). También intervenimos en el resto de la provincia de
+              Barcelona y en la Costa Brava.
+            </p>
+          </div>
+        </FadeIn>
+      </Container>
 
       <ContactSection />
     </RootLayout>

@@ -26,6 +26,7 @@ const serviceProjects: Project[] = [
       '150 m² en estilo mediterráneo contemporáneo: selección integral de mobiliario, textiles y luminarias para crear un ambiente cálido y funcional para toda la familia.',
     year: '2025',
     category: 'Decoración integral',
+    image: imageLaptop,
   },
   {
     title: 'Renovación estética piso de alquiler en el Born',
@@ -33,6 +34,7 @@ const serviceProjects: Project[] = [
       '70 m² transformados sin obras: nueva paleta de colores, mobiliario contemporáneo y styling completo para maximizar el atractivo del piso.',
     year: '2024',
     category: 'Decoración sin obras',
+    image: imageMeeting,
   },
   {
     title: 'Styling y ambientación restaurante en Eixample',
@@ -40,6 +42,7 @@ const serviceProjects: Project[] = [
       'Decoración integral de un restaurante de cocina mediterránea: creación de una atmósfera coherente con la imagen de marca a través del mobiliario, textiles e iluminación.',
     year: '2024',
     category: 'Decoración comercial',
+    image: imageWhiteboard,
   },
 ]
 
@@ -56,8 +59,8 @@ const serviceTestimonials: TestimonialItem[] = [
   },
   {
     quote:
-      'Our decorator perfectly captured the Mediterranean atmosphere we wanted for our restaurant in Eixample. The material selection and lighting design transformed the space completely.',
-    client: 'David K., restaurant decoration in Eixample',
+      'Nuestra decoradora captó perfectamente la atmósfera mediterránea que queríamos para nuestro restaurante en el Eixample. La selección de materiales y el diseño de iluminación transformaron el espacio por completo.',
+    client: 'David K., decoración de restaurante en el Eixample',
   },
 ]
 
