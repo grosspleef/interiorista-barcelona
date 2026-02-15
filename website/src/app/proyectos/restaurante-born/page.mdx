@@ -1,0 +1,62 @@
+import imageHero from './hero.jpg'
+import imageMarcR from './marc-r.jpg'
+
+export const caseStudy = {
+  client: 'Marc R.',
+  title: 'Interiorismo completo para restaurante mediterráneo en el Born',
+  description:
+    'Diseño integral de un restaurante de cocina mediterránea de 180m² en el Born, desde la identidad visual hasta el mobiliario a medida y la iluminación.',
+  summary: [
+    'Marc quería abrir un restaurante de cocina mediterránea en el Born que transmitiera autenticidad y calidez. Nuestro equipo diseñó un espacio de 180m² que combina materiales naturales, iluminación cálida y mobiliario a medida.',
+    'El restaurante alcanzó un 95% de ocupación en sus primeros meses, con clientes que destacan tanto la cocina como el diseño del espacio.',
+  ],
+  image: { src: imageHero },
+  date: '2024-01',
+  service: 'Interiorismo comercial',
+  testimonial: {
+    author: { name: 'Marc R.', role: 'Propietario del restaurante' },
+    content:
+      'Contratamos el diseño de nuestro nuevo restaurante en el Born y el resultado ha sido espectacular. Entendieron la identidad de marca desde el primer día y los clientes no dejan de elogiar el espacio. La inversión en interiorismo se ha notado directamente en la facturación.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} — ${caseStudy.title}`,
+  description: caseStudy.description,
+}
+
+## Visión general
+
+Marc, chef con más de 15 años de experiencia, quería abrir su propio restaurante de cocina mediterránea en el Born, uno de los barrios con más personalidad de Barcelona. Su visión era crear un espacio que reflejara la filosofía de su cocina: producto local, tradición y creatividad.
+
+Nuestro equipo de interiorismo comercial trabajó desde la fase de concepto hasta la entrega llave en mano. El proyecto incluyó el diseño de la identidad visual del restaurante, la selección de materiales y acabados, el diseño del mobiliario a medida, el proyecto de iluminación y la configuración de la cocina abierta.
+
+Utilizamos materiales naturales — madera de olivo recuperada, piedra calcárea, cerámica artesanal y lino — para crear una atmósfera mediterránea auténtica. La iluminación, diseñada en capas, permite adaptar el ambiente desde el servicio de mediodía hasta las cenas íntimas.
+
+El mobiliario fue fabricado a medida por artesanos locales: banquetas tapizadas en tejidos naturales, mesas de roble macizo y una barra central de mármol que se ha convertido en el corazón del restaurante. La cocina abierta, visible desde la sala, refuerza la transparencia y cercanía que Marc buscaba.
+
+## Lo que hicimos
+
+<TagList>
+  <TagListItem>Interiorismo comercial</TagListItem>
+  <TagListItem>Diseño de restaurantes</TagListItem>
+  <TagListItem>Mobiliario a medida</TagListItem>
+  <TagListItem>Iluminación</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Marc R.', role: 'Propietario del restaurante' }}
+  image={{ src: imageMarcR }}
+>
+  Contratamos el diseño de nuestro nuevo restaurante en el Born y el resultado
+  ha sido espectacular. Entendieron la identidad de marca desde el primer día y
+  los clientes no dejan de elogiar el espacio. La inversión en interiorismo se
+  ha notado directamente en la facturación.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="180m²" label="Superficie diseñada" />
+  <StatListItem value="3 meses" label="Duración del proyecto" />
+  <StatListItem value="95%" label="Ocupación media" />
+  <StatListItem value="40" label="Plazas sentadas" />
+</StatList>

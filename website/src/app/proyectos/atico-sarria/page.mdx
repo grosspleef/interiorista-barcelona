@@ -1,0 +1,62 @@
+import imageHero from './hero.jpg'
+import imageLauraG from './laura-g.jpg'
+
+export const caseStudy = {
+  client: 'Laura G.',
+  title: 'Diseño de interiores para un ático de lujo en Sarrià',
+  description:
+    'Proyecto de interiorismo para un ático de 200m² con terraza panorámica de 60m² en Sarrià-Sant Gervasi, con un enfoque minimalista y materiales nobles.',
+  summary: [
+    'Laura buscaba transformar su ático en Sarrià en un refugio contemporáneo que aprovechara al máximo las vistas panorámicas de Barcelona. Nuestro equipo diseñó un espacio minimalista con materiales nobles y una integración total entre interior y exterior.',
+    'El resultado es un hogar de 200m² con terraza de 60m² donde cada detalle — desde el mobiliario de lujo hasta la iluminación natural — contribuye a una experiencia de vida excepcional.',
+  ],
+  image: { src: imageHero },
+  date: '2023-09',
+  service: 'Decoración de interiores',
+  testimonial: {
+    author: { name: 'Laura G.', role: 'Propietaria en Sarrià' },
+    content:
+      'Queríamos un proyecto de interiorismo que reflejara nuestra personalidad sin obras mayores. La interiorista eligió materiales, colores y mobiliario perfectos. Cada rincón de nuestro ático cuenta una historia y la terraza se ha convertido en nuestra estancia favorita.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} — ${caseStudy.title}`,
+  description: caseStudy.description,
+}
+
+## Visión general
+
+Laura adquirió un ático de 200m² con una terraza panorámica de 60m² en el exclusivo barrio de Sarrià-Sant Gervasi. El espacio contaba con buenas calidades constructivas pero carecía de personalidad y no aprovechaba el potencial de sus vistas a Barcelona y a la sierra de Collserola.
+
+Nuestro enfoque fue crear un proyecto de interiorismo integral basado en el minimalismo cálido: líneas depuradas, paleta neutra con toques de madera y piedra natural, y una conexión fluida entre los espacios interiores y la terraza.
+
+El proyecto incluyó la selección de todo el mobiliario — piezas de diseño de firmas como B&B Italia, Flos y Carl Hansen — el diseño de un vestidor a medida con iluminación integrada, la creación de un espacio de lectura junto al ventanal principal y el interiorismo completo de la terraza con zona de estar, comedor exterior y jardinería mediterránea.
+
+La iluminación fue diseñada para potenciar la luz natural durante el día y crear ambientes cálidos e íntimos por la noche. Los grandes ventanales del ático se convirtieron en el elemento protagonista del diseño, enmarcando las vistas como auténticos cuadros.
+
+## Lo que hicimos
+
+<TagList>
+  <TagListItem>Decoración</TagListItem>
+  <TagListItem>Diseño de interiores</TagListItem>
+  <TagListItem>Terraza</TagListItem>
+  <TagListItem>Mobiliario de lujo</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Laura G.', role: 'Propietaria en Sarrià' }}
+  image={{ src: imageLauraG }}
+>
+  Queríamos un proyecto de interiorismo que reflejara nuestra personalidad sin
+  obras mayores. La interiorista eligió materiales, colores y mobiliario
+  perfectos. Cada rincón de nuestro ático cuenta una historia y la terraza se ha
+  convertido en nuestra estancia favorita.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="200m²" label="Superficie interior" />
+  <StatListItem value="60m²" label="Terraza panorámica" />
+  <StatListItem value="5 meses" label="Duración del proyecto" />
+  <StatListItem value="100%" label="Satisfacción del cliente" />
+</StatList>

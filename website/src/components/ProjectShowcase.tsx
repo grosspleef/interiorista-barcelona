@@ -1,4 +1,5 @@
 import Image, { type StaticImageData } from 'next/image'
+import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
@@ -10,6 +11,7 @@ export type Project = {
   year: string
   category: string
   image?: StaticImageData
+  href?: string
 }
 
 export function ProjectShowcase({
@@ -36,8 +38,8 @@ export function ProjectShowcase({
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {projects.map((project) => (
-            <FadeIn key={project.title} className="flex">
+          {projects.map((project) => {
+            const card = (
               <article className="relative flex w-full flex-col overflow-hidden rounded-3xl ring-1 ring-neutral-950/5 transition hover:bg-neutral-50">
                 {project.image && (
                   <Image
@@ -70,8 +72,20 @@ export function ProjectShowcase({
                   </p>
                 </div>
               </article>
-            </FadeIn>
-          ))}
+            )
+
+            return (
+              <FadeIn key={project.title} className="flex">
+                {project.href ? (
+                  <Link href={project.href} className="flex w-full">
+                    {card}
+                  </Link>
+                ) : (
+                  card
+                )}
+              </FadeIn>
+            )
+          })}
         </FadeInStagger>
       </Container>
     </>

@@ -39,6 +39,7 @@ const projects = [
     year: '2024',
     category: 'Interiorismo',
     image: imageLaptop,
+    href: '/proyectos/reforma-eixample/',
   },
   {
     title: 'Diseño restaurante Born',
@@ -47,6 +48,7 @@ const projects = [
     year: '2024',
     category: 'Interiorismo comercial',
     image: imageMeeting,
+    href: '/proyectos/restaurante-born/',
   },
   {
     title: 'Ático contemporáneo Sarrià',
@@ -55,6 +57,7 @@ const projects = [
     year: '2023',
     category: 'Decoración de interiores',
     image: imageWhiteboard,
+    href: '/proyectos/atico-sarria/',
   },
 ]
 

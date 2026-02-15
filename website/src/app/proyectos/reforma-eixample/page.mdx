@@ -1,0 +1,62 @@
+import imageHero from './hero.jpg'
+import imageCarlosAna from './carlos-ana.jpg'
+
+export const caseStudy = {
+  client: 'Carlos y Ana M.',
+  title: 'Reforma integral de un piso modernista en el Eixample',
+  description:
+    'Transformación completa de un piso de 120m² en el Eixample, combinando la restauración de elementos modernistas con un diseño contemporáneo funcional.',
+  summary: [
+    'Carlos y Ana buscaban renovar por completo su piso en el Eixample sin perder el encanto modernista original. Nuestro equipo diseñó un proyecto que respeta las molduras de época y los suelos hidráulicos mientras incorpora una distribución abierta y moderna.',
+    'El resultado es un hogar luminoso y funcional de 120m² con cocina abierta al salón, domótica integrada y una revalorización del inmueble del 35%.',
+  ],
+  image: { src: imageHero },
+  date: '2024-03',
+  service: 'Reforma integral',
+  testimonial: {
+    author: { name: 'Carlos y Ana M.', role: 'Propietarios en el Eixample' },
+    content:
+      'Nuestra reforma integral en el Eixample fue un éxito total. El equipo coordinó albañiles, electricistas y decoradores sin que tuviéramos que preocuparnos por nada. En 4 meses teníamos un piso completamente nuevo que respeta el carácter modernista que tanto nos gusta.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} — ${caseStudy.title}`,
+  description: caseStudy.description,
+}
+
+## Visión general
+
+Carlos y Ana adquirieron un piso de 120m² en el corazón del Eixample barcelonés. El inmueble, construido a principios del siglo XX, conservaba elementos modernistas originales — molduras en los techos, suelos hidráulicos y carpintería de madera — pero la distribución era obsoleta y las instalaciones necesitaban una actualización completa.
+
+Nuestro objetivo fue diseñar una reforma integral que respetara el patrimonio arquitectónico del piso mientras creaba un espacio contemporáneo, luminoso y funcional adaptado al estilo de vida actual de la pareja.
+
+El proyecto incluyó la apertura de la cocina al salón-comedor, la creación de un vestidor en el dormitorio principal, la restauración de todas las molduras originales, la recuperación de los suelos hidráulicos y la instalación de un sistema domótico para iluminación, climatización y persianas.
+
+Trabajamos con artesanos locales para la restauración de los elementos de época y seleccionamos materiales nobles — roble natural, mármol de Carrara y latón envejecido — que dialogan con el carácter histórico del edificio.
+
+## Lo que hicimos
+
+<TagList>
+  <TagListItem>Diseño interior</TagListItem>
+  <TagListItem>Reforma integral</TagListItem>
+  <TagListItem>Mobiliario</TagListItem>
+  <TagListItem>Iluminación</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Carlos y Ana M.', role: 'Propietarios en el Eixample' }}
+  image={{ src: imageCarlosAna }}
+>
+  Nuestra reforma integral en el Eixample fue un éxito total. El equipo coordinó
+  albañiles, electricistas y decoradores sin que tuviéramos que preocuparnos por
+  nada. En 4 meses teníamos un piso completamente nuevo que respeta el carácter
+  modernista que tanto nos gusta.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="120m²" label="Superficie reformada" />
+  <StatListItem value="4 meses" label="Duración del proyecto" />
+  <StatListItem value="+35%" label="Revalorización" />
+  <StatListItem value="100%" label="Satisfacción del cliente" />
+</StatList>
