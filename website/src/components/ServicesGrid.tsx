@@ -63,7 +63,7 @@ function ServiceCard({
 
 export function ServicesGrid() {
   return (
-    <>
+    <section id="servicios" className="scroll-mt-24">
       <SectionIntro
         eyebrow="Servicios"
         title="Soluciones integrales de interiorismo y arquitectura en Barcelona"
@@ -83,6 +83,6 @@ export function ServicesGrid() {
           ))}
         </FadeInStagger>
       </Container>
-    </>
+    </section>
   )
 }

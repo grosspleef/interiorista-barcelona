@@ -2,12 +2,13 @@
 
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useState,
 } from 'react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import clsx from 'clsx'
 import {
   AnimatePresence,
@@ -30,7 +31,7 @@ const RootLayoutContext = createContext<{
 
 const serviciosDropdown = {
   label: 'Servicios',
-  href: '/diseno-interiores/',
+  href: '/#servicios',
   links: services.map((s) => ({
     label: s.shortName,
     href: s.href,
@@ -76,12 +77,35 @@ function Header() {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
   let [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   let [desktopServiciosOpen, setDesktopServiciosOpen] = useState(false)
-  let [mobileServiciosOpen, setMobileServiciosOpen] = useState(false)
   let pathname = usePathname()
+  let router = useRouter()
+
+  let handleServiciosClick = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>) => {
+      if (pathname === '/') {
+        e.preventDefault()
+        document
+          .getElementById('servicios')
+          ?.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        e.preventDefault()
+        router.push('/#servicios')
+      }
+    },
+    [pathname, router],
+  )
 
   useEffect(() => {
     setMobileMenuOpen(false)
-    setMobileServiciosOpen(false)
+
+    if (pathname === '/' && window.location.hash === '#servicios') {
+      // Small delay to let the page render before scrolling
+      setTimeout(() => {
+        document
+          .getElementById('servicios')
+          ?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
   }, [pathname])
 
   return (
@@ -113,8 +137,9 @@ function Header() {
               onMouseEnter={() => setDesktopServiciosOpen(true)}
               onMouseLeave={() => setDesktopServiciosOpen(false)}
             >
-              <Link
+              <a
                 href={serviciosDropdown.href}
+                onClick={handleServiciosClick}
                 aria-haspopup="true"
                 aria-expanded={desktopServiciosOpen}
                 className={clsx(
@@ -133,7 +158,7 @@ function Header() {
                     desktopServiciosOpen && 'rotate-180',
                   )}
                 />
-              </Link>
+              </a>
 
               <AnimatePresence>
                 {desktopServiciosOpen && (
@@ -205,58 +230,14 @@ function Header() {
         {mobileMenuOpen && (
           <nav className="border-t border-neutral-950/10 py-4 lg:hidden">
             <div className="flex flex-col gap-y-3">
-              {/* Servicios collapsible */}
-              <div>
-                <button
-                  type="button"
-                  onClick={() => setMobileServiciosOpen((open) => !open)}
-                  aria-expanded={mobileServiciosOpen}
-                  className={clsx(
-                    'flex w-full items-center justify-between text-sm font-semibold transition',
-                    mobileServiciosOpen
-                      ? 'text-neutral-950'
-                      : 'text-neutral-600',
-                  )}
-                >
-                  {serviciosDropdown.label}
-                  <ChevronDownIcon
-                    className={clsx(
-                      'h-4 w-4 transition-transform duration-150',
-                      mobileServiciosOpen && 'rotate-180',
-                    )}
-                  />
-                </button>
-
-                <AnimatePresence>
-                  {mobileServiciosOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.15 }}
-                      className="overflow-hidden"
-                    >
-                      <ul className="space-y-2 pl-4 pt-3">
-                        {serviciosDropdown.links.map((link) => (
-                          <li key={link.href}>
-                            <Link
-                              href={link.href}
-                              className={clsx(
-                                'block text-sm transition',
-                                pathname === link.href
-                                  ? 'font-semibold text-neutral-950'
-                                  : 'text-neutral-600 hover:text-neutral-950',
-                              )}
-                            >
-                              {link.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+              {/* Servicios link */}
+              <a
+                href={serviciosDropdown.href}
+                onClick={handleServiciosClick}
+                className="text-sm font-semibold text-neutral-600 transition hover:text-neutral-950"
+              >
+                {serviciosDropdown.label}
+              </a>
 
               {/* Regular nav links */}
               {navLinks.map((link) => (

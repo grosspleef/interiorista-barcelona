@@ -12,7 +12,7 @@ export const services: Service[] = [
     name: 'Interiorismo',
     shortName: 'Interiorismo',
     description:
-      'Diseño de interiores integral: redistribución, reforma y transformación de tu hogar en Barcelona',
+      'Nuestros interioristas en Barcelona transforman tu vivienda con proyectos de diseño de interiores a medida: redistribución de espacios, selección de materiales y seguimiento de obra para un resultado que refleja tu estilo de vida',
     href: '/diseno-interiores/',
   },
   {
@@ -20,7 +20,7 @@ export const services: Service[] = [
     name: 'Decoración',
     shortName: 'Decoración',
     description:
-      'Selección de mobiliario, textiles e iluminación para tu hogar',
+      'Servicio de decoración de interiores en Barcelona: selección de mobiliario, textiles, iluminación y acabados. Creamos ambientes con personalidad que combinan estética y funcionalidad en cada rincón de tu hogar',
     href: '/decoracion-interiores/',
   },
   {
@@ -28,7 +28,7 @@ export const services: Service[] = [
     name: 'Asesoramiento compra vivienda',
     shortName: 'Asesoría compra',
     description:
-      'Evaluación técnica y estética antes de comprar tu vivienda',
+      'Evaluación técnica y estética de viviendas antes de la compra con la mirada experta de un interiorista en Barcelona. Te ayudamos a detectar el potencial real de cada inmueble y a evitar reformas imprevistas',
     href: '/asesoria-compra-vivienda/',
   },
   {
@@ -36,7 +36,7 @@ export const services: Service[] = [
     name: 'Compra sobre plano',
     shortName: 'Sobre plano',
     description:
-      'Acompañamiento en la compra de obra nueva y personalización',
+      'Acompañamiento profesional en la compra de obra nueva en Barcelona: revisión de planos, personalización de acabados y negociación con la promotora para que tu futura vivienda se adapte a tus necesidades desde el primer día',
     href: '/compra-sobre-plano/',
   },
   {
@@ -44,7 +44,7 @@ export const services: Service[] = [
     name: 'Home staging',
     shortName: 'Home staging',
     description:
-      'Puesta en escena de inmuebles para venta o alquiler',
+      'Home staging profesional en Barcelona para vender o alquilar tu inmueble más rápido y al mejor precio. Preparamos tu vivienda con una puesta en escena estratégica que maximiza su atractivo ante los compradores',
     href: '/home-staging/',
   },
   {
@@ -52,7 +52,7 @@ export const services: Service[] = [
     name: 'Interiorismo accesible',
     shortName: 'Accesibilidad',
     description:
-      'Diseño de interiores adaptado a personas con movilidad reducida',
+      'Diseño de interiores adaptado a personas con movilidad reducida en Barcelona. Proyectos que eliminan barreras arquitectónicas sin renunciar a la estética, garantizando confort y autonomía en cada espacio del hogar',
     href: '/interiorismo-accesible/',
   },
   {
@@ -60,7 +60,7 @@ export const services: Service[] = [
     name: 'Arquitecto',
     shortName: 'Arquitecto',
     description:
-      'Proyectos arquitectónicos residenciales y de obra nueva',
+      'Arquitectos colegiados en Barcelona para proyectos residenciales, obra nueva y rehabilitaciones. Gestionamos licencias, dirección de obra y coordinación de gremios para que tu proyecto se ejecute con rigor técnico y dentro de plazo',
     href: '/arquitecto/',
   },
   {
@@ -68,7 +68,7 @@ export const services: Service[] = [
     name: 'Ampliación de vivienda',
     shortName: 'Ampliación',
     description:
-      'Extensiones, sobrelevaciones y agrandamiento de espacios',
+      'Ampliación de vivienda en Barcelona: extensiones, sobrelevaciones y aprovechamiento de áticos o terrazas. Ganamos metros útiles optimizando la estructura existente para que tu hogar crezca contigo',
     href: '/ampliacion-vivienda/',
   },
   {
@@ -76,7 +76,7 @@ export const services: Service[] = [
     name: 'Interiorismo comercial',
     shortName: 'Interiorismo comercial',
     description:
-      'Interiorismo para restaurantes, hoteles y locales comerciales',
+      'Interiorismo comercial en Barcelona para restaurantes, hoteles, tiendas y locales. Diseñamos espacios que refuerzan la identidad de tu marca y mejoran la experiencia de tus clientes desde el primer paso',
     href: '/interiorismo-comercial/',
   },
   {
@@ -84,7 +84,7 @@ export const services: Service[] = [
     name: 'Reforma de oficinas',
     shortName: 'Reforma oficinas',
     description:
-      'Reforma y diseño de oficinas, coworking y espacios de trabajo',
+      'Reforma y diseño de oficinas en Barcelona: espacios de trabajo, coworkings y sedes corporativas. Creamos entornos profesionales que potencian la productividad y el bienestar de los equipos',
     href: '/reforma-oficinas/',
   },
   {
@@ -92,7 +92,7 @@ export const services: Service[] = [
     name: 'Licitaciones de arquitectura',
     shortName: 'Licitaciones',
     description:
-      'Licitaciones, concursos de arquitectura y proyectos de equipamientos públicos',
+      'Participación en licitaciones y concursos de arquitectura en Barcelona: equipamientos públicos, edificios institucionales y proyectos urbanos. Aportamos experiencia técnica y capacidad de gestión para propuestas competitivas',
     href: '/licitaciones-arquitectura/',
   },
   {
@@ -100,7 +100,7 @@ export const services: Service[] = [
     name: 'Rehabilitación energética',
     shortName: 'Rehabilitación energética',
     description:
-      'Mejora de la eficiencia energética y certificación de edificios',
+      'Rehabilitación energética de edificios en Barcelona: aislamiento, ventilación, certificación energética y acceso a subvenciones. Reducimos tu consumo energético y mejoramos el confort térmico de tu vivienda',
     href: '/rehabilitacion-energetica/',
   },
   {
@@ -108,7 +108,7 @@ export const services: Service[] = [
     name: 'Reforma de masías',
     shortName: 'Reforma masías',
     description:
-      'Reforma y rehabilitación de masías catalanas tradicionales',
+      'Reforma y rehabilitación de masías catalanas con respeto por la arquitectura tradicional. Modernizamos instalaciones y espacios interiores conservando el carácter y el encanto original de cada propiedad',
     href: '/reforma-masias/',
   },
   {
@@ -116,7 +116,7 @@ export const services: Service[] = [
     name: 'Paisajismo',
     shortName: 'Paisajismo',
     description:
-      'Diseño de jardines, terrazas y espacios exteriores',
+      'Diseño de jardines, terrazas y espacios exteriores en Barcelona. Creamos paisajes mediterráneos sostenibles que prolongan tu hogar al aire libre con vegetación autóctona y soluciones de bajo mantenimiento',
     href: '/paisajismo/',
   },
 ]

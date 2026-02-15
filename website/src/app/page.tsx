@@ -1,6 +1,5 @@
 import { type Metadata } from 'next'
 
-import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -9,7 +8,6 @@ import { NeighborhoodsSection } from '@/components/NeighborhoodsSection'
 import { ProjectShowcase } from '@/components/ProjectShowcase'
 import { RootLayout } from '@/components/RootLayout'
 import { ServicesGrid } from '@/components/ServicesGrid'
-import { StatList, StatListItem } from '@/components/StatList'
 import { TestimonialSlider } from '@/components/TestimonialSlider'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
@@ -120,20 +118,7 @@ export default function Home() {
             Más de 25 profesionales especializados en interiorismo,
             decoración, home staging, interiorismo comercial y rehabilitación.
           </p>
-          <div className="mt-8">
-            <Button href="/contacto/">Pedir presupuesto</Button>
-          </div>
         </FadeIn>
-      </Container>
-
-      {/* 2. Stats */}
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <StatList>
-          <StatListItem value="25+" label="Profesionales" />
-          <StatListItem value="150+" label="Proyectos" />
-          <StatListItem value="12+" label="Barrios" />
-          <StatListItem value="15" label="Años experiencia media" />
-        </StatList>
       </Container>
 
       {/* 3. Barrios */}
