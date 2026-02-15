@@ -7,17 +7,9 @@ import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
-import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
+import { TestimonialSlider } from '@/components/TestimonialSlider'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
@@ -31,7 +23,7 @@ function CaseStudies({
     <Container className="mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Case studies
+          Estudios de caso
         </h2>
       </FadeIn>
       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
@@ -75,7 +67,7 @@ function CaseStudies({
                       href={caseStudy.href}
                       aria-label={`Read case study: ${caseStudy.client}`}
                     >
-                      Read case study
+                      Ver proyecto
                     </Button>
                   </div>
                   {caseStudy.testimonial && (
@@ -96,50 +88,29 @@ function CaseStudies({
   )
 }
 
-const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+
+const testimonials = [
+  {
+    quote:
+      'Nuestra reforma integral en el Eixample fue un éxito total. El equipo coordinó albañiles, electricistas y decoradores sin que tuviéramos que preocuparnos por nada. En 4 meses teníamos un piso completamente nuevo.',
+    client: 'Carlos y Ana M., reforma integral en Eixample',
+  },
+  {
+    quote:
+      'Queríamos un proyecto de interiorismo que reflejara nuestra personalidad sin obras mayores. La interiorista eligió materiales, colores y mobiliario perfectos. Cada rincón de nuestro piso cuenta una historia.',
+    client: 'Laura G., proyecto de interiorismo en Sarrià',
+  },
+  {
+    quote:
+      'Contratamos el diseño de nuestro nuevo restaurante en Poblenou y el resultado ha sido espectacular. Entendieron la identidad de marca desde el primer día y los clientes no dejan de elogiar el espacio.',
+    client: 'Marc R., interiorismo comercial en Poblenou',
+  },
 ]
 
-function Clients() {
-  return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          You’re in good company
-        </h2>
-      </FadeIn>
-      <FadeInStagger className="mt-10" faster>
-        <Border as={FadeIn} />
-        <ul
-          role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
-        >
-          {clients.map(([client, logo]) => (
-            <li key={client} className="group">
-              <FadeIn className="overflow-hidden">
-                <Border className="pt-12 group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
-                </Border>
-              </FadeIn>
-            </li>
-          ))}
-        </ul>
-      </FadeInStagger>
-    </Container>
-  )
-}
-
 export const metadata: Metadata = {
-  title: 'Our Work',
+  title: 'Nuestros Proyectos | Reformas e Interiorismo en Barcelona',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Descubre nuestros proyectos de reforma integral, interiorismo residencial y diseño comercial en Barcelona. Resultados reales con opiniones de clientes satisfechos.',
 }
 
 export default async function Work() {
@@ -147,28 +118,68 @@ export default async function Work() {
 
   return (
     <RootLayout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Inicio',
+                  item: 'https://www.interioristabarcelona.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'Proyectos',
+                  item: 'https://www.interioristabarcelona.com/proyectos/',
+                },
+              ],
+            },
+            ...testimonials.map((t, i) => ({
+              '@context': 'https://schema.org',
+              '@type': 'Review',
+              reviewRating: {
+                '@type': 'Rating',
+                ratingValue: '5',
+                bestRating: '5',
+              },
+              author: {
+                '@type': 'Person',
+                name: t.client.split(',')[0],
+              },
+              reviewBody: t.quote,
+              itemReviewed: {
+                '@type': 'LocalBusiness',
+                name: 'Interiorista Barcelona',
+                image: 'https://www.interioristabarcelona.com/og-image.jpg',
+              },
+            })),
+          ]),
+        }}
+      />
       <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        eyebrow="Nuestros proyectos"
+        title="Reformas e interiorismo que transforman espacios en Barcelona."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          Cada proyecto es único, desde reformas integrales de pisos en el
+          Eixample hasta el diseño de espacios comerciales en Poblenou.
+          Descubre cómo nuestros interioristas han transformado hogares y
+          negocios en toda Barcelona.
         </p>
       </PageIntro>
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+      <TestimonialSlider
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
-      >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
-      </Testimonial>
-
-      <Clients />
+        testimonials={testimonials}
+      />
 
       <ContactSection />
     </RootLayout>
