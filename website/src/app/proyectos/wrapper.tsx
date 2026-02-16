@@ -16,8 +16,8 @@ export default async function CaseStudyLayout({
   children: React.ReactNode
 }) {
   let allCaseStudies = await loadCaseStudies()
-  let moreCaseStudies = allCaseStudies
-    .filter(({ metadata }) => metadata !== caseStudy)
+  let otherCaseStudies = allCaseStudies
+    .filter((study) => study.title !== caseStudy.title)
     .slice(0, 2)
 
   return (
@@ -75,11 +75,11 @@ export default async function CaseStudyLayout({
         </Container>
       </article>
 
-      {moreCaseStudies.length > 0 && (
+      {otherCaseStudies.length > 0 && (
         <PageLinks
-          className="mt-24 sm:mt-32 lg:mt-40"
-          title="Más proyectos"
-          pages={moreCaseStudies}
+          title="Otros proyectos"
+          pages={otherCaseStudies}
+          intro="Descubre más proyectos de interiorismo en Barcelona."
         />
       )}
 
