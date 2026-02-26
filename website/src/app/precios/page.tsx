@@ -7,8 +7,11 @@ import { PageIntro } from '@/components/PageIntro'
 import { PricingBlock, type PricingTier } from '@/components/PricingBlock'
 import { PricingTableOfContents } from '@/components/PricingTableOfContents'
 import { RootLayout } from '@/components/RootLayout'
+import imageDormitorioBorn from '@/images/decoracion-dormitorio-minimalista-born-barcelona.jpg'
+import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
+import imageTerrazaAtico from '@/images/terraza-atico-vista-barcelona-asesoria.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
 
 type ServicePricing = {
@@ -30,7 +33,7 @@ const servicePricing: ServicePricing[] = [
       'Proyectos de diseño de interiores que transforman la distribución y estructura de tu espacio. Intervenciones que requieren proyecto técnico y visado.',
     href: '/diseno-interiores/',
     ctaLabel: 'Ver servicio de interiorismo',
-    image: { src: imageMeeting, shape: 2 },
+    image: { src: imageSalonContemporaneo, shape: 2 },
     tiers: [
       {
         name: 'Consulta inicial',
@@ -60,7 +63,7 @@ const servicePricing: ServicePricing[] = [
       'Servicio de decoración de interiores para renovar la imagen de tu hogar sin obra. Selección de mobiliario, textiles, iluminación y complementos.',
     href: '/decoracion-interiores/',
     ctaLabel: 'Ver servicio de decoración',
-    image: { src: imageWhiteboard, shape: 0 },
+    image: { src: imageDormitorioBorn, shape: 0 },
     tiers: [
       {
         name: 'Consulta de decoración',
@@ -90,7 +93,7 @@ const servicePricing: ServicePricing[] = [
       'Evaluación técnica y estética de un inmueble antes de la compra. Te acompañamos para tomar la mejor decisión.',
     href: '/asesoria-compra-vivienda/',
     ctaLabel: 'Ver servicio de asesoría',
-    image: { src: imageLaptop, shape: 1 },
+    image: { src: imageTerrazaAtico, shape: 1 },
     tiers: [
       {
         name: 'Contravisita de asesoramiento',

@@ -12,9 +12,8 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageInformeTecnico from '@/images/informe-tecnico-asesoria-compra-barcelona.jpg'
+import imageTerrazaAtico from '@/images/terraza-atico-vista-barcelona-asesoria.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import { TestimonialSlider, type TestimonialItem } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
@@ -26,7 +25,7 @@ const serviceProjects: Project[] = [
       '95 m² en finca regia: detección del estado de las bajantes, evaluación del potencial de redistribución y estimación del coste de reforma integral.',
     year: '2025',
     category: 'Asesoramiento compra',
-    image: imageLaptop,
+    image: imageTerrazaAtico,
   },
   {
     title: 'Evaluación técnica dúplex en Gràcia',
@@ -34,7 +33,7 @@ const serviceProjects: Project[] = [
       '120 m² con informe técnico completo: análisis estructural, estado de las instalaciones, estimación desglosada de costes y esquema de redistribución.',
     year: '2025',
     category: 'Informe técnico',
-    image: imageMeeting,
+    image: imageInformeTecnico,
   },
   {
     title: 'Asesoramiento compra local comercial en Poblenou',
@@ -42,7 +41,7 @@ const serviceProjects: Project[] = [
       '200 m² para restauración: verificación de la normativa de actividades, evaluación de las instalaciones y estimación del coste de adecuación.',
     year: '2024',
     category: 'Asesoramiento comercial',
-    image: imageWhiteboard,
+    image: imageTerrazaAtico,
   },
 ]
 
@@ -541,7 +540,7 @@ export default function AsesoriaCompraViviendaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Contravisita del inmueble con tu interiorista"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageTerrazaAtico }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -577,7 +576,7 @@ export default function AsesoriaCompraViviendaPage() {
 
         <Section
           title="Informe técnico y estimación de costes"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageInformeTecnico, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -619,7 +618,7 @@ export default function AsesoriaCompraViviendaPage() {
 
         <Section
           title="Acompañamiento post-compra"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageTerrazaAtico, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -662,7 +661,7 @@ export default function AsesoriaCompraViviendaPage() {
           description="Servicio de asesoramiento para la compra de vivienda en Barcelona. Te acompañamos en la visita del inmueble y te entregamos un informe técnico con la estimación del coste de reforma."
           href="/contacto/"
           ctaLabel="Solicitar asesoramiento gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageInformeTecnico, shape: 0 }}
           showCounter={false}
           tiers={[
             {

@@ -12,9 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageCocinaGracia from '@/images/decoracion-cocina-abierta-gracia-barcelona.jpg'
+import imageDormitorioBorn from '@/images/decoracion-dormitorio-minimalista-born-barcelona.jpg'
+import imageRestauranteEixample from '@/images/decoracion-restaurante-eixample-barcelona.jpg'
+import imageSalonSarria from '@/images/decoracion-salon-mediterraneo-sarria-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import { TestimonialSlider, type TestimonialItem } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
@@ -26,7 +27,7 @@ const serviceProjects: Project[] = [
       '150 m² en estilo mediterráneo contemporáneo: selección integral de mobiliario, textiles y luminarias para crear un ambiente cálido y funcional para toda la familia.',
     year: '2025',
     category: 'Decoración integral',
-    image: imageLaptop,
+    image: imageSalonSarria,
   },
   {
     title: 'Renovación estética piso de alquiler en el Born',
@@ -34,7 +35,7 @@ const serviceProjects: Project[] = [
       '70 m² transformados sin obras: nueva paleta de colores, mobiliario contemporáneo y styling completo para maximizar el atractivo del piso.',
     year: '2024',
     category: 'Decoración sin obras',
-    image: imageMeeting,
+    image: imageDormitorioBorn,
   },
   {
     title: 'Styling y ambientación restaurante en Eixample',
@@ -42,7 +43,7 @@ const serviceProjects: Project[] = [
       'Decoración integral de un restaurante de cocina mediterránea: creación de una atmósfera coherente con la imagen de marca a través del mobiliario, textiles e iluminación.',
     year: '2024',
     category: 'Decoración comercial',
-    image: imageWhiteboard,
+    image: imageRestauranteEixample,
   },
 ]
 
@@ -531,7 +532,7 @@ export default function DecoracionInterioresPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita consejo de decoración"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageSalonSarria }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -564,7 +565,7 @@ export default function DecoracionInterioresPage() {
 
         <Section
           title="Proyecto de decoración"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageCocinaGracia, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -607,7 +608,7 @@ export default function DecoracionInterioresPage() {
 
         <Section
           title="Instalación y styling final"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageRestauranteEixample, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -653,7 +654,7 @@ export default function DecoracionInterioresPage() {
           description="Servicio de decoración de interiores para viviendas en Barcelona. Desde la primera consulta hasta la instalación final, te acompañamos para renovar tu hogar sin obras."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageDormitorioBorn, shape: 0 }}
           showCounter={false}
           tiers={[
             {

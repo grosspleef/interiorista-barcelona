@@ -4,13 +4,23 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
+import imageDormitorioBorn from '@/images/decoracion-dormitorio-minimalista-born-barcelona.jpg'
+import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
+import imageTerrazaAtico from '@/images/terraza-atico-vista-barcelona-asesoria.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
 import { services } from '@/lib/services'
 import type { Service } from '@/lib/services'
+import type { StaticImageData } from 'next/image'
 
 const serviceImages = [imageLaptop, imageMeeting, imageWhiteboard]
+
+const serviceImageOverrides: Record<string, StaticImageData> = {
+  'diseno-interiores': imageSalonContemporaneo,
+  'decoracion-interiores': imageDormitorioBorn,
+  'asesoria-compra-vivienda': imageTerrazaAtico,
+}
 
 const homeServiceIds = [
   'diseno-interiores',
@@ -39,7 +49,7 @@ function ServiceCard({
     <FadeIn className="flex">
       <article className="relative flex w-full flex-col overflow-hidden rounded-3xl ring-1 ring-neutral-950/5 transition hover:bg-neutral-50">
         <Image
-          src={serviceImages[index % serviceImages.length]}
+          src={serviceImageOverrides[service.id] ?? serviceImages[index % serviceImages.length]}
           alt=""
           className="aspect-[16/9] w-full object-cover"
         />
