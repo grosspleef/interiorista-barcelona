@@ -2,6 +2,7 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
+import { HeroCarousel } from '@/components/HeroCarousel'
 import { MDXComponents } from '@/components/MDXComponents'
 import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
@@ -55,15 +56,21 @@ export default async function CaseStudyLayout({
             </div>
 
             <div className="border-y border-neutral-200 bg-neutral-100">
-              <div className="mx-auto -my-px max-w-304 bg-neutral-200">
-                <GrayscaleTransitionImage
-                  {...caseStudy.image}
-                  quality={90}
-                  className="w-full"
-                  sizes="(min-width: 1216px) 76rem, 100vw"
-                  priority
-                />
-              </div>
+              {caseStudy.images && caseStudy.images.length > 1 ? (
+                <div className="-my-px bg-neutral-200">
+                  <HeroCarousel images={caseStudy.images} />
+                </div>
+              ) : (
+                <div className="mx-auto -my-px max-w-304 bg-neutral-200">
+                  <GrayscaleTransitionImage
+                    {...caseStudy.image}
+                    quality={90}
+                    className="w-full"
+                    sizes="(min-width: 1216px) 76rem, 100vw"
+                    priority
+                  />
+                </div>
+              )}
             </div>
           </FadeIn>
         </header>

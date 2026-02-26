@@ -46,6 +46,7 @@ export interface CaseStudy {
   summary: Array<string>
   logo?: ImageProps['src']
   image: ImagePropsWithOptionalAlt
+  images?: Array<{ src: ImageProps['src']; alt?: string }>
   service: string
   testimonial: {
     author: {
