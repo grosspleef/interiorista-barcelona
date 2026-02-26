@@ -1,0 +1,76 @@
+import imagePatriciaJordi from './patricia-jordi.jpg'
+import imageSalon from './arquitectura-casa-gracia-barcelona-salon-patio.jpg'
+import imagePatio from './patio-interior-casa-gracia-barcelona-arquitectura.jpg'
+import imageCocina from './cocina-casa-gracia-barcelona-microcemento.jpg'
+import imageDormitorio from './dormitorio-volta-catalana-casa-gracia-barcelona.jpg'
+import imageTerraza from './terraza-sobretico-casa-gracia-barcelona.jpg'
+
+export const caseStudy = {
+  client: 'Patricia y Jordi V.',
+  title: 'Rehabilitación de una casa entre medianeras en Gràcia',
+  description:
+    'Rehabilitación integral de una casa centenaria de 160m² en tres plantas con patio interior de 25m² en el barrio de Gràcia, combinando arquitectura tradicional catalana con diseño mediterráneo contemporáneo.',
+  summary: [
+    'Patricia y Jordi soñaban con devolver la vida a una casa entre medianeras centenaria en el corazón de Gràcia. Nuestro equipo de arquitectos diseñó una rehabilitación integral que restaura elementos patrimoniales como la volta catalana mientras introduce un lenguaje contemporáneo mediterráneo.',
+    'El resultado es una vivienda de 160m² distribuida en tres plantas con patio interior de 25m², terraza-solarium en cubierta y una perfecta integración entre el patrimonio arquitectónico catalán y las necesidades de una familia moderna.',
+  ],
+  image: { src: imageSalon },
+  date: '2024-09',
+  service: 'Arquitecto',
+  testimonial: {
+    author: { name: 'Patricia y Jordi V.', role: 'Propietarios en Gràcia' },
+    content:
+      'Teníamos una casa centenaria con mucho potencial pero en un estado complicado. El equipo de arquitectos supo ver lo que nosotros solo intuíamos: restaurar la volta catalana, abrir el patio interior y crear un solarium en la cubierta. Ahora vivimos en una casa que respira historia y modernidad a partes iguales.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} — ${caseStudy.title}`,
+  description: caseStudy.description,
+}
+
+## Visión general
+
+<ProjectCarousel
+  images={[
+    { src: imageSalon, alt: 'Salón-comedor con vistas al patio interior de la casa en Gràcia' },
+    { src: imagePatio, alt: 'Patio interior vegetalizado de la casa rehabilitada en Gràcia' },
+    { src: imageCocina, alt: 'Cocina abierta con microcemento y acceso al patio interior' },
+    { src: imageDormitorio, alt: 'Dormitorio principal con volta catalana restaurada' },
+    { src: imageTerraza, alt: 'Terraza-solarium en la cubierta con vistas a Gràcia' },
+  ]}
+/>
+
+Patricia y Jordi adquirieron una casa entre medianeras centenaria en una de las calles más tranquilas de Gràcia. La vivienda, típica de la arquitectura popular catalana del siglo XIX, conservaba una volta catalana en la planta baja y un patio interior en desuso, pero la estructura necesitaba una rehabilitación profunda y la distribución original no se adaptaba a la vida contemporánea.
+
+Nuestro equipo de arquitectos diseñó un proyecto que parte del respeto absoluto por el patrimonio existente. La volta catalana fue restaurada artesanalmente, recuperando la belleza de la bóveda de ladrillo visto. El patio interior, antes abandonado, se transformó en el corazón verde de la vivienda — un jardín mediterráneo de 25m² que ventila e ilumina las tres plantas de la casa.
+
+La distribución se reorganizó para crear espacios fluidos: la planta baja alberga el salón-comedor abierto al patio y la cocina con acabados en microcemento; la primera planta acoge los dormitorios con la volta catalana como protagonista; y la cubierta se convirtió en un solarium privado con vistas a los tejados de Gràcia.
+
+Los materiales fueron seleccionados para dialogar con la historia del edificio: microcemento para suelos y encimeras, terracota recuperada en el patio, roble natural para carpinterías interiores, cal blanca en los muros y carpintería metálica en negro para los nuevos elementos estructurales.
+
+## Lo que hicimos
+
+<TagList>
+  <TagListItem>Arquitectura</TagListItem>
+  <TagListItem>Rehabilitación</TagListItem>
+  <TagListItem>Patio interior</TagListItem>
+  <TagListItem>Volta catalana</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Patricia y Jordi V.', role: 'Propietarios en Gràcia' }}
+  image={{ src: imagePatriciaJordi }}
+>
+  Teníamos una casa centenaria con mucho potencial pero en un estado complicado.
+  El equipo de arquitectos supo ver lo que nosotros solo intuíamos: restaurar la
+  volta catalana, abrir el patio interior y crear un solarium en la cubierta.
+  Ahora vivimos en una casa que respira historia y modernidad a partes iguales.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="160m²" label="Superficie construida" />
+  <StatListItem value="3 plantas" label="Niveles rehabilitados" />
+  <StatListItem value="8 meses" label="Duración del proyecto" />
+  <StatListItem value="25m²" label="Patio interior" />
+</StatList>

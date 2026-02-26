@@ -1,5 +1,9 @@
-import imageHero from './hero.jpg'
 import imageCarlosAna from './carlos-ana.jpg'
+import imageSalon from './reforma-piso-eixample-barcelona-salon-comedor.jpg'
+import imageCocina from './cocina-abierta-reforma-eixample-barcelona-marmol-carrara.jpg'
+import imageDormitorio from './dormitorio-principal-vestidor-reforma-eixample-barcelona.jpg'
+import imagePasillo from './pasillo-suelos-hidraulicos-piso-modernista-eixample.jpg'
+import imageBano from './bano-marmol-carrara-reforma-piso-eixample-barcelona.jpg'
 
 export const caseStudy = {
   client: 'Carlos y Ana M.',
@@ -10,7 +14,7 @@ export const caseStudy = {
     'Carlos y Ana buscaban renovar por completo su piso en el Eixample sin perder el encanto modernista original. Nuestro equipo diseñó un proyecto que respeta las molduras de época y los suelos hidráulicos mientras incorpora una distribución abierta y moderna.',
     'El resultado es un hogar luminoso y funcional de 120m² con cocina abierta al salón, domótica integrada y una revalorización del inmueble del 35%.',
   ],
-  image: { src: imageHero },
+  image: { src: imageSalon },
   date: '2024-03',
   service: 'Reforma integral',
   testimonial: {
@@ -26,6 +30,16 @@ export const metadata = {
 }
 
 ## Visión general
+
+<ProjectCarousel
+  images={[
+    { src: imageSalon, alt: 'Salón-comedor del piso modernista reformado en el Eixample' },
+    { src: imageCocina, alt: 'Cocina abierta con isla de mármol de Carrara' },
+    { src: imageDormitorio, alt: 'Dormitorio principal con vestidor integrado' },
+    { src: imagePasillo, alt: 'Pasillo con suelos hidráulicos originales restaurados' },
+    { src: imageBano, alt: 'Baño en mármol de Carrara con grifería de latón' },
+  ]}
+/>
 
 Carlos y Ana adquirieron un piso de 120m² en el corazón del Eixample barcelonés. El inmueble, construido a principios del siglo XX, conservaba elementos modernistas originales — molduras en los techos, suelos hidráulicos y carpintería de madera — pero la distribución era obsoleta y las instalaciones necesitaban una actualización completa.
 

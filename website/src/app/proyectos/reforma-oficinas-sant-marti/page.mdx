@@ -1,0 +1,77 @@
+import imageMartaL from './marta-l.jpg'
+import imageOpenPlan from './reforma-oficinas-sant-marti-barcelona-espacio-abierto.jpg'
+import imageCocina from './cocina-social-oficinas-sant-marti-barcelona.jpg'
+import imageSala from './sala-reuniones-oficinas-sant-marti-barcelona-diseno.jpg'
+import imageCabinas from './cabinas-concentracion-oficinas-sant-marti-barcelona.jpg'
+import imageRecepcion from './recepcion-oficinas-sant-marti-barcelona-reforma.jpg'
+
+export const caseStudy = {
+  client: 'Marta L.',
+  title: 'Reforma de oficinas biofílicas para una startup tech en Sant Martí',
+  description:
+    'Reforma integral de 280m² de oficinas para una startup tecnológica en el distrito de Sant Martí, con diseño biofílico, cabinas acústicas y espacios colaborativos.',
+  summary: [
+    'Marta, CEO de una startup tecnológica en crecimiento, necesitaba unas oficinas que reflejaran los valores de su empresa: innovación, bienestar y sostenibilidad. Nuestro equipo diseñó un espacio de 280m² en el distrito tech de Sant Martí con un enfoque biofílico integral.',
+    'El resultado es un espacio de trabajo de 280m² para 45 personas que combina zonas abiertas, cabinas de concentración acústicas, salas de reuniones vitrificadas y una cocina social. La rotación de personal se redujo un 20% en el primer trimestre tras la reforma.',
+  ],
+  image: { src: imageOpenPlan },
+  date: '2025-01',
+  service: 'Reforma de oficinas',
+  testimonial: {
+    author: { name: 'Marta L.', role: 'CEO startup tech en Sant Martí' },
+    content:
+      'Queríamos unas oficinas que no parecieran oficinas. El equipo entendió que para una empresa tech, el espacio de trabajo es parte de la cultura. El muro vegetal, las cabinas acústicas y la cocina social han cambiado la forma en que trabajamos. La rotación ha bajado un 20% y los candidatos siempre comentan el espacio en las entrevistas.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} — ${caseStudy.title}`,
+  description: caseStudy.description,
+}
+
+## Visión general
+
+<ProjectCarousel
+  images={[
+    { src: imageOpenPlan, alt: 'Espacio abierto de trabajo con diseño biofílico en Sant Martí' },
+    { src: imageCocina, alt: 'Cocina social y zona de descanso de las oficinas' },
+    { src: imageSala, alt: 'Sala de reuniones vitrificada con acústica integrada' },
+    { src: imageCabinas, alt: 'Cabinas de concentración acústicas con fieltro reciclado' },
+    { src: imageRecepcion, alt: 'Recepción con muro vegetal y mostrador de terrazzo' },
+  ]}
+/>
+
+Marta lideraba una startup tecnológica de 40 personas que había superado su espacio anterior. El nuevo local de 280m² en el distrito de innovación de Sant Martí era una planta diáfana sin identidad. El reto: crear un espacio que atrajera talento, fomentara la colaboración y reflejara los valores de sostenibilidad de la empresa.
+
+Nuestro equipo diseñó una reforma basada en el diseño biofílico — la integración de la naturaleza en el entorno de trabajo. Un muro vegetal de más de 200 plantas ocupa la pared principal de la recepción, purificando el aire y estableciendo el tono desde la entrada. El mostrador de recepción en terrazzo reciclado refuerza el compromiso con la sostenibilidad.
+
+La zonificación del espacio fue clave: el open-plan central con mesas de roble natural y separadores vegetales permite la colaboración fluida; las cabinas de concentración revestidas de fieltro reciclado verde salvia ofrecen privacidad acústica sin aislamiento visual; las salas de reuniones vitrificadas mantienen la transparencia con aislamiento acústico profesional; y la cocina social se convirtió en el punto de encuentro informal del equipo.
+
+Los materiales combinan calidez y funcionalidad: suelos de microcemento, mobiliario de roble natural, paneles de corcho acústico, fieltro reciclado, terrazzo y acero negro mate. La iluminación circadiana se adapta a lo largo del día, y las más de 200 plantas distribuidas por todo el espacio crean un ecosistema interior que mejora la calidad del aire y el bienestar de los trabajadores.
+
+## Lo que hicimos
+
+<TagList>
+  <TagListItem>Reforma de oficinas</TagListItem>
+  <TagListItem>Diseño biofílico</TagListItem>
+  <TagListItem>Acústica</TagListItem>
+  <TagListItem>Sostenibilidad</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Marta L.', role: 'CEO startup tech en Sant Martí' }}
+  image={{ src: imageMartaL }}
+>
+  Queríamos unas oficinas que no parecieran oficinas. El equipo entendió que
+  para una empresa tech, el espacio de trabajo es parte de la cultura. El muro
+  vegetal, las cabinas acústicas y la cocina social han cambiado la forma en que
+  trabajamos. La rotación ha bajado un 20% y los candidatos siempre comentan el
+  espacio en las entrevistas.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="280m²" label="Superficie reformada" />
+  <StatListItem value="45 puestos" label="Capacidad de trabajo" />
+  <StatListItem value="3 meses" label="Duración del proyecto" />
+  <StatListItem value="-20%" label="Rotación de personal" />
+</StatList>

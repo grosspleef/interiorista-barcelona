@@ -105,6 +105,16 @@ const testimonials = [
       'Contratamos el diseño de nuestro nuevo restaurante en Poblenou y el resultado ha sido espectacular. Entendieron la identidad de marca desde el primer día y los clientes no dejan de elogiar el espacio.',
     client: 'Marc R., interiorismo comercial en Poblenou',
   },
+  {
+    quote:
+      'Teníamos una casa centenaria con mucho potencial pero en un estado complicado. El equipo de arquitectos supo ver lo que nosotros solo intuíamos: restaurar la volta catalana, abrir el patio interior y crear un solarium en la cubierta. Ahora vivimos en una casa que respira historia y modernidad.',
+    client: 'Patricia y Jordi V., rehabilitación de casa en Gràcia',
+  },
+  {
+    quote:
+      'Queríamos unas oficinas que no parecieran oficinas. El muro vegetal, las cabinas acústicas y la cocina social han cambiado la forma en que trabajamos. La rotación ha bajado un 20% y los candidatos siempre comentan el espacio en las entrevistas.',
+    client: 'Marta L., reforma de oficinas en Sant Martí',
+  },
 ]
 
 export const metadata: Metadata = {
