@@ -12,9 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageRevisionPlanos from '@/images/revision-planos-obra-nueva-diagonal-mar-barcelona.jpg'
+import imageSeleccionAcabados from '@/images/seleccion-acabados-obra-nueva-barcelona.jpg'
+import imageInspeccionEntrega from '@/images/inspeccion-pre-entrega-obra-nueva-poblenou-barcelona.jpg'
+import imagePisoObraNueva from '@/images/piso-obra-nueva-personalizado-eixample-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +30,7 @@ const serviceProjects: Project[] = [
       '85 m²: selección de acabados y redistribución de cocina en promoción de obra nueva. Acompañamiento completo desde la firma de arras hasta la entrega.',
     year: '2025',
     category: 'Compra sobre plano',
-    image: imageLaptop,
+    image: imageSeleccionAcabados,
   },
   {
     title: 'Acompañamiento compra sobre plano en Poblenou',
@@ -37,7 +38,7 @@ const serviceProjects: Project[] = [
       '110 m²: modificaciones solicitadas al promotor, redistribución del salón-cocina e inspección pre-entrega con acta de reservas.',
     year: '2025',
     category: 'Obra nueva',
-    image: imageMeeting,
+    image: imageInspeccionEntrega,
   },
   {
     title: 'Asesoramiento acabados dúplex en Sant Cugat',
@@ -45,7 +46,7 @@ const serviceProjects: Project[] = [
       '150 m²: selección de pavimentos, revestimientos y diseño de cocina a medida en colaboración con la promotora.',
     year: '2024',
     category: 'Personalización acabados',
-    image: imageWhiteboard,
+    image: imageRevisionPlanos,
   },
 ]
 
@@ -540,7 +541,7 @@ export default function CompraSobrePlanoPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Asesoramiento inicial y revisión de planos"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageRevisionPlanos }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -568,7 +569,7 @@ export default function CompraSobrePlanoPage() {
 
         <Section
           title="Estudio de personalización y selección de acabados"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageSeleccionAcabados, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -612,7 +613,7 @@ export default function CompraSobrePlanoPage() {
 
         <Section
           title="Seguimiento de obra y verificación de entrega"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageInspeccionEntrega, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -657,7 +658,7 @@ export default function CompraSobrePlanoPage() {
           description="Servicio de acompañamiento en la compra sobre plano en Barcelona. Te asesoramos en la personalización de tu vivienda de obra nueva, desde la revisión de planos hasta la inspección de la entrega."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imagePisoObraNueva, shape: 0 }}
           showCounter={false}
           tiers={[
             {

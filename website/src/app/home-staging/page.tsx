@@ -12,9 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageDiagnostico from '@/images/diagnostico-home-staging-piso-gracia-barcelona.jpg'
+import imageSalonStaging from '@/images/home-staging-salon-eixample-barcelona.jpg'
+import imageReportaje from '@/images/reportaje-fotografico-home-staging-born-barcelona.jpg'
+import imageDormitorioPremium from '@/images/home-staging-dormitorio-premium-sarria-barcelona.jpg'
 import {
   ProjectShowcase,
   type Project,
@@ -32,7 +33,7 @@ const serviceProjects: Project[] = [
       '95 m² preparado para venta: despersonalización, redistribución del mobiliario existente y styling completo. Vendido en 12 días al precio de salida.',
     year: '2025',
     category: 'Home staging residencial',
-    image: imageLaptop,
+    image: imageSalonStaging,
   },
   {
     title: 'Staging apartamento turístico en El Born',
@@ -40,7 +41,7 @@ const serviceProjects: Project[] = [
       '55 m² de staging para alquiler vacacional: mobiliario de alquiler, textiles mediterráneos y fotografía profesional. Ocupación +35 % respecto al trimestre anterior.',
     year: '2024',
     category: 'Staging alquiler',
-    image: imageMeeting,
+    image: imageReportaje,
   },
   {
     title: 'Home staging ático en Sarrià',
@@ -48,7 +49,7 @@ const serviceProjects: Project[] = [
       '140 m² con terraza: posicionamiento premium, mobiliario de diseño alquilado y reportaje fotográfico profesional. Vendido un 10 % por encima del precio inicial.',
     year: '2024',
     category: 'Home staging premium',
-    image: imageWhiteboard,
+    image: imageDormitorioPremium,
   },
 ]
 
@@ -500,7 +501,7 @@ export default function HomeStagingPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Diagnóstico y plan de staging"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageDiagnostico }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -528,7 +529,7 @@ export default function HomeStagingPage() {
 
         <Section
           title="Puesta en escena del inmueble"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageSalonStaging, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -567,7 +568,7 @@ export default function HomeStagingPage() {
 
         <Section
           title="Reportaje fotográfico y entrega"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageReportaje, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -602,7 +603,7 @@ export default function HomeStagingPage() {
           description="Servicio profesional de home staging para inmuebles en venta o alquiler en Barcelona. Desde la consulta gratuita hasta el reportaje fotográfico final."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageDormitorioPremium, shape: 0 }}
           showCounter={false}
           tiers={[
             {

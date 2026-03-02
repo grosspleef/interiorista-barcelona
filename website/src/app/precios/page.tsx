@@ -9,9 +9,13 @@ import { PricingTableOfContents } from '@/components/PricingTableOfContents'
 import { RootLayout } from '@/components/RootLayout'
 import imageDormitorioBorn from '@/images/decoracion-dormitorio-minimalista-born-barcelona.jpg'
 import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
+import imageSalonStaging from '@/images/home-staging-salon-eixample-barcelona.jpg'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
+import imagePisoObraNueva from '@/images/piso-obra-nueva-personalizado-eixample-barcelona.jpg'
+import imageSalonAccesible from '@/images/salon-accesible-moderno-poblenou-barcelona.jpg'
 import imageTerrazaAtico from '@/images/terraza-atico-vista-barcelona-asesoria.jpg'
+import imageVillaContemporanea from '@/images/villa-contemporanea-doble-altura-pedralbes-barcelona.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
 
 type ServicePricing = {
@@ -117,7 +121,7 @@ const servicePricing: ServicePricing[] = [
       'Acompañamiento en la compra de obra nueva: revisión de planos, selección de acabados y personalización de tu futura vivienda.',
     href: '/compra-sobre-plano/',
     ctaLabel: 'Ver servicio de compra sobre plano',
-    image: { src: imageWhiteboard, shape: 0 },
+    image: { src: imagePisoObraNueva, shape: 0 },
     tiers: [
       {
         name: 'Asesoramiento de compra',
@@ -141,7 +145,7 @@ const servicePricing: ServicePricing[] = [
       'Preparación profesional de inmuebles para la venta o alquiler. Maximiza el atractivo de tu propiedad y acelera la operación inmobiliaria.',
     href: '/home-staging/',
     ctaLabel: 'Ver servicio de home staging',
-    image: { src: imageLaptop, shape: 1 },
+    image: { src: imageSalonStaging, shape: 1 },
     tiers: [
       {
         name: 'Consulta inicial',
@@ -165,7 +169,7 @@ const servicePricing: ServicePricing[] = [
       'Diseño de interiores adaptado a personas con movilidad reducida. Soluciones funcionales y estéticas para una vivienda accesible.',
     href: '/interiorismo-accesible/',
     ctaLabel: 'Ver servicio de accesibilidad',
-    image: { src: imageMeeting, shape: 2 },
+    image: { src: imageSalonAccesible, shape: 2 },
     tiers: [
       {
         name: 'Diagnóstico de accesibilidad',
@@ -190,7 +194,7 @@ const servicePricing: ServicePricing[] = [
       'Proyectos arquitectónicos residenciales y de obra nueva. Diseño, proyecto técnico visado y dirección de obra.',
     href: '/arquitecto/',
     ctaLabel: 'Ver servicio de arquitectura',
-    image: { src: imageWhiteboard, shape: 0 },
+    image: { src: imageVillaContemporanea, shape: 0 },
     tiers: [
       {
         name: 'Consulta inicial',

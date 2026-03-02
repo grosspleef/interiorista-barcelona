@@ -12,9 +12,12 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageVisitaViabilidad from '@/images/visita-viabilidad-arquitecto-sarria-barcelona.jpg'
+import imageAnteproyecto from '@/images/anteproyecto-maqueta-arquitecto-gracia-barcelona.jpg'
+import imageLicenciaObras from '@/images/licencia-obras-fachada-loft-poblenou-barcelona.jpg'
+import imageLicitacion from '@/images/licitacion-planos-tecnicos-eixample-barcelona.jpg'
+import imageDireccionObra from '@/images/direccion-obra-chantier-structural-born-barcelona.jpg'
+import imageVillaContemporanea from '@/images/villa-contemporanea-doble-altura-pedralbes-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +32,7 @@ const serviceProjects: Project[] = [
       '220 m² de construcción nueva con estructura de hormigón y fachada ventilada. Diseño bioclimático con orientación sur y certificación energética A.',
     year: '2025',
     category: 'Construcción nueva',
-    image: imageLaptop,
+    image: imageVillaContemporanea,
   },
   {
     title: 'Ampliación y rehabilitación de masía en el Maresme',
@@ -37,7 +40,7 @@ const serviceProjects: Project[] = [
       '350 m² de rehabilitación integral con ampliación contemporánea de 80 m². Respeto de la estructura original en piedra con intervención moderna.',
     year: '2024',
     category: 'Rehabilitación',
-    image: imageMeeting,
+    image: imageLicenciaObras,
   },
   {
     title: 'Sobrelevación de edificio plurifamiliar en Gràcia',
@@ -45,7 +48,7 @@ const serviceProjects: Project[] = [
       'Adición de 2 plantas sobre edificio existente: 160 m² de nueva construcción con estructura metálica ligera y fachada de zinc.',
     year: '2024',
     category: 'Ampliación vertical',
-    image: imageWhiteboard,
+    image: imageAnteproyecto,
   },
 ]
 
@@ -544,7 +547,7 @@ export default function ArquitectoPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita consejo y estudio de viabilidad"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageVisitaViabilidad }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -578,7 +581,7 @@ export default function ArquitectoPage() {
 
         <Section
           title="Estudio de viabilidad y anteproyecto"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageAnteproyecto, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -627,7 +630,7 @@ export default function ArquitectoPage() {
 
         <Section
           title="Licencia de obras y tramitación urbanística"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageLicenciaObras, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -661,7 +664,7 @@ export default function ArquitectoPage() {
 
         <Section
           title="Consulta a empresas y licitación de obras"
-          image={{ src: imageWhiteboard, shape: 1 }}
+          image={{ src: imageLicitacion, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -694,7 +697,7 @@ export default function ArquitectoPage() {
 
         <Section
           title="Dirección de obra y recepción"
-          image={{ src: imageLaptop, shape: 2 }}
+          image={{ src: imageDireccionObra, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -740,7 +743,7 @@ export default function ArquitectoPage() {
           description="Servicio integral de arquitectura para proyectos de construcción y rehabilitación en Barcelona. Desde la consulta inicial hasta la dirección de obra, te acompañamos en cada etapa."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageVillaContemporanea, shape: 0 }}
           showCounter={false}
           tiers={[
             {

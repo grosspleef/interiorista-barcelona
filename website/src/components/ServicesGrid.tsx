@@ -4,11 +4,15 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
+import imageBanoAccesible from '@/images/bano-accesible-diseno-sarria-barcelona.jpg'
 import imageDormitorioBorn from '@/images/decoracion-dormitorio-minimalista-born-barcelona.jpg'
 import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
+import imageSalonStaging from '@/images/home-staging-salon-eixample-barcelona.jpg'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
+import imagePisoObraNueva from '@/images/piso-obra-nueva-personalizado-eixample-barcelona.jpg'
 import imageTerrazaAtico from '@/images/terraza-atico-vista-barcelona-asesoria.jpg'
+import imageVillaContemporanea from '@/images/villa-contemporanea-doble-altura-pedralbes-barcelona.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
 import { services } from '@/lib/services'
 import type { Service } from '@/lib/services'
@@ -20,6 +24,10 @@ const serviceImageOverrides: Record<string, StaticImageData> = {
   'diseno-interiores': imageSalonContemporaneo,
   'decoracion-interiores': imageDormitorioBorn,
   'asesoria-compra-vivienda': imageTerrazaAtico,
+  'compra-sobre-plano': imagePisoObraNueva,
+  'home-staging': imageSalonStaging,
+  'interiorismo-accesible': imageBanoAccesible,
+  'arquitecto': imageVillaContemporanea,
 }
 
 const homeServiceIds = [

@@ -12,9 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageEvaluacion from '@/images/evaluacion-accesibilidad-piso-born-barcelona.jpg'
+import imageProyectoAdaptacion from '@/images/proyecto-adaptacion-accesible-eixample-barcelona.jpg'
+import imageBanoAccesible from '@/images/bano-accesible-diseno-sarria-barcelona.jpg'
+import imageSalonAccesible from '@/images/salon-accesible-moderno-poblenou-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +30,7 @@ const serviceProjects: Project[] = [
       '95 m² adaptados para persona con movilidad reducida: puertas ensanchadas a 80 cm, ducha enrasada con asiento abatible, cocina con encimera regulable en altura y sistema domótico de control por voz.',
     year: '2025',
     category: 'Adaptación integral',
-    image: imageLaptop,
+    image: imageProyectoAdaptacion,
   },
   {
     title: 'Baño adaptado y cocina accesible en Gràcia',
@@ -37,7 +38,7 @@ const serviceProjects: Project[] = [
       'Reforma de baño y cocina para pareja de 75 años: plato de ducha antideslizante, barras de apoyo, grifería termostática y muebles de cocina con cajones extraíbles. Subvencionado por la Generalitat de Catalunya.',
     year: '2024',
     category: 'Baño y cocina adaptados',
-    image: imageMeeting,
+    image: imageBanoAccesible,
   },
   {
     title: 'Domótica accesible en ático de Sarrià',
@@ -45,7 +46,7 @@ const serviceProjects: Project[] = [
       'Adaptación completa para persona con Parkinson: control vocal de iluminación, persianas y climatización, sensores de caída en baño y dormitorio, y automatización de accesos.',
     year: '2024',
     category: 'Domótica accesible',
-    image: imageWhiteboard,
+    image: imageSalonAccesible,
   },
 ]
 
@@ -537,7 +538,7 @@ export default function InteriorismoAccesiblePage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita de evaluación de accesibilidad"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageEvaluacion }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -566,7 +567,7 @@ export default function InteriorismoAccesiblePage() {
 
         <Section
           title="Estudio del proyecto de adaptación"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageProyectoAdaptacion, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -611,7 +612,7 @@ export default function InteriorismoAccesiblePage() {
 
         <Section
           title="Seguimiento de obra y entrega"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageBanoAccesible, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -645,7 +646,7 @@ export default function InteriorismoAccesiblePage() {
           description="Servicio profesional de interiorismo accesible en Barcelona. Adaptamos tu vivienda o local para personas con movilidad reducida, cumpliendo la normativa y gestionando subvenciones."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageSalonAccesible, shape: 0 }}
           showCounter={false}
           tiers={[
             {

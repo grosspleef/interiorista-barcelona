@@ -23,6 +23,18 @@ Prompts pour générer les photos réalistes pour les pages de services du site,
 
 ---
 
+> **⚠️ Note sur la variation stylistique**
+>
+> Pour éviter la monotonie visuelle entre les pages de services, **varier systématiquement** les éléments suivants entre chaque prompt :
+> - **Angles de prise de vue** — alterner wide-angle, eye-level, overhead, detail shot, contre-plongée
+> - **Focales** — ne pas rester sur le 24mm ; utiliser aussi 16mm, 28mm, 35mm, 50mm, 85mm
+> - **Palettes de couleurs** — éviter la dominance terracotta + sage + cream ; explorer béton brut, acier Corten, micro-ciment anthracite, brique, laiton, noir mat
+> - **Types de lumière** — varier entre lumière dorée late-afternoon, lumière fraîche matinale, zénithale, blue hour, latérale avec ombres portées
+> - **Plantes et accessoires** — ne pas répéter pothos, fiddle-leaf fig et pampas grass ; utiliser eucalyptus, oliviers, romarin, plantes grasses, herbes aromatiques
+> - **Types de pièces et espaces** — alterner salons, chambres, cuisines, salles de bain, terrasses, façades, chantiers, bureaux
+
+---
+
 ## Page : Diseño de Interiores (`/diseno-interiores/`)
 
 **Contexte :** Page de service principale pour le diseño de interiores à Barcelona. Décrit le processus en 3 étapes (visita consejo → estudio del proyecto → seguimiento de obra) + section tarifas. Les 4 images doivent illustrer chaque étape du processus et une image d'ambiance pour la section pricing. Styles variés pour montrer la diversité des projets barcelonais.
@@ -199,6 +211,345 @@ A breathtaking wide-angle editorial photograph of a beautifully designed rooftop
 | AC-2 | Informe técnico (étape 2) | Bureau d'expertise — plans, rapport technique, échantillons matériaux, outils de mesure | `informe-tecnico-asesoria-compra-barcelona.jpg` |
 | AC-3 | Acompañamiento post-compra (étape 3) | Salon rénové Born — résultat aspirationnel, chêne + lin + pierre, pierre apparente restaurée | `resultado-reforma-integral-born-barcelona.jpg` |
 | AC-4 | PricingBlock (tarifas) | Terrasse ático Eixample — vue Sagrada Familia, golden hour, plantes méditerranéennes | `terraza-atico-vista-barcelona-asesoria.jpg` |
+
+---
+
+## Page : Compra Sobre Plano (`/compra-sobre-plano/`)
+
+**Contexte :** Page de service pour l'accompagnement à l'achat sur plan (obra nueva) à Barcelona. Les 4 images illustrent le **processus d'accompagnement** — du showroom du promoteur à la sélection des finitions, en passant par l'inspection pré-livraison, jusqu'au résultat final d'un appartement livré et personnalisé. L'objectif est de montrer la valeur ajoutée d'un interiorista lors de l'achat d'un bien en VEFA (vente en état futur d'achèvement).
+
+---
+
+### CSP-1 — Asesoramiento inicial y revisión de planos (étape 1) — Showroom promoteur Diagonal Mar
+
+**Ratio :** `16:9` · **Fichier SEO :** `revision-planos-obra-nueva-diagonal-mar-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `Section title="Asesoramiento inicial y revisión de planos" image={{ src: imageWhiteboard }}`
+
+```
+A warm editorial photograph of a new-build developer's showroom in Barcelona's Diagonal Mar district, shot for Architectural Digest. The scene captures a sleek presentation table in white lacquer where large-format architectural floor plans of a new apartment are spread open, showing room layouts with precise dimensions and structural elements marked in pencil. Beside the plans, a developer's marketing brochure with premium paper shows exterior renders of a modern residential tower. A collection of finish samples is arranged methodically on the table: large-format porcelain tile squares in warm greige and cool white, engineered oak flooring samples in three tones from light natural to warm walnut, kitchen door front samples in matte lacquer and wood veneer, and small squares of quartz countertop material in white and grey veining. A professional laser distance measurer and a retractable steel tape measure rest on the plans. A tablet device shows a digital floor plan with colored overlay annotations. Through the floor-to-ceiling windows of the showroom, the modern Diagonal Mar skyline is visible — contemporary residential towers, landscaped boulevards, and a glimpse of the Mediterranean sea in the far distance under a clear blue sky. The showroom has polished concrete floors, minimalist white walls, and track lighting that illuminates the table surface with clean, even light. A large architectural scale model of the residential development sits on a pedestal in the background, slightly out of focus. The atmosphere is professional, contemporary, and full of possibility — the starting point of a personalization journey. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The space is empty with no people, no readable text on plans or brochures, no watermarks, and no logos.
+```
+
+---
+
+### CSP-2 — Estudio de personalización y selección de acabados (étape 2) — Atelier sélection matériaux
+
+**Ratio :** `16:9` · **Fichier SEO :** `seleccion-acabados-obra-nueva-barcelona.jpg`
+**Remplace :** `laptop.jpg` dans `Section title="Estudio de personalización y selección de acabados" image={{ src: imageLaptop, shape: 1 }}`
+
+```
+An editorial overhead-angle photograph of an interior designer's workspace during a new-build apartment finish selection session, shot for Architectural Digest. A large natural oak table is covered with a carefully curated selection of premium materials for a new-construction apartment in Barcelona. At the center, optimized floor plans showing a proposed kitchen redistribution are spread out, with pencil annotations comparing the developer's original layout to the improved version. Surrounding the plans, material samples are grouped by room: for the kitchen — matte lacquer cabinet door samples in warm greige and deep sage green, quartz countertop samples with subtle veining, and brushed brass hardware pulls. For the bathrooms — handmade zellige tiles in soft white, large-format marble-effect porcelain in Calacatta tones, and matte black tapware samples. For the living areas — wide-plank engineered oak flooring samples in three warm tones, skirting board profiles in natural oak, and paint chips fanned out in warm neutral shades from soft linen to warm clay. A laptop screen shows a photorealistic 3D rendering of the personalized kitchen with the new layout, island counter, and selected finishes. A mood board pinned to a small easel shows the design direction — warm contemporary Mediterranean with natural materials. A mechanical pencil, a brass ruler, and sticky notes in pastel colors are scattered purposefully. A ceramic cup of coffee and a small branch of dried eucalyptus in a stoneware vase sit at the corner. Warm afternoon light from a large window creates soft shadows across the materials, highlighting the textures of wood grain, stone veining, and ceramic glaze. Photographed with a Canon EOS R5 and a 35mm lens with moderate depth of field, photorealistic, ultra-detailed, 8K resolution. The workspace has no people, no readable text on plans or screen, no brand names, no watermarks, and no logos.
+```
+
+---
+
+### CSP-3 — Seguimiento de obra y verificación de entrega (étape 3) — Inspección pre-entrega Poblenou
+
+**Ratio :** `16:9` · **Fichier SEO :** `inspeccion-pre-entrega-obra-nueva-poblenou-barcelona.jpg`
+**Remplace :** `meeting.jpg` dans `Section title="Seguimiento de obra y verificación de entrega" image={{ src: imageMeeting, shape: 2 }}`
+
+```
+A dramatic editorial photograph of a brand-new apartment during a pre-delivery inspection in a modern residential building in Barcelona's Poblenou district, shot for Architectural Digest. The scene captures a freshly completed 100-square-meter apartment that has never been lived in — everything is pristine and new. The open-plan living area features perfectly laid large-format porcelain floor tiles in warm light grey with minimal grout lines. The walls are freshly painted in luminous white with crisp edges at every corner and junction. A modern open kitchen is visible in the background with newly installed matte white lacquer cabinets, a quartz countertop in soft grey veining, and a stainless steel sink — everything spotless and untouched. Through the large sliding glass doors with slim aluminum frames, a private balcony overlooks the contemporary Poblenou neighborhood — converted industrial buildings, modern residential blocks, and cranes of ongoing development visible in the distance. On the kitchen island, a professional inspection clipboard with a checklist is laid out alongside a laser distance measurer, a spirit level, a professional moisture meter, and a high-powered flashlight — the tools of a thorough pre-delivery inspection. Small colored adhesive dots — blue and red — are placed on two spots on the wall and one on a window frame, marking minor defects for the developer to address. The natural light flooding through the large windows is bright and clean, typical of a new building with generous glazing and good orientation. The atmosphere is one of meticulous verification — the critical final step before accepting a new home. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The apartment is empty with no people, no furniture, no readable text on the clipboard, no watermarks, and no logos.
+```
+
+---
+
+### CSP-4 — PricingBlock (tarifas) — Salon livré et personnalisé Eixample
+
+**Ratio :** `16:9` · **Fichier SEO :** `piso-obra-nueva-personalizado-eixample-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `PricingBlock image={{ src: imageWhiteboard, shape: 0 }}`
+
+```
+A stunning wide-angle editorial photograph of a beautifully personalized new-build apartment living room in Barcelona's Eixample district, shot for Architectural Digest as the aspirational result of a complete off-plan purchase advisory project. The spacious open-plan living and dining area showcases the quality achievable when finishes are chosen before delivery. The floors are premium large-format porcelain tiles in warm cream with a subtle stone texture and minimal grout lines — a finish selected during the construction phase. A contemporary modular sofa in natural linen fabric in warm sand is arranged facing the windows, with textured cushions in cream, terracotta, and soft olive. A sculptural coffee table in light travertine with organic rounded edges sits on a large handwoven wool rug in natural cream tones. The open kitchen beyond features a generous island with a waterfall quartz countertop in soft white with delicate grey veining, custom matte sage-green lacquer cabinets that were specified during the personalization phase, integrated appliances, and pendant lights in hand-blown opal glass with brushed brass fittings. The dining area between kitchen and living room has a round natural oak table for six with cane-backed chairs in warm honey tones. Floor-to-ceiling windows with slim aluminum frames and motorized roller blinds in sheer white linen fill the space with abundant natural light. Through the windows, the characteristic grid of Eixample streets is visible — tree-lined boulevards and elegant stone facades. The walls are finished in smooth warm white with one accent wall in the living area featuring vertical fluted oak panels — a custom upgrade requested from the developer. Built-in storage with oak-fronted cabinets flanks the entrance hallway, visible through a wide doorway. The entire space radiates contemporary Mediterranean warmth — the result of thoughtful personalization during the construction phase, with every finish, fixture, and detail chosen with professional guidance. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The room is empty with no people, no visible text, no watermarks, and no logos.
+```
+
+---
+
+## Récapitulatif — 4 images Compra Sobre Plano
+
+| # | Section page | Style | Fichier SEO |
+|---|-------------|-------|-------------|
+| CSP-1 | Asesoramiento inicial (étape 1) | Showroom promoteur Diagonal Mar — plans, échantillons, maquette | `revision-planos-obra-nueva-diagonal-mar-barcelona.jpg` |
+| CSP-2 | Personalización acabados (étape 2) | Atelier sélection matériaux — mood board, 3D render, échantillons par pièce | `seleccion-acabados-obra-nueva-barcelona.jpg` |
+| CSP-3 | Seguimiento obra (étape 3) | Inspección pre-entrega Poblenou — appart neuf vide, outils inspection, pastilles défauts | `inspeccion-pre-entrega-obra-nueva-poblenou-barcelona.jpg` |
+| CSP-4 | PricingBlock (tarifas) | Salon livré personnalisé Eixample — cuisine ouverte, finitions premium, résultat aspirationnel | `piso-obra-nueva-personalizado-eixample-barcelona.jpg` |
+
+---
+
+## Page : Home Staging (`/home-staging/`)
+
+**Contexte :** Page de service pour le home staging à Barcelona. Les 4 images illustrent le **processus complet de mise en valeur d'un bien pour la vente** — du diagnostic initial (état « avant ») à la mise en scène, au shooting photo professionnel, et enfin une chambre stagée premium pour la section tarifas. Chaque image montre un quartier différent (Gràcia, Eixample, Born, Sarrià) et un espace différent pour illustrer la diversité des projets.
+
+---
+
+### HS-1 — Diagnóstico y plan de staging (étape 1) — Piso à préparer Gràcia
+
+**Ratio :** `16:9` · **Fichier SEO :** `diagnostico-home-staging-piso-gracia-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `Section title="Diagnóstico y plan de staging" image={{ src: imageWhiteboard }}`
+
+```
+A warm editorial photograph of a 90-square-meter apartment living room in Barcelona's Gràcia neighborhood being assessed for a home staging project, shot for Architectural Digest. The room is in its current lived-in state — not messy but clearly personal and over-furnished. A large dark leather sofa dominates the space, flanked by mismatched side tables with family photos in various frames. Bookshelves overflow with paperbacks, magazines, and personal memorabilia. A bulky entertainment center with visible cables sits against one wall. The curtains are heavy dark fabric that blocks much of the natural light. However, the apartment's exceptional bones are clearly visible — original hydraulic cement floor tiles in a beautiful geometric pattern of warm blues and creams peek out from under a worn area rug, high ceilings with simple classical moldings, and two tall windows with traditional wooden shutters that promise abundant Mediterranean light when properly revealed. On the coffee table, a professional staging assessment is underway: a clipboard with a room-by-room checklist, a laser distance measurer, a retractable steel tape measure, fabric swatches in light neutral tones suggesting the future direction, and a tablet showing before-and-after staging reference photos of a similar apartment. A floor plan of the apartment with pencil annotations indicating furniture to remove, pieces to reposition, and areas to highlight is spread beside the clipboard. The contrast between the room's current cluttered state and its visible architectural potential tells the story of the staging opportunity. Warm afternoon light filters through the partially open shutters, casting striped shadows that hint at the brightness possible once the space is properly staged. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The room has no people, no readable text on documents, no watermarks, and no logos.
+```
+
+---
+
+### HS-2 — Puesta en escena del inmueble (étape 2) — Salon stagé Eixample
+
+**Ratio :** `16:9` · **Fichier SEO :** `home-staging-salon-eixample-barcelona.jpg`
+**Remplace :** `laptop.jpg` dans `Section title="Puesta en escena del inmueble" image={{ src: imageLaptop, shape: 1 }}`
+
+```
+A striking editorial photograph of a beautifully staged modernist apartment living room in Barcelona's Eixample district, prepared for sale by a professional home staging team, shot for Architectural Digest. The 100-square-meter space has been transformed into a buyer's dream — every element carefully chosen to maximize appeal. A streamlined contemporary sofa in natural linen fabric in warm cream is positioned to face the tall double windows, paired with a single sculptural armchair in soft oatmeal bouclé. A round coffee table in light natural oak with slender legs sits on a large jute rug in natural tones that defines the living area. The dining zone beyond features a simple oval table in white-washed ash for four with elegant wishbone-style chairs in natural beech and woven cord seats. The walls are freshly painted in a luminous warm white that maximizes the sense of space and light. The original ornate ceiling moldings and central rosette have been highlighted by the fresh paint, drawing the eye upward to the generous ceiling height. Strategic styling details create warmth without clutter: a single large ceramic vase in matte warm white with dried pampas grass on the dining table, a neat stack of three oversized coffee-table books on design and architecture on the coffee table, two textured linen cushions in soft sage green and warm clay on the sofa, and a lightweight cotton throw in natural cream draped over one arm. A large round mirror in a thin brass frame on the wall opposite the windows doubles the natural light. The original hydraulic cement floor tiles in subtle geometric patterns of cream and soft grey have been professionally cleaned and sealed, their beauty now a selling point rather than hidden under rugs. Sheer white linen curtains frame the tall windows, through which the leafy canopy of an Eixample boulevard is visible. The entire space feels aspirational yet attainable — a home buyers can immediately envision themselves living in. Photographed with a Canon EOS R5 and a 35mm lens, photorealistic, ultra-detailed, 8K resolution. The room is empty with no people, no visible text, no watermarks, and no logos.
+```
+
+---
+
+### HS-3 — Reportaje fotográfico y entrega (étape 3) — Shooting photo appartement Born
+
+**Ratio :** `16:9` · **Fichier SEO :** `reportaje-fotografico-home-staging-born-barcelona.jpg`
+**Remplace :** `meeting.jpg` dans `Section title="Reportaje fotográfico y entrega" image={{ src: imageMeeting, shape: 2 }}`
+
+```
+A dramatic editorial photograph of a professionally staged apartment in Barcelona's El Born district during a real estate photography session, shot for Architectural Digest. The scene captures a beautifully staged open-plan living and dining area from a wide angle, with professional photography equipment visible in the foreground — a sturdy carbon-fiber tripod supporting a professional camera with a wide-angle lens, positioned at the optimal height for architectural photography. A portable LED panel light on a light stand with a large softbox diffuser is set up to one side, providing fill light that eliminates harsh shadows. The staged apartment beyond the equipment is immaculate: a contemporary sofa in warm grey linen faces exposed stone walls — original medieval masonry carefully restored and sealed — with a modern glass-and-oak coffee table, a woven wool rug in cream tones, and carefully placed accessories including ceramic vessels, a small olive branch in a stoneware vase, and design books. The dining area features a reclaimed elm wood table with four linen-upholstered chairs in soft warm grey. Through a tall arched window with original stone surrounds, the narrow cobblestone street of El Born is visible with characteristic wrought-iron balconies on the building opposite. On a small side table near the tripod, a laptop shows a tethered shooting preview — the live camera feed displaying the staged room from the camera's perspective, demonstrating the professional workflow. A reflector disc in silver-white leans against the wall nearby. The natural light from the windows combines with the professional lighting to create the bright, inviting atmosphere that drives real estate listings to stand out on Idealista and Fotocasa. The atmosphere conveys professional precision — the final step that transforms staging into compelling marketing imagery. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The space has no people, no readable text on the laptop screen, no watermarks, and no logos.
+```
+
+---
+
+### HS-4 — PricingBlock (tarifas) — Chambre principale stagée Sarrià
+
+**Ratio :** `16:9` · **Fichier SEO :** `home-staging-dormitorio-premium-sarria-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `PricingBlock image={{ src: imageWhiteboard, shape: 0 }}`
+
+```
+A serene wide-angle editorial photograph of a beautifully staged master bedroom in a premium apartment in Barcelona's Sarrià district, prepared for sale by a professional home staging team, shot for Architectural Digest. The generous bedroom showcases the transformative power of expert staging. A king-size bed with a simple upholstered headboard in natural oatmeal linen is the centerpiece, dressed in layers of premium bedding — crisp white cotton sheets, a lightweight linen duvet cover in warm sand, a folded wool throw blanket in soft terracotta at the foot, and four oversized pillows in white and natural linen. Two matching bedside tables in light natural oak with rounded edges each hold a handmade ceramic table lamp with a linen shade in warm cream — their soft glow suggesting warmth. A large handwoven wool rug in cream and soft grey with a subtle textural pattern anchors the bed on polished natural oak floors in wide planks with a warm honey tone. At the foot of the bed, a simple upholstered bench in bouclé fabric in warm ivory provides a styling surface — a neatly folded cashmere throw and a small tray with a ceramic cup and a single design book. Against the opposite wall, a simple oak dresser with brass knob hardware displays a curated vignette: a large round mirror in brushed brass leaning against the wall, a tall ceramic vase in matte off-white with a single branch of dried cotton flowers, and a small stack of linen-bound notebooks. Floor-to-ceiling curtains in heavyweight natural linen in warm white frame two tall windows, one slightly open, through which the lush tree canopy of a quiet Sarrià street is visible — mature plane trees and Mediterranean pines creating a green, private backdrop. The afternoon light is soft and diffused through the linen curtains, creating a luminous, restful atmosphere. A trailing string-of-pearls plant cascades from a small wall-mounted shelf in natural oak near the window. Every element has been chosen to appeal to the widest range of premium buyers — neutral, warm, sophisticated, and aspirational. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The room is empty with no people, no visible text, no brand names, no watermarks, and no logos.
+```
+
+---
+
+## Récapitulatif — 4 images Home Staging
+
+| # | Section page | Style | Fichier SEO |
+|---|-------------|-------|-------------|
+| HS-1 | Diagnóstico y plan (étape 1) | Piso Gràcia avant staging — encombré mais beau potentiel, outils diagnostic, suelos hidráulicos | `diagnostico-home-staging-piso-gracia-barcelona.jpg` |
+| HS-2 | Puesta en escena (étape 2) | Salon stagé Eixample — mobilier épuré, textiles neutres, moulures mises en valeur | `home-staging-salon-eixample-barcelona.jpg` |
+| HS-3 | Reportaje fotográfico (étape 3) | Shooting photo Born — trépied, éclairage pro, appartement stagé prêt pour Idealista | `reportaje-fotografico-home-staging-born-barcelona.jpg` |
+| HS-4 | PricingBlock (tarifas) | Chambre stagée premium Sarrià — literie haut de gamme, textiles naturels, lumière douce | `home-staging-dormitorio-premium-sarria-barcelona.jpg` |
+
+---
+
+## Page : Interiorismo Accesible
+
+4 prompts pour la page `/interiorismo-accesible/` — Code **IA-**.
+
+Quartiers : Born, Eixample, Sarrià, Poblenou.
+
+---
+
+### IA-1 — Visita de evaluación de accesibilidad (étape 1) — Appartement avec barrières Born
+
+**Ratio :** `16:9` · **Fichier SEO :** `evaluacion-accesibilidad-piso-born-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `Section title="Visita de evaluación de accesibilidad" image={{ src: imageWhiteboard }}`
+
+Scène : un appartement ancien dans le Born montrant les barrières architecturales typiques — seuils de porte surélevés, couloir étroit, salle de bain avec baignoire haute. Outils d'évaluation posés (mètre laser, checklist, niveau). L'image raconte le diagnostic initial d'accessibilité — les problèmes sont visibles mais le potentiel du lieu aussi.
+
+```
+A warm editorial photograph of a 85-square-meter apartment hallway and bathroom entrance in Barcelona's El Born district being assessed for an accessibility renovation, shot for Architectural Digest. The scene captures the typical architectural barriers found in historic Barcelona buildings. A narrow hallway approximately 90 centimeters wide with original terracotta floor tiles leads to a bathroom with a raised door threshold of several centimeters — a clear obstacle for wheelchair access. The bathroom beyond is visible through the open door: a traditional high-sided cast-iron bathtub with claw feet, old ceramic floor tiles with no anti-slip properties, a pedestal sink too high and without wheelchair clearance underneath, and a light switch positioned too high on the wall. Despite the barriers, the apartment has beautiful character — exposed stone walls in the hallway with warm Mediterranean tones, high vaulted ceilings with original wooden beams, and warm natural light filtering through a window at the end of the corridor. On a small console table in the hallway, professional accessibility assessment tools are laid out: a clipboard with a room-by-room barrier checklist, a laser distance measurer showing a measurement, a retractable steel tape measure partially extended, a spirit level, and a folder with printed accessibility regulation references. A door-width measuring stick leans against the bathroom doorframe, highlighting the insufficient width. Colored adhesive dots — red for barriers, green for compliant elements — are placed on the doorframe and threshold. The contrast between the apartment's architectural charm and its accessibility deficiencies tells the story of the evaluation visit — identifying every barrier that needs to be addressed. Warm afternoon light streams through the corridor window, casting a golden glow that emphasizes both the beauty and the challenges of the space. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The space has no people, no readable text on documents, no watermarks, and no logos.
+```
+
+---
+
+### IA-2 — Estudio del proyecto de adaptación (étape 2) — Plans techniques accessibilité Eixample
+
+**Ratio :** `16:9` · **Fichier SEO :** `proyecto-adaptacion-accesible-eixample-barcelona.jpg`
+**Remplace :** `laptop.jpg` dans `Section title="Estudio del proyecto de adaptación" image={{ src: imageLaptop, shape: 1 }}`
+
+Scène : un bureau d'interioriste avec les plans techniques d'un projet d'adaptation accessibilité — plans annotés avec les rayons de giro (150 cm), largeurs de portes (80 cm), hauteurs d'interrupteurs. Échantillons de matériaux spécifiques accessibilité : barres d'appui, carrelage antidérapant, robinetterie thermostatique. Tablette montrant un rendu 3D de salle de bain accessible.
+
+```
+An editorial overhead-angle photograph of an interior designer's workspace during the planning phase of an accessibility renovation project for a modernist apartment in Barcelona's Eixample district, shot for Architectural Digest. A large natural oak desk is covered with the specialized tools of an accessible design project. At the center, detailed architectural floor plans of a Barcelona apartment are spread out, showing the proposed accessible layout with pencil annotations marking critical accessibility dimensions — turning radius circles in the bathroom and kitchen areas, door widths, corridor widths, and switch heights. Beside the main plans, a bathroom elevation drawing shows a level-access shower area with a fold-down seat, grab bars at specific heights, and a thermostatic mixer valve. A collection of accessibility-specific material samples is arranged methodically: large anti-slip ceramic floor tile samples in warm neutral tones with visible textured surfaces, stainless steel grab bar sections in two finishes — brushed stainless and matte white — showing how they integrate aesthetically, thermostatic tap hardware samples, and a small hinge mechanism for a fold-down shower seat. A tablet device shows a photorealistic 3D rendering of a beautifully designed accessible bathroom — modern, warm, and elegant with no clinical appearance — featuring a curbless shower, floating vanity with wheelchair clearance underneath, and strategically placed grab bars that double as towel rails. A small mood board pinned to a desk easel shows the design direction: warm natural materials, matte finishes, and discreet accessibility features that blend with the interior design. Professional tools include a mechanical pencil, a brass architect's scale ruler, and a printed reference sheet of CTE DB SUA 9 dimensional requirements. A ceramic mug of coffee and a small potted succulent in a terracotta pot sit at the desk corner. Warm natural light from a window on the left creates soft directional shadows across the plans and materials. Photographed with a Canon EOS R5 and a 35mm lens with moderate depth of field, photorealistic, ultra-detailed, 8K resolution. The workspace has no people, no readable text on plans or screen, no brand names, no watermarks, and no logos.
+```
+
+---
+
+### IA-3 — Seguimiento de obra y entrega (étape 3) — Salle de bain accessible design Sarrià
+
+**Ratio :** `16:9` · **Fichier SEO :** `bano-accesible-diseno-sarria-barcelona.jpg`
+**Remplace :** `meeting.jpg` dans `Section title="Seguimiento de obra y entrega" image={{ src: imageMeeting, shape: 2 }}`
+
+Scène : une salle de bain accessible terminée dans un appartement à Sarrià — douche à l'italienne avec siège rabattable, barres d'appui design en inox, vasque suspendue avec passage fauteuil, carrelage antidérapant. L'image montre que l'accessibilité peut être belle — aucun aspect clinique, design contemporain chaleureux.
+
+```
+A stunning editorial photograph of a beautifully finished accessible bathroom in a premium apartment in Barcelona's Sarrià district, shot for Architectural Digest to showcase how accessibility and design excellence coexist. The generous bathroom of approximately 8 square meters demonstrates that accessible design can be visually stunning. The centerpiece is a spacious curbless walk-in shower area with a gentle slope toward a linear drain in brushed stainless steel — the transition from bathroom floor to shower is seamless. Inside the shower, a fold-down teak wood seat with stainless steel hinges is mounted at the perfect height, currently folded down and ready for use. Two grab bars in matte white powder-coated stainless steel are mounted at strategic heights — their sleek, minimal design makes them appear as intentional design elements rather than medical aids. A premium thermostatic rain shower system with a hand-held shower on an adjustable height rail in brushed stainless steel is mounted on the wall. The floating vanity is a custom piece in natural oak with a thick honed Carrara marble countertop and an integrated shallow basin — mounted at wheelchair-accessible height with ample clearance underneath for a wheelchair to roll under. A large frameless mirror above extends down to the vanity level, usable from both standing and seated positions. The floor throughout is covered in large-format porcelain tiles in warm cream with a certified anti-slip surface — the texture is subtle enough to be elegant but effective for wet conditions. The walls are finished in large-format rectified tiles in soft warm white with minimal grout lines, creating a clean, spacious feeling. Warm elements soften the space: a woven basket with rolled towels in natural cotton, a small teak bath mat outside the shower, and a trailing pothos plant on a wall-mounted oak shelf. A tall window with frosted glass in the lower half and clear glass above lets in soft natural light while maintaining privacy. The overall atmosphere is warm, spa-like, and sophisticated — proof that accessible design enhances rather than compromises interior beauty. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The bathroom is empty with no people, no visible text, no brand names, no watermarks, and no logos.
+```
+
+---
+
+### IA-4 — PricingBlock (tarifas) — Salon accessible moderne Poblenou
+
+**Ratio :** `16:9` · **Fichier SEO :** `salon-accesible-moderno-poblenou-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `PricingBlock image={{ src: imageWhiteboard, shape: 0 }}`
+
+Scène : un salon accessible dans un appartement moderne à Poblenou — espaces de circulation larges, mobilier bas et ergonomique, domótica visible (interrupteurs à bonne hauteur, interface vocale), seuils nuls, lumière naturelle abondante. Image aspirationnelle montrant un résultat final accessible et beau.
+
+```
+A bright wide-angle editorial photograph of a beautifully designed accessible living room in a modern apartment in Barcelona's Poblenou district, shot for Architectural Digest as the aspirational result of a complete accessibility renovation. The spacious open-plan living area of approximately 50 square meters showcases thoughtful accessible design that is indistinguishable from high-end contemporary interior design. The layout features generous circulation paths — wide clear zones between furniture groupings that allow easy wheelchair navigation without feeling sparse or institutional. A contemporary low-profile sofa in natural linen fabric in warm sand with wide, firm seat cushions at an ergonomic transfer height is arranged facing large floor-to-ceiling windows with sliding panels that open onto a private terrace. Two armchairs with supportive backs and armrests in soft bouclé fabric in warm cream are positioned at comfortable conversation distance. A round coffee table in light travertine with smooth rounded edges — no sharp corners — sits on a large flat-weave rug in natural cotton in cream and soft grey that lies completely flat without trip hazards. The floors are polished micro-cement in warm light grey — perfectly smooth, level throughout with zero thresholds at every doorway visible in the background. Smart home elements are subtly integrated: sleek touch panels mounted at accessible height on the walls in brushed aluminum, a small smart speaker on a side table for voice control of lighting, blinds, and climate. All light switches and electrical outlets are positioned at wheelchair-accessible heights. The open kitchen visible in the background features a lowered section of countertop in white quartz, pull-out drawers instead of lower cabinets, and a side-opening oven at an ergonomic height. A fiddle-leaf fig in a large ceramic planter and trailing pothos on a floating oak shelf add organic warmth. Through the generous windows, the contemporary Poblenou skyline is visible — converted industrial buildings and modern architecture under a clear Mediterranean sky. Abundant natural light floods the space, highlighting the warm textures of linen, travertine, and micro-cement. The entire space radiates warmth, sophistication, and effortless accessibility — a home designed for full autonomy without any compromise on style. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The room is empty with no people, no visible text, no brand names, no watermarks, and no logos.
+```
+
+---
+
+### Récapitulatif — 4 images Interiorismo Accesible
+
+| # | Section page | Style | Fichier SEO |
+|---|-------------|-------|-------------|
+| IA-1 | Visita evaluación (étape 1) | Appart Born avec barrières — couloir étroit, baignoire haute, outils évaluation, pastilles colorées | `evaluacion-accesibilidad-piso-born-barcelona.jpg` |
+| IA-2 | Estudio proyecto (étape 2) | Bureau plans accessibilité — rayons de giro, barres appui, carrelage antidérapant, rendu 3D sdb | `proyecto-adaptacion-accesible-eixample-barcelona.jpg` |
+| IA-3 | Seguimiento y entrega (étape 3) | Salle de bain accessible design Sarrià — douche italienne, barres design, vasque PMR, spa-like | `bano-accesible-diseno-sarria-barcelona.jpg` |
+| IA-4 | PricingBlock (tarifas) | Salon accessible Poblenou — circulation large, domótica, zéro seuil, design contemporain | `salon-accesible-moderno-poblenou-barcelona.jpg` |
+
+---
+
+## Page : Arquitecto (`/arquitecto/`)
+
+**Contexte :** Page de service pour l'architecture à Barcelona. 5 étapes + PricingBlock = 6 images. Le processus couvre de la visite conseil jusqu'à la réception de l'œuvre, en passant par l'anteproyecto, la licencia de obras, la licitación et la dirección de obra. **Variation stylistique maximale** : aucun overhead desk shot, palettes différentes de terracotta/sage/cream, focales variées (16mm à 85mm), 6 quartiers différents.
+
+---
+
+### ARQ-1 — Visita consejo y estudio de viabilidad (étape 1) — Façade maison rénovée Sarrià
+
+**Ratio :** `16:9` · **Fichier SEO :** `visita-viabilidad-arquitecto-sarria-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `Section title="Visita consejo y estudio de viabilidad" image={{ src: imageWhiteboard }}`
+
+```
+A warm editorial photograph of a recently renovated detached house facade in Barcelona's Sarrià district, captured at eye level with a 35mm lens from the garden path leading to the entrance, shot for Architectural Digest. The two-story house combines original golden sandstone masonry walls with a contemporary dark-stained timber extension on the upper level. The main entrance features a tall pivot door in dark walnut with a vertical brass handle. To the left, a large fixed window with slim black steel frames reveals a glimpse of the interior hallway — polished concrete floors and a floating oak staircase visible beyond. The original stone facade has been carefully cleaned and repointed, its warm honey tones glowing in the cool directional morning light that rakes across the textured surface from the east. Mature Mediterranean garden flanks the path: a sculpted olive tree with silvery-green leaves, low rosemary hedges releasing their scent, and white gravel groundcover. A low stone boundary wall with integrated planters of lavender frames the property. On the entrance steps, professional assessment tools suggest a recent architect's visit: a rolled-up set of architectural plans in a cardboard tube, a hardback survey notebook with a mechanical pencil clipped to it, and a laser distance measurer. The morning light creates crisp directional shadows from the olive tree branches across the stone facade, emphasizing the texture contrast between original stonework and contemporary timber cladding. The sky is clear pale blue with soft morning luminosity. Photographed with a Canon EOS R5 and a 35mm lens at eye level, photorealistic, ultra-detailed, 8K resolution. The scene has no people, no readable text, no watermarks, and no logos.
+```
+
+---
+
+### ARQ-2 — Estudio de viabilidad y anteproyecto (étape 2) — Maquette architecturale Gràcia
+
+**Ratio :** `16:9` · **Fichier SEO :** `anteproyecto-maqueta-arquitecto-gracia-barcelona.jpg`
+**Remplace :** `laptop.jpg` dans `Section title="Estudio de viabilidad y anteproyecto" image={{ src: imageLaptop, shape: 1 }}`
+
+```
+A refined editorial photograph of an architectural model on a clean white presentation table in a bright architect's studio in Barcelona's Gràcia district, captured at eye level with a 50mm lens and shallow depth of field, shot for Architectural Digest. The detailed scale model in white museum board and balsa wood shows a three-story residential building with a rooftop terrace, miniature landscaping in dried moss and tiny wire trees, and removable floor plates revealing the interior layout. The model sits on a base of thin grey cardboard with contour lines suggesting the terrain. Around the maquette on the table: a set of technical drawings printed on thick matte paper showing floor plans with pencil dimension annotations, a tracing paper overlay with alternative layout sketches in graphite, an architect's scale ruler in brushed aluminum, a mechanical pencil, and a small brass compass. Behind the model, slightly out of focus, a large monitor mounted on the wall displays a 3D BIM rendering of the same building in warm daylight visualization — the digital twin of the physical maquette. The studio has raw concrete walls with a single large steel-framed window on the left through which zenithal light pours down from a glass rooflight above, creating clean downward illumination with minimal shadows — the characteristic light of a top-lit atelier. A narrow shelf on the back wall holds rolled plans in labeled tubes and architecture reference books. The palette is restrained: raw concrete grey, white model board, light oak table, black monitor frame, and graphite pencil marks. Photographed with a Canon EOS R5 and a 50mm lens with f/2.8 depth of field, photorealistic, ultra-detailed, 8K resolution. The studio has no people, no readable text on plans or screen, no watermarks, and no logos.
+```
+
+---
+
+### ARQ-3 — Licencia de obras y tramitación urbanística (étape 3) — Façade loft Poblenou au crépuscule
+
+**Ratio :** `16:9` · **Fichier SEO :** `licencia-obras-fachada-loft-poblenou-barcelona.jpg`
+**Remplace :** `meeting.jpg` dans `Section title="Licencia de obras y tramitación urbanística" image={{ src: imageMeeting, shape: 2 }}`
+
+```
+A dramatic editorial photograph of the facade of a converted industrial loft building in Barcelona's Poblenou district during blue hour, captured from the street with a 24mm wide-angle lens looking from the exterior toward the illuminated interior, shot for Architectural Digest. The four-story former factory features a striking combination of original red brick masonry — carefully restored with visible texture and patina — and new Corten steel cladding panels on an added penthouse level, their rust-orange surface contrasting with the aged brick below. The ground floor has been opened with a massive floor-to-ceiling glass wall in black steel industrial frames, through which the renovated interior is fully visible: a double-height living space with polished concrete floors, a floating steel-and-oak mezzanine with industrial cable railings, and warm interior lighting from exposed filament pendant lights that cast golden pools. An architect's drafting table with plans is visible inside near the glass wall, suggesting the design process. The original industrial loading dock entrance with its steel lintel and stone threshold has been preserved as the main entry. Outside, the narrow Poblenou street is paved in grey granite setts, with a single mature jacaranda tree in the foreground, its branches framing the upper floors. The blue hour sky is a deep gradient from navy overhead to a warm indigo-purple at the horizon, with the last traces of warm light on the western-facing brick wall creating a beautiful warm-cool contrast. Interior light spills onto the pavement through the glass facade, creating warm reflections on the stone. The overall atmosphere captures the essence of Poblenou's industrial transformation — heritage preserved, reimagined through contemporary architecture. Photographed with a Canon EOS R5 and a 24mm wide-angle lens, photorealistic, ultra-detailed, 8K resolution. The scene has no people, no readable text, no watermarks, and no logos.
+```
+
+---
+
+### ARQ-4 — Consulta a empresas y licitación de obras (étape 4) — Plans techniques Eixample
+
+**Ratio :** `16:9` · **Fichier SEO :** `licitacion-planos-tecnicos-eixample-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `Section title="Consulta a empresas y licitación de obras" image={{ src: imageWhiteboard, shape: 1 }}`
+
+```
+A precise editorial detail photograph of architectural construction drawings spread across a drafting surface, captured with an 85mm lens at close range with beautiful bokeh on the background, shot for Architectural Digest. The sharp focus plane falls on a large-format technical blueprint showing a detailed cross-section of a modernist Eixample apartment rehabilitation: structural elements marked in bold black lines, new steel I-beams annotated with load calculations, partition walls in dashed lines, and plumbing and electrical runs in colored pencil — blue for water, red for electrical, green for drainage. A translucent tracing paper overlay partially covers the main drawing, showing a hand-sketched detail of a steel-to-masonry connection node with dimension annotations in graphite. Around the focal area, slightly soft: a T-square in brushed aluminum rests at an angle, a set of technical pens in 0.1mm to 0.8mm widths arranged in a leather pen roll, a brass architect's scale ruler with engraved graduations, and small wood samples — dark wenge and light maple — clipped to the drawing edge with binder clips for material reference. The surface is a weathered oak drafting board with visible grain and minor ink stains from years of use. Strong lateral window light from the right side creates crisp, defined shadows from the pens and ruler across the paper surface, with the tracing paper edges catching the light translucently. The background dissolves into a warm bokeh of what appears to be additional rolled plans and the oak shelving of an architect's office. The palette is graphic and restrained: white and cream paper, graphite grey, ink black, warm oak wood, and the subtle colored pencil annotations. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens with shallow depth of field, photorealistic, ultra-detailed, 8K resolution. The scene has no people, no readable text or numbers, no watermarks, and no logos.
+```
+
+---
+
+### ARQ-5 — Dirección de obra y recepción (étape 5) — Chantier structurel Born
+
+**Ratio :** `16:9` · **Fichier SEO :** `direccion-obra-chantier-structural-born-barcelona.jpg`
+**Remplace :** `laptop.jpg` dans `Section title="Dirección de obra y recepción" image={{ src: imageLaptop, shape: 2 }}`
+
+```
+A dramatic editorial photograph of a structural renovation in progress inside a historic building in Barcelona's El Born district, captured with a 16mm ultra-wide-angle lens in a slight low-angle perspective looking upward, shot for Architectural Digest. The scene shows a critical construction phase: a new steel IPN beam has just been installed to create a large open-plan living area by removing a load-bearing wall. The fresh steel beam — dark matte grey with visible weld marks — spans the full width of the room approximately four meters, supported at each end by reinforced concrete pilasters poured against the original stone masonry walls. Below the beam, the former wall has been entirely removed, opening a dramatic sight line through two rooms into a third space beyond where a tall arched window with original stone surrounds floods the sequence of spaces with bright zenithal light from above. The raw construction state is visible: exposed stone walls in warm golden Mediterranean limestone, new reinforcement bars protruding from the pilaster tops awaiting the next pour, construction dust settled on the original terracotta floor tiles, steel acrow props and temporary shoring timbers still in place supporting the floor above. Professional construction equipment is organized to one side: a mobile scaffolding tower, coiled electrical cables in orange conduit, a professional rotary hammer drill, and safety equipment — hard hats, high-vis vests, and protective goggles hung on a temporary hook board. Pinned to a plywood panel on the wall, architectural section drawings show the beam detail and load path with pencil annotations. The dramatic overhead light from the arched window creates strong contrasts — bright pools and deep shadows — emphasizing the raw materiality of stone, steel, and concrete. Photographed with a Canon EOS R5 and a 16mm ultra-wide-angle lens, slight upward angle, photorealistic, ultra-detailed, 8K resolution. The space has no people, no readable text on plans, no watermarks, and no logos.
+```
+
+---
+
+### ARQ-6 — PricingBlock (tarifas) — Double hauteur villa Pedralbes
+
+**Ratio :** `16:9` · **Fichier SEO :** `villa-contemporanea-doble-altura-pedralbes-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `PricingBlock image={{ src: imageWhiteboard, shape: 0 }}`
+
+```
+A stunning editorial photograph of a contemporary villa interior with a dramatic double-height living space in Barcelona's Pedralbes district, captured with a 28mm lens from the midpoint of a floating design staircase looking down into the living area, shot for Architectural Digest. The double-height space rises approximately six meters, with the upper level visible as a cantilevered mezzanine with a minimalist glass and brushed steel railing. The staircase from which the photo is taken features floating treads in solid oiled oak anchored to a micro-cement wall with concealed steel brackets — each tread casting a precise horizontal shadow line on the wall below. The living area below is expansive: floors in polished micro-cement in deep anthracite grey that reflects the abundant natural light. A contemporary low-profile sectional sofa in charcoal wool fabric is arranged around a monolithic coffee table in honed black marble with subtle white veining. Two accent armchairs in warm cognac leather with brass-finished legs provide contrast. The far wall is floor-to-ceiling glazing — minimal-frame sliding panels in anthracite aluminum — opening onto a landscaped garden with a rectangular infinity-edge lap pool reflecting the sky. The material palette is sophisticated and deliberately different from Mediterranean clichés: anthracite micro-cement, black marble, warm oiled oak, brushed brass accents, and the cognac leather providing warmth. A tall indoor tree — a mature Ficus lyrata replaced by a sculptural Strelitzia nicolai with dramatic paddle-shaped leaves — rises from a large raw-concrete planter near the glass wall, its leaves reaching toward the upper level. Integrated architectural lighting is subtle: recessed linear LED strips along the mezzanine edge wash the double-height wall, and two large minimalist pendant lights in brushed brass with opal glass diffusers hang at staggered heights in the void. Abundant natural light pours through the glazed wall, clean and bright, illuminating the space evenly with the characteristic clarity of a well-oriented contemporary villa. The overall atmosphere is one of architectural ambition realized — a premium result that justifies professional architectural guidance. Photographed with a Canon EOS R5 and a 28mm lens from the staircase, photorealistic, ultra-detailed, 8K resolution. The space has no people, no visible text, no watermarks, and no logos.
+```
+
+---
+
+## Récapitulatif — 6 images Arquitecto
+
+| # | Section page | Style | Quartier | Fichier SEO |
+|---|-------------|-------|----------|-------------|
+| ARQ-1 | Visita consejo (étape 1) | Façade maison rénovée — pierre dorée + bois sombre, lumière matinale, 35mm eye-level | Sarrià | `visita-viabilidad-arquitecto-sarria-barcelona.jpg` |
+| ARQ-2 | Anteproyecto (étape 2) | Maquette architecturale — béton brut + chêne clair + noir mat, lumière zénithale verrière, 50mm shallow DoF | Gràcia | `anteproyecto-maqueta-arquitecto-gracia-barcelona.jpg` |
+| ARQ-3 | Licencia de obras (étape 3) | Façade loft industriel — brique + acier Corten + verre, blue hour/crépuscule, 24mm extérieur | Poblenou | `licencia-obras-fachada-loft-poblenou-barcelona.jpg` |
+| ARQ-4 | Licitación (étape 4) | Plans techniques detail — papier + calque + graphite + bois, lumière latérale ombres nettes, 85mm bokeh | Eixample | `licitacion-planos-tecnicos-eixample-barcelona.jpg` |
+| ARQ-5 | Dirección de obra (étape 5) | Chantier structurel — béton + acier noir + pierre, lumière zénithale dramatique, 16mm ultra-wide contre-plongée | Born | `direccion-obra-chantier-structural-born-barcelona.jpg` |
+| ARQ-6 | PricingBlock (tarifas) | Villa double hauteur — micro-ciment anthracite + chêne + laiton, lumière naturelle abondante, 28mm depuis escalier | Pedralbes | `villa-contemporanea-doble-altura-pedralbes-barcelona.jpg` |
+
+---
+
+## Page : Ampliación de Vivienda (`/ampliacion-vivienda/`)
+
+**Contexte :** Page de service pour l'ampliación de vivienda à Barcelona. Les 4 images illustrent le **processus d'extension de logement** — de l'étude de viabilité urbanistique au résultat final, en passant par le projet technique et l'exécution de chantier. Chaque image montre un **type d'ampliación différent** (cerramiento de terraza, unión de pisos, altillo, verrière) et un **quartier jamais utilisé** (Sant Gervasi, Les Corts, Poble Sec, Horta-Guinardó). Palettes et focales inédites pour maximiser la variation stylistique.
+
+---
+
+### AMP-1 — Estudio de viabilidad urbanística (étape 1) — Terrasse ático Sant Gervasi
+
+**Ratio :** `16:9` · **Fichier SEO :** `estudio-viabilidad-terraza-atico-sant-gervasi-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `Section title="Estudio de viabilidad urbanística" image={{ src: imageWhiteboard }}`
+
+```
+A dramatic editorial photograph of a rooftop terrace of a penthouse apartment in Barcelona's Sant Gervasi district, captured from the terrace looking inward toward the apartment interior through open French doors, shot for Architectural Digest to illustrate a feasibility assessment for a terrace enclosure project. The 35-square-meter terrace features weathered grey-blue cement floor tiles with a subtle herringbone pattern, an ornamental wrought-iron railing with Art Nouveau curves painted in matte black, and a low stone parapet wall. The terrace is currently open-air and unfurnished, clearly in its raw state awaiting transformation. Through the open French doors with peeling white paint, the existing apartment interior is partially visible — high ceilings with simple classical moldings and warm terracotta floor tiles. On the terrace floor, professional assessment tools suggest a recent architect's visit: a rolled-up set of architectural plans partially unfurled showing the terrace footprint with pencil dimension annotations, a laser distance measurer pointed at the railing, a retractable steel tape measure extended along the parapet wall, and a hardback survey notebook with a mechanical pencil. Small colored adhesive markers — blue for structural elements, yellow for regulatory boundaries — are placed on the railing posts and parapet corners. The morning Mediterranean light is frank and directional, streaming from the east and casting crisp shadows from the wrought-iron railing across the blue-grey tiles. In the background beyond the railing, the rooftops of Sant Gervasi climb gently uphill toward Tibidabo — terracotta roof tiles, church bell towers, and mature Mediterranean pine trees visible against a clear pale blue sky. The atmosphere conveys assessment and potential — a generous outdoor space that could become a luminous year-round living area. Photographed with a Canon EOS R5 and a 28mm lens from the terrace toward the interior, photorealistic, ultra-detailed, 8K resolution. The scene has no people, no readable text on plans, no watermarks, and no logos.
+```
+
+---
+
+### AMP-2 — Proyecto técnico y licencias (étape 2) — Coupe structurelle unión de pisos Les Corts
+
+**Ratio :** `16:9` · **Fichier SEO :** `proyecto-tecnico-union-pisos-les-corts-barcelona.jpg`
+**Remplace :** `laptop.jpg` dans `Section title="Proyecto técnico y licencias" image={{ src: imageLaptop, shape: 1 }}`
+
+```
+A precise editorial photograph of a technical workspace in an architect's office in Barcelona's Les Corts district during the preparation of a structural project for joining two apartments vertically, shot for Architectural Digest. The scene is captured at eye level with a 45mm lens, showing a large drafting table in natural birch plywood covered with kraft paper and technical documents. At the center, a detailed architectural cross-section drawing on thick matte paper shows a two-story apartment union — the existing concrete floor slab partially opened, new steel reinforcement beams annotated with load calculations in blue engineering pencil, a new internal staircase drawn in precise ink lines, and structural connection nodes circled in red pencil for special attention. A translucent tracing paper overlay shows an alternative staircase configuration sketched in soft graphite. Around the main drawing: a structural engineer's calculation booklet with a plain grey cover lies open to a page of formulas, a set of technical pens in graduated widths arranged in a brushed aluminum pen tray, a brass architect's scale ruler with engraved graduations, and a steel T-square resting at an angle. Material reference samples are clipped to the drawing edge with binder clips: a small section of steel I-beam profile in dark matte grey, a concrete core sample cylinder, and a piece of engineered oak flooring showing the warm grain. A professional calculator and a ceramic mug of coffee sit at the corner. The light is diffuse and cool, coming from a large north-facing window on the left — typical of a technical studio — creating even illumination across the paper surfaces with minimal shadows. The palette is restrained and technical: kraft brown, engineering blue, graphite grey, birch plywood, and steel accents. Photographed with a Canon EOS R5 and a 45mm lens at eye level, photorealistic, ultra-detailed, 8K resolution. The workspace has no people, no readable text or numbers on plans, no brand names, no watermarks, and no logos.
+```
+
+---
+
+### AMP-3 — Ejecución de obra y entrega (étape 3) — Chantier altillo loft Poble Sec
+
+**Ratio :** `16:9` · **Fichier SEO :** `chantier-altillo-loft-poble-sec-barcelona.jpg`
+**Remplace :** `meeting.jpg` dans `Section title="Ejecución de obra y entrega" image={{ src: imageMeeting, shape: 2 }}`
+
+```
+A dramatic editorial photograph of a mezzanine construction in progress inside a converted industrial loft in Barcelona's Poble Sec district, captured with a 20mm ultra-wide-angle lens from the mezzanine level looking slightly downward, shot for Architectural Digest. The double-height space rises approximately 5 meters with a characteristic industrial shed roof featuring a north-facing sawtooth glass rooflight that floods the space with bright zenithal industrial light from above, illuminating dust particles floating in the air. The mezzanine structure is mid-construction: raw steel IPE beams in dark matte grey span the width of the space, supported by slender steel columns bolted to concrete base plates on the original industrial floor below. OSB panels in their characteristic warm golden-brown with visible wood chip texture form the mezzanine deck, partially laid — some beams still exposed showing the structural skeleton. Temporary steel acrow props brace the structure during construction. Along one edge, raw formwork-finished concrete block walls in light grey define a future bedroom on the mezzanine. Below, the ground floor is visible through the open section of the mezzanine: the original industrial concrete floor with patched repairs, exposed brick walls in warm terracotta tones with whitewash traces, and new electrical conduits in orange corrugated tubing running along the walls. Construction materials are organized on the ground floor: stacked OSB panels, bundles of steel angle brackets, boxes of heavy-duty structural screws, and a portable welding station with a welding helmet hung on its handle. A custom-designed steel staircase in raw unfinished state — angular treads welded to a single central stringer — rises from ground floor to mezzanine, its industrial aesthetic intentional rather than temporary. Architectural section drawings are pinned to a plywood board leaning against the brick wall, showing the mezzanine detail and height clearances. The atmosphere is one of active construction — raw materials being transformed into habitable space, the industrial heritage of Poble Sec meeting contemporary residential design. Photographed with a Canon EOS R5 and a 20mm ultra-wide-angle lens from the mezzanine, slight downward angle, photorealistic, ultra-detailed, 8K resolution. The space has no people, no readable text on plans, no watermarks, and no logos.
+```
+
+---
+
+### AMP-4 — PricingBlock (tarifas) — Verrière terrasse Horta-Guinardó
+
+**Ratio :** `16:9` · **Fichier SEO :** `verriere-terraza-habitable-horta-guinardo-barcelona.jpg`
+**Remplace :** `whiteboard.jpg` dans `PricingBlock image={{ src: imageWhiteboard, shape: 0 }}`
+
+```
+A stunning editorial photograph of a beautifully finished enclosed terrace transformed into a luminous year-round living space in an apartment in Barcelona's Horta-Guinardó district, captured with a 35mm lens on a diagonal from the living room looking into the new verrière extension, shot for Architectural Digest as the aspirational result of a terrace enclosure project. The former 30-square-meter terrace has been enclosed with a contemporary glass and brushed aluminum structure — floor-to-ceiling fixed glass panels with slim aluminum mullions in a warm silver tone, topped by a glass roof with integrated motorized exterior blinds in light grey fabric, currently half-retracted. Two large sliding glass panels are partially open, blurring the boundary between interior and the new enclosed space. The enclosed terrace floor is finished in bleached oak wide planks with a matte finish, creating a warm contrast with the original apartment's polished concrete floor visible in the foreground. Inside the verrière, a comfortable reading area is arranged: a deep armchair in natural linen fabric in soft sage green with a matching ottoman, a slender side table in brushed aluminum with a ceramic mug and a small stack of books, and a low bookshelf in bleached oak running along the base of the glass wall. Lush green plants thrive in the glass enclosure's greenhouse-like conditions: a tall Strelitzia nicolai with dramatic paddle-shaped leaves, cascading trailing ferns hung from discrete aluminum hooks on the glass structure, and potted herbs — rosemary and mint — in handmade stoneware pots on the floor. The golden hour lateral light streams through the west-facing glass panels, casting long warm shadows from the aluminum mullions across the oak floor and creating a beautiful interplay of light and shadow. Through the glass walls, the green hillside of Horta-Guinardó rises in the background — terraced gardens, mature Mediterranean pines, and the characteristic low-rise residential architecture of the neighborhood visible under a warm amber sky. The atmosphere captures the reward of a successful terrace enclosure — a space that seamlessly extends the home into a light-filled garden room usable year-round. Photographed with a Canon EOS R5 and a 35mm lens on a diagonal composition, photorealistic, ultra-detailed, 8K resolution. The space has no people, no visible text, no brand names, no watermarks, and no logos.
+```
+
+---
+
+## Récapitulatif — 4 images Ampliación de Vivienda
+
+| # | Section page | Style | Quartier | Fichier SEO |
+|---|-------------|-------|----------|-------------|
+| AMP-1 | Estudio viabilidad (étape 1) | Terrasse ático avant cerramiento — carreaux gris-bleu + fer forgé, lumière matinale franche, 28mm depuis terrasse | Sant Gervasi | `estudio-viabilidad-terraza-atico-sant-gervasi-barcelona.jpg` |
+| AMP-2 | Proyecto técnico (étape 2) | Coupe structurelle unión pisos — kraft + bleu ingénieur + acier, lumière diffuse nord, 45mm eye-level | Les Corts | `proyecto-tecnico-union-pisos-les-corts-barcelona.jpg` |
+| AMP-3 | Ejecución obra (étape 3) | Chantier altillo loft — acier brut + OSB + béton coffré, lumière zénithale industrielle verrière shed, 20mm ultra-wide plongée | Poble Sec | `chantier-altillo-loft-poble-sec-barcelona.jpg` |
+| AMP-4 | PricingBlock (tarifas) | Verrière terrasse résultat final — verre + aluminium brossé + chêne blanchi + vert, golden hour latérale, 35mm diagonale | Horta-Guinardó | `verriere-terraza-habitable-horta-guinardo-barcelona.jpg` |
 
 ---
 
