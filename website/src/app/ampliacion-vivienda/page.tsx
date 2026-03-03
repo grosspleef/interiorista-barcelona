@@ -12,9 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageEstudioViabilidad from '@/images/estudio-viabilidad-terraza-atico-sant-gervasi-barcelona.jpg'
+import imageProyectoTecnico from '@/images/proyecto-tecnico-union-pisos-les-corts-barcelona.jpg'
+import imageChantier from '@/images/chantier-altillo-loft-poble-sec-barcelona.jpg'
+import imageVerriere from '@/images/verriere-terraza-habitable-horta-guinardo-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +30,7 @@ const serviceProjects: Project[] = [
       'Cerramiento de 45 m² de terraza en ático con estructura de aluminio y vidrio de control solar. Integración de sistema de ventilación cruzada y suelo radiante. Licencia de obra mayor tramitada en 3 meses.',
     year: '2025',
     category: 'Cerramiento de terraza',
-    image: imageLaptop,
+    image: imageVerriere,
   },
   {
     title: 'Unión de dos pisos en el Eixample',
@@ -37,7 +38,7 @@ const serviceProjects: Project[] = [
       'Unificación de dos viviendas contiguas de 75 m² cada una mediante apertura de muro de carga con refuerzo estructural. Nueva distribución de 150 m² con 3 dormitorios y zona de día diáfana.',
     year: '2024',
     category: 'Unión de pisos',
-    image: imageMeeting,
+    image: imageProyectoTecnico,
   },
   {
     title: 'Altillo habitable en loft de Poblenou',
@@ -45,7 +46,7 @@ const serviceProjects: Project[] = [
       'Construcción de altillo de 28 m² en loft industrial con altura libre de 4,5 m. Estructura metálica autoportante, escalera diseñada a medida y nueva cédula de habitabilidad.',
     year: '2024',
     category: 'Altillo habitable',
-    image: imageWhiteboard,
+    image: imageChantier,
   },
 ]
 
@@ -638,7 +639,7 @@ export default function AmpliacionViviendaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Estudio de viabilidad urbanística"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageEstudioViabilidad }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -677,7 +678,7 @@ export default function AmpliacionViviendaPage() {
 
         <Section
           title="Proyecto técnico y licencias"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageProyectoTecnico, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -734,7 +735,7 @@ export default function AmpliacionViviendaPage() {
 
         <Section
           title="Ejecución de obra y entrega"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageChantier, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -780,7 +781,7 @@ export default function AmpliacionViviendaPage() {
           description="Proyecto integral de ampliación de vivienda en Barcelona: desde el estudio de viabilidad hasta la entrega de obra con nueva cédula de habitabilidad."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageVerriere, shape: 0 }}
           showCounter={false}
           tiers={[
             {
