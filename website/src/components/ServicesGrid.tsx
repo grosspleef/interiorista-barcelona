@@ -13,6 +13,8 @@ import imageMeeting from '@/images/meeting.jpg'
 import imagePisoObraNueva from '@/images/piso-obra-nueva-personalizado-eixample-barcelona.jpg'
 import imageTerrazaAtico from '@/images/terraza-atico-vista-barcelona-asesoria.jpg'
 import imageVillaContemporanea from '@/images/villa-contemporanea-doble-altura-pedralbes-barcelona.jpg'
+import imageHotelLobby from '@/images/interiorismo-boutique-hotel-lobby-eixample-barcelona.jpg'
+import imageStartup22 from '@/images/reforma-oficina-startup-tech-22-barcelona.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
 import { services } from '@/lib/services'
 import type { Service } from '@/lib/services'
@@ -28,6 +30,8 @@ const serviceImageOverrides: Record<string, StaticImageData> = {
   'home-staging': imageSalonStaging,
   'interiorismo-accesible': imageBanoAccesible,
   'arquitecto': imageVillaContemporanea,
+  'reforma-oficinas': imageStartup22,
+  'interiorismo-comercial': imageHotelLobby,
 }
 
 const homeServiceIds = [

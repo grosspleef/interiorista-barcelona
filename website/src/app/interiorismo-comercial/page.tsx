@@ -12,9 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageCafePanaderia from '@/images/interiorismo-cafe-panaderia-artesanal-gracia-barcelona.jpg'
+import imageFlagshipStore from '@/images/interiorismo-flagship-store-passeig-gracia-barcelona.jpg'
+import imageHotelLobby from '@/images/interiorismo-boutique-hotel-lobby-eixample-barcelona.jpg'
+import imageRestaurante from '@/images/interiorismo-restaurante-gastronomico-born-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +30,7 @@ const serviceProjects: Project[] = [
       '180 m² en local con bóvedas de piedra: diseño de barra abierta a cocina, iluminación ambiental, mobiliario a medida y tramitación de licencia de actividad incluida.',
     year: '2025',
     category: 'Restauración',
-    image: imageLaptop,
+    image: imageRestaurante,
   },
   {
     title: 'Boutique hotel 12 habitaciones en Eixample',
@@ -37,7 +38,7 @@ const serviceProjects: Project[] = [
       '420 m² en edificio modernista: rehabilitación de elementos catalogados, diseño de habitaciones con identidad propia, zonas comunes y cumplimiento normativo hotelero.',
     year: '2024',
     category: 'Hostelería',
-    image: imageMeeting,
+    image: imageHotelLobby,
   },
   {
     title: 'Flagship store en Passeig de Gràcia',
@@ -45,7 +46,7 @@ const serviceProjects: Project[] = [
       '95 m² de retail de alta gama: diseño de escaparate, circuito de cliente optimizado, iluminación comercial y mobiliario expositivo a medida.',
     year: '2024',
     category: 'Retail',
-    image: imageWhiteboard,
+    image: imageFlagshipStore,
   },
 ]
 
@@ -518,7 +519,7 @@ export default function InteriorismoComercialPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita al local y briefing comercial"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageRestaurante }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -551,7 +552,7 @@ export default function InteriorismoComercialPage() {
 
         <Section
           title="Diseño del proyecto comercial"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageHotelLobby, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -594,7 +595,7 @@ export default function InteriorismoComercialPage() {
 
         <Section
           title="Dirección de obra y apertura"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageFlagshipStore, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -635,7 +636,7 @@ export default function InteriorismoComercialPage() {
           description="Servicio integral de interiorismo comercial en Barcelona. Desde la consulta inicial gratuita hasta la dirección de obra y apertura del local."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageCafePanaderia, shape: 0 }}
           showCounter={false}
           tiers={[
             {

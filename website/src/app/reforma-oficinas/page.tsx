@@ -12,9 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageCoworkingGracia from '@/images/reforma-coworking-terraza-gracia-barcelona.jpg'
+import imageDespachoAbogados from '@/images/reforma-despacho-abogados-eixample-barcelona.jpg'
+import imageDireccionPME from '@/images/reforma-oficina-direccion-pme-sarria-barcelona.jpg'
+import imageStartup22 from '@/images/reforma-oficina-startup-tech-22-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +30,7 @@ const serviceProjects: Project[] = [
       '350 m² de oficina open space: salas agile, phone booths, zona break con cocina equipada y mobiliario ergonómico para 60 puestos de trabajo.',
     year: '2025',
     category: 'Oficinas',
-    image: imageLaptop,
+    image: imageStartup22,
   },
   {
     title: 'Despacho de abogados en Eixample',
@@ -37,7 +38,7 @@ const serviceProjects: Project[] = [
       '180 m² de despacho profesional: despachos privados con acústica reforzada, sala de juntas para 14 personas y recepción corporativa.',
     year: '2024',
     category: 'Oficinas',
-    image: imageMeeting,
+    image: imageDespachoAbogados,
   },
   {
     title: 'Coworking en Gràcia',
@@ -45,7 +46,7 @@ const serviceProjects: Project[] = [
       '280 m² de espacio de coworking: hot desking, salas de reuniones modulares, cabinas telefónicas, terraza comunitaria y zona lounge.',
     year: '2024',
     category: 'Coworking',
-    image: imageWhiteboard,
+    image: imageCoworkingGracia,
   },
 ]
 
@@ -519,7 +520,7 @@ export default function ReformaOficinasPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita y análisis del espacio de trabajo"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageStartup22 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -551,7 +552,7 @@ export default function ReformaOficinasPage() {
 
         <Section
           title="Proyecto de reforma de oficina"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageDespachoAbogados, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -600,7 +601,7 @@ export default function ReformaOficinasPage() {
 
         <Section
           title="Dirección de obra y entrega"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageCoworkingGracia, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -639,7 +640,7 @@ export default function ReformaOficinasPage() {
           description="Servicio integral de reforma de oficinas en Barcelona. Desde la consulta inicial gratuita hasta la dirección de obra y entrega del espacio de trabajo."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageDireccionPME, shape: 0 }}
           showCounter={false}
           tiers={[
             {

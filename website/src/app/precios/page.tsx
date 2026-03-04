@@ -16,6 +16,8 @@ import imagePisoObraNueva from '@/images/piso-obra-nueva-personalizado-eixample-
 import imageSalonAccesible from '@/images/salon-accesible-moderno-poblenou-barcelona.jpg'
 import imageTerrazaAtico from '@/images/terraza-atico-vista-barcelona-asesoria.jpg'
 import imageVillaContemporanea from '@/images/villa-contemporanea-doble-altura-pedralbes-barcelona.jpg'
+import imageHotelLobby from '@/images/interiorismo-boutique-hotel-lobby-eixample-barcelona.jpg'
+import imageStartup22 from '@/images/reforma-oficina-startup-tech-22-barcelona.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
 
 type ServicePricing = {
@@ -224,7 +226,7 @@ const servicePricing: ServicePricing[] = [
       'Diseño de interiores para restaurantes, hoteles, locales comerciales y espacios de retail en Barcelona.',
     href: '/interiorismo-comercial/',
     ctaLabel: 'Ver servicio de interiorismo comercial',
-    image: { src: imageMeeting, shape: 2 },
+    image: { src: imageHotelLobby, shape: 2 },
     tiers: [
       {
         name: 'Consulta inicial',
@@ -254,7 +256,7 @@ const servicePricing: ServicePricing[] = [
       'Reforma y diseño de oficinas, coworking y espacios de trabajo. Proyectos que optimizan la productividad y el bienestar laboral.',
     href: '/reforma-oficinas/',
     ctaLabel: 'Ver servicio de reforma de oficinas',
-    image: { src: imageWhiteboard, shape: 0 },
+    image: { src: imageStartup22, shape: 0 },
     tiers: [
       {
         name: 'Consulta inicial',
