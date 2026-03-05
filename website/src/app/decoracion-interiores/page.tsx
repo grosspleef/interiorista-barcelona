@@ -644,40 +644,38 @@ export default function DecoracionInterioresPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-decoracion"
-          name="Tarifas de decoración de interiores"
-          description="Servicio de decoración de interiores para viviendas en Barcelona. Desde la primera consulta hasta la instalación final, te acompañamos para renovar tu hogar sin obras."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageDormitorioBorn, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Consulta de decoración',
-              price: '90 €/h',
-              description:
-                'Visita a domicilio para evaluar el espacio, definir el estilo y orientar el proyecto de decoración.',
-            },
-            {
-              name: 'Proyecto de decoración',
-              price: 'Desde 50 €/m²',
-              description:
-                'Proyecto completo: moodboards, plano de mobiliario, shopping list y presupuesto detallado. ≤40 m²: 65 €/m² · 41-80 m²: 60 €/m² · 81-120 m²: 55 €/m² · ≥121 m²: 50 €/m².',
-              highlighted: true,
-            },
-            {
-              name: 'Instalación y styling',
-              price: 'Desde 450 €/media jornada',
-              description:
-                'Coordinación de compras, instalación del mobiliario y styling final. Jornada completa: 800 €.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-decoracion"
+        name="Tarifas de decoración de interiores"
+        description="Servicio de decoración de interiores para viviendas en Barcelona. Desde la primera consulta hasta la instalación final, te acompañamos para renovar tu hogar sin obras."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageDormitorioBorn, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Consulta de decoración',
+            price: '90 €/h',
+            description:
+              'Visita a domicilio para evaluar el espacio, definir el estilo y orientar el proyecto de decoración.',
+          },
+          {
+            name: 'Proyecto de decoración',
+            price: 'Desde 50 €/m²',
+            description:
+              'Proyecto completo: moodboards, plano de mobiliario, shopping list y presupuesto detallado. ≤40 m²: 65 €/m² · 41-80 m²: 60 €/m² · 81-120 m²: 55 €/m² · ≥121 m²: 50 €/m².',
+            highlighted: true,
+          },
+          {
+            name: 'Instalación y styling',
+            price: 'Desde 450 €/media jornada',
+            description:
+              'Coordinación de compras, instalación del mobiliario y styling final. Jornada completa: 800 €.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

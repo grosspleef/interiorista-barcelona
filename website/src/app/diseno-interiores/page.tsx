@@ -641,40 +641,38 @@ export default function DisenoInterioresPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-diseno-interiores"
-          name="Tarifas de diseño de interiores"
-          description="Servicio integral de diseño de interiores para viviendas en Barcelona. Desde la primera consulta gratuita hasta el seguimiento de obra, te acompañamos en cada etapa de tu proyecto."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageSalonContemporaneo, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Consulta inicial',
-              price: 'Gratuita',
-              description:
-                'Primera visita a tu domicilio para evaluar el espacio, entender tus necesidades y definir el alcance del proyecto.',
-            },
-            {
-              name: 'Proyecto de diseño de interiores',
-              price: 'Desde 60 €/m²',
-              description:
-                'Proyecto completo: planos, 3D, selección de materiales y mobiliario. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',
-              highlighted: true,
-            },
-            {
-              name: 'Seguimiento de obra',
-              price: '8 % del presupuesto',
-              description:
-                'Coordinación con los gremios, visitas regulares a la obra y control de calidad hasta la entrega final.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-diseno-interiores"
+        name="Tarifas de diseño de interiores"
+        description="Servicio integral de diseño de interiores para viviendas en Barcelona. Desde la primera consulta gratuita hasta el seguimiento de obra, te acompañamos en cada etapa de tu proyecto."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageSalonContemporaneo, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Consulta inicial',
+            price: 'Gratuita',
+            description:
+              'Primera visita a tu domicilio para evaluar el espacio, entender tus necesidades y definir el alcance del proyecto.',
+          },
+          {
+            name: 'Proyecto de diseño de interiores',
+            price: 'Desde 60 €/m²',
+            description:
+              'Proyecto completo: planos, 3D, selección de materiales y mobiliario. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',
+            highlighted: true,
+          },
+          {
+            name: 'Seguimiento de obra',
+            price: '8 % del presupuesto',
+            description:
+              'Coordinación con los gremios, visitas regulares a la obra y control de calidad hasta la entrega final.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

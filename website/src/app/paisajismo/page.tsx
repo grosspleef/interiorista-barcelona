@@ -614,40 +614,38 @@ export default function PaisajismoPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-paisajismo"
-          name="Tarifas de un paisajista en Barcelona"
-          description="Servicio de paisajismo para viviendas y espacios exteriores en Barcelona. Desde la primera consulta hasta la entrega final con guía de mantenimiento."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageTerrazaJardin, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Consulta de paisajismo',
-              price: '90 €/h',
-              description:
-                'Visita a domicilio para evaluar el espacio, estudiar orientación/suelo y definir el proyecto. Descontada del proyecto (2ª etapa).',
-            },
-            {
-              name: 'Proyecto de paisajismo',
-              price: 'Desde 45 €/m²',
-              description:
-                'Proyecto completo: planos, selección vegetal, materiales y presupuesto. ≤30 m²: desde 1.200 € · 31-100 m²: 55 €/m² · 101-300 m²: 50 €/m² · ≥301 m²: 45 €/m².',
-              highlighted: true,
-            },
-            {
-              name: 'Ejecución / supervisión',
-              price: '9 % del presupuesto',
-              description:
-                'Coordinación de la obra, seguimiento del plantado y entrega con guía de mantenimiento.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-paisajismo"
+        name="Tarifas de un paisajista en Barcelona"
+        description="Servicio de paisajismo para viviendas y espacios exteriores en Barcelona. Desde la primera consulta hasta la entrega final con guía de mantenimiento."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageTerrazaJardin, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Consulta de paisajismo',
+            price: '90 €/h',
+            description:
+              'Visita a domicilio para evaluar el espacio, estudiar orientación/suelo y definir el proyecto. Descontada del proyecto (2ª etapa).',
+          },
+          {
+            name: 'Proyecto de paisajismo',
+            price: 'Desde 45 €/m²',
+            description:
+              'Proyecto completo: planos, selección vegetal, materiales y presupuesto. ≤30 m²: desde 1.200 € · 31-100 m²: 55 €/m² · 101-300 m²: 50 €/m² · ≥301 m²: 45 €/m².',
+            highlighted: true,
+          },
+          {
+            name: 'Ejecución / supervisión',
+            price: '9 % del presupuesto',
+            description:
+              'Coordinación de la obra, seguimiento del plantado y entrega con guía de mantenimiento.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

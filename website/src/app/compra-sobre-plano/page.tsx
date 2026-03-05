@@ -648,34 +648,32 @@ export default function CompraSobrePlanoPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-compra-sobre-plano"
-          name="Tarifas de compra sobre plano"
-          description="Servicio de acompañamiento en la compra sobre plano en Barcelona. Te asesoramos en la personalización de tu vivienda de obra nueva, desde la revisión de planos hasta la inspección de la entrega."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imagePisoObraNueva, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Asesoramiento de compra',
-              price: 'Desde 200 €',
-              description:
-                'Revisión de los planos del promotor, análisis de la distribución, identificación de las opciones de personalización y primera estimación orientativa.',
-              highlighted: true,
-            },
-            {
-              name: 'Acompañamiento completo',
-              price: 'Consultar',
-              description:
-                'Servicio integral: selección de acabados, planos optimizados, visualizaciones 3D, visitas de obra y verificación de la entrega.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-compra-sobre-plano"
+        name="Tarifas de compra sobre plano"
+        description="Servicio de acompañamiento en la compra sobre plano en Barcelona. Te asesoramos en la personalización de tu vivienda de obra nueva, desde la revisión de planos hasta la inspección de la entrega."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imagePisoObraNueva, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Asesoramiento de compra',
+            price: 'Desde 200 €',
+            description:
+              'Revisión de los planos del promotor, análisis de la distribución, identificación de las opciones de personalización y primera estimación orientativa.',
+            highlighted: true,
+          },
+          {
+            name: 'Acompañamiento completo',
+            price: 'Consultar',
+            description:
+              'Servicio integral: selección de acabados, planos optimizados, visualizaciones 3D, visitas de obra y verificación de la entrega.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

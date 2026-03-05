@@ -665,7 +665,6 @@ export default function LicitacionesArquitecturaPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Equipamientos públicos */}
       <SectionIntro
@@ -710,37 +709,36 @@ export default function LicitacionesArquitecturaPage() {
       </Container>
 
       {/* 6. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-licitaciones-arquitectura"
-          name="Tarifas para licitaciones de arquitectura"
-          description="Servicio integral para concursos y licitaciones públicas de arquitectura en Barcelona. Desde el análisis del pliego hasta la dirección de obra, adaptamos nuestro equipo a cada proyecto."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imagePolideportivo, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Asesoramiento en licitación',
-              price: 'Consultar',
-              description:
-                'Análisis del pliego de condiciones, evaluación de criterios de adjudicación, estrategia de propuesta y preparación de la documentación de solvencia.',
-            },
-            {
-              name: 'Proyecto de concurso',
-              price: 'Consultar',
-              description:
-                'Propuesta completa: memoria técnica, planos, presupuesto, planificación y documentación administrativa. Equipo a medida según requisitos del pliego.',
-              highlighted: true,
-            },
-            {
-              name: 'Dirección de obra pública',
-              price: 'Consultar',
-              description:
-                'Ejecución, control de calidad, certificaciones de obra, acta de recepción y documentación final as-built. Seguimiento económico del contrato.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-licitaciones-arquitectura"
+        name="Tarifas para licitaciones de arquitectura"
+        description="Servicio integral para concursos y licitaciones públicas de arquitectura en Barcelona. Desde el análisis del pliego hasta la dirección de obra, adaptamos nuestro equipo a cada proyecto."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imagePolideportivo, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Asesoramiento en licitación',
+            price: 'Consultar',
+            description:
+              'Análisis del pliego de condiciones, evaluación de criterios de adjudicación, estrategia de propuesta y preparación de la documentación de solvencia.',
+          },
+          {
+            name: 'Proyecto de concurso',
+            price: 'Consultar',
+            description:
+              'Propuesta completa: memoria técnica, planos, presupuesto, planificación y documentación administrativa. Equipo a medida según requisitos del pliego.',
+            highlighted: true,
+          },
+          {
+            name: 'Dirección de obra pública',
+            price: 'Consultar',
+            description:
+              'Ejecución, control de calidad, certificaciones de obra, acta de recepción y documentación final as-built. Seguimiento económico del contrato.',
+          },
+        ]}
+      />
       </div>
 
       {/* 7. FAQ */}

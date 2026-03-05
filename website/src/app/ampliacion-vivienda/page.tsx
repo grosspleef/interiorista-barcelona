@@ -771,40 +771,38 @@ export default function AmpliacionViviendaPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-ampliacion"
-          name="Tarifas de ampliación de vivienda"
-          description="Proyecto integral de ampliación de vivienda en Barcelona: desde el estudio de viabilidad hasta la entrega de obra con nueva cédula de habitabilidad."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageVerriere, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Consulta inicial',
-              price: 'Gratuita',
-              description:
-                'Primera visita para evaluar la viabilidad de la ampliación: análisis urbanístico (PGM, edificabilidad), evaluación estructural y estimación presupuestaria.',
-            },
-            {
-              name: 'Proyecto de ampliación',
-              price: 'Desde 60 €/m²',
-              description:
-                'Proyecto técnico completo: estudio de viabilidad, anteproyecto, proyecto de ejecución, licencia de obra mayor y dirección facultativa. Precio variable según complejidad y tipología.',
-              highlighted: true,
-            },
-            {
-              name: 'Ejecución de obra',
-              price: 'Desde 1.200 €/m²',
-              description:
-                'Ejecución integral de la ampliación: estructura, instalaciones, acabados, coordinación de gremios y seguimiento semanal. Precio variable según tipología y calidad de materiales.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-ampliacion"
+        name="Tarifas de ampliación de vivienda"
+        description="Proyecto integral de ampliación de vivienda en Barcelona: desde el estudio de viabilidad hasta la entrega de obra con nueva cédula de habitabilidad."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageVerriere, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Consulta inicial',
+            price: 'Gratuita',
+            description:
+              'Primera visita para evaluar la viabilidad de la ampliación: análisis urbanístico (PGM, edificabilidad), evaluación estructural y estimación presupuestaria.',
+          },
+          {
+            name: 'Proyecto de ampliación',
+            price: 'Desde 60 €/m²',
+            description:
+              'Proyecto técnico completo: estudio de viabilidad, anteproyecto, proyecto de ejecución, licencia de obra mayor y dirección facultativa. Precio variable según complejidad y tipología.',
+            highlighted: true,
+          },
+          {
+            name: 'Ejecución de obra',
+            price: 'Desde 1.200 €/m²',
+            description:
+              'Ejecución integral de la ampliación: estructura, instalaciones, acabados, coordinación de gremios y seguimiento semanal. Precio variable según tipología y calidad de materiales.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

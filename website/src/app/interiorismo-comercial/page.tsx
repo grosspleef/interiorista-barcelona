@@ -626,40 +626,38 @@ export default function InteriorismoComercialPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-interiorismo-comercial"
-          name="Tarifas de interiorismo comercial"
-          description="Servicio integral de interiorismo comercial en Barcelona. Desde la consulta inicial gratuita hasta la dirección de obra y apertura del local."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageCafePanaderia, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Consulta inicial',
-              price: 'Gratuita',
-              description:
-                'Análisis del local, briefing de marca y primeras propuestas conceptuales para tu espacio comercial.',
-            },
-            {
-              name: 'Proyecto comercial',
-              price: 'Desde 70 €/m²',
-              description:
-                'Proyecto integral: concepto, planos, 3D, selección de materiales y mobiliario comercial. ≤40 m²: 90 €/m² · 41-80 m²: 80 €/m² · 81-120 m²: 75 €/m² · ≥121 m²: 70 €/m².',
-              highlighted: true,
-            },
-            {
-              name: 'Dirección de obra',
-              price: '9 % del presupuesto',
-              description:
-                'Coordinación de la ejecución, control de plazos y calidad hasta la apertura del local.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-interiorismo-comercial"
+        name="Tarifas de interiorismo comercial"
+        description="Servicio integral de interiorismo comercial en Barcelona. Desde la consulta inicial gratuita hasta la dirección de obra y apertura del local."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageCafePanaderia, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Consulta inicial',
+            price: 'Gratuita',
+            description:
+              'Análisis del local, briefing de marca y primeras propuestas conceptuales para tu espacio comercial.',
+          },
+          {
+            name: 'Proyecto comercial',
+            price: 'Desde 70 €/m²',
+            description:
+              'Proyecto integral: concepto, planos, 3D, selección de materiales y mobiliario comercial. ≤40 m²: 90 €/m² · 41-80 m²: 80 €/m² · 81-120 m²: 75 €/m² · ≥121 m²: 70 €/m².',
+            highlighted: true,
+          },
+          {
+            name: 'Dirección de obra',
+            price: '9 % del presupuesto',
+            description:
+              'Coordinación de la ejecución, control de plazos y calidad hasta la apertura del local.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

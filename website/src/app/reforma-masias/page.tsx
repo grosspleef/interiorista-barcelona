@@ -941,7 +941,6 @@ export default function ReformaMasiasPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 9. Zonas de intervención */}
       <SectionIntro
@@ -992,37 +991,36 @@ export default function ReformaMasiasPage() {
       </Container>
 
       {/* 10. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-reforma-masias"
-          name="Tarifas de reforma de masías"
-          description="Servicio integral de reforma y rehabilitación de masías en Barcelona y Cataluña. Desde la visita de diagnóstico hasta la entrega de llaves, te acompañamos en cada etapa de tu proyecto."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageSalonVitree, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Visita consejo + diagnóstico',
-              price: 'Desde 250 €',
-              description:
-                'Visita a la masía, evaluación del estado estructural, análisis normativo urbanístico y primera estimación del alcance y presupuesto de la reforma.',
-            },
-            {
-              name: 'Proyecto de reforma integral',
-              price: 'Desde 60 €/m²',
-              description:
-                'Proyecto de ejecución completo: planos, cálculo estructural, selección de materiales, visualizaciones 3D, tramitación de licencias y dirección de obra.',
-              highlighted: true,
-            },
-            {
-              name: 'Seguimiento de obra',
-              price: '10 % del presupuesto de obra',
-              description:
-                'Coordinación de gremios especializados, control de calidad, visitas de obra periódicas y gestión de certificaciones al finalizar.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-reforma-masias"
+        name="Tarifas de reforma de masías"
+        description="Servicio integral de reforma y rehabilitación de masías en Barcelona y Cataluña. Desde la visita de diagnóstico hasta la entrega de llaves, te acompañamos en cada etapa de tu proyecto."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageSalonVitree, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Visita consejo + diagnóstico',
+            price: 'Desde 250 €',
+            description:
+              'Visita a la masía, evaluación del estado estructural, análisis normativo urbanístico y primera estimación del alcance y presupuesto de la reforma.',
+          },
+          {
+            name: 'Proyecto de reforma integral',
+            price: 'Desde 60 €/m²',
+            description:
+              'Proyecto de ejecución completo: planos, cálculo estructural, selección de materiales, visualizaciones 3D, tramitación de licencias y dirección de obra.',
+            highlighted: true,
+          },
+          {
+            name: 'Seguimiento de obra',
+            price: '10 % del presupuesto de obra',
+            description:
+              'Coordinación de gremios especializados, control de calidad, visitas de obra periódicas y gestión de certificaciones al finalizar.',
+          },
+        ]}
+      />
       </div>
 
       {/* 11. FAQ */}

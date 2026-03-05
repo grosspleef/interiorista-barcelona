@@ -593,40 +593,38 @@ export default function HomeStagingPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-home-staging"
-          name="Tarifas de home staging"
-          description="Servicio profesional de home staging para inmuebles en venta o alquiler en Barcelona. Desde la consulta gratuita hasta el reportaje fotográfico final."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageDormitorioPremium, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Consulta inicial',
-              price: 'Gratuita',
-              description:
-                'Primera visita al inmueble para evaluar su estado, analizar el mercado de la zona y definir la estrategia de staging.',
-            },
-            {
-              name: 'Home staging residencial',
-              price: 'Desde 990 €',
-              description:
-                'Staging completo: diagnóstico, plan de acción, puesta en escena con mobiliario y accesorios, y reportaje fotográfico profesional. Pisos ≤60 m²: 1.200 € · 61-100 m²: 1.800 € · ≥101 m²: desde 2.500 €.',
-              highlighted: true,
-            },
-            {
-              name: 'Staging virtual',
-              price: 'Desde 150 €/estancia',
-              description:
-                'Puesta en escena digital para pisos vacíos: renders fotorrealistas para portales inmobiliarios.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-home-staging"
+        name="Tarifas de home staging"
+        description="Servicio profesional de home staging para inmuebles en venta o alquiler en Barcelona. Desde la consulta gratuita hasta el reportaje fotográfico final."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageDormitorioPremium, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Consulta inicial',
+            price: 'Gratuita',
+            description:
+              'Primera visita al inmueble para evaluar su estado, analizar el mercado de la zona y definir la estrategia de staging.',
+          },
+          {
+            name: 'Home staging residencial',
+            price: 'Desde 990 €',
+            description:
+              'Staging completo: diagnóstico, plan de acción, puesta en escena con mobiliario y accesorios, y reportaje fotográfico profesional. Pisos ≤60 m²: 1.200 € · 61-100 m²: 1.800 € · ≥101 m²: desde 2.500 €.',
+            highlighted: true,
+          },
+          {
+            name: 'Staging virtual',
+            price: 'Desde 150 €/estancia',
+            description:
+              'Puesta en escena digital para pisos vacíos: renders fotorrealistas para portales inmobiliarios.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

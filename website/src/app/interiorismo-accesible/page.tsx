@@ -636,46 +636,44 @@ export default function InteriorismoAccesiblePage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-interiorismo-accesible"
-          name="Tarifas de interiorismo accesible"
-          description="Servicio profesional de interiorismo accesible en Barcelona. Adaptamos tu vivienda o local para personas con movilidad reducida, cumpliendo la normativa y gestionando subvenciones."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageSalonAccesible, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Visita de evaluación',
-              price: '75 €/hora',
-              description:
-                'Evaluación a domicilio de barreras arquitectónicas, análisis de necesidades de movilidad y primera estimación de presupuesto y subvenciones aplicables.',
-            },
-            {
-              name: 'Proyecto de adaptación',
-              price: 'Desde 40 €/m²',
-              description:
-                'Proyecto completo de adaptación: planos técnicos, selección de materiales certificados, estimación de costes y gestión de subvenciones. Pisos ≤60 m²: 70 €/m² · 61-100 m²: 55 €/m² · ≥101 m²: 40 €/m².',
-              highlighted: true,
-            },
-            {
-              name: 'Seguimiento de obra',
-              price: '9 % del presupuesto',
-              description:
-                'Coordinación de gremios especializados en accesibilidad, visitas de obra periódicas y verificación final de accesibilidad.',
-            },
-            {
-              name: 'Consulta terapeuta ocupacional',
-              price: '200 €',
-              description:
-                'Evaluación conjunta con terapeuta ocupacional para definir las adaptaciones específicas según el tipo de movilidad reducida.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-interiorismo-accesible"
+        name="Tarifas de interiorismo accesible"
+        description="Servicio profesional de interiorismo accesible en Barcelona. Adaptamos tu vivienda o local para personas con movilidad reducida, cumpliendo la normativa y gestionando subvenciones."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageSalonAccesible, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Visita de evaluación',
+            price: '75 €/hora',
+            description:
+              'Evaluación a domicilio de barreras arquitectónicas, análisis de necesidades de movilidad y primera estimación de presupuesto y subvenciones aplicables.',
+          },
+          {
+            name: 'Proyecto de adaptación',
+            price: 'Desde 40 €/m²',
+            description:
+              'Proyecto completo de adaptación: planos técnicos, selección de materiales certificados, estimación de costes y gestión de subvenciones. Pisos ≤60 m²: 70 €/m² · 61-100 m²: 55 €/m² · ≥101 m²: 40 €/m².',
+            highlighted: true,
+          },
+          {
+            name: 'Seguimiento de obra',
+            price: '9 % del presupuesto',
+            description:
+              'Coordinación de gremios especializados en accesibilidad, visitas de obra periódicas y verificación final de accesibilidad.',
+          },
+          {
+            name: 'Consulta terapeuta ocupacional',
+            price: '200 €',
+            description:
+              'Evaluación conjunta con terapeuta ocupacional para definir las adaptaciones específicas según el tipo de movilidad reducida.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

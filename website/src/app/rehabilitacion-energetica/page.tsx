@@ -958,40 +958,38 @@ export default function RehabilitacionEnergeticaPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 10. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-rehabilitacion-energetica"
-          name="Tarifas de rehabilitación energética"
-          description="Servicio integral de rehabilitación energética para viviendas y comunidades en Barcelona. Desde el diagnóstico gratuito hasta la certificación final, te acompañamos en cada etapa."
-          href="/contacto/"
-          ctaLabel="Solicitar diagnóstico gratuito"
-          image={{ src: imageResultado, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Diagnóstico energético',
-              price: 'Gratuito',
-              description:
-                'Visita a tu vivienda, evaluación de la envolvente térmica, análisis del CEE actual y primera estimación de mejoras y subvenciones disponibles.',
-            },
-            {
-              name: 'Proyecto de rehabilitación energética',
-              price: 'Desde 50 €/m²',
-              description:
-                'Proyecto técnico completo: simulación energética, selección de materiales, tramitación de subvenciones y coordinación con el diseño interior.',
-              highlighted: true,
-            },
-            {
-              name: 'Seguimiento de obra + certificación',
-              price: '10 % del presupuesto',
-              description:
-                'Coordinación de gremios, control de calidad, visitas de obra y gestión del nuevo certificado energético al finalizar.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-rehabilitacion-energetica"
+        name="Tarifas de rehabilitación energética"
+        description="Servicio integral de rehabilitación energética para viviendas y comunidades en Barcelona. Desde el diagnóstico gratuito hasta la certificación final, te acompañamos en cada etapa."
+        href="/contacto/"
+        ctaLabel="Solicitar diagnóstico gratuito"
+        image={{ src: imageResultado, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Diagnóstico energético',
+            price: 'Gratuito',
+            description:
+              'Visita a tu vivienda, evaluación de la envolvente térmica, análisis del CEE actual y primera estimación de mejoras y subvenciones disponibles.',
+          },
+          {
+            name: 'Proyecto de rehabilitación energética',
+            price: 'Desde 50 €/m²',
+            description:
+              'Proyecto técnico completo: simulación energética, selección de materiales, tramitación de subvenciones y coordinación con el diseño interior.',
+            highlighted: true,
+          },
+          {
+            name: 'Seguimiento de obra + certificación',
+            price: '10 % del presupuesto',
+            description:
+              'Coordinación de gremios, control de calidad, visitas de obra y gestión del nuevo certificado energético al finalizar.',
+          },
+        ]}
+      />
       </div>
 
       {/* 11. FAQ */}

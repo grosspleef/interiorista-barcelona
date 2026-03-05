@@ -651,34 +651,32 @@ export default function AsesoriaCompraViviendaPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-asesoria-compra"
-          name="Tarifas de asesoramiento compra vivienda"
-          description="Servicio de asesoramiento para la compra de vivienda en Barcelona. Te acompañamos en la visita del inmueble y te entregamos un informe técnico con la estimación del coste de reforma."
-          href="/contacto/"
-          ctaLabel="Solicitar asesoramiento gratuito"
-          image={{ src: imageInformeTecnico, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Contravisita de asesoramiento',
-              price: 'Desde 150 €',
-              description:
-                'Visita al inmueble con un interiorista para evaluar el potencial de redistribución, el estado de las instalaciones y estimar el coste de una posible reforma.',
-              highlighted: true,
-            },
-            {
-              name: 'Informe técnico completo',
-              price: 'Desde 350 €',
-              description:
-                'Informe escrito con evaluación del estado del inmueble, estimación desglosada de costes de reforma por partidas y esquema orientativo de redistribución.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-asesoria-compra"
+        name="Tarifas de asesoramiento compra vivienda"
+        description="Servicio de asesoramiento para la compra de vivienda en Barcelona. Te acompañamos en la visita del inmueble y te entregamos un informe técnico con la estimación del coste de reforma."
+        href="/contacto/"
+        ctaLabel="Solicitar asesoramiento gratuito"
+        image={{ src: imageInformeTecnico, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Contravisita de asesoramiento',
+            price: 'Desde 150 €',
+            description:
+              'Visita al inmueble con un interiorista para evaluar el potencial de redistribución, el estado de las instalaciones y estimar el coste de una posible reforma.',
+            highlighted: true,
+          },
+          {
+            name: 'Informe técnico completo',
+            price: 'Desde 350 €',
+            description:
+              'Informe escrito con evaluación del estado del inmueble, estimación desglosada de costes de reforma por partidas y esquema orientativo de redistribución.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

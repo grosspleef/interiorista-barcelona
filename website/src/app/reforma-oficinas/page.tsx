@@ -630,40 +630,38 @@ export default function ReformaOficinasPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-reforma-oficinas"
-          name="Tarifas de reforma de oficinas"
-          description="Servicio integral de reforma de oficinas en Barcelona. Desde la consulta inicial gratuita hasta la dirección de obra y entrega del espacio de trabajo."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageDireccionPME, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Consulta inicial',
-              price: 'Gratuita',
-              description:
-                'Visita al espacio, análisis de necesidades y primera estimación orientativa para tu proyecto de oficina.',
-            },
-            {
-              name: 'Proyecto de oficina',
-              price: 'Desde 60 €/m²',
-              description:
-                'Proyecto integral: space planning, planos, 3D, instalaciones y selección de materiales. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-150 m²: 65 €/m² · ≥151 m²: 60 €/m².',
-              highlighted: true,
-            },
-            {
-              name: 'Dirección de obra',
-              price: '8 % del presupuesto',
-              description:
-                'Coordinación de la ejecución, control de plazos y calidad hasta la entrega del espacio de trabajo.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-reforma-oficinas"
+        name="Tarifas de reforma de oficinas"
+        description="Servicio integral de reforma de oficinas en Barcelona. Desde la consulta inicial gratuita hasta la dirección de obra y entrega del espacio de trabajo."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageDireccionPME, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Consulta inicial',
+            price: 'Gratuita',
+            description:
+              'Visita al espacio, análisis de necesidades y primera estimación orientativa para tu proyecto de oficina.',
+          },
+          {
+            name: 'Proyecto de oficina',
+            price: 'Desde 60 €/m²',
+            description:
+              'Proyecto integral: space planning, planos, 3D, instalaciones y selección de materiales. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-150 m²: 65 €/m² · ≥151 m²: 60 €/m².',
+            highlighted: true,
+          },
+          {
+            name: 'Dirección de obra',
+            price: '8 % del presupuesto',
+            description:
+              'Coordinación de la ejecución, control de plazos y calidad hasta la entrega del espacio de trabajo.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}

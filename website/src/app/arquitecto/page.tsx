@@ -733,40 +733,38 @@ export default function ArquitectoPage() {
             </p>
           </div>
         </Section>
-      </div>
 
       {/* 5. Tarifas */}
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <PricingBlock
-          id="tarifas-arquitecto"
-          name="Tarifas de un proyecto de arquitectura"
-          description="Servicio integral de arquitectura para proyectos de construcción y rehabilitación en Barcelona. Desde la consulta inicial hasta la dirección de obra, te acompañamos en cada etapa."
-          href="/contacto/"
-          ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageVillaContemporanea, shape: 0 }}
-          showCounter={false}
-          tiers={[
-            {
-              name: 'Consulta inicial',
-              price: '90 €/hora',
-              description:
-                'Primera visita para evaluar la viabilidad del proyecto, analizar el terreno y las normativas urbanísticas aplicables.',
-            },
-            {
-              name: 'Proyecto de arquitectura',
-              price: 'Desde el 11 % del presupuesto de obra',
-              description:
-                'Misión completa: estudio de viabilidad, anteproyecto, proyecto de ejecución, licencia de obras y dirección facultativa. Porcentaje variable: 11-15 % según complejidad.',
-              highlighted: true,
-            },
-            {
-              name: 'Dirección de obra',
-              price: 'Incluida en misión completa',
-              description:
-                'Coordinación del chantier, visitas semanales, control de calidad y recepción de la obra. Facturación: 35 % de los honorarios ajustados al coste real.',
-            },
-          ]}
-        />
+      <PricingBlock
+        id="tarifas-arquitecto"
+        name="Tarifas de un proyecto de arquitectura"
+        description="Servicio integral de arquitectura para proyectos de construcción y rehabilitación en Barcelona. Desde la consulta inicial hasta la dirección de obra, te acompañamos en cada etapa."
+        href="/contacto/"
+        ctaLabel="Solicitar presupuesto gratuito"
+        image={{ src: imageVillaContemporanea, shape: 0 }}
+        showCounter={false}
+        tiers={[
+          {
+            name: 'Consulta inicial',
+            price: '90 €/hora',
+            description:
+              'Primera visita para evaluar la viabilidad del proyecto, analizar el terreno y las normativas urbanísticas aplicables.',
+          },
+          {
+            name: 'Proyecto de arquitectura',
+            price: 'Desde el 11 % del presupuesto de obra',
+            description:
+              'Misión completa: estudio de viabilidad, anteproyecto, proyecto de ejecución, licencia de obras y dirección facultativa. Porcentaje variable: 11-15 % según complejidad.',
+            highlighted: true,
+          },
+          {
+            name: 'Dirección de obra',
+            price: 'Incluida en misión completa',
+            description:
+              'Coordinación del chantier, visitas semanales, control de calidad y recepción de la obra. Facturación: 35 % de los honorarios ajustados al coste real.',
+          },
+        ]}
+      />
       </div>
 
       {/* 6. FAQ */}
