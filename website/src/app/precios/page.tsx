@@ -10,7 +10,7 @@ import { RootLayout } from '@/components/RootLayout'
 import imageDormitorioBorn from '@/images/decoracion-dormitorio-minimalista-born-barcelona.jpg'
 import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
 import imageSalonStaging from '@/images/home-staging-salon-eixample-barcelona.jpg'
-import imageLaptop from '@/images/laptop.jpg'
+import imageJardinSantCugat from '@/images/paisajismo-jardin-piscina-natural-villa-sant-cugat.webp'
 import imageMeeting from '@/images/meeting.jpg'
 import imagePisoObraNueva from '@/images/piso-obra-nueva-personalizado-eixample-barcelona.jpg'
 import imageSalonAccesible from '@/images/salon-accesible-moderno-poblenou-barcelona.jpg'
@@ -26,7 +26,7 @@ type ServicePricing = {
   description: string
   href: string
   ctaLabel: string
-  image: { src: typeof imageLaptop; shape?: 0 | 1 | 2 }
+  image: { src: typeof imageMeeting; shape?: 0 | 1 | 2 }
   tiers: PricingTier[]
 }
 
@@ -286,7 +286,7 @@ const servicePricing: ServicePricing[] = [
       'Diseño de jardines, terrazas y espacios exteriores. Proyectos de paisajismo que integran vegetación, materiales y funcionalidad.',
     href: '/paisajismo/',
     ctaLabel: 'Ver servicio de paisajismo',
-    image: { src: imageLaptop, shape: 1 },
+    image: { src: imageJardinSantCugat, shape: 1 },
     tiers: [
       {
         name: 'Consulta inicial',

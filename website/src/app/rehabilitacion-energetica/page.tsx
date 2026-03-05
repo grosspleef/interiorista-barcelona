@@ -12,9 +12,13 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageAislamiento from '@/images/obra-aislamiento-interior-fibra-madera-barcelona.jpg'
+import imageAerotermia from '@/images/rehabilitacion-energetica-aerotermia-solar-terraza-barcelona.jpg'
+import imageDiagnostico from '@/images/diagnostico-energetico-termografia-piso-antiguo-barcelona.jpg'
+import imageEstudio from '@/images/estudio-tecnico-proyecto-rehabilitacion-energetica-barcelona.jpg'
+import imageFachada from '@/images/rehabilitacion-energetica-fachada-sate-eixample-barcelona.jpg'
+import imageResultado from '@/images/rehabilitacion-energetica-resultado-final-piso-luminoso-barcelona.jpg'
+import imageVentanas from '@/images/rehabilitacion-energetica-ventanas-salon-luminoso-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +33,7 @@ const serviceProjects: Project[] = [
       '420 m² en edificio de 1905: aislamiento SATE en patio interior, sustitución de ventanas con protección del patrimonio, aerotermia centralizada y certificación energética de E a B.',
     year: '2025',
     category: 'Rehabilitación energética integral',
-    image: imageLaptop,
+    image: imageFachada,
   },
   {
     title: 'Mejora energética de piso pasante en Gràcia',
@@ -37,7 +41,7 @@ const serviceProjects: Project[] = [
       '95 m² con doble orientación: aislamiento interior con lana mineral, ventanas de altas prestaciones, VMC doble flujo e instalación solar fotovoltaica en cubierta comunitaria.',
     year: '2024',
     category: 'Rehabilitación energética vivienda',
-    image: imageMeeting,
+    image: imageVentanas,
   },
   {
     title: 'Rehabilitación integral de cubierta y envolvente en Poblenou',
@@ -45,7 +49,7 @@ const serviceProjects: Project[] = [
       'Comunidad de 12 viviendas: aislamiento de cubierta plana con cubierta verde, SATE en fachada posterior, sustitución de carpinterías y reducción del 62% en consumo energético.',
     year: '2024',
     category: 'Rehabilitación energética comunitaria',
-    image: imageWhiteboard,
+    image: imageAerotermia,
   },
 ]
 
@@ -627,7 +631,7 @@ export default function RehabilitacionEnergeticaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Aislamiento térmico y envolvente"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageAislamiento }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -666,7 +670,7 @@ export default function RehabilitacionEnergeticaPage() {
 
         <Section
           title="Ventanas de altas prestaciones"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageVentanas, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -710,7 +714,7 @@ export default function RehabilitacionEnergeticaPage() {
 
         <Section
           title="Sistemas de climatización y energía"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageAerotermia, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -863,7 +867,7 @@ export default function RehabilitacionEnergeticaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Diagnóstico energético y visita"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageDiagnostico }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -893,7 +897,7 @@ export default function RehabilitacionEnergeticaPage() {
 
         <Section
           title="Estudio técnico y proyecto de rehabilitación"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageEstudio, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -929,7 +933,7 @@ export default function RehabilitacionEnergeticaPage() {
 
         <Section
           title="Ejecución de obra y certificación"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageFachada, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -964,7 +968,7 @@ export default function RehabilitacionEnergeticaPage() {
           description="Servicio integral de rehabilitación energética para viviendas y comunidades en Barcelona. Desde el diagnóstico gratuito hasta la certificación final, te acompañamos en cada etapa."
           href="/contacto/"
           ctaLabel="Solicitar diagnóstico gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageResultado, shape: 0 }}
           showCounter={false}
           tiers={[
             {

@@ -12,9 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageAyuntamiento from '@/images/licitacion-arquitectura-ayuntamiento-distrito-barcelona.jpg'
+import imageBiblioteca from '@/images/licitacion-biblioteca-municipal-moderna-barcelona.jpg'
+import imageColegio from '@/images/licitacion-interiorismo-colegio-aulas-barcelona.jpg'
+import imagePolideportivo from '@/images/licitacion-polideportivo-municipal-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +30,7 @@ const serviceProjects: Project[] = [
       '450 m² de reforma integral con criterios de accesibilidad PMR y eficiencia energética. Espacio polivalente para actividades comunitarias y culturales.',
     year: '2025',
     category: 'Equipamiento cultural',
-    image: imageLaptop,
+    image: imageColegio,
   },
   {
     title: 'Interiorismo de biblioteca pública en Poblenou',
@@ -37,7 +38,7 @@ const serviceProjects: Project[] = [
       '800 m² de diseño interior con espacio polivalente, zona infantil, mediateca y sala de estudio. Iluminación natural optimizada y materiales sostenibles.',
     year: '2024',
     category: 'Equipamiento educativo',
-    image: imageMeeting,
+    image: imageBiblioteca,
   },
   {
     title: 'Rehabilitación de mercado municipal en el Born',
@@ -45,7 +46,7 @@ const serviceProjects: Project[] = [
       '1.200 m² de rehabilitación patrimonial con estructura metálica original preservada. Integración de criterios de sostenibilidad y eficiencia energética.',
     year: '2024',
     category: 'Patrimonio público',
-    image: imageWhiteboard,
+    image: imagePolideportivo,
   },
 ]
 
@@ -538,7 +539,7 @@ export default function LicitacionesArquitecturaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Análisis del pliego y estrategia de propuesta"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageAyuntamiento }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -576,7 +577,7 @@ export default function LicitacionesArquitecturaPage() {
 
         <Section
           title="Redacción del proyecto y documentación técnica"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageColegio, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -631,7 +632,7 @@ export default function LicitacionesArquitecturaPage() {
 
         <Section
           title="Ejecución de obra y dirección facultativa"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageBiblioteca, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -716,7 +717,7 @@ export default function LicitacionesArquitecturaPage() {
           description="Servicio integral para concursos y licitaciones públicas de arquitectura en Barcelona. Desde el análisis del pliego hasta la dirección de obra, adaptamos nuestro equipo a cada proyecto."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imagePolideportivo, shape: 0 }}
           showCounter={false}
           tiers={[
             {

@@ -12,9 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageRooftop from '@/images/paisajismo-terraza-rooftop-atico-eixample-barcelona.webp'
+import imageJardin from '@/images/paisajismo-jardin-piscina-natural-villa-sant-cugat.webp'
+import imagePatio from '@/images/paisajismo-patio-interior-modernista-gracia-barcelona.webp'
+import imageTerrazaJardin from '@/images/paisajismo-terraza-jardin-mediterraneo-sostenible-barcelona.webp'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +30,7 @@ const serviceProjects: Project[] = [
       '35 m², diseño mediterráneo con pérgola, jardineras de aromáticas y sistema de riego por goteo.',
     year: '2025',
     category: 'Terraza urbana',
-    image: imageLaptop,
+    image: imageRooftop,
   },
   {
     title: 'Jardín de masía en Sant Cugat',
@@ -37,7 +38,7 @@ const serviceProjects: Project[] = [
       '400 m², restauración de jardín con piscina, olivos centenarios y zona de huerto.',
     year: '2024',
     category: 'Jardín residencial',
-    image: imageMeeting,
+    image: imageJardin,
   },
   {
     title: 'Patio interior de finca modernista en Gràcia',
@@ -45,7 +46,7 @@ const serviceProjects: Project[] = [
       '25 m², jardín vertical y fuente ornamental. Transformación de patio en desuso en oasis vegetal.',
     year: '2024',
     category: 'Patio interior',
-    image: imageWhiteboard,
+    image: imagePatio,
   },
 ]
 
@@ -501,7 +502,7 @@ export default function PaisajismoPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita consejo y análisis del espacio"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageRooftop }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -531,7 +532,7 @@ export default function PaisajismoPage() {
 
         <Section
           title="Proyecto de paisajismo"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageJardin, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -579,7 +580,7 @@ export default function PaisajismoPage() {
 
         <Section
           title="Ejecución y coordinación"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imagePatio, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -623,7 +624,7 @@ export default function PaisajismoPage() {
           description="Servicio de paisajismo para viviendas y espacios exteriores en Barcelona. Desde la primera consulta hasta la entrega final con guía de mantenimiento."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageTerrazaJardin, shape: 0 }}
           showCounter={false}
           tiers={[
             {

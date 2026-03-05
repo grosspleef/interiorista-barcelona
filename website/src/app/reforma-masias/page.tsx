@@ -12,9 +12,13 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageFachada from '@/images/reforma-masia-fachada-piedra-restaurada-campagne-barcelona.webp'
+import imageSalon from '@/images/reforma-masia-salon-vigas-madera-boveda-catalana.webp'
+import imageCocina from '@/images/reforma-masia-cocina-chimenea-piedra-suelo-terracota.jpg.webp'
+import imageVistaAerea from '@/images/reforma-masia-vista-aerea-valles-piscina-olivar.webp'
+import imageSuite from '@/images/reforma-masia-suite-combles-piedra-chaux-bano-abierto.webp'
+import imageTerraza from '@/images/reforma-masia-terraza-pergola-vinedo-penedes.webp'
+import imageSalonVitree from '@/images/reforma-masia-salon-baie-vitree-campagne-catalane.webp'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import {
   TestimonialSlider,
@@ -29,7 +33,7 @@ const serviceProjects: Project[] = [
       'Masía de 650 m² con consolidación de muros de piedra, restauración de bóveda catalana, nuevo forjado de cubierta con aislamiento, cocina y baños contemporáneos integrando piedra original y mobiliario a medida.',
     year: '2025',
     category: 'Reforma integral de masía',
-    image: imageLaptop,
+    image: imageSalon,
   },
   {
     title: 'Conversión de masía agrícola en vivienda familiar en el Maresme',
@@ -37,7 +41,7 @@ const serviceProjects: Project[] = [
       '420 m² de antiguo almacén agrícola transformado en vivienda unifamiliar: cambio de uso, refuerzo estructural con perfiles metálicos ocultos, recuperación de vigas de madera originales y jardín mediterráneo.',
     year: '2024',
     category: 'Conversión de masía',
-    image: imageMeeting,
+    image: imageVistaAerea,
   },
   {
     title: 'Reforma de masía con mejora energética en el Penedès',
@@ -45,7 +49,7 @@ const serviceProjects: Project[] = [
       'Masía de 380 m² con aislamiento térmico compatible con muros de piedra, aerotermia, suelo radiante, carpintería de madera con doble acristalamiento y restauración de la chimenea y escalera de piedra originales.',
     year: '2024',
     category: 'Reforma y eficiencia energética',
-    image: imageWhiteboard,
+    image: imageTerraza,
   },
 ]
 
@@ -623,7 +627,7 @@ export default function ReformaMasiasPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Muros de piedra y bóvedas catalanas"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageFachada }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -668,7 +672,7 @@ export default function ReformaMasiasPage() {
 
         <Section
           title="Vigas de madera y cubiertas tradicionales"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageSalon, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -714,7 +718,7 @@ export default function ReformaMasiasPage() {
 
         <Section
           title="Pavimentos, chimeneas y elementos decorativos"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageCocina, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -829,7 +833,7 @@ export default function ReformaMasiasPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Evaluación y diagnóstico"
-          image={{ src: imageWhiteboard }}
+          image={{ src: imageVistaAerea }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -870,7 +874,7 @@ export default function ReformaMasiasPage() {
 
         <Section
           title="Proyecto y diseño"
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: imageSuite, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -910,7 +914,7 @@ export default function ReformaMasiasPage() {
 
         <Section
           title="Ejecución de obra y entrega"
-          image={{ src: imageMeeting, shape: 2 }}
+          image={{ src: imageTerraza, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -995,7 +999,7 @@ export default function ReformaMasiasPage() {
           description="Servicio integral de reforma y rehabilitación de masías en Barcelona y Cataluña. Desde la visita de diagnóstico hasta la entrega de llaves, te acompañamos en cada etapa de tu proyecto."
           href="/contacto/"
           ctaLabel="Solicitar presupuesto gratuito"
-          image={{ src: imageWhiteboard, shape: 0 }}
+          image={{ src: imageSalonVitree, shape: 0 }}
           showCounter={false}
           tiers={[
             {

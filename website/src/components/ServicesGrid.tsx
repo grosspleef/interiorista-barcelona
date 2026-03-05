@@ -16,6 +16,7 @@ import imageVillaContemporanea from '@/images/villa-contemporanea-doble-altura-p
 import imageHotelLobby from '@/images/interiorismo-boutique-hotel-lobby-eixample-barcelona.jpg'
 import imageStartup22 from '@/images/reforma-oficina-startup-tech-22-barcelona.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageJardinSantCugat from '@/images/paisajismo-jardin-piscina-natural-villa-sant-cugat.webp'
 import { services } from '@/lib/services'
 import type { Service } from '@/lib/services'
 import type { StaticImageData } from 'next/image'
@@ -32,6 +33,7 @@ const serviceImageOverrides: Record<string, StaticImageData> = {
   'arquitecto': imageVillaContemporanea,
   'reforma-oficinas': imageStartup22,
   'interiorismo-comercial': imageHotelLobby,
+  'paisajismo': imageJardinSantCugat,
 }
 
 const homeServiceIds = [
