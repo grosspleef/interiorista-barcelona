@@ -12,10 +12,10 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageEstudioProyecto from '@/images/estudio-proyecto-diseno-interiores-barcelona-planos.jpg'
+import imageArtDeco from '@/images/diseno-interiores-art-deco-modernista-eixample.webp'
+import imageLoftIndustrial from '@/images/diseno-interiores-loft-industrial-poblenou-barcelona.webp'
+import imagePenthouse from '@/images/diseno-interiores-penthouse-minimalista-barcelona.webp'
 import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
-import imageSeguimientoObra from '@/images/seguimiento-obra-reforma-integral-barcelona.jpg'
-import imageVisitaConsejo from '@/images/visita-consejo-interiorista-piso-eixample-barcelona.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import { TestimonialSlider, type TestimonialItem } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
@@ -27,7 +27,7 @@ const serviceProjects: Project[] = [
       '130 m² en finca regia: apertura cocina-salón, recuperación de suelos hidráulicos originales y redistribución completa respetando los elementos modernistas.',
     year: '2025',
     category: 'Reforma integral',
-    image: imageVisitaConsejo,
+    image: imagePenthouse,
   },
   {
     title: 'Rehabilitación de ático en Gràcia',
@@ -35,7 +35,7 @@ const serviceProjects: Project[] = [
       '85 m² con terraza: optimización de la luz natural, redistribución de espacios y creación de una conexión fluida entre interior y exterior.',
     year: '2024',
     category: 'Diseño de interiores',
-    image: imageEstudioProyecto,
+    image: imageArtDeco,
   },
   {
     title: 'Transformación loft industrial en Poblenou',
@@ -43,7 +43,7 @@ const serviceProjects: Project[] = [
       '110 m² con entreplantas: integración de materiales industriales originales, nueva distribución en dos niveles y diseño de espacios diáfanos.',
     year: '2024',
     category: 'Reforma integral',
-    image: imageSeguimientoObra,
+    image: imageLoftIndustrial,
   },
 ]
 
@@ -531,7 +531,7 @@ export default function DisenoInterioresPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita consejo con tu diseñador de interiores"
-          image={{ src: imageVisitaConsejo }}
+          image={{ src: imagePenthouse }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -564,7 +564,7 @@ export default function DisenoInterioresPage() {
 
         <Section
           title="Estudio del proyecto de diseño de interiores"
-          image={{ src: imageEstudioProyecto, shape: 1 }}
+          image={{ src: imageArtDeco, shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -612,7 +612,7 @@ export default function DisenoInterioresPage() {
 
         <Section
           title="Seguimiento de obra y coordinación de gremios"
-          image={{ src: imageSeguimientoObra, shape: 2 }}
+          image={{ src: imageLoftIndustrial, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
