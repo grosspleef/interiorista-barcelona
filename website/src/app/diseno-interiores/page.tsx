@@ -27,7 +27,7 @@ const serviceProjects: Project[] = [
       '130 m² en finca regia: apertura cocina-salón, recuperación de suelos hidráulicos originales y redistribución completa respetando los elementos modernistas.',
     year: '2025',
     category: 'Reforma integral',
-    image: imagePenthouse,
+    image: imageSalonContemporaneo,
   },
   {
     title: 'Rehabilitación de ático en Gràcia',
@@ -531,7 +531,7 @@ export default function DisenoInterioresPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita consejo con tu diseñador de interiores"
-          image={{ src: imagePenthouse }}
+          image={{ src: imageSalonContemporaneo }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -649,7 +649,7 @@ export default function DisenoInterioresPage() {
         description="Servicio integral de diseño de interiores para viviendas en Barcelona. Desde la primera consulta gratuita hasta el seguimiento de obra, te acompañamos en cada etapa de tu proyecto."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageSalonContemporaneo, shape: 0 }}
+        image={{ src: imagePenthouse, shape: 0 }}
         showCounter={false}
         tiers={[
           {

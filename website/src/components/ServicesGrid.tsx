@@ -6,7 +6,7 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import imageBanoAccesible from '@/images/bano-accesible-diseno-sarria-barcelona.jpg'
 import imageDormitorioBorn from '@/images/decoracion-dormitorio-minimalista-born-barcelona.jpg'
-import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
+import imagePenthouse from '@/images/diseno-interiores-penthouse-minimalista-barcelona.webp'
 import imageSalonStaging from '@/images/home-staging-salon-eixample-barcelona.jpg'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
@@ -24,7 +24,7 @@ import type { StaticImageData } from 'next/image'
 const serviceImages = [imageLaptop, imageMeeting, imageWhiteboard]
 
 const serviceImageOverrides: Record<string, StaticImageData> = {
-  'diseno-interiores': imageSalonContemporaneo,
+  'diseno-interiores': imagePenthouse,
   'decoracion-interiores': imageDormitorioBorn,
   'asesoria-compra-vivienda': imageTerrazaAtico,
   'compra-sobre-plano': imagePisoObraNueva,

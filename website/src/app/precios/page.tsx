@@ -8,7 +8,7 @@ import { PricingBlock, type PricingTier } from '@/components/PricingBlock'
 import { PricingTableOfContents } from '@/components/PricingTableOfContents'
 import { RootLayout } from '@/components/RootLayout'
 import imageDormitorioBorn from '@/images/decoracion-dormitorio-minimalista-born-barcelona.jpg'
-import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
+import imagePenthouse from '@/images/diseno-interiores-penthouse-minimalista-barcelona.webp'
 import imageSalonStaging from '@/images/home-staging-salon-eixample-barcelona.jpg'
 import imageJardinSantCugat from '@/images/paisajismo-jardin-piscina-natural-villa-sant-cugat.webp'
 import imageMeeting from '@/images/meeting.jpg'
@@ -39,7 +39,7 @@ const servicePricing: ServicePricing[] = [
       'Proyectos de diseño de interiores que transforman la distribución y estructura de tu espacio. Intervenciones que requieren proyecto técnico y visado.',
     href: '/diseno-interiores/',
     ctaLabel: 'Ver servicio de interiorismo',
-    image: { src: imageSalonContemporaneo, shape: 2 },
+    image: { src: imagePenthouse, shape: 2 },
     tiers: [
       {
         name: 'Consulta inicial',
