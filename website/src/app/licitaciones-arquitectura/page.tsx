@@ -16,39 +16,12 @@ import imageAyuntamiento from '@/images/licitacion-arquitectura-ayuntamiento-dis
 import imageBiblioteca from '@/images/licitacion-biblioteca-municipal-moderna-barcelona.jpg'
 import imageColegio from '@/images/licitacion-interiorismo-colegio-aulas-barcelona.jpg'
 import imagePolideportivo from '@/images/licitacion-polideportivo-municipal-barcelona.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Reforma interior de centro cívico en Gràcia',
-    description:
-      '450 m² de reforma integral con criterios de accesibilidad PMR y eficiencia energética. Espacio polivalente para actividades comunitarias y culturales.',
-    year: '2025',
-    category: 'Equipamiento cultural',
-    image: imageColegio,
-  },
-  {
-    title: 'Interiorismo de biblioteca pública en Poblenou',
-    description:
-      '800 m² de diseño interior con espacio polivalente, zona infantil, mediateca y sala de estudio. Iluminación natural optimizada y materiales sostenibles.',
-    year: '2024',
-    category: 'Equipamiento educativo',
-    image: imageBiblioteca,
-  },
-  {
-    title: 'Rehabilitación de mercado municipal en el Born',
-    description:
-      '1.200 m² de rehabilitación patrimonial con estructura metálica original preservada. Integración de criterios de sostenibilidad y eficiencia energética.',
-    year: '2024',
-    category: 'Patrimonio público',
-    image: imagePolideportivo,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -404,26 +377,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -762,10 +715,9 @@ export default function LicitacionesArquitecturaPage() {
       <ContactSection />
 
       {/* 9. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de equipamientos públicos en Barcelona"
         subtitle="Descubre algunos proyectos de arquitectura pública realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 10. Testimonios */}

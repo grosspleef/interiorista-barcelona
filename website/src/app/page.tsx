@@ -5,14 +5,10 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { LocalExpertise } from '@/components/LocalExpertise'
 import { NeighborhoodsSection } from '@/components/NeighborhoodsSection'
-import { ProjectShowcase } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import { RootLayout } from '@/components/RootLayout'
 import { ServicesGrid } from '@/components/ServicesGrid'
 import { TestimonialSlider } from '@/components/TestimonialSlider'
-import imageReformaPiso from './proyectos/reforma-piso-modernista/reforma-piso-eixample-barcelona-salon-comedor.jpg'
-import imageRestauranteBorn from './proyectos/interiorismo-restaurante-mediterraneo/fachada-restaurante-born-barcelona-golden-hour.jpg'
-import imageAticoSarria from './proyectos/decoracion-atico-minimalista/atico-lujo-sarria-barcelona-salon-vistas-panoramicas.jpg'
-
 const testimonials = [
   {
     quote:
@@ -31,35 +27,6 @@ const testimonials = [
   },
 ]
 
-const projects = [
-  {
-    title: 'Reforma integral piso Eixample',
-    description:
-      'Transformación completa de un piso de 120m² en el Eixample, combinando elementos modernistas con diseño contemporáneo.',
-    year: '2024',
-    category: 'Interiorismo',
-    image: imageReformaPiso,
-    href: '/proyectos/reforma-piso-modernista/',
-  },
-  {
-    title: 'Diseño restaurante Born',
-    description:
-      'Interiorismo completo para un restaurante de cocina mediterránea en el corazón del Born.',
-    year: '2024',
-    category: 'Interiorismo comercial',
-    image: imageRestauranteBorn,
-    href: '/proyectos/interiorismo-restaurante-mediterraneo/',
-  },
-  {
-    title: 'Ático contemporáneo Sarrià',
-    description:
-      'Diseño de interiores para un ático de lujo con vistas panorámicas en Sarrià-Sant Gervasi.',
-    year: '2023',
-    category: 'Decoración de interiores',
-    image: imageAticoSarria,
-    href: '/proyectos/decoracion-atico-minimalista/',
-  },
-]
 
 export const metadata: Metadata = {
   description:
@@ -131,11 +98,10 @@ export default function Home() {
       <ServicesGrid />
 
       {/* 5. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         eyebrow="Proyectos"
         title="Nuestros últimos proyectos de interiorismo"
         subtitle="Descubre una selección de proyectos realizados por los miembros de nuestro colectivo en Barcelona."
-        projects={projects}
       />
 
       {/* 5b. Expertise locale SEO */}

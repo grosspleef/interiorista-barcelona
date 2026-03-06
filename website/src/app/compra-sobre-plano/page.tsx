@@ -16,39 +16,12 @@ import imageRevisionPlanos from '@/images/revision-planos-obra-nueva-diagonal-ma
 import imageSeleccionAcabados from '@/images/seleccion-acabados-obra-nueva-barcelona.jpg'
 import imageInspeccionEntrega from '@/images/inspeccion-pre-entrega-obra-nueva-poblenou-barcelona.jpg'
 import imagePisoObraNueva from '@/images/piso-obra-nueva-personalizado-eixample-barcelona.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Personalización piso obra nueva en Diagonal Mar',
-    description:
-      '85 m²: selección de acabados y redistribución de cocina en promoción de obra nueva. Acompañamiento completo desde la firma de arras hasta la entrega.',
-    year: '2025',
-    category: 'Compra sobre plano',
-    image: imageSeleccionAcabados,
-  },
-  {
-    title: 'Acompañamiento compra sobre plano en Poblenou',
-    description:
-      '110 m²: modificaciones solicitadas al promotor, redistribución del salón-cocina e inspección pre-entrega con acta de reservas.',
-    year: '2025',
-    category: 'Obra nueva',
-    image: imageInspeccionEntrega,
-  },
-  {
-    title: 'Asesoramiento acabados dúplex en Sant Cugat',
-    description:
-      '150 m²: selección de pavimentos, revestimientos y diseño de cocina a medida en colaboración con la promotora.',
-    year: '2024',
-    category: 'Personalización acabados',
-    image: imageRevisionPlanos,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -402,26 +375,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -697,10 +650,9 @@ export default function CompraSobrePlanoPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de compra sobre plano en Barcelona"
         subtitle="Descubre algunos proyectos de acompañamiento en compra sobre plano realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}

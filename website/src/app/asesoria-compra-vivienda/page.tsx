@@ -16,36 +16,9 @@ import imageContravisita from '@/images/contravisita-piso-reformar-eixample-barc
 import imageInformeTecnico from '@/images/informe-tecnico-asesoria-compra-barcelona.jpg'
 import imageResultadoReforma from '@/images/resultado-reforma-integral-born-barcelona.jpg'
 import imageTerrazaAtico from '@/images/terraza-atico-vista-barcelona-asesoria.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import { TestimonialSlider, type TestimonialItem } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Contravisita piso para reformar en Eixample Dreta',
-    description:
-      '95 m² en finca regia: detección del estado de las bajantes, evaluación del potencial de redistribución y estimación del coste de reforma integral.',
-    year: '2025',
-    category: 'Asesoramiento compra',
-    image: imageTerrazaAtico,
-  },
-  {
-    title: 'Evaluación técnica dúplex en Gràcia',
-    description:
-      '120 m² con informe técnico completo: análisis estructural, estado de las instalaciones, estimación desglosada de costes y esquema de redistribución.',
-    year: '2025',
-    category: 'Informe técnico',
-    image: imageInformeTecnico,
-  },
-  {
-    title: 'Asesoramiento compra local comercial en Poblenou',
-    description:
-      '200 m² para restauración: verificación de la normativa de actividades, evaluación de las instalaciones y estimación del coste de adecuación.',
-    year: '2024',
-    category: 'Asesoramiento comercial',
-    image: imageTerrazaAtico,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -404,26 +377,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -702,10 +655,9 @@ export default function AsesoriaCompraViviendaPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de asesoramiento compra vivienda en Barcelona"
         subtitle="Descubre algunos proyectos de asesoramiento en la compra de vivienda realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}

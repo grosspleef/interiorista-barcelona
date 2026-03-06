@@ -16,36 +16,10 @@ import imageArtDeco from '@/images/diseno-interiores-art-deco-modernista-eixampl
 import imageLoftIndustrial from '@/images/diseno-interiores-loft-industrial-poblenou-barcelona.webp'
 import imagePenthouse from '@/images/diseno-interiores-penthouse-minimalista-barcelona.webp'
 import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import { TestimonialSlider, type TestimonialItem } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
 
-const serviceProjects: Project[] = [
-  {
-    title: 'Reforma integral piso modernista en Eixample',
-    description:
-      '130 m² en finca regia: apertura cocina-salón, recuperación de suelos hidráulicos originales y redistribución completa respetando los elementos modernistas.',
-    year: '2025',
-    category: 'Reforma integral',
-    image: imageSalonContemporaneo,
-  },
-  {
-    title: 'Rehabilitación de ático en Gràcia',
-    description:
-      '85 m² con terraza: optimización de la luz natural, redistribución de espacios y creación de una conexión fluida entre interior y exterior.',
-    year: '2024',
-    category: 'Diseño de interiores',
-    image: imageArtDeco,
-  },
-  {
-    title: 'Transformación loft industrial en Poblenou',
-    description:
-      '110 m² con entreplantas: integración de materiales industriales originales, nueva distribución en dos niveles y diseño de espacios diáfanos.',
-    year: '2024',
-    category: 'Reforma integral',
-    image: imageLoftIndustrial,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -413,26 +387,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -696,10 +650,9 @@ export default function DisenoInterioresPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de diseño de interiores en Barcelona"
         subtitle="Descubre algunos proyectos de diseño de interiores realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}

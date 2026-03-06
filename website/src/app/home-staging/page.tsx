@@ -16,42 +16,13 @@ import imageDiagnostico from '@/images/diagnostico-home-staging-piso-gracia-barc
 import imageSalonStaging from '@/images/home-staging-salon-eixample-barcelona.jpg'
 import imageReportaje from '@/images/reportaje-fotografico-home-staging-born-barcelona.jpg'
 import imageDormitorioPremium from '@/images/home-staging-dormitorio-premium-sarria-barcelona.jpg'
-import {
-  ProjectShowcase,
-  type Project,
-} from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
 
-const serviceProjects: Project[] = [
-  {
-    title: 'Home staging piso 3 habitaciones en Eixample',
-    description:
-      '95 m² preparado para venta: despersonalización, redistribución del mobiliario existente y styling completo. Vendido en 12 días al precio de salida.',
-    year: '2025',
-    category: 'Home staging residencial',
-    image: imageSalonStaging,
-  },
-  {
-    title: 'Staging apartamento turístico en El Born',
-    description:
-      '55 m² de staging para alquiler vacacional: mobiliario de alquiler, textiles mediterráneos y fotografía profesional. Ocupación +35 % respecto al trimestre anterior.',
-    year: '2024',
-    category: 'Staging alquiler',
-    image: imageReportaje,
-  },
-  {
-    title: 'Home staging ático en Sarrià',
-    description:
-      '140 m² con terraza: posicionamiento premium, mobiliario de diseño alquilado y reportaje fotográfico profesional. Vendido un 10 % por encima del precio inicial.',
-    year: '2024',
-    category: 'Home staging premium',
-    image: imageDormitorioPremium,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -381,26 +352,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -648,10 +599,9 @@ export default function HomeStagingPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de home staging en Barcelona"
         subtitle="Descubre algunos proyectos de home staging realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}

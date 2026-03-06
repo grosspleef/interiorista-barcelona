@@ -16,39 +16,12 @@ import imageEvaluacion from '@/images/evaluacion-accesibilidad-piso-born-barcelo
 import imageProyectoAdaptacion from '@/images/proyecto-adaptacion-accesible-eixample-barcelona.jpg'
 import imageBanoAccesible from '@/images/bano-accesible-diseno-sarria-barcelona.jpg'
 import imageSalonAccesible from '@/images/salon-accesible-moderno-poblenou-barcelona.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Adaptación integral vivienda PMR en Eixample',
-    description:
-      '95 m² adaptados para persona con movilidad reducida: puertas ensanchadas a 80 cm, ducha enrasada con asiento abatible, cocina con encimera regulable en altura y sistema domótico de control por voz.',
-    year: '2025',
-    category: 'Adaptación integral',
-    image: imageProyectoAdaptacion,
-  },
-  {
-    title: 'Baño adaptado y cocina accesible en Gràcia',
-    description:
-      'Reforma de baño y cocina para pareja de 75 años: plato de ducha antideslizante, barras de apoyo, grifería termostática y muebles de cocina con cajones extraíbles. Subvencionado por la Generalitat de Catalunya.',
-    year: '2024',
-    category: 'Baño y cocina adaptados',
-    image: imageBanoAccesible,
-  },
-  {
-    title: 'Domótica accesible en ático de Sarrià',
-    description:
-      'Adaptación completa para persona con Parkinson: control vocal de iluminación, persianas y climatización, sensores de caída en baño y dormitorio, y automatización de accesos.',
-    year: '2024',
-    category: 'Domótica accesible',
-    image: imageSalonAccesible,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -405,26 +378,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -697,10 +650,9 @@ export default function InteriorismoAccesiblePage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de interiorismo accesible en Barcelona"
         subtitle="Descubre algunos proyectos de adaptación de viviendas realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}

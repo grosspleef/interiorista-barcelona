@@ -1,4 +1,4 @@
-import Image, { type StaticImageData } from 'next/image'
+import Image, { type ImageProps } from 'next/image'
 import Link from 'next/link'
 
 import { Container } from '@/components/Container'
@@ -10,7 +10,7 @@ export type Project = {
   description: string
   year: string
   category: string
-  image?: StaticImageData
+  image?: ImageProps['src']
   href?: string
 }
 
@@ -20,12 +20,16 @@ export function ProjectShowcase({
   subtitle,
   projects,
   className,
+  viewAllHref,
+  viewAllLabel,
 }: {
   eyebrow?: string
   title: string
   subtitle?: string
   projects: Project[]
   className?: string
+  viewAllHref?: string
+  viewAllLabel?: string
 }) {
   return (
     <>
@@ -87,6 +91,24 @@ export function ProjectShowcase({
             )
           })}
         </FadeInStagger>
+        {viewAllHref && viewAllLabel && (
+          <FadeIn>
+            <div className="mt-10 flex justify-end">
+              <Link
+                href={viewAllHref}
+                className="group inline-flex items-center gap-x-2 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+              >
+                {viewAllLabel}
+                <span
+                  aria-hidden="true"
+                  className="inline-block transition-transform group-hover:translate-x-1"
+                >
+                  &rarr;
+                </span>
+              </Link>
+            </div>
+          </FadeIn>
+        )}
       </Container>
     </>
   )

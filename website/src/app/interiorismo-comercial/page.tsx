@@ -16,39 +16,12 @@ import imageCafePanaderia from '@/images/interiorismo-cafe-panaderia-artesanal-g
 import imageFlagshipStore from '@/images/interiorismo-flagship-store-passeig-gracia-barcelona.jpg'
 import imageHotelLobby from '@/images/interiorismo-boutique-hotel-lobby-eixample-barcelona.jpg'
 import imageRestaurante from '@/images/interiorismo-restaurante-gastronomico-born-barcelona.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Restaurante gastronómico en el Born',
-    description:
-      '180 m² en local con bóvedas de piedra: diseño de barra abierta a cocina, iluminación ambiental, mobiliario a medida y tramitación de licencia de actividad incluida.',
-    year: '2025',
-    category: 'Restauración',
-    image: imageRestaurante,
-  },
-  {
-    title: 'Boutique hotel 12 habitaciones en Eixample',
-    description:
-      '420 m² en edificio modernista: rehabilitación de elementos catalogados, diseño de habitaciones con identidad propia, zonas comunes y cumplimiento normativo hotelero.',
-    year: '2024',
-    category: 'Hostelería',
-    image: imageHotelLobby,
-  },
-  {
-    title: 'Flagship store en Passeig de Gràcia',
-    description:
-      '95 m² de retail de alta gama: diseño de escaparate, circuito de cliente optimizado, iluminación comercial y mobiliario expositivo a medida.',
-    year: '2024',
-    category: 'Retail',
-    image: imageFlagshipStore,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -398,26 +371,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -681,10 +634,9 @@ export default function InteriorismoComercialPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de interiorismo comercial en Barcelona"
         subtitle="Descubre algunos proyectos de interiorismo comercial realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}

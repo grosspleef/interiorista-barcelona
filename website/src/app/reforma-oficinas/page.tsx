@@ -16,39 +16,12 @@ import imageCoworkingGracia from '@/images/reforma-coworking-terraza-gracia-barc
 import imageDespachoAbogados from '@/images/reforma-despacho-abogados-eixample-barcelona.jpg'
 import imageDireccionPME from '@/images/reforma-oficina-direccion-pme-sarria-barcelona.jpg'
 import imageStartup22 from '@/images/reforma-oficina-startup-tech-22-barcelona.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Sede de startup tecnológica en el 22@',
-    description:
-      '350 m² de oficina open space: salas agile, phone booths, zona break con cocina equipada y mobiliario ergonómico para 60 puestos de trabajo.',
-    year: '2025',
-    category: 'Oficinas',
-    image: imageStartup22,
-  },
-  {
-    title: 'Despacho de abogados en Eixample',
-    description:
-      '180 m² de despacho profesional: despachos privados con acústica reforzada, sala de juntas para 14 personas y recepción corporativa.',
-    year: '2024',
-    category: 'Oficinas',
-    image: imageDespachoAbogados,
-  },
-  {
-    title: 'Coworking en Gràcia',
-    description:
-      '280 m² de espacio de coworking: hot desking, salas de reuniones modulares, cabinas telefónicas, terraza comunitaria y zona lounge.',
-    year: '2024',
-    category: 'Coworking',
-    image: imageCoworkingGracia,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -399,26 +372,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -685,10 +638,9 @@ export default function ReformaOficinasPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de reforma de oficinas en Barcelona"
         subtitle="Descubre algunos proyectos de reforma de oficinas y espacios de trabajo realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}

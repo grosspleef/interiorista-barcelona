@@ -19,39 +19,12 @@ import imageVistaAerea from '@/images/reforma-masia-vista-aerea-valles-piscina-o
 import imageSuite from '@/images/reforma-masia-suite-combles-piedra-chaux-bano-abierto.webp'
 import imageTerraza from '@/images/reforma-masia-terraza-pergola-vinedo-penedes.webp'
 import imageSalonVitree from '@/images/reforma-masia-salon-baie-vitree-campagne-catalane.webp'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Rehabilitación integral de masía del siglo XVIII en el Vallès',
-    description:
-      'Masía de 650 m² con consolidación de muros de piedra, restauración de bóveda catalana, nuevo forjado de cubierta con aislamiento, cocina y baños contemporáneos integrando piedra original y mobiliario a medida.',
-    year: '2025',
-    category: 'Reforma integral de masía',
-    image: imageSalon,
-  },
-  {
-    title: 'Conversión de masía agrícola en vivienda familiar en el Maresme',
-    description:
-      '420 m² de antiguo almacén agrícola transformado en vivienda unifamiliar: cambio de uso, refuerzo estructural con perfiles metálicos ocultos, recuperación de vigas de madera originales y jardín mediterráneo.',
-    year: '2024',
-    category: 'Conversión de masía',
-    image: imageVistaAerea,
-  },
-  {
-    title: 'Reforma de masía con mejora energética en el Penedès',
-    description:
-      'Masía de 380 m² con aislamiento térmico compatible con muros de piedra, aerotermia, suelo radiante, carpintería de madera con doble acristalamiento y restauración de la chimenea y escalera de piedra originales.',
-    year: '2024',
-    category: 'Reforma y eficiencia energética',
-    image: imageTerraza,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -452,26 +425,6 @@ const schemaOrg = {
         name: t.client.split(',')[0],
       },
       reviewBody: t.quote,
-    })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
     })),
   ],
 }
@@ -1044,10 +997,9 @@ export default function ReformaMasiasPage() {
       <ContactSection />
 
       {/* 13. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de reforma de masías en Cataluña"
         subtitle="Descubre algunos proyectos de reforma de masías realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 14. Testimonios */}

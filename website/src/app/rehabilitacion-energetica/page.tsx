@@ -19,39 +19,12 @@ import imageEstudio from '@/images/estudio-tecnico-proyecto-rehabilitacion-energ
 import imageFachada from '@/images/rehabilitacion-energetica-fachada-sate-eixample-barcelona.jpg'
 import imageResultado from '@/images/rehabilitacion-energetica-resultado-final-piso-luminoso-barcelona.jpg'
 import imageVentanas from '@/images/rehabilitacion-energetica-ventanas-salon-luminoso-barcelona.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Rehabilitación energética de finca modernista en Eixample',
-    description:
-      '420 m² en edificio de 1905: aislamiento SATE en patio interior, sustitución de ventanas con protección del patrimonio, aerotermia centralizada y certificación energética de E a B.',
-    year: '2025',
-    category: 'Rehabilitación energética integral',
-    image: imageFachada,
-  },
-  {
-    title: 'Mejora energética de piso pasante en Gràcia',
-    description:
-      '95 m² con doble orientación: aislamiento interior con lana mineral, ventanas de altas prestaciones, VMC doble flujo e instalación solar fotovoltaica en cubierta comunitaria.',
-    year: '2024',
-    category: 'Rehabilitación energética vivienda',
-    image: imageVentanas,
-  },
-  {
-    title: 'Rehabilitación integral de cubierta y envolvente en Poblenou',
-    description:
-      'Comunidad de 12 viviendas: aislamiento de cubierta plana con cubierta verde, SATE en fachada posterior, sustitución de carpinterías y reducción del 62% en consumo energético.',
-    year: '2024',
-    category: 'Rehabilitación energética comunitaria',
-    image: imageAerotermia,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -457,26 +430,6 @@ const schemaOrg = {
         name: t.client.split(',')[0],
       },
       reviewBody: t.quote,
-    })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
     })),
   ],
 }
@@ -1013,10 +966,9 @@ export default function RehabilitacionEnergeticaPage() {
       <ContactSection />
 
       {/* 13. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de rehabilitación energética en Barcelona"
         subtitle="Descubre algunos proyectos de rehabilitación energética realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 14. Testimonios */}

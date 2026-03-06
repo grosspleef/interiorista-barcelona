@@ -16,39 +16,12 @@ import imageRooftop from '@/images/paisajismo-terraza-rooftop-atico-eixample-bar
 import imageJardin from '@/images/paisajismo-jardin-piscina-natural-villa-sant-cugat.webp'
 import imagePatio from '@/images/paisajismo-patio-interior-modernista-gracia-barcelona.webp'
 import imageTerrazaJardin from '@/images/paisajismo-terraza-jardin-mediterraneo-sostenible-barcelona.webp'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Terraza de ático en Eixample',
-    description:
-      '35 m², diseño mediterráneo con pérgola, jardineras de aromáticas y sistema de riego por goteo.',
-    year: '2025',
-    category: 'Terraza urbana',
-    image: imageRooftop,
-  },
-  {
-    title: 'Jardín de masía en Sant Cugat',
-    description:
-      '400 m², restauración de jardín con piscina, olivos centenarios y zona de huerto.',
-    year: '2024',
-    category: 'Jardín residencial',
-    image: imageJardin,
-  },
-  {
-    title: 'Patio interior de finca modernista en Gràcia',
-    description:
-      '25 m², jardín vertical y fuente ornamental. Transformación de patio en desuso en oasis vegetal.',
-    year: '2024',
-    category: 'Patio interior',
-    image: imagePatio,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -368,26 +341,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -669,10 +622,9 @@ export default function PaisajismoPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de paisajismo en Barcelona"
         subtitle="Descubre algunos proyectos de paisajismo realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}

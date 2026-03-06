@@ -16,39 +16,12 @@ import imageEstudioViabilidad from '@/images/estudio-viabilidad-terraza-atico-sa
 import imageProyectoTecnico from '@/images/proyecto-tecnico-union-pisos-les-corts-barcelona.jpg'
 import imageChantier from '@/images/chantier-altillo-loft-poble-sec-barcelona.jpg'
 import imageVerriere from '@/images/verriere-terraza-habitable-horta-guinardo-barcelona.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
-
-const serviceProjects: Project[] = [
-  {
-    title: 'Cerramiento de ático con terraza en Sarrià',
-    description:
-      'Cerramiento de 45 m² de terraza en ático con estructura de aluminio y vidrio de control solar. Integración de sistema de ventilación cruzada y suelo radiante. Licencia de obra mayor tramitada en 3 meses.',
-    year: '2025',
-    category: 'Cerramiento de terraza',
-    image: imageVerriere,
-  },
-  {
-    title: 'Unión de dos pisos en el Eixample',
-    description:
-      'Unificación de dos viviendas contiguas de 75 m² cada una mediante apertura de muro de carga con refuerzo estructural. Nueva distribución de 150 m² con 3 dormitorios y zona de día diáfana.',
-    year: '2024',
-    category: 'Unión de pisos',
-    image: imageProyectoTecnico,
-  },
-  {
-    title: 'Altillo habitable en loft de Poblenou',
-    description:
-      'Construcción de altillo de 28 m² en loft industrial con altura libre de 4,5 m. Estructura metálica autoportante, escalera diseñada a medida y nueva cédula de habitabilidad.',
-    year: '2024',
-    category: 'Altillo habitable',
-    image: imageChantier,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -501,26 +474,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -826,10 +779,9 @@ export default function AmpliacionViviendaPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de ampliación de vivienda en Barcelona"
         subtitle="Descubre algunos proyectos de ampliación realizados por los miembros del colectivo en Barcelona."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}

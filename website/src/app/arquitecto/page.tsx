@@ -18,39 +18,13 @@ import imageLicenciaObras from '@/images/licencia-obras-fachada-loft-poblenou-ba
 import imageLicitacion from '@/images/licitacion-planos-tecnicos-eixample-barcelona.jpg'
 import imageDireccionObra from '@/images/direccion-obra-chantier-structural-born-barcelona.jpg'
 import imageVillaContemporanea from '@/images/villa-contemporanea-doble-altura-pedralbes-barcelona.jpg'
-import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
+import { LatestProjects } from '@/components/LatestProjects'
 import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
 import { FAQAccordion } from './faq-accordion'
 
-const serviceProjects: Project[] = [
-  {
-    title: 'Construcción de vivienda unifamiliar en Vallvidrera',
-    description:
-      '220 m² de construcción nueva con estructura de hormigón y fachada ventilada. Diseño bioclimático con orientación sur y certificación energética A.',
-    year: '2025',
-    category: 'Construcción nueva',
-    image: imageVillaContemporanea,
-  },
-  {
-    title: 'Ampliación y rehabilitación de masía en el Maresme',
-    description:
-      '350 m² de rehabilitación integral con ampliación contemporánea de 80 m². Respeto de la estructura original en piedra con intervención moderna.',
-    year: '2024',
-    category: 'Rehabilitación',
-    image: imageLicenciaObras,
-  },
-  {
-    title: 'Sobrelevación de edificio plurifamiliar en Gràcia',
-    description:
-      'Adición de 2 plantas sobre edificio existente: 160 m² de nueva construcción con estructura metálica ligera y fachada de zinc.',
-    year: '2024',
-    category: 'Ampliación vertical',
-    image: imageAnteproyecto,
-  },
-]
 
 const serviceTestimonials: TestimonialItem[] = [
   {
@@ -420,26 +394,6 @@ const schemaOrg = {
       },
       reviewBody: t.quote,
     })),
-    ...serviceProjects.map((p) => ({
-      '@type': 'CreativeWork' as const,
-      name: p.title,
-      description: p.description,
-      dateCreated: p.year,
-      genre: p.category,
-      creator: {
-        '@type': 'Organization' as const,
-        name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
-      },
-      locationCreated: {
-        '@type': 'Place' as const,
-        address: {
-          '@type': 'PostalAddress' as const,
-          addressLocality: 'Barcelona',
-          addressCountry: 'ES',
-        },
-      },
-    })),
   ],
 }
 
@@ -788,10 +742,9 @@ export default function ArquitectoPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <ProjectShowcase
+      <LatestProjects
         title="Proyectos de arquitectura en Barcelona"
         subtitle="Descubre algunos proyectos de arquitectura realizados por los miembros del colectivo."
-        projects={serviceProjects}
       />
 
       {/* 9. Testimonios */}
