@@ -742,10 +742,7 @@ export default function ArquitectoPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de arquitectura en Barcelona"
-        subtitle="Descubre algunos proyectos de arquitectura realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

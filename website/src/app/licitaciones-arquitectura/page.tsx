@@ -715,10 +715,7 @@ export default function LicitacionesArquitecturaPage() {
       <ContactSection />
 
       {/* 9. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de equipamientos públicos en Barcelona"
-        subtitle="Descubre algunos proyectos de arquitectura pública realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 10. Testimonios */}
       <TestimonialSlider

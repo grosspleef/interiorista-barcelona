@@ -650,10 +650,7 @@ export default function DisenoInterioresPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de diseño de interiores en Barcelona"
-        subtitle="Descubre algunos proyectos de diseño de interiores realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

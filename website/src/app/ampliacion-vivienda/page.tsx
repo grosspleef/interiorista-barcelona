@@ -779,10 +779,7 @@ export default function AmpliacionViviendaPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de ampliación de vivienda en Barcelona"
-        subtitle="Descubre algunos proyectos de ampliación realizados por los miembros del colectivo en Barcelona."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

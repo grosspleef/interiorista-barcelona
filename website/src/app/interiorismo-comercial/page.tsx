@@ -634,10 +634,7 @@ export default function InteriorismoComercialPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de interiorismo comercial en Barcelona"
-        subtitle="Descubre algunos proyectos de interiorismo comercial realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

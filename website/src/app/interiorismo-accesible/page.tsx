@@ -650,10 +650,7 @@ export default function InteriorismoAccesiblePage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de interiorismo accesible en Barcelona"
-        subtitle="Descubre algunos proyectos de adaptación de viviendas realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

@@ -622,10 +622,7 @@ export default function PaisajismoPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de paisajismo en Barcelona"
-        subtitle="Descubre algunos proyectos de paisajismo realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

@@ -655,10 +655,7 @@ export default function AsesoriaCompraViviendaPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de asesoramiento compra vivienda en Barcelona"
-        subtitle="Descubre algunos proyectos de asesoramiento en la compra de vivienda realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

@@ -599,10 +599,7 @@ export default function HomeStagingPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de home staging en Barcelona"
-        subtitle="Descubre algunos proyectos de home staging realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

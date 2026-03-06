@@ -966,10 +966,7 @@ export default function RehabilitacionEnergeticaPage() {
       <ContactSection />
 
       {/* 13. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de rehabilitación energética en Barcelona"
-        subtitle="Descubre algunos proyectos de rehabilitación energética realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 14. Testimonios */}
       <TestimonialSlider

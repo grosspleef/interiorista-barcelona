@@ -638,10 +638,7 @@ export default function ReformaOficinasPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de reforma de oficinas en Barcelona"
-        subtitle="Descubre algunos proyectos de reforma de oficinas y espacios de trabajo realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

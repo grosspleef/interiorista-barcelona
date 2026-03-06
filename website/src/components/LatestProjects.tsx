@@ -3,12 +3,12 @@ import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 
 export async function LatestProjects({
   eyebrow,
-  title,
-  subtitle,
+  title = 'Nuestros últimos proyectos de interiorismo',
+  subtitle = 'Descubre algunos proyectos de interiorismo realizados por los miembros del colectivo en Barcelona.',
   className,
 }: {
   eyebrow?: string
-  title: string
+  title?: string
   subtitle?: string
   className?: string
 }) {

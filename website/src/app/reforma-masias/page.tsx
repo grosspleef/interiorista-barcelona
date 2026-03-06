@@ -997,10 +997,7 @@ export default function ReformaMasiasPage() {
       <ContactSection />
 
       {/* 13. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de reforma de masías en Cataluña"
-        subtitle="Descubre algunos proyectos de reforma de masías realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 14. Testimonios */}
       <TestimonialSlider

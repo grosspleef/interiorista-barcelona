@@ -650,10 +650,7 @@ export default function CompraSobrePlanoPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de compra sobre plano en Barcelona"
-        subtitle="Descubre algunos proyectos de acompañamiento en compra sobre plano realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

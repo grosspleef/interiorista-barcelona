@@ -652,10 +652,7 @@ export default function DecoracionInterioresPage() {
       <ContactSection />
 
       {/* 8. Proyectos destacados */}
-      <LatestProjects
-        title="Proyectos de decoración de interiores en Barcelona"
-        subtitle="Descubre algunos proyectos de decoración de interiores realizados por los miembros del colectivo."
-      />
+      <LatestProjects />
 
       {/* 9. Testimonios */}
       <TestimonialSlider

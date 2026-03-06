@@ -98,11 +98,7 @@ export default function Home() {
       <ServicesGrid />
 
       {/* 5. Proyectos destacados */}
-      <LatestProjects
-        eyebrow="Proyectos"
-        title="Nuestros últimos proyectos de interiorismo"
-        subtitle="Descubre una selección de proyectos realizados por los miembros de nuestro colectivo en Barcelona."
-      />
+      <LatestProjects eyebrow="Proyectos" />
 
       {/* 5b. Expertise locale SEO */}
       <LocalExpertise />
