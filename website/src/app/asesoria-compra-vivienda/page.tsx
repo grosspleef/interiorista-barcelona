@@ -12,7 +12,9 @@ import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
+import imageContravisita from '@/images/contravisita-piso-reformar-eixample-barcelona.jpg'
 import imageInformeTecnico from '@/images/informe-tecnico-asesoria-compra-barcelona.jpg'
+import imageResultadoReforma from '@/images/resultado-reforma-integral-born-barcelona.jpg'
 import imageTerrazaAtico from '@/images/terraza-atico-vista-barcelona-asesoria.jpg'
 import { ProjectShowcase, type Project } from '@/components/ProjectShowcase'
 import { TestimonialSlider, type TestimonialItem } from '@/components/TestimonialSlider'
@@ -540,7 +542,7 @@ export default function AsesoriaCompraViviendaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Contravisita del inmueble con tu interiorista"
-          image={{ src: imageTerrazaAtico }}
+          image={{ src: imageContravisita }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -618,7 +620,7 @@ export default function AsesoriaCompraViviendaPage() {
 
         <Section
           title="Acompañamiento post-compra"
-          image={{ src: imageTerrazaAtico, shape: 2 }}
+          image={{ src: imageResultadoReforma, shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -659,7 +661,7 @@ export default function AsesoriaCompraViviendaPage() {
         description="Servicio de asesoramiento para la compra de vivienda en Barcelona. Te acompañamos en la visita del inmueble y te entregamos un informe técnico con la estimación del coste de reforma."
         href="/contacto/"
         ctaLabel="Solicitar asesoramiento gratuito"
-        image={{ src: imageInformeTecnico, shape: 0 }}
+        image={{ src: imageTerrazaAtico, shape: 0 }}
         showCounter={false}
         tiers={[
           {
