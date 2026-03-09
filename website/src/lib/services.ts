@@ -24,52 +24,12 @@ export const services: Service[] = [
     href: '/decoracion-interiores/',
   },
   {
-    id: 'asesoria-compra-vivienda',
-    name: 'Asesoramiento compra vivienda',
-    shortName: 'Asesoría compra',
-    description:
-      'Evaluación técnica y estética de viviendas antes de la compra con la mirada experta de un interiorista en Barcelona. Te ayudamos a detectar el potencial real de cada inmueble y a evitar reformas imprevistas',
-    href: '/asesoria-compra-vivienda/',
-  },
-  {
-    id: 'compra-sobre-plano',
-    name: 'Compra sobre plano',
-    shortName: 'Sobre plano',
-    description:
-      'Acompañamiento profesional en la compra de obra nueva en Barcelona: revisión de planos, personalización de acabados y negociación con la promotora para que tu futura vivienda se adapte a tus necesidades desde el primer día',
-    href: '/compra-sobre-plano/',
-  },
-  {
     id: 'home-staging',
     name: 'Home staging',
     shortName: 'Home staging',
     description:
       'Home staging profesional en Barcelona para vender o alquilar tu inmueble más rápido y al mejor precio. Preparamos tu vivienda con una puesta en escena estratégica que maximiza su atractivo ante los compradores',
     href: '/home-staging/',
-  },
-  {
-    id: 'interiorismo-accesible',
-    name: 'Interiorismo accesible',
-    shortName: 'Accesibilidad',
-    description:
-      'Diseño de interiores adaptado a personas con movilidad reducida en Barcelona. Proyectos que eliminan barreras arquitectónicas sin renunciar a la estética, garantizando confort y autonomía en cada espacio del hogar',
-    href: '/interiorismo-accesible/',
-  },
-  {
-    id: 'arquitecto',
-    name: 'Arquitecto',
-    shortName: 'Arquitecto',
-    description:
-      'Arquitectos colegiados en Barcelona para proyectos residenciales, obra nueva y rehabilitaciones. Gestionamos licencias, dirección de obra y coordinación de gremios para que tu proyecto se ejecute con rigor técnico y dentro de plazo',
-    href: '/arquitecto/',
-  },
-  {
-    id: 'ampliacion-vivienda',
-    name: 'Ampliación de vivienda',
-    shortName: 'Ampliación',
-    description:
-      'Ampliación de vivienda en Barcelona: extensiones, sobrelevaciones y aprovechamiento de áticos o terrazas. Ganamos metros útiles optimizando la estructura existente para que tu hogar crezca contigo',
-    href: '/ampliacion-vivienda/',
   },
   {
     id: 'interiorismo-comercial',
@@ -88,12 +48,12 @@ export const services: Service[] = [
     href: '/reforma-oficinas/',
   },
   {
-    id: 'licitaciones-arquitectura',
-    name: 'Licitaciones de arquitectura',
-    shortName: 'Licitaciones',
+    id: 'arquitecto',
+    name: 'Arquitecto',
+    shortName: 'Arquitecto',
     description:
-      'Participación en licitaciones y concursos de arquitectura en Barcelona: equipamientos públicos, edificios institucionales y proyectos urbanos. Aportamos experiencia técnica y capacidad de gestión para propuestas competitivas',
-    href: '/licitaciones-arquitectura/',
+      'Arquitectos colegiados en Barcelona para proyectos residenciales, obra nueva y rehabilitaciones. Gestionamos licencias, dirección de obra y coordinación de gremios para que tu proyecto se ejecute con rigor técnico y dentro de plazo',
+    href: '/arquitecto/',
   },
   {
     id: 'rehabilitacion-energetica',
@@ -104,12 +64,52 @@ export const services: Service[] = [
     href: '/rehabilitacion-energetica/',
   },
   {
+    id: 'asesoria-compra-vivienda',
+    name: 'Asesoramiento compra vivienda',
+    shortName: 'Asesoría compra',
+    description:
+      'Evaluación técnica y estética de viviendas antes de la compra con la mirada experta de un interiorista en Barcelona. Te ayudamos a detectar el potencial real de cada inmueble y a evitar reformas imprevistas',
+    href: '/asesoria-compra-vivienda/',
+  },
+  {
+    id: 'compra-sobre-plano',
+    name: 'Compra sobre plano',
+    shortName: 'Sobre plano',
+    description:
+      'Acompañamiento profesional en la compra de obra nueva en Barcelona: revisión de planos, personalización de acabados y negociación con la promotora para que tu futura vivienda se adapte a tus necesidades desde el primer día',
+    href: '/compra-sobre-plano/',
+  },
+  {
+    id: 'ampliacion-vivienda',
+    name: 'Ampliación de vivienda',
+    shortName: 'Ampliación',
+    description:
+      'Ampliación de vivienda en Barcelona: extensiones, sobrelevaciones y aprovechamiento de áticos o terrazas. Ganamos metros útiles optimizando la estructura existente para que tu hogar crezca contigo',
+    href: '/ampliacion-vivienda/',
+  },
+  {
+    id: 'interiorismo-accesible',
+    name: 'Interiorismo accesible',
+    shortName: 'Accesibilidad',
+    description:
+      'Diseño de interiores adaptado a personas con movilidad reducida en Barcelona. Proyectos que eliminan barreras arquitectónicas sin renunciar a la estética, garantizando confort y autonomía en cada espacio del hogar',
+    href: '/interiorismo-accesible/',
+  },
+  {
     id: 'reforma-masias',
     name: 'Reforma de masías',
     shortName: 'Reforma masías',
     description:
       'Reforma y rehabilitación de masías catalanas con respeto por la arquitectura tradicional. Modernizamos instalaciones y espacios interiores conservando el carácter y el encanto original de cada propiedad',
     href: '/reforma-masias/',
+  },
+  {
+    id: 'licitaciones-arquitectura',
+    name: 'Licitaciones de arquitectura',
+    shortName: 'Licitaciones',
+    description:
+      'Participación en licitaciones y concursos de arquitectura en Barcelona: equipamientos públicos, edificios institucionales y proyectos urbanos. Aportamos experiencia técnica y capacidad de gestión para propuestas competitivas',
+    href: '/licitaciones-arquitectura/',
   },
   {
     id: 'paisajismo',

@@ -1,14 +1,14 @@
 import { type StaticImageData } from 'next/image'
 
-import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
-import imageMichaelFoster from '@/images/team/michael-foster.jpg'
-import imageDriesVincent from '@/images/team/dries-vincent.jpg'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
-import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
-import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
-import imageBlakeReid from '@/images/team/blake-reid.jpg'
-import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
-import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
+import imageMarta from '@/images/retrato-marta-arquitecta-interiores-barcelona.webp'
+import imageJordi from '@/images/retrato-jordi-arquitecto-barcelona.webp'
+import imageCarla from '@/images/retrato-carla-decoradora-barcelona.webp'
+import imageAndreu from '@/images/retrato-andreu-arquitecto-interiores-barcelona.webp'
+import imageNuria from '@/images/retrato-nuria-arquitecta-interiores-barcelona.webp'
+import imageMarc from '@/images/retrato-marc-decorador-barcelona.webp'
+import imageLaia from '@/images/retrato-laia-paisajista-barcelona.webp'
+import imagePere from '@/images/retrato-pere-paisajista-barcelona.webp'
+import imageElena from '@/images/retrato-elena-arquitecta-barcelona.webp'
 
 export type Member = {
   slug: string
@@ -28,7 +28,7 @@ export const members: Member[] = [
     slug: 'marta-arquitecta-interiores-barcelona',
     name: 'Marta',
     professionLabel: 'Arquitecta de interiores',
-    image: imageLeslieAlexander,
+    image: imageMarta,
     href: '/quienes-somos/marta-arquitecta-interiores-barcelona/',
     neighborhoods: ['Eixample', 'Gràcia'],
     serviceIds: [
@@ -44,7 +44,7 @@ export const members: Member[] = [
     slug: 'jordi-arquitecto-barcelona',
     name: 'Jordi',
     professionLabel: 'Arquitecto',
-    image: imageMichaelFoster,
+    image: imageJordi,
     href: '/quienes-somos/jordi-arquitecto-barcelona/',
     neighborhoods: ['Eixample', 'Born'],
     serviceIds: [
@@ -60,7 +60,7 @@ export const members: Member[] = [
     slug: 'carla-decoradora-barcelona',
     name: 'Carla',
     professionLabel: 'Decoradora',
-    image: imageDriesVincent,
+    image: imageCarla,
     href: '/quienes-somos/carla-decoradora-barcelona/',
     neighborhoods: ['Born', 'Barceloneta'],
     serviceIds: [
@@ -76,7 +76,7 @@ export const members: Member[] = [
     slug: 'andreu-arquitecto-interiores-barcelona',
     name: 'Andreu',
     professionLabel: 'Arquitecto de interiores',
-    image: imageChelseaHagon,
+    image: imageAndreu,
     href: '/quienes-somos/andreu-arquitecto-interiores-barcelona/',
     neighborhoods: ['Poblenou', 'Sant Martí'],
     serviceIds: [
@@ -92,7 +92,7 @@ export const members: Member[] = [
     slug: 'nuria-arquitecta-interiores-barcelona',
     name: 'Nuria',
     professionLabel: 'Arquitecta de interiores',
-    image: imageEmmaDorsey,
+    image: imageNuria,
     href: '/quienes-somos/nuria-arquitecta-interiores-barcelona/',
     neighborhoods: ['Sarrià', 'Les Corts'],
     serviceIds: [
@@ -108,7 +108,7 @@ export const members: Member[] = [
     slug: 'marc-decorador-barcelona',
     name: 'Marc',
     professionLabel: 'Decorador',
-    image: imageLeonardKrasner,
+    image: imageMarc,
     href: '/quienes-somos/marc-decorador-barcelona/',
     neighborhoods: ['Sant Andreu', 'Sants'],
     serviceIds: [
@@ -124,7 +124,7 @@ export const members: Member[] = [
     slug: 'laia-paisajista-barcelona',
     name: 'Laia',
     professionLabel: 'Paisajista',
-    image: imageBlakeReid,
+    image: imageLaia,
     href: '/quienes-somos/laia-paisajista-barcelona/',
     neighborhoods: ['Sarrià', 'Pedralbes'],
     serviceIds: ['paisajismo', 'diseno-interiores', 'reforma-masias'],
@@ -136,7 +136,7 @@ export const members: Member[] = [
     slug: 'pere-paisajista-barcelona',
     name: 'Pere',
     professionLabel: 'Paisajista',
-    image: imageKathrynMurphy,
+    image: imagePere,
     href: '/quienes-somos/pere-paisajista-barcelona/',
     neighborhoods: ['Poblenou', 'Sant Martí'],
     serviceIds: [
@@ -152,7 +152,7 @@ export const members: Member[] = [
     slug: 'elena-arquitecta-barcelona',
     name: 'Elena',
     professionLabel: 'Arquitecta',
-    image: imageWhitneyFrancis,
+    image: imageElena,
     href: '/quienes-somos/elena-arquitecta-barcelona/',
     neighborhoods: ['Gràcia', 'Sant Gervasi'],
     serviceIds: [

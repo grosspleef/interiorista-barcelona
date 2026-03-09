@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import imageMeeting from '@/images/meeting.jpg'
+import imageContacto from '@/images/interiorismo-lujo-penthouse-paseo-de-gracia-barcelona.webp'
 
 function TextInput({
   label,
@@ -139,7 +139,7 @@ export function ContactSection() {
             </div>
             <div className="relative hidden lg:block">
               <Image
-                src={imageMeeting}
+                src={imageContacto}
                 alt="Interior de un proyecto de diseño en Barcelona"
                 className="h-full w-full rounded-3xl object-cover"
                 sizes="(min-width: 1024px) 50vw, 100vw"

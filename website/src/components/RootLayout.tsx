@@ -210,7 +210,7 @@ function Header() {
 
           {/* Right side: CTA + mobile toggle */}
           <div className="flex items-center gap-x-4">
-            <Button href="/contacto/">Contacto</Button>
+            <Button href="/contacto/">Empieza tu proyecto</Button>
             <button
               type="button"
               onClick={() => setMobileMenuOpen((open) => !open)}

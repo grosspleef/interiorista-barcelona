@@ -991,6 +991,162 @@ A beautiful editorial photograph of a contemporary terraced garden attached to a
 
 ---
 
+## Page : Formulario de Contacto (`/contacto/`)
+
+**Contexte :** Page du formulaire de contact, la dernière étape du parcours utilisateur. L'image doit montrer un projet résidentiel luxueux et complet — un intérieur barcelonais haut de gamme entièrement décoré et meublé — qui incarne le résultat final d'une collaboration avec le collectif. L'idée est de donner envie au visiteur de passer à l'action. Focus sur la richesse décorative, les matériaux nobles, et une ambiance de vie élégante et chaleureuse.
+
+---
+
+### CT-1 — Image principale du formulaire de contact — Penthouse Paseo de Gracia
+
+**Ratio :** `16:9` · **Fichier SEO :** `interiorismo-lujo-penthouse-paseo-de-gracia-barcelona.jpg`
+**Remplace :** `meeting.jpg` dans `import imageMeeting from '@/images/meeting.jpg'` sur la page contacto
+
+```
+A breathtaking editorial photograph of a fully decorated luxury penthouse living room on Paseo de Gracia in Barcelona, shot for Architectural Digest. The expansive open-plan space of approximately 200 square meters features soaring 4-meter ceilings with restored original ornate plaster moldings and a magnificent central rosette from which hangs a spectacular contemporary chandelier in hand-blown Murano glass with organic sculptural forms in warm amber and champagne tones, its dozens of delicate glass elements catching the light like frozen drops of honey. The living area is anchored by two generous sofas facing each other — one in sumptuous deep emerald-green velvet with brass nailhead detailing and plush down-filled cushions, the other in rich cream bouclé wool — arranged around a statement coffee table, a massive slab of Italian Calacatta Viola marble with dramatic purple and gold veining, resting on a sculptural base of brushed antique brass. Between the sofas, on the polished herringbone parquet floor in dark fumed French oak, lies an oversized hand-knotted silk and wool rug in deep burgundy, navy, and gold with an abstract contemporary pattern. Against the far wall, a bespoke floor-to-ceiling bookshelf in dark walnut with integrated brass trim and subtle LED backlighting displays a curated collection — first-edition art books, sculptural ceramic pieces by local Barcelona artisans in terracotta and cobalt blue, small bronze sculptures, and framed black-and-white photography. A pair of mid-century Italian armchairs in cognac saddle leather with sculpted walnut frames flank a slender console table in black marble holding an oversized ceramic vase with an abundant arrangement of fresh white peonies, eucalyptus branches, and dried palm fronds. The full-height Modernista balcony doors with their original ornate ironwork railings are open wide, revealing a generous planted terrace beyond with mature olive trees in large terracotta planters, trailing jasmine along the stone balustrade, and a glimpse of Gaudí's Casa Batlló rooftop in the golden distance. Sheer curtains in raw silk ivory fabric billow gently inward with the Mediterranean breeze. The walls are finished in a warm Venetian stucco in the palest champagne with a subtle luminous sheen. A large-scale original oil painting in rich earth tones — ochre, sienna, deep teal, and touches of gold leaf — in an elegant thin brass frame dominates the wall above the emerald sofa. Carefully placed accent lighting — brass picture lights above artworks, sculptural table lamps with linen shades on side tables, candles in hand-blown amber glass votives on the coffee table — creates layers of warm, inviting illumination. Every surface tells a story of careful curation: a cashmere throw in dusty rose draped over an armrest, a stack of oversized coffee-table books on architecture and Mediterranean living, a hand-carved wooden tray holding a crystal decanter and two cut-crystal glasses, decorative boxes in shagreen and brass. The overall atmosphere is one of refined Mediterranean luxury — opulent yet deeply livable, sophisticated yet warm, a space where Barcelona's Modernista heritage meets contemporary international design at the highest level. Late afternoon golden-hour light floods through the open balcony doors, painting everything in warm honeyed tones and casting long dramatic shadows across the parquet. Photographed with a Canon EOS R5 and a 24mm tilt-shift lens, photorealistic, ultra-detailed, 8K resolution. The room is empty with no people, no visible text, no watermarks, and no logos.
+```
+
+---
+
+## Récapitulatif — 1 image Formulario de Contacto
+
+| # | Section page | Style | Fichier SEO |
+|---|-------------|-------|-------------|
+| CT-1 | Image formulaire contact | Penthouse Paseo de Gracia — luxe total, velours émeraude + marbre Calacatta + Murano + terrasse avec vue Gaudí | `interiorismo-lujo-penthouse-paseo-de-gracia-barcelona.jpg` |
+
+---
+
+## Perfiles del Colectivo — Portraits des 9 membres
+
+**Contexte :** Portraits professionnels éditoriaux des 9 membres du collectif Interiorista Barcelona. Chaque portrait remplace les photos placeholder du template Tailwind Plus dans `src/lib/members.ts`. Les portraits doivent transmettre l'expertise, la personnalité et le style de chaque professionnel tout en gardant une cohérence visuelle d'ensemble (même objectif, même ratio, même style éditorial).
+
+### Spécifications communes
+
+| Paramètre | Valeur |
+|-----------|--------|
+| **Ratio** | `3:4` (portrait vertical, tête + buste) |
+| **Cadrage** | Head and shoulders, légèrement décentré |
+| **Objectif** | Canon EOS R5, 85mm f/1.4 (bokeh portrait) |
+| **Style** | Editorial portrait, éclairage naturel, profondeur de champ faible |
+| **Exclusions** | no visible text, no watermarks, no logos |
+
+---
+
+### ARQ-1 — Marta · Arquitecta de interiores
+
+**Ratio :** `3:4` · **Fichier SEO :** `retrato-marta-arquitecta-interiores-barcelona.jpg`
+**Remplace :** `leslie-alexander.jpg` dans `imageLeslieAlexander` — `src/lib/members.ts`
+
+```
+An editorial portrait photograph of a confident Mediterranean woman in her mid-thirties, an interior architect based in Barcelona. She wears a fitted black turtleneck under a sharply structured black blazer, with delicate thin-framed rectangular glasses. Her dark brown hair is pulled back in a low chignon, revealing elegant small gold earrings. She is photographed in her bright design atelier, slightly off-center in the frame, with architectural scale models, rolled-up blueprints, and material samples softly blurred in the warm background. Natural daylight streams through large windows behind her, creating a luminous halo effect on her silhouette. Her expression is warm yet precise — a slight confident smile with direct eye contact. The overall mood conveys Italian-trained elegance and architectural rigor. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens at wide aperture for a creamy bokeh background, photorealistic, ultra-detailed, 8K resolution. Head and shoulders framing, 3:4 vertical portrait ratio. No visible text, no watermarks, no logos.
+```
+
+---
+
+### ARQ-2 — Jordi · Arquitecto
+
+**Ratio :** `3:4` · **Fichier SEO :** `retrato-jordi-arquitecto-barcelona.jpg`
+**Remplace :** `michael-foster.jpg` dans `imageMichaelFoster` — `src/lib/members.ts`
+
+```
+An editorial portrait photograph of a seasoned Mediterranean man in his mid-forties, an architect based in Barcelona. He wears an impeccably white linen shirt with sleeves casually rolled up to the forearms, revealing a classic steel watch. His salt-and-pepper short hair and trimmed beard frame a strong, weathered face with warm brown eyes. He is photographed on a restoration construction site in Barcelona's Eixample district, slightly off-center, with ornate restored plaster moldings, scaffolding, and exposed original brickwork softly blurred behind him. The warm afternoon light filtering through a construction opening casts directional golden light across his face. His expression conveys quiet authority and experience — a steady, confident gaze. The overall mood is one of hands-on expertise and commanding presence on the building site. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens at wide aperture for a creamy bokeh background, photorealistic, ultra-detailed, 8K resolution. Head and shoulders framing, 3:4 vertical portrait ratio. No visible text, no watermarks, no logos.
+```
+
+---
+
+### ARQ-3 — Carla · Decoradora
+
+**Ratio :** `3:4` · **Fichier SEO :** `retrato-carla-decoradora-barcelona.jpg`
+**Remplace :** `dries-vincent.jpg` dans `imageDriesVincent` — `src/lib/members.ts`
+
+```
+An editorial portrait photograph of a stylish young Mediterranean woman in her early thirties, a decorator based in Barcelona. She wears a flowing cream-colored silk blouse with a softly draped neckline, accessorized with delicate minimalist gold jewelry — thin layered necklaces and small hoop earrings. Her chestnut brown hair falls in loose natural waves past her shoulders. She is photographed in a high-end decoration showroom, slightly off-center, with colorful fabric swatches, textile samples on wooden rolls, and curated decorative objects softly blurred in the warm background. Soft diffused natural light from a skylight above creates even, flattering illumination with gentle shadows. Her expression is creative and refined — a warm, inviting smile with bright, engaged eyes. The overall mood conveys artistic sensibility and sophisticated taste. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens at wide aperture for a creamy bokeh background, photorealistic, ultra-detailed, 8K resolution. Head and shoulders framing, 3:4 vertical portrait ratio. No visible text, no watermarks, no logos.
+```
+
+---
+
+### ARQ-4 — Andreu · Arquitecto de interiores
+
+**Ratio :** `3:4` · **Fichier SEO :** `retrato-andreu-arquitecto-interiores-barcelona.jpg`
+**Remplace :** `chelsea-hagon.jpg` dans `imageChelseaHagon` — `src/lib/members.ts`
+
+```
+An editorial portrait photograph of a contemporary Mediterranean man in his mid-thirties, an interior architect based in Barcelona. He wears a premium black crew-neck t-shirt under a sleek dark charcoal technical jacket with a modern minimalist cut. His dark hair is styled in a short textured crop, and he has light designer stubble. He is photographed in an industrial loft space in Barcelona's Poblenou district, slightly off-center, with exposed red brick walls, steel-framed factory windows, and a dramatic steel-and-glass verrière partition softly blurred behind him. Cool natural light from the large industrial windows creates a cinematic quality with subtle contrast on his features. His expression is sharp and urban — a focused, slightly serious gaze that conveys creative intensity. The overall mood is contemporary, urban, and design-forward. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens at wide aperture for a creamy bokeh background, photorealistic, ultra-detailed, 8K resolution. Head and shoulders framing, 3:4 vertical portrait ratio. No visible text, no watermarks, no logos.
+```
+
+---
+
+### ARQ-5 — Nuria · Arquitecta de interiores
+
+**Ratio :** `3:4` · **Fichier SEO :** `retrato-nuria-arquitecta-interiores-barcelona.jpg`
+**Remplace :** `emma-dorsey.jpg` dans `imageEmmaDorsey` — `src/lib/members.ts`
+
+```
+An editorial portrait photograph of a serene Mediterranean woman in her late thirties, an interior architect based in Barcelona. She wears a soft light grey cashmere V-neck sweater over a crisp white shirt collar peeking at the neckline, creating a refined Scandinavian-inspired layered look. Her honey-brown hair is worn in a neat low ponytail. She is photographed in a minimalist Scandinavian-inspired design office, slightly off-center, with clean white walls, a pale birch wood desk, architectural drawings pinned to a mood board, and a single potted monstera plant softly blurred in the background. Soft cool Nordic-quality natural light floods in from a large window, creating an even and serene illumination. Her expression is calm and thoughtful — a gentle, composed smile with intelligent, attentive eyes. The overall mood conveys Scandinavian minimalism, serenity, and quiet confidence. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens at wide aperture for a creamy bokeh background, photorealistic, ultra-detailed, 8K resolution. Head and shoulders framing, 3:4 vertical portrait ratio. No visible text, no watermarks, no logos.
+```
+
+---
+
+### ARQ-6 — Marc · Decorador
+
+**Ratio :** `3:4` · **Fichier SEO :** `retrato-marc-decorador-barcelona.jpg`
+**Remplace :** `leonard-krasner.jpg` dans `imageLeonardKrasner` — `src/lib/members.ts`
+
+```
+An editorial portrait photograph of a sophisticated young Mediterranean man in his early thirties, a decorator based in Barcelona. He wears a well-tailored navy blue suit jacket over a crisp open-collar white shirt — no tie — with a carefully folded pocket square in muted burgundy silk. His dark hair is neatly styled with a side part, and he is clean-shaven with sharp, refined features. He is photographed in an elegantly staged interior, slightly off-center, with mid-century modern furniture — an iconic Eames lounge chair in walnut and black leather, a brass arc floor lamp, and a curated gallery wall with framed art prints — softly blurred in the warm background. Warm golden-hour light enters from a side window, creating a sophisticated interplay of light and shadow on his face. His expression is polished and confident — a subtle knowing smile with an artistically composed gaze. The overall mood conveys sophistication, art world knowledge, and refined decorative taste. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens at wide aperture for a creamy bokeh background, photorealistic, ultra-detailed, 8K resolution. Head and shoulders framing, 3:4 vertical portrait ratio. No visible text, no watermarks, no logos.
+```
+
+---
+
+### ARQ-7 — Laia · Paisajista
+
+**Ratio :** `3:4` · **Fichier SEO :** `retrato-laia-paisajista-barcelona.jpg`
+**Remplace :** `blake-reid.jpg` dans `imageBlakeReid` — `src/lib/members.ts`
+
+```
+An editorial portrait photograph of a natural and approachable Mediterranean woman in her early forties, a landscape architect based in Barcelona. She wears a relaxed natural linen jacket in a warm sand tone over a simple white cotton shirt, with the collar open in an effortlessly casual way. Her dark wavy hair is worn loose, slightly tousled by the breeze, with a few sun-lightened strands. She is photographed in a lush Mediterranean garden, slightly off-center, with abundant greenery — lavender bushes, mature rosemary, bougainvillea, and a weathered stone wall — softly blurred in the warm background. Dappled sunlight filtering through olive tree branches creates a beautiful pattern of light and shadow on her face and shoulders. Her expression is warm and grounded — a genuine, open smile with bright eyes that convey a deep connection to nature. The overall mood is organic, natural, and full of life. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens at wide aperture for a creamy bokeh background, photorealistic, ultra-detailed, 8K resolution. Head and shoulders framing, 3:4 vertical portrait ratio. No visible text, no watermarks, no logos.
+```
+
+---
+
+### ARQ-8 — Pere · Paisajista
+
+**Ratio :** `3:4` · **Fichier SEO :** `retrato-pere-paisajista-barcelona.jpg`
+**Remplace :** `kathryn-murphy.jpg` dans `imageKathrynMurphy` — `src/lib/members.ts`
+
+```
+An editorial portrait photograph of an outdoorsy Mediterranean man in his early forties, a landscape architect based in Barcelona. He wears a muted olive-green polo shirt under a lightweight technical jacket in khaki, giving a look that is both professional and suited for outdoor work. His light brown hair is slightly wavy and naturally tousled, and he has a short well-groomed beard with hints of grey. He is photographed on a lush rooftop terrace garden, slightly off-center, with verdant planter boxes, ornamental grasses, trailing ivy on steel trellises, and the Barcelona skyline — including the distant silhouette of the Sagrada Familia — softly blurred in the background. Bright open-sky daylight creates clean, even illumination with a slight warm cast from the afternoon sun. His expression is friendly and passionate — an enthusiastic smile with kind, weathered eyes that speak of years working outdoors. The overall mood conveys sustainability, urban greenery, and a connection between city and nature. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens at wide aperture for a creamy bokeh background, photorealistic, ultra-detailed, 8K resolution. Head and shoulders framing, 3:4 vertical portrait ratio. No visible text, no watermarks, no logos.
+```
+
+---
+
+### ARQ-9 — Elena · Arquitecta
+
+**Ratio :** `3:4` · **Fichier SEO :** `retrato-elena-arquitecta-barcelona.jpg`
+**Remplace :** `whitney-francis.jpg` dans `imageWhitneyFrancis` — `src/lib/members.ts`
+
+```
+An editorial portrait photograph of a precise and authoritative Mediterranean woman in her early forties, an architect based in Barcelona. She wears a beautifully tailored dark charcoal-grey architect's jacket with a structured shoulder line, over a subtly textured woven scarf in warm taupe draped around her neck. Her dark hair is cut in a sharp, elegant bob just above the shoulders. She is photographed in a professional materials library, slightly off-center, with organized shelves of material samples — stone, wood, glass, metal — and framed energy certification documents and architectural diplomas softly blurred on the wall behind her. Cool, even studio-quality natural light from a north-facing window illuminates her features with precision. Her expression is focused and technical — a composed, serious gaze with the hint of a knowing half-smile that conveys deep expertise. The overall mood is one of Swiss-trained precision, technical mastery, and sustainable architecture commitment. Photographed with a Canon EOS R5 and an 85mm f/1.4 lens at wide aperture for a creamy bokeh background, photorealistic, ultra-detailed, 8K resolution. Head and shoulders framing, 3:4 vertical portrait ratio. No visible text, no watermarks, no logos.
+```
+
+---
+
+## Récapitulatif — 9 portraits du Colectivo
+
+| # | Membre | Genre/Âge~ | Tenue | Cadre/Fond | Style visuel | Fichier SEO |
+|---|--------|-----------|-------|------------|--------------|-------------|
+| ARQ-1 | **Marta** — Arquitecta de interiores | F, ~35 | Col roulé noir + blazer structuré, lunettes fines | Atelier lumineux, maquettes et plans | Élégance italienne, rigueur | `retrato-marta-arquitecta-interiores-barcelona.jpg` |
+| ARQ-2 | **Jordi** — Arquitecto | H, ~45 | Chemise blanche, manches retroussées | Chantier Eixample, moulures restaurées | Terrain, autorité | `retrato-jordi-arquitecto-barcelona.jpg` |
+| ARQ-3 | **Carla** — Decoradora | F, ~32 | Blouse fluide crème, bijoux dorés minimalistes | Showroom déco, tissus/échantillons | Créative, raffinée | `retrato-carla-decoradora-barcelona.jpg` |
+| ARQ-4 | **Andreu** — Arquitecto de interiores | H, ~35 | T-shirt noir premium + veste technique | Loft Poblenou, briques et verrières | Contemporain, urbain | `retrato-andreu-arquitecto-interiores-barcelona.jpg` |
+| ARQ-5 | **Nuria** — Arquitecta de interiores | F, ~38 | Pull cachemire gris + col chemise blanc | Bureau scandinave épuré, lumière nordique | Minimaliste, sereine | `retrato-nuria-arquitecta-interiores-barcelona.jpg` |
+| ARQ-6 | **Marc** — Decorador | H, ~33 | Costume bleu marine, pocket square | Intérieur staging, mobilier mid-century | Sophistiqué, art | `retrato-marc-decorador-barcelona.jpg` |
+| ARQ-7 | **Laia** — Paisajista | F, ~40 | Veste lin naturel + chemise blanche | Jardin méditerranéen luxuriant | Nature, organique | `retrato-laia-paisajista-barcelona.jpg` |
+| ARQ-8 | **Pere** — Paisajista | H, ~42 | Polo vert olive + veste technique | Terrasse rooftop, skyline Barcelone | Durable, urbain-vert | `retrato-pere-paisajista-barcelona.jpg` |
+| ARQ-9 | **Elena** — Arquitecta | F, ~43 | Veste gris anthracite, écharpe texturée | Bibliothèque matériaux, certifications | Précision, technique | `retrato-elena-arquitecta-barcelona.jpg` |
+
+---
+
 ## Workflow recommandé
 
 1. **Tester en `1K`** — Générer en basse résolution pour valider composition et ambiance

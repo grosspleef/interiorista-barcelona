@@ -7,7 +7,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { RootLayout } from '@/components/RootLayout'
-import imageMeeting from '@/images/meeting.jpg'
+import imageContacto from '@/images/interiorismo-lujo-penthouse-paseo-de-gracia-barcelona.webp'
 
 function TextInput({
   label,
@@ -100,7 +100,7 @@ export default function Contacto() {
           <ContactForm />
           <FadeIn className="flex items-center justify-center">
             <StylizedImage
-              src={imageMeeting}
+              src={imageContacto}
               shape={1}
               sizes="(min-width: 1024px) 41rem, 31rem"
               className="justify-center"
