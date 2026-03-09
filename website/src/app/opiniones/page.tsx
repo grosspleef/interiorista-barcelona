@@ -8,9 +8,13 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageReformaSalon from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
+import imageAticoPenthouse from '@/images/diseno-interiores-penthouse-minimalista-barcelona.webp'
+import imageDecoSalon from '@/images/decoracion-salon-mediterraneo-sarria-barcelona.jpg'
+import imageRestaurante from '@/images/interiorismo-restaurante-gastronomico-born-barcelona.jpg'
+import imageLoftIndustrial from '@/images/diseno-interiores-loft-industrial-poblenou-barcelona.webp'
+import imageMasia from '@/images/reforma-masia-salon-vigas-madera-boveda-catalana.webp'
+import imageHotel from '@/images/interiorismo-boutique-hotel-lobby-eixample-barcelona.jpg'
 
 type Testimonial = {
   projectType: string
@@ -456,7 +460,7 @@ function ImageBreak({
   src,
   alt,
 }: {
-  src: typeof imageLaptop
+  src: typeof imageReformaSalon
   alt: string
 }) {
   return (
@@ -478,9 +482,13 @@ function ImageBreak({
 
 export default function OpinionesPage() {
   const images = [
-    { src: imageMeeting, alt: 'Reunión entre interiorista y cliente durante el seguimiento de una reforma' },
-    { src: imageWhiteboard, alt: 'Planificación de un proyecto de interiorismo con planos y materiales' },
-    { src: imageLaptop, alt: 'Diseño de un proyecto de interiores con herramientas digitales' },
+    { src: imageReformaSalon, alt: 'Salón contemporáneo diseñado por nuestro equipo en Barcelona' },
+    { src: imageAticoPenthouse, alt: 'Ático minimalista con vistas panorámicas en Sarrià' },
+    { src: imageDecoSalon, alt: 'Decoración de salón mediterráneo en Sarrià, Barcelona' },
+    { src: imageRestaurante, alt: 'Interiorismo de restaurante gastronómico en el Born' },
+    { src: imageLoftIndustrial, alt: 'Reforma de loft industrial en Poblenou, Barcelona' },
+    { src: imageMasia, alt: 'Reforma de masía catalana con bóveda y vigas de madera' },
+    { src: imageHotel, alt: 'Diseño de lobby de hotel boutique en el Eixample' },
   ]
 
   // Split testimonials into groups of ~5 for image insertion

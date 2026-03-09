@@ -4,8 +4,22 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import clsx from 'clsx'
 
+import Link from 'next/link'
+
 import { Container } from '@/components/Container'
 import { GridPattern } from '@/components/GridPattern'
+
+function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 6" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M24 3 18 .5v2H0v1h18v2L24 3Z"
+      />
+    </svg>
+  )
+}
 
 export type TestimonialItem = {
   quote: string
@@ -97,6 +111,16 @@ export function TestimonialSlider({
               onClick={() => setCurrent(i)}
             />
           ))}
+        </div>
+
+        <div className="mt-6 flex justify-center">
+          <Link
+            href="/opiniones/"
+            className="flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+          >
+            Ver todas las opiniones
+            <ArrowIcon className="w-6 flex-none fill-current" />
+          </Link>
         </div>
       </Container>
     </div>

@@ -1,0 +1,75 @@
+import imageClient from '../arquitectura-casa-gracia/patricia-jordi.jpg'
+import imageFachada from '@/images/reforma-masia-fachada-piedra-restaurada-campagne-barcelona.webp'
+import imageSalon from '@/images/reforma-masia-salon-vigas-madera-boveda-catalana.webp'
+import imageCocina from '@/images/reforma-masia-cocina-chimenea-piedra-suelo-terracota.jpg.webp'
+import imageVistaAerea from '@/images/reforma-masia-vista-aerea-valles-piscina-olivar.webp'
+import imageSuite from '@/images/reforma-masia-suite-combles-piedra-chaux-bano-abierto.webp'
+import imageTerraza from '@/images/reforma-masia-terraza-pergola-vinedo-penedes.webp'
+
+export const caseStudy = {
+  client: 'Familia Puig-Soler',
+  title: 'Rehabilitación integral de una masía del siglo XVIII en el Penedès',
+  description:
+    'Reforma completa de una masía catalana de 350m² del siglo XVIII en el Penedès, restaurando bóvedas catalanas, muros de piedra y cubierta, con diseño interior contemporáneo, paisajismo mediterráneo y piscina integrada en 2 hectáreas de olivar.',
+  summary: [
+    'La familia Puig-Soler adquirió una masía abandonada del siglo XVIII en el corazón del Penedès con el sueño de convertirla en su residencia familiar. Nuestro equipo diseñó una rehabilitación integral que respeta el patrimonio arquitectónico catalán — bóvedas, muros de piedra, carpintería de madera — mientras introduce el confort y la eficiencia energética del siglo XXI.',
+    'El resultado es una vivienda de 350m² en una finca de 2 hectáreas con olivar, piscina naturalizada, terraza con pérgola y vistas a los viñedos del Penedès. Un proyecto que combina restauración patrimonial, diseño interior mediterráneo y paisajismo sostenible.',
+  ],
+  image: { src: imageFachada },
+  images: [
+    { src: imageFachada, alt: 'Fachada de piedra restaurada de la masía catalana en el Penedès' },
+    { src: imageSalon, alt: 'Salón con vigas de madera y bóveda catalana restaurada' },
+    { src: imageCocina, alt: 'Cocina con chimenea de piedra y suelo de terracota' },
+    { src: imageVistaAerea, alt: 'Vista aérea de la masía con piscina y olivar' },
+    { src: imageSuite, alt: 'Suite principal bajo cubierta con piedra vista y baño abierto' },
+    { src: imageTerraza, alt: 'Terraza con pérgola y vistas a los viñedos del Penedès' },
+  ],
+  date: '2025-01',
+  service: 'Reforma de masías',
+  testimonial: {
+    author: { name: 'Familia Puig-Soler', role: 'Propietarios en el Penedès' },
+    content:
+      'Compramos una masía en ruinas y el equipo la transformó en el hogar que siempre soñamos. Supieron respetar cada piedra, cada viga, cada bóveda, y al mismo tiempo crear espacios luminosos y funcionales. La terraza con vistas a los viñedos es nuestro rincón favorito.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} — ${caseStudy.title}`,
+  description: caseStudy.description,
+}
+
+## Visión general
+
+La familia Puig-Soler llevaba años buscando una masía en la comarca del Penedès para establecer su residencia familiar lejos del ritmo de Barcelona. Encontraron una construcción del siglo XVIII abandonada durante décadas: 350m² de piedra, vigas de madera y bóvedas catalanas en una finca de 2 hectáreas con olivar centenario y vistas a los viñedos.
+
+Nuestro equipo abordó una rehabilitación integral que partió de un diagnóstico exhaustivo de la estructura existente. Se consolidaron los muros portantes de piedra, se restauraron las bóvedas catalanas de la planta baja y se sustituyó la cubierta respetando la estructura original de vigas de madera. La fachada de piedra fue limpiada y rejuntada artesanalmente, recuperando la nobleza del aparejo original.
+
+El diseño interior combina la autenticidad de los materiales históricos — piedra vista, terracota recuperada, cal natural, madera maciza — con intervenciones contemporáneas discretas: una cocina profesional integrada junto a la chimenea de piedra original, una suite bajo cubierta con baño abierto, y grandes ventanales que enmarcan el paisaje del Penedès.
+
+El proyecto de paisajismo transformó el entorno inmediato de la masía: una piscina naturalizada se integra entre los olivos, una pérgola de madera extiende el salón hacia la terraza, y los caminos de piedra conectan la vivienda con el olivar y los viñedos vecinos.
+
+## Lo que hicimos
+
+<TagList>
+  <TagListItem>Rehabilitación estructural</TagListItem>
+  <TagListItem>Restauración patrimonio</TagListItem>
+  <TagListItem>Diseño interior</TagListItem>
+  <TagListItem>Paisajismo</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Familia Puig-Soler', role: 'Propietarios en el Penedès' }}
+  image={{ src: imageClient }}
+>
+  Compramos una masía en ruinas y el equipo la transformó en el hogar que siempre
+  soñamos. Supieron respetar cada piedra, cada viga, cada bóveda, y al mismo
+  tiempo crear espacios luminosos y funcionales. La terraza con vistas a los
+  viñedos es nuestro rincón favorito.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="350m²" label="Superficie rehabilitada" />
+  <StatListItem value="8 meses" label="Duración de la obra" />
+  <StatListItem value="+45%" label="Revalorización estimada" />
+  <StatListItem value="2 ha" label="Finca con olivar" />
+</StatList>
