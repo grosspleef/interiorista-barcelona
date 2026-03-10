@@ -34,6 +34,7 @@ const navigation = [
     title: 'Recursos',
     links: [
       { title: 'Proyectos', href: '/proyectos/' },
+      { title: 'Antes y Después', href: '/antes-y-despues/' },
       { title: 'Precios', href: '/precios/' },
       { title: 'Opiniones', href: '/opiniones/' },
       { title: 'Quiénes somos', href: '/quienes-somos/' },
