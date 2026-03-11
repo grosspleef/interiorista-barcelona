@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
@@ -9,21 +9,15 @@ import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
-import heroArquitecturaCasaGracia from '../arquitectura-casa-gracia/hero.jpg'
-import heroDecoracionAticoMinimalista from '../decoracion-atico-minimalista/hero.jpg'
-import heroInteriorismoRestauranteMediterraneo from '../interiorismo-restaurante-mediterraneo/hero.jpg'
-import heroReformaLoftIndustrial from '../reforma-loft-industrial/hero.jpg'
-import heroReformaOficinasSantMarti from '../reforma-oficinas-sant-marti/hero.jpg'
-import heroReformaPisoModernista from '../reforma-piso-modernista/hero.jpg'
-
-const heroImages: Record<string, typeof heroReformaPisoModernista> = {
-  'arquitectura-casa-gracia': heroArquitecturaCasaGracia,
-  'decoracion-atico-minimalista': heroDecoracionAticoMinimalista,
-  'interiorismo-restaurante-mediterraneo':
-    heroInteriorismoRestauranteMediterraneo,
-  'reforma-loft-industrial': heroReformaLoftIndustrial,
-  'reforma-oficinas-sant-marti': heroReformaOficinasSantMarti,
-  'reforma-piso-modernista': heroReformaPisoModernista,
+async function loadAntesImages(
+  slug: string,
+): Promise<Array<StaticImageData | null>> {
+  try {
+    const mod = await import(`../${slug}/images`)
+    return mod.default
+  } catch {
+    return []
+  }
 }
 
 function getSlugFromHref(href: string) {
@@ -65,7 +59,7 @@ export default async function AntesYDespuesProject(props: {
     return null
   }
 
-  const heroImage = heroImages[slug]
+  const antesImages = await loadAntesImages(slug)
 
   return (
     <RootLayout>
@@ -108,8 +102,8 @@ export default async function AntesYDespuesProject(props: {
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="space-y-16">
           {(caseStudy.images ?? []).map((img, index) => {
-            const beforeSrc =
-              index === 0 && heroImage ? heroImage : img.src
+            const antesImage = antesImages[index] ?? null
+            if (!antesImage) return null
             const altText = img.alt ?? caseStudy.title
 
             return (
@@ -119,9 +113,9 @@ export default async function AntesYDespuesProject(props: {
                   <div>
                     <div className="relative overflow-hidden rounded-xl bg-neutral-100">
                       <Image
-                        src={beforeSrc}
+                        src={antesImage}
                         alt={`Antes: ${altText}`}
-                        className="aspect-[4/3] w-full object-cover grayscale"
+                        className="aspect-[4/3] w-full object-cover"
                       />
                       <span className="absolute left-4 top-4 rounded-full bg-neutral-950/70 px-4 py-1.5 text-sm font-semibold text-white">
                         Antes
