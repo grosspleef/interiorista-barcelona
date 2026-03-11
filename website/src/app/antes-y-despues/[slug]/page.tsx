@@ -46,6 +46,9 @@ export async function generateMetadata(props: {
   return {
     title: `Antes y Después: ${caseStudy.title} | Interiorista Barcelona`,
     description: `Descubre el antes y después de ${caseStudy.title.toLowerCase()}. ${caseStudy.description}`,
+    alternates: {
+      canonical: `/antes-y-despues/${slug}/`,
+    },
   }
 }
 

@@ -31,6 +31,9 @@ const testimonials = [
 export const metadata: Metadata = {
   description:
     'Colectivo de más de 25 interioristas y arquitectos en Barcelona. Interiorismo, decoración, home staging, interiorismo comercial y rehabilitación.',
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function Home() {

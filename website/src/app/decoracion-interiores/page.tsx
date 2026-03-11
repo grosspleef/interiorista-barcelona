@@ -383,6 +383,9 @@ export const metadata: Metadata = {
   title: 'Decoración de interiores en Barcelona | Decoración 2026',
   description:
     'Decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra. Presupuesto gratuito. Tendencias 2026.',
+  alternates: {
+    canonical: '/decoracion-interiores/',
+  },
 }
 
 export default function DecoracionInterioresPage() {

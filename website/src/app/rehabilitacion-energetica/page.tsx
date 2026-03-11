@@ -438,6 +438,9 @@ export const metadata: Metadata = {
   title: 'Rehabilitación energética en Barcelona | Subvenciones 2026',
   description:
     'Rehabilitación energética en Barcelona: aislamiento térmico, aerotermia, ventanas de altas prestaciones y gestión de subvenciones Next Generation EU. Diagnóstico gratuito por interioristas titulados.',
+  alternates: {
+    canonical: '/rehabilitacion-energetica/',
+  },
 }
 
 export default function RehabilitacionEnergeticaPage() {

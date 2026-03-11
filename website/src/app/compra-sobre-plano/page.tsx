@@ -383,6 +383,9 @@ export const metadata: Metadata = {
     'Compra sobre plano en Barcelona | Obra nueva personalización 2026',
   description:
     '¿Vas a comprar piso sobre plano en Barcelona? Un interiorista te acompaña: revisión de planos, personalización de acabados y seguimiento de obra. Desde 200 €.',
+  alternates: {
+    canonical: '/compra-sobre-plano/',
+  },
 }
 
 export default function CompraSobrePlanoPage() {

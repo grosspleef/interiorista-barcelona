@@ -380,6 +380,9 @@ export const metadata: Metadata = {
     'Reforma de oficinas en Barcelona | Diseño de espacios de trabajo 2026',
   description:
     '¿Buscas reformar tu oficina en Barcelona? Diseño de oficinas, coworking y espacios de trabajo. Proyecto integral desde 60 €/m². Space planning, bienestar laboral y dirección de obra.',
+  alternates: {
+    canonical: '/reforma-oficinas/',
+  },
 }
 
 export default function ReformaOficinasPage() {

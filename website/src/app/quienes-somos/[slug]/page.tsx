@@ -32,6 +32,9 @@ export function generateMetadata({
     return {
       title,
       description,
+      alternates: {
+        canonical: `/quienes-somos/${slug}/`,
+      },
       openGraph: {
         title,
         description,

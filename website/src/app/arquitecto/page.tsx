@@ -401,6 +401,9 @@ export const metadata: Metadata = {
   title: 'Arquitecto en Barcelona | Construcción y Rehabilitación 2026',
   description:
     'Arquitecto colegiado en Barcelona: proyectos de construcción nueva, rehabilitación y dirección facultativa de obra. Inscrito en el COAC. Presupuesto gratuito.',
+  alternates: {
+    canonical: '/arquitecto/',
+  },
 }
 
 export default function ArquitectoPage() {

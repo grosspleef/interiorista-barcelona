@@ -348,6 +348,9 @@ export const metadata: Metadata = {
   title: 'Paisajismo en Barcelona | Diseño de jardines y terrazas 2026',
   description:
     'Paisajismo en Barcelona: diseño de jardines, terrazas, áticos y espacios exteriores mediterráneos. Presupuesto gratuito. Paisajistas profesionales en Barcelona y alrededores.',
+  alternates: {
+    canonical: '/paisajismo/',
+  },
 }
 
 export default function PaisajismoPage() {

@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   title: 'Condiciones de uso',
   description:
     'Condiciones generales de uso del sitio web interioristabarcelona.com, plataforma de puesta en relación con profesionales del interiorismo en Barcelona.',
+  alternates: {
+    canonical: '/condiciones-uso/',
+  },
 }
 
 export default function CondicionesUsoPage() {

@@ -412,7 +412,7 @@ export const metadata: Metadata = {
   description:
     'Descubre las opiniones de nuestros clientes sobre nuestros servicios de diseño de interiores, reformas y decoración. Más de 45 testimonios reales de proyectos realizados por nuestro colectivo de interioristas.',
   alternates: {
-    canonical: 'https://www.interioristabarcelona.com/opiniones/',
+    canonical: '/opiniones/',
   },
 }
 

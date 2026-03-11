@@ -775,7 +775,7 @@ export const metadata: Metadata = {
   description:
     'Respuestas a las preguntas más frecuentes sobre interiorismo, arquitectura de interiores y decoración en Barcelona. Funcionamiento, servicios, tarifas y profesionales.',
   alternates: {
-    canonical: 'https://www.interioristabarcelona.com/preguntas-frecuentes/',
+    canonical: '/preguntas-frecuentes/',
   },
 }
 

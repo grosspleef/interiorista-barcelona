@@ -385,6 +385,9 @@ export const metadata: Metadata = {
   title: 'Interiorismo Accesible en Barcelona | Diseño Adaptado PMR 2026',
   description:
     'Interiorismo accesible en Barcelona: diseño de interiores adaptado a movilidad reducida, baño adaptado, cocina accesible y domótica. Gestión de subvenciones. Presupuesto gratuito.',
+  alternates: {
+    canonical: '/interiorismo-accesible/',
+  },
 }
 
 export default function InteriorismoAccesiblePage() {

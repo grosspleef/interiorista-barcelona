@@ -378,6 +378,9 @@ export const metadata: Metadata = {
   title: 'Interiorismo comercial en Barcelona | Diseño de locales 2026',
   description:
     '¿Buscas un interiorista comercial en Barcelona? Diseño de restaurantes, hoteles, tiendas y locales comerciales. Proyecto integral desde 70 €/m². Gestión de licencias incluida.',
+  alternates: {
+    canonical: '/interiorismo-comercial/',
+  },
 }
 
 export default function InteriorismoComercialPage() {

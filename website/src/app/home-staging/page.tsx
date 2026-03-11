@@ -359,6 +359,9 @@ export const metadata: Metadata = {
   title: 'Home Staging en Barcelona | Vende tu Piso Más Rápido',
   description:
     'Servicio profesional de home staging en Barcelona. Preparamos tu piso para vender un 50 % más rápido y hasta un 15 % más caro. Presupuesto gratuito.',
+  alternates: {
+    canonical: '/home-staging/',
+  },
 }
 
 export default function HomeStagingPage() {

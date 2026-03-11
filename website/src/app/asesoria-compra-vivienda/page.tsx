@@ -385,6 +385,9 @@ export const metadata: Metadata = {
     'Asesoramiento compra vivienda en Barcelona | Informe técnico vivienda 2026',
   description:
     'Asesoramiento compra vivienda en Barcelona: contravisita con un interiorista para detectar vicios ocultos, evaluar el potencial del inmueble y estimar el coste de reforma. Desde 150 €.',
+  alternates: {
+    canonical: '/asesoria-compra-vivienda/',
+  },
 }
 
 export default function AsesoriaCompraViviendaPage() {

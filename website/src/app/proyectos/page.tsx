@@ -121,6 +121,9 @@ export const metadata: Metadata = {
   title: 'Nuestros Proyectos | Reformas e Interiorismo en Barcelona',
   description:
     'Descubre nuestros proyectos de reforma integral, interiorismo residencial y diseño comercial en Barcelona. Resultados reales con opiniones de clientes satisfechos.',
+  alternates: {
+    canonical: '/proyectos/',
+  },
 }
 
 export default async function Work() {

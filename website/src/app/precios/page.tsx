@@ -308,6 +308,9 @@ export const metadata: Metadata = {
   title: 'Precios interiorismo Barcelona | Tarifas transparentes',
   description:
     'Descubre los precios de nuestros servicios de interiorismo y arquitectura en Barcelona. Tarifas transparentes para interiorismo, decoración, home staging, interiorismo comercial y rehabilitación.',
+  alternates: {
+    canonical: '/precios/',
+  },
 }
 
 export default function Precios() {

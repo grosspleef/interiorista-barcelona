@@ -385,6 +385,9 @@ export const metadata: Metadata = {
     'Licitaciones de Arquitectura en Barcelona | Concursos Públicos 2026',
   description:
     'Estudio de arquitectura e interiorismo para licitaciones públicas en Barcelona. Concursos de proyectos, equipamientos públicos y contratación pública (LCSP). Presupuesto gratuito.',
+  alternates: {
+    canonical: '/licitaciones-arquitectura/',
+  },
 }
 
 export default function LicitacionesArquitecturaPage() {

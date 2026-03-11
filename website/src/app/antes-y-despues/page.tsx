@@ -118,6 +118,9 @@ export const metadata: Metadata = {
     'Antes y Después de Reformas en Barcelona | Interiorista Barcelona',
   description:
     'Descubre el antes y después de nuestras reformas e interiorismo en Barcelona. Transformaciones reales de pisos, casas, oficinas y locales comerciales con fotos comparativas.',
+  alternates: {
+    canonical: '/antes-y-despues/',
+  },
 }
 
 export default async function AntesYDespues() {

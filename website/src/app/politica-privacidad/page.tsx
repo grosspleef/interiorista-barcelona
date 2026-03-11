@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   title: 'Política de privacidad',
   description:
     'Política de privacidad del sitio web interioristabarcelona.com, en cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales (LOPDGDD).',
+  alternates: {
+    canonical: '/politica-privacidad/',
+  },
 }
 
 export default function PoliticaPrivacidadPage() {

@@ -394,6 +394,9 @@ export const metadata: Metadata = {
   title: 'Diseño de interiores en Barcelona | Diseñador de interiores 2026',
   description:
     '¿Buscas un diseñador de interiores en Barcelona? Nuestros interioristas titulados te acompañan en tu proyecto de diseño de interiores, reforma o reestructuración de tu piso o casa en Barcelona y alrededores.',
+  alternates: {
+    canonical: '/diseno-interiores/',
+  },
 }
 
 export default function DisenoInterioresPage() {
