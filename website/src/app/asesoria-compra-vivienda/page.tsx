@@ -411,7 +411,7 @@ export default function AsesoriaCompraViviendaPage() {
           Barcelona con total seguridad.
         </p>
         <div className="mt-8">
-          <Button href="/contacto/">Solicitar asesoramiento gratuito</Button>
+          <Button href="/contacto/">Solicitar asesoramiento</Button>
         </div>
       </PageIntro>
 
@@ -613,13 +613,13 @@ export default function AsesoriaCompraViviendaPage() {
         name="Tarifas de asesoramiento compra vivienda"
         description="Servicio de asesoramiento para la compra de vivienda en Barcelona. Te acompañamos en la visita del inmueble y te entregamos un informe técnico con la estimación del coste de reforma."
         href="/contacto/"
-        ctaLabel="Solicitar asesoramiento gratuito"
+        ctaLabel="Solicitar asesoramiento"
         image={{ src: imageTerrazaAtico, shape: 0 }}
         showCounter={false}
         tiers={[
           {
             name: 'Contravisita de asesoramiento',
-            price: 'Desde 150 €',
+            price: 'Desde 250 €',
             description:
               'Visita al inmueble con un interiorista para evaluar el potencial de redistribución, el estado de las instalaciones y estimar el coste de una posible reforma.',
             highlighted: true,

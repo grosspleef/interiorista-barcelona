@@ -113,7 +113,7 @@ export function TestimonialSlider({
           ))}
         </div>
 
-        <div className="mt-6 flex justify-center">
+        <div className="mt-6 flex justify-end">
           <Link
             href="/opiniones/"
             className="flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"

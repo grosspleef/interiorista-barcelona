@@ -616,7 +616,7 @@ export default function DisenoInterioresPage() {
             name: 'Proyecto de diseño de interiores',
             price: 'Desde 60 €/m²',
             description:
-              'Proyecto completo: planos, 3D, selección de materiales y mobiliario. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',
+              'Proyecto completo: planos, 3D, selección de materiales y mobiliario. Incluye visado y gestión de licencias cuando necesario. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',
             highlighted: true,
           },
           {

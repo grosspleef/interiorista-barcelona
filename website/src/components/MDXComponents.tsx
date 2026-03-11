@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 
+import { AntesYDespuesButton } from '@/components/AntesYDespuesButton'
 import { Blockquote } from '@/components/Blockquote'
 import { Border } from '@/components/Border'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
@@ -8,6 +9,7 @@ import { StatList, StatListItem } from '@/components/StatList'
 import { TagList, TagListItem } from '@/components/TagList'
 
 export const MDXComponents = {
+  AntesYDespuesButton,
   Blockquote({
     className,
     ...props

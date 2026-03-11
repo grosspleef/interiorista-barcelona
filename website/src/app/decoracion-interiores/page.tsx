@@ -609,23 +609,23 @@ export default function DecoracionInterioresPage() {
         showCounter={false}
         tiers={[
           {
-            name: 'Consulta de decoración',
-            price: '90 €/h',
+            name: 'Consulta inicial',
+            price: 'Gratuita',
             description:
-              'Visita a domicilio para evaluar el espacio, definir el estilo y orientar el proyecto de decoración.',
+              'Primera visita a tu domicilio para evaluar el espacio, entender tu estilo y definir las líneas del proyecto de decoración.',
           },
           {
             name: 'Proyecto de decoración',
             price: 'Desde 50 €/m²',
             description:
-              'Proyecto completo: moodboards, plano de mobiliario, shopping list y presupuesto detallado. ≤40 m²: 65 €/m² · 41-80 m²: 60 €/m² · 81-120 m²: 55 €/m² · ≥121 m²: 50 €/m².',
+              'Proyecto completo: moodboards, plano de mobiliario, shopping list, presupuesto detallado y acompañamiento en compras. ≤40 m²: 65 €/m² · 41-80 m²: 60 €/m² · 81-120 m²: 55 €/m² · ≥121 m²: 50 €/m².',
             highlighted: true,
           },
           {
             name: 'Instalación y styling',
             price: 'Desde 450 €/media jornada',
             description:
-              'Coordinación de compras, instalación del mobiliario y styling final. Jornada completa: 800 €.',
+              'Recepción de pedidos, montaje de mobiliario y styling final. Media jornada: 450 € · Jornada completa: 800 €.',
           },
         ]}
       />

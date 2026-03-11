@@ -31,7 +31,6 @@ type ServicePricing = {
 }
 
 const servicePricing: ServicePricing[] = [
-  // — Interiorismo (6) —
   {
     id: 'diseno-interiores',
     name: 'Interiorismo',
@@ -43,15 +42,15 @@ const servicePricing: ServicePricing[] = [
     tiers: [
       {
         name: 'Consulta inicial',
-        price: '90 €/h',
+        price: 'Gratuita',
         description:
-          'Sesión de asesoramiento técnico con un arquitecto. Importe descontado si se contrata el proyecto completo.',
+          'Primera visita a tu domicilio para evaluar el espacio, entender tus necesidades y definir el alcance del proyecto.',
       },
       {
         name: 'Proyecto de diseño de interiores',
         price: 'Desde 60 €/m²',
         description:
-          'Proyecto visado: redistribución, planos técnicos, memorias y gestión de licencias. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',
+          'Proyecto completo: planos, 3D, selección de materiales y mobiliario. Incluye visado y gestión de licencias cuando necesario. ≤40 m²: 80 €/m² · 41-80 m²: 70 €/m² · 81-120 m²: 65 €/m² · ≥121 m²: 60 €/m².',
         highlighted: true,
       },
       {
@@ -72,16 +71,16 @@ const servicePricing: ServicePricing[] = [
     image: { src: imageDormitorioBorn, shape: 0 },
     tiers: [
       {
-        name: 'Consulta de decoración',
-        price: '90 €/h',
+        name: 'Consulta inicial',
+        price: 'Gratuita',
         description:
-          'Sesión de asesoramiento en tu domicilio con propuestas de estilo, color y distribución. Importe descontado si se contrata el proyecto.',
+          'Primera visita a tu domicilio para evaluar el espacio, entender tu estilo y definir las líneas del proyecto de decoración.',
       },
       {
         name: 'Proyecto de decoración',
         price: 'Desde 50 €/m²',
         description:
-          'Moodboards, planos de mobiliario, shopping list y acompañamiento en compras. ≤40 m²: 65 €/m² · 41-80 m²: 60 €/m² · 81-120 m²: 55 €/m² · ≥121 m²: 50 €/m².',
+          'Proyecto completo: moodboards, plano de mobiliario, shopping list, presupuesto detallado y acompañamiento en compras. ≤40 m²: 65 €/m² · 41-80 m²: 60 €/m² · 81-120 m²: 55 €/m² · ≥121 m²: 50 €/m².',
         highlighted: true,
       },
       {
@@ -89,54 +88,6 @@ const servicePricing: ServicePricing[] = [
         price: 'Desde 450 €/media jornada',
         description:
           'Recepción de pedidos, montaje de mobiliario y styling final. Media jornada: 450 € · Jornada completa: 800 €.',
-      },
-    ],
-  },
-  {
-    id: 'asesoria-compra-vivienda',
-    name: 'Asesoramiento compra vivienda',
-    description:
-      'Evaluación técnica y estética de un inmueble antes de la compra. Te acompañamos para tomar la mejor decisión.',
-    href: '/asesoria-compra-vivienda/',
-    ctaLabel: 'Ver servicio de asesoría',
-    image: { src: imageTerrazaAtico, shape: 1 },
-    tiers: [
-      {
-        name: 'Contravisita de asesoramiento',
-        price: 'Desde 150 €',
-        description:
-          'Visita al inmueble con un interiorista para evaluar el potencial de redistribución, el estado de las instalaciones y estimar el coste de una posible reforma.',
-        highlighted: true,
-      },
-      {
-        name: 'Informe técnico',
-        price: 'Desde 350 €',
-        description:
-          'Informe escrito con evaluación del estado del inmueble, estimación de costes de reforma y recomendaciones.',
-      },
-    ],
-  },
-  {
-    id: 'compra-sobre-plano',
-    name: 'Compra sobre plano',
-    description:
-      'Acompañamiento en la compra de obra nueva: revisión de planos, selección de acabados y personalización de tu futura vivienda.',
-    href: '/compra-sobre-plano/',
-    ctaLabel: 'Ver servicio de compra sobre plano',
-    image: { src: imagePisoObraNueva, shape: 0 },
-    tiers: [
-      {
-        name: 'Asesoramiento de compra',
-        price: 'Desde 200 €',
-        description:
-          'Revisión de los planos del promotor, análisis de la distribución y asesoramiento sobre las opciones de personalización disponibles.',
-        highlighted: true,
-      },
-      {
-        name: 'Acompañamiento completo',
-        price: 'Consultar',
-        description:
-          'Seguimiento del proceso de compra: selección de acabados, visitas de obra y verificación de la entrega final.',
       },
     ],
   },
@@ -161,61 +112,6 @@ const servicePricing: ServicePricing[] = [
         description:
           'Intervención completa: despersonalización, redistribución del mobiliario existente, aportación de complementos y sesión fotográfica profesional.',
         highlighted: true,
-      },
-    ],
-  },
-  {
-    id: 'interiorismo-accesible',
-    name: 'Interiorismo accesible',
-    description:
-      'Diseño de interiores adaptado a personas con movilidad reducida. Soluciones funcionales y estéticas para una vivienda accesible.',
-    href: '/interiorismo-accesible/',
-    ctaLabel: 'Ver servicio de accesibilidad',
-    image: { src: imageSalonAccesible, shape: 2 },
-    tiers: [
-      {
-        name: 'Diagnóstico de accesibilidad',
-        price: 'Desde 150 €',
-        description:
-          'Visita a domicilio para evaluar las barreras arquitectónicas y proponer soluciones de adaptación del espacio.',
-        highlighted: true,
-      },
-      {
-        name: 'Proyecto de adaptación',
-        price: 'Consultar',
-        description:
-          'Proyecto completo de adaptación: redistribución, selección de equipamiento específico y seguimiento de obra.',
-      },
-    ],
-  },
-  // — Arquitectura (4) —
-  {
-    id: 'arquitecto',
-    name: 'Arquitecto',
-    description:
-      'Proyectos arquitectónicos residenciales y de obra nueva. Diseño, proyecto técnico visado y dirección de obra.',
-    href: '/arquitecto/',
-    ctaLabel: 'Ver servicio de arquitectura',
-    image: { src: imageVillaContemporanea, shape: 0 },
-    tiers: [
-      {
-        name: 'Consulta inicial',
-        price: '90 €/h',
-        description:
-          'Sesión de asesoramiento con un arquitecto para evaluar la viabilidad de tu proyecto.',
-      },
-      {
-        name: 'Proyecto de arquitectura',
-        price: 'Desde 70 €/m²',
-        description:
-          'Proyecto visado completo: anteproyecto, proyecto básico, proyecto ejecutivo y gestión de licencias. ≤80 m²: 90 €/m² · 81-150 m²: 80 €/m² · ≥151 m²: 70 €/m².',
-        highlighted: true,
-      },
-      {
-        name: 'Dirección de obra',
-        price: '9 % del presupuesto',
-        description:
-          'Dirección facultativa, certificados y supervisión técnica hasta la entrega final.',
       },
     ],
   },
@@ -280,6 +176,108 @@ const servicePricing: ServicePricing[] = [
     ],
   },
   {
+    id: 'arquitecto',
+    name: 'Arquitecto',
+    description:
+      'Proyectos arquitectónicos residenciales y de obra nueva. Diseño, proyecto técnico visado y dirección de obra.',
+    href: '/arquitecto/',
+    ctaLabel: 'Ver servicio de arquitectura',
+    image: { src: imageVillaContemporanea, shape: 0 },
+    tiers: [
+      {
+        name: 'Consulta inicial',
+        price: '90 €/h',
+        description:
+          'Sesión de asesoramiento con un arquitecto para evaluar la viabilidad de tu proyecto.',
+      },
+      {
+        name: 'Proyecto de arquitectura',
+        price: 'Desde 70 €/m²',
+        description:
+          'Proyecto visado completo: anteproyecto, proyecto básico, proyecto ejecutivo y gestión de licencias. ≤80 m²: 90 €/m² · 81-150 m²: 80 €/m² · ≥151 m²: 70 €/m².',
+        highlighted: true,
+      },
+      {
+        name: 'Dirección de obra',
+        price: '9 % del presupuesto',
+        description:
+          'Dirección facultativa, certificados y supervisión técnica hasta la entrega final.',
+      },
+    ],
+  },
+  {
+    id: 'asesoria-compra-vivienda',
+    name: 'Asesoramiento compra vivienda',
+    description:
+      'Evaluación técnica y estética de un inmueble antes de la compra. Te acompañamos para tomar la mejor decisión.',
+    href: '/asesoria-compra-vivienda/',
+    ctaLabel: 'Ver servicio de asesoría',
+    image: { src: imageTerrazaAtico, shape: 1 },
+    tiers: [
+      {
+        name: 'Contravisita de asesoramiento',
+        price: 'Desde 250 €',
+        description:
+          'Visita al inmueble con un interiorista para evaluar el potencial de redistribución, el estado de las instalaciones y estimar el coste de una posible reforma.',
+        highlighted: true,
+      },
+      {
+        name: 'Informe técnico completo',
+        price: 'Desde 350 €',
+        description:
+          'Informe escrito con evaluación del estado del inmueble, estimación desglosada de costes de reforma por partidas y esquema orientativo de redistribución.',
+      },
+    ],
+  },
+  {
+    id: 'compra-sobre-plano',
+    name: 'Compra sobre plano',
+    description:
+      'Acompañamiento en la compra de obra nueva: revisión de planos, selección de acabados y personalización de tu futura vivienda.',
+    href: '/compra-sobre-plano/',
+    ctaLabel: 'Ver servicio de compra sobre plano',
+    image: { src: imagePisoObraNueva, shape: 0 },
+    tiers: [
+      {
+        name: 'Asesoramiento de compra',
+        price: 'Desde 200 €',
+        description:
+          'Revisión de los planos del promotor, análisis de la distribución y asesoramiento sobre las opciones de personalización disponibles.',
+        highlighted: true,
+      },
+      {
+        name: 'Acompañamiento completo',
+        price: 'Consultar',
+        description:
+          'Seguimiento del proceso de compra: selección de acabados, visitas de obra y verificación de la entrega final.',
+      },
+    ],
+  },
+  {
+    id: 'interiorismo-accesible',
+    name: 'Interiorismo accesible',
+    description:
+      'Diseño de interiores adaptado a personas con movilidad reducida. Soluciones funcionales y estéticas para una vivienda accesible.',
+    href: '/interiorismo-accesible/',
+    ctaLabel: 'Ver servicio de accesibilidad',
+    image: { src: imageSalonAccesible, shape: 2 },
+    tiers: [
+      {
+        name: 'Diagnóstico de accesibilidad',
+        price: 'Desde 150 €',
+        description:
+          'Visita a domicilio para evaluar las barreras arquitectónicas y proponer soluciones de adaptación del espacio.',
+        highlighted: true,
+      },
+      {
+        name: 'Proyecto de adaptación',
+        price: 'Consultar',
+        description:
+          'Proyecto completo de adaptación: redistribución, selección de equipamiento específico y seguimiento de obra.',
+      },
+    ],
+  },
+  {
     id: 'paisajismo',
     name: 'Paisajismo',
     description:
@@ -290,10 +288,9 @@ const servicePricing: ServicePricing[] = [
     tiers: [
       {
         name: 'Consulta inicial',
-        price: 'Desde 150 €',
+        price: 'Gratuita',
         description:
           'Visita al espacio exterior, análisis de las condiciones (orientación, suelo, clima) y primeras propuestas de diseño.',
-        highlighted: true,
       },
       {
         name: 'Proyecto de paisajismo',
@@ -364,9 +361,11 @@ export default function Precios() {
       >
         <p>
           Creemos en la transparencia. Aquí encontrarás las tarifas orientativas
-          de cada uno de nuestros servicios de interiorismo en Barcelona. Cada
-          proyecto es único: los precios finales se ajustan tras una primera
-          consulta gratuita.
+          de cada uno de nuestros servicios de interiorismo y arquitectura en
+          Barcelona. Como colectivo de profesionales independientes, los precios
+          pueden variar ligeramente de un arquitecto o interiorista a otro. Cada
+          proyecto es único: los precios definitivos se concretan tras una
+          primera toma de contacto.
         </p>
       </PageIntro>
 
@@ -395,9 +394,12 @@ export default function Precios() {
             </h3>
             <p className="mt-4 text-sm text-neutral-700">
               Las tarifas indicadas son orientativas y pueden variar en función
-              de la complejidad de tu proyecto. La consulta inicial es gratuita y
-              sin compromiso: tras analizar tus necesidades, te entregaremos un
-              presupuesto personalizado y detallado.
+              de la complejidad de tu proyecto y del profesional asignado.
+              Interiorista Barcelona es un colectivo de arquitectos e
+              interioristas independientes: cada profesional fija sus propios
+              honorarios dentro de las horquillas indicadas. Tras analizar tus
+              necesidades, te entregaremos un presupuesto personalizado y
+              detallado, sin compromiso.
             </p>
             <p className="mt-4 text-sm text-neutral-700">
               Nuestros servicios de interiorismo, arquitectura, decoración y
