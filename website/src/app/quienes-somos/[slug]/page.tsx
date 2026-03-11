@@ -26,9 +26,16 @@ export function generateMetadata({
     const member = getMemberBySlug(slug)
     if (!member) return {}
 
+    const title = `${member.name} — ${member.professionLabel} en Barcelona`
+    const description = `${member.name}, ${member.professionLabel.toLowerCase()} del colectivo Interiorista Barcelona. ${member.yearsExperience} años de experiencia. Formación: ${member.training}. Barrios: ${member.neighborhoods.join(', ')}.`
+
     return {
-      title: `${member.name} — ${member.professionLabel} en Barcelona`,
-      description: `${member.name}, ${member.professionLabel.toLowerCase()} del colectivo Interiorista Barcelona. ${member.yearsExperience} años de experiencia. Formación: ${member.training}. Barrios: ${member.neighborhoods.join(', ')}.`,
+      title,
+      description,
+      openGraph: {
+        title,
+        description,
+      },
     }
   })
 }

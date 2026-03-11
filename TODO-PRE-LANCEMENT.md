@@ -29,9 +29,9 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 ### IMPORTANT — A faire avant l'indexation
 
-- [ ] **7. Ajouter les balises Open Graph** sur toutes les pages — Aucune balise og:title, og:description, og:image, og:url n'existe. Ajouter dans le `metadata` du layout racine + surcharger par page.
+- [x] **7. Ajouter les balises Open Graph** sur toutes les pages — Aucune balise og:title, og:description, og:image, og:url n'existe. Ajouter dans le `metadata` du layout racine + surcharger par page.
 
-- [ ] **8. Ajouter les balises Twitter Card** — Memes lacunes, ajouter `twitter:card`, `twitter:title`, etc.
+- [x] **8. Ajouter les balises Twitter Card** — Memes lacunes, ajouter `twitter:card`, `twitter:title`, etc.
 
 - [ ] **9. Ajouter les URLs canoniques** — Seulement 2 pages sur ~30 ont une canonical. Ajouter sur toutes les pages via le metadata Next.js.
 
@@ -104,7 +104,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 | Pages legales | OK | Aviso legal, conditions, cookies, politique de confidentialite |
 | Blog (3 articles) | KO | Contenu template anglais non remplace |
 | Pages EN (about, process, contact) | OK | Supprimees (aucun lien interne, `/contacto/` existe) |
-| SEO technique | PARTIEL | robots.txt et sitemap OK. OG tags et canonicals manquants |
+| SEO technique | PARTIEL | robots.txt, sitemap, OG tags et Twitter Cards OK. Canonicals manquants |
 | Formulaires | OK | Resend API, validation, honeypot, rate limiting, confirmation client |
 | Analytics | KO | Aucun tracking |
 | Securite | KO | Aucun header de securite |

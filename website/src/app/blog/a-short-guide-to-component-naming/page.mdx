@@ -15,6 +15,12 @@ export const article = {
 export const metadata = {
   title: article.title,
   description: article.description,
+  openGraph: {
+    type: 'article',
+    title: article.title,
+    description: article.description,
+    publishedTime: article.date,
+  },
 }
 
 ## 1. Brevity is Key
