@@ -1,5 +1,6 @@
-import { useId } from 'react'
-import { type Metadata } from 'next'
+'use client'
+
+import { useId, useState } from 'react'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -36,12 +37,78 @@ function TextInput({
 }
 
 function ContactForm() {
+  const [status, setStatus] = useState<
+    'idle' | 'loading' | 'success' | 'error'
+  >('idle')
+  const [errorMessage, setErrorMessage] = useState('')
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setStatus('loading')
+    setErrorMessage('')
+
+    const form = e.currentTarget
+    const data = Object.fromEntries(new FormData(form))
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, source: 'Página de contacto' }),
+      })
+
+      const json = await res.json()
+
+      if (!res.ok) {
+        setStatus('error')
+        setErrorMessage(json.error || 'Error al enviar el mensaje.')
+        return
+      }
+
+      setStatus('success')
+      form.reset()
+    } catch {
+      setStatus('error')
+      setErrorMessage('Error de conexión. Inténtalo de nuevo.')
+    }
+  }
+
+  if (status === 'success') {
+    return (
+      <FadeIn>
+        <div className="rounded-2xl border border-green-200 bg-green-50 p-8 text-center">
+          <p className="font-display text-lg font-semibold text-green-900">
+            Solicitud enviada correctamente
+          </p>
+          <p className="mt-2 text-sm text-green-700">
+            Nos pondremos en contacto contigo en las próximas 24-48 horas.
+          </p>
+          <button
+            type="button"
+            onClick={() => setStatus('idle')}
+            className="mt-4 text-sm font-semibold text-green-700 underline"
+          >
+            Enviar otra solicitud
+          </button>
+        </div>
+      </FadeIn>
+    )
+  }
+
   return (
     <FadeIn>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Solicita tu presupuesto
         </h2>
+        {/* Honeypot — hidden from users */}
+        <input
+          type="text"
+          name="_honeypot"
+          tabIndex={-1}
+          autoComplete="off"
+          className="absolute h-0 w-0 overflow-hidden opacity-0"
+        />
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput label="Nombre" name="name" autoComplete="name" required />
           <TextInput
@@ -68,19 +135,21 @@ function ContactForm() {
           <TextInput label="Presupuesto estimado" name="budget" required />
           <TextInput label="Descripción del proyecto" name="message" required />
         </div>
-        <Button type="submit" className="mt-10">
-          Enviar solicitud
+
+        {status === 'error' && (
+          <p className="mt-4 text-sm text-red-600">{errorMessage}</p>
+        )}
+
+        <Button
+          type="submit"
+          className="mt-10"
+          disabled={status === 'loading'}
+        >
+          {status === 'loading' ? 'Enviando...' : 'Enviar solicitud'}
         </Button>
       </form>
     </FadeIn>
   )
-}
-
-
-export const metadata: Metadata = {
-  title: 'Contacto — Interiorista Barcelona',
-  description:
-    'Contacta con nuestro equipo de interioristas en Barcelona. Presupuesto gratuito y sin compromiso para tu proyecto de interiorismo o reforma.',
 }
 
 export default function Contacto() {

@@ -13,7 +13,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [x] **2. Creer `sitemap.xml`** — Aucun sitemap. Creer `src/app/sitemap.ts` generant dynamiquement toutes les URLs (pages, services, blog, projets, antes-y-despues).
 
-- [ ] **3. Formulaires de contact non fonctionnels** — Les 3 formulaires (`/contacto/`, `/contact/`, `ContactSection`) n'ont aucun handler de soumission. Creer une API route `src/app/api/contact/route.ts` avec:
+- [x] **3. Formulaires de contact non fonctionnels** — Les 3 formulaires (`/contacto/`, `/contact/`, `ContactSection`) n'ont aucun handler de soumission. Creer une API route `src/app/api/contact/route.ts` avec:
   - Service email (Resend, SendGrid ou Nodemailer)
   - Validation serveur (zod)
   - Protection spam (honeypot + rate limiting)
@@ -105,7 +105,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 | Blog (3 articles) | KO | Contenu template anglais non remplace |
 | Pages EN (about, process, contact) | OK | Supprimees (aucun lien interne, `/contacto/` existe) |
 | SEO technique | PARTIEL | robots.txt et sitemap OK. OG tags et canonicals manquants |
-| Formulaires | KO | Non fonctionnels (pas de backend) |
+| Formulaires | OK | Resend API, validation, honeypot, rate limiting, confirmation client |
 | Analytics | KO | Aucun tracking |
 | Securite | KO | Aucun header de securite |
 | Pages barrios | KO | Non creees (prevues dans l'architecture) |
