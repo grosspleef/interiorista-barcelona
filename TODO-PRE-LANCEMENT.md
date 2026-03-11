@@ -21,9 +21,9 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [x] **4. Page Politique de Confidentialite manquante** — OBLIGATOIRE RGPD/LSSI-CE. Creer `/politica-privacidad/` avec le contenu legal requis.
 
-- [ ] **5. Corriger la page Contact anglais** — `/contact/` contient encore des emails template (`careers@studioagency.com`, `press@studioagency.com`). Remplacer par les vrais emails ou rediriger vers `/contacto/`.
+- [x] **5. Corriger la page Contact anglais** — `/contact/` supprimee (cf. point 11). `/contacto/` est la seule page de contact.
 
-- [ ] **6. Ajouter `trailingSlash: true`** dans `next.config.mjs` — Toutes les URLs internes utilisent des trailing slashes mais la config Next.js ne le force pas. Risque de contenu duplique.
+- [x] **6. Ajouter `trailingSlash: true`** dans `next.config.mjs` — Toutes les URLs internes utilisent des trailing slashes mais la config Next.js ne le force pas. Risque de contenu duplique.
 
 ---
 
