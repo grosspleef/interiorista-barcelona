@@ -46,6 +46,7 @@ const navigation = [
     title: 'Legal',
     links: [
       { title: 'Aviso legal', href: '/aviso-legal/' },
+      { title: 'Política de privacidad', href: '/politica-privacidad/' },
       { title: 'Condiciones de uso', href: '/condiciones-uso/' },
       { title: 'Política de cookies', href: '/politica-cookies/' },
     ],

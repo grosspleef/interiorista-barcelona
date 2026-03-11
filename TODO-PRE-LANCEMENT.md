@@ -19,7 +19,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
   - Protection spam (honeypot + rate limiting)
   - Confirmation visuelle a l'utilisateur
 
-- [ ] **4. Page Politique de Confidentialite manquante** — OBLIGATOIRE RGPD/LSSI-CE. Creer `/politica-privacidad/` avec le contenu legal requis.
+- [x] **4. Page Politique de Confidentialite manquante** — OBLIGATOIRE RGPD/LSSI-CE. Creer `/politica-privacidad/` avec le contenu legal requis.
 
 - [ ] **5. Corriger la page Contact anglais** — `/contact/` contient encore des emails template (`careers@studioagency.com`, `press@studioagency.com`). Remplacer par les vrais emails ou rediriger vers `/contacto/`.
 
@@ -78,7 +78,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [ ] **24. Ajouter alt text aux images projets** — `ProjectShowcase.tsx` et `HeroCarousel.tsx` ont des alt="" vides sur certaines images.
 
-- [ ] **25. Lien politique de confidentialite dans le footer** — Ajouter le lien vers `/politica-privacidad/` une fois la page creee.
+- [x] **25. Lien politique de confidentialite dans le footer** — Ajouter le lien vers `/politica-privacidad/` une fois la page creee.
 
 ---
 
@@ -101,7 +101,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 | Avant/Apres (7) | OK | Galeries photos reelles |
 | Page prix | OK | 14 services avec vrais tarifs |
 | Temoignages (40+) | OK | Contenus authentiques |
-| Pages legales | PARTIEL | Aviso legal, conditions, cookies OK. **Politique de confidentialite manquante** |
+| Pages legales | OK | Aviso legal, conditions, cookies, politique de confidentialite |
 | Blog (3 articles) | KO | Contenu template anglais non remplace |
 | Pages EN (about, process, contact) | OK | Supprimees (aucun lien interne, `/contacto/` existe) |
 | SEO technique | PARTIEL | robots.txt et sitemap OK. OG tags et canonicals manquants |
