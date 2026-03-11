@@ -9,9 +9,9 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 ### CRITIQUE — Bloquant pour la mise en ligne
 
-- [ ] **1. Creer `robots.txt`** — Aucun fichier robots.txt n'existe. Creer `src/app/robots.ts` avec les regles d'indexation et lien vers le sitemap.
+- [x] **1. Creer `robots.txt`** — Aucun fichier robots.txt n'existe. Creer `src/app/robots.ts` avec les regles d'indexation et lien vers le sitemap.
 
-- [ ] **2. Creer `sitemap.xml`** — Aucun sitemap. Creer `src/app/sitemap.ts` generant dynamiquement toutes les URLs (pages, services, blog, projets, antes-y-despues).
+- [x] **2. Creer `sitemap.xml`** — Aucun sitemap. Creer `src/app/sitemap.ts` generant dynamiquement toutes les URLs (pages, services, blog, projets, antes-y-despues).
 
 - [ ] **3. Formulaires de contact non fonctionnels** — Les 3 formulaires (`/contacto/`, `/contact/`, `ContactSection`) n'ont aucun handler de soumission. Creer une API route `src/app/api/contact/route.ts` avec:
   - Service email (Resend, SendGrid ou Nodemailer)
@@ -37,11 +37,11 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [ ] **10. Remplacer les 3 articles de blog** — Contenu template en anglais ("Component Naming", "Going Back to Office", "Web Development"). Ecrire de vrais articles en espagnol sur le design d'interieur.
 
-- [ ] **11. Supprimer ou adapter les pages template anglaises** :
-  - `/about/` — Contenu satirique template, equipe fictive
-  - `/process/` — Contenu generique
-  - `/contact/` — Emails et adresses fausses
-  - Decision : soit les localiser en espagnol, soit les supprimer et rediriger.
+- [x] **11. Supprimer ou adapter les pages template anglaises** :
+  - `/about/` — Supprimee (contenu satirique template, equipe fictive)
+  - `/process/` — Supprimee (contenu generique)
+  - `/contact/` — Supprimee (emails et adresses fausses, `/contacto/` existe deja)
+  - Decision : pages supprimees — aucun lien interne ne pointait vers elles.
 
 - [ ] **12. Corriger les liens footer "Ciudades"** — Madrid, Valencia, Sevilla etc. pointent vers `#`. Soit implementer ces pages, soit retirer les liens.
 
@@ -103,8 +103,8 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 | Temoignages (40+) | OK | Contenus authentiques |
 | Pages legales | PARTIEL | Aviso legal, conditions, cookies OK. **Politique de confidentialite manquante** |
 | Blog (3 articles) | KO | Contenu template anglais non remplace |
-| Pages EN (about, process, contact) | KO | Contenu template non adapte |
-| SEO technique | KO | Pas de robots.txt, sitemap, OG tags, canonicals |
+| Pages EN (about, process, contact) | OK | Supprimees (aucun lien interne, `/contacto/` existe) |
+| SEO technique | PARTIEL | robots.txt et sitemap OK. OG tags et canonicals manquants |
 | Formulaires | KO | Non fonctionnels (pas de backend) |
 | Analytics | KO | Aucun tracking |
 | Securite | KO | Aucun header de securite |
@@ -126,7 +126,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 | `next.config.mjs` | MODIFIER (trailingSlash, headers) |
 | `src/styles/base.css` | MODIFIER (font-display: swap) |
 | `src/components/ProjectShowcase.tsx` | MODIFIER (alt text) |
-| `src/app/contact/page.tsx` | MODIFIER ou SUPPRIMER |
-| `src/app/about/page.tsx` | MODIFIER ou SUPPRIMER |
-| `src/app/process/page.tsx` | MODIFIER ou SUPPRIMER |
+| `src/app/contact/page.tsx` | ~~SUPPRIME~~ |
+| `src/app/about/page.tsx` | ~~SUPPRIME~~ |
+| `src/app/process/page.tsx` | ~~SUPPRIME~~ |
 | `src/app/blog/*/page.mdx` | REMPLACER (3 articles) |
