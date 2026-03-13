@@ -442,7 +442,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         </span>
         <StarRating />
       </div>
-      <blockquote className="flex-1 text-base/7 text-neutral-600">
+      <blockquote className="flex-1 text-base text-neutral-600">
         <p className="before:content-['«\00a0'] after:content-['\00a0»']">
           {testimonial.quote}
         </p>

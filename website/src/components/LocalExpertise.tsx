@@ -48,7 +48,7 @@ export function LocalExpertise() {
             ¿Buscas un interiorista en Barcelona?
           </h2>
 
-          <p className="mt-6 text-lg text-neutral-600">
+          <p className="mt-6 text-base text-neutral-600">
             Nuestro colectivo reúne arquitectos de interiores, decoradores y
             diseñadores de espacios en Barcelona y sus alrededores. Cada
             profesional aporta su visión y especialidad para acompañarte en tu

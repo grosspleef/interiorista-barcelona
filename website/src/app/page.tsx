@@ -84,7 +84,7 @@ export default function Home() {
       {/* 1. Hero */}
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
+          <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-6xl">
             Tu colectivo de interioristas en Barcelona.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">

@@ -23,7 +23,7 @@ function BlockquoteWithImage({
         className,
       )}
     >
-      <blockquote className="col-span-2 text-xl/7 text-neutral-600 sm:col-span-7 sm:col-start-6 sm:row-start-2">
+      <blockquote className="col-span-2 text-xl text-neutral-600 sm:col-span-7 sm:col-start-6 sm:row-start-2">
         {typeof children === 'string' ? <p>{children}</p> : children}
       </blockquote>
       <div className="col-start-1 row-start-2 overflow-hidden rounded-xl bg-neutral-100 sm:col-span-5 sm:row-span-full sm:rounded-3xl">
