@@ -23,24 +23,20 @@ const ciudades = [
   { name: 'Sant Cugat del Vallès', href: '/interiorista-sant-cugat/' },
   { name: 'Sabadell', href: '/interiorista-sabadell/' },
   { name: 'Terrassa', href: '/interiorista-terrassa/' },
-  { name: 'Castelldefels', href: '/interiorista-castelldefels/' },
+  { name: 'Manresa', href: '/interiorista-manresa/' },
   { name: 'Sitges', href: '/interiorista-sitges/' },
-  { name: 'Badalona', href: '/interiorista-badalona/' },
-  {
-    name: "L'Hospitalet de Llobregat",
-    href: '/interiorista-hospitalet/',
-  },
-  { name: 'Sant Just Desvern', href: '/interiorista-sant-just-desvern/' },
-  {
-    name: 'Esplugues de Llobregat',
-    href: '/interiorista-esplugues/',
-  },
-  { name: 'Sant Joan Despí', href: '/interiorista-sant-joan-despi/' },
-  { name: 'Gavà', href: '/interiorista-gava/' },
-  {
-    name: 'Vilanova i la Geltrú',
-    href: '/interiorista-vilanova/',
-  },
+  { name: 'Mataró', href: '/interiorista-mataro/' },
+]
+
+const otrasCiudades = [
+  'Castelldefels',
+  'Badalona',
+  "L'Hospitalet de Llobregat",
+  'Sant Just Desvern',
+  'Esplugues de Llobregat',
+  'Sant Joan Despí',
+  'Gavà',
+  'Vilanova i la Geltrú',
 ]
 
 export function LocalExpertise() {
@@ -133,6 +129,10 @@ export function LocalExpertise() {
               </li>
             ))}
           </ul>
+          <p className="mt-4 text-sm text-neutral-500">
+            También trabajamos en {otrasCiudades.join(', ')} y otras
+            localidades del área metropolitana.
+          </p>
         </article>
       </FadeIn>
     </Container>
