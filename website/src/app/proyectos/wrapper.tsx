@@ -21,8 +21,117 @@ export default async function CaseStudyLayout({
     .filter((study) => study.title !== caseStudy.title)
     .slice(0, 2)
 
+  const currentStudy = allCaseStudies.find(
+    (s) => s.title === caseStudy.title,
+  )
+  const canonicalUrl = currentStudy
+    ? `https://www.interioristabarcelona.com${currentStudy.href}/`
+    : 'https://www.interioristabarcelona.com/proyectos/'
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Inicio',
+            item: 'https://www.interioristabarcelona.com/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Proyectos',
+            item: 'https://www.interioristabarcelona.com/proyectos/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: caseStudy.title,
+          },
+        ],
+      },
+      {
+        '@type': 'CreativeWork',
+        '@id': `${canonicalUrl}#project`,
+        name: caseStudy.title,
+        description: caseStudy.description,
+        dateCreated: caseStudy.date,
+        about: caseStudy.service,
+        locationCreated: {
+          '@type': 'Place',
+          name: 'Barcelona',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Barcelona',
+            addressRegion: 'Cataluña',
+            addressCountry: 'ES',
+          },
+        },
+        creator: {
+          '@type': 'Organization',
+          '@id': 'https://www.interioristabarcelona.com/#organization',
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': canonicalUrl,
+        },
+      },
+      {
+        '@type': 'Organization',
+        '@id': 'https://www.interioristabarcelona.com/#organization',
+        name: 'Interiorista Barcelona',
+        url: 'https://www.interioristabarcelona.com',
+        description:
+          'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Carrer de Mallorca, 237',
+          addressLocality: 'Barcelona',
+          postalCode: '08008',
+          addressCountry: 'ES',
+        },
+        areaServed: [
+          { '@type': 'City', name: 'Barcelona' },
+          { '@type': 'City', name: 'Sant Cugat del Vallès' },
+          { '@type': 'City', name: 'Sabadell' },
+          { '@type': 'City', name: 'Terrassa' },
+          { '@type': 'City', name: 'Sitges' },
+          { '@type': 'City', name: 'Mataró' },
+          { '@type': 'City', name: 'Manresa' },
+        ],
+      },
+      ...(caseStudy.testimonial
+        ? [
+            {
+              '@type': 'Review',
+              itemReviewed: {
+                '@id': `${canonicalUrl}#project`,
+              },
+              reviewRating: {
+                '@type': 'Rating',
+                ratingValue: '5',
+                bestRating: '5',
+              },
+              author: {
+                '@type': 'Person',
+                name: caseStudy.testimonial.author.name,
+              },
+              reviewBody: caseStudy.testimonial.content,
+            },
+          ]
+        : []),
+    ],
+  }
+
   return (
     <RootLayout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
           <PageIntro eyebrow="Proyecto" title={caseStudy.title} centered>

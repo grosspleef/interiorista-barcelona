@@ -64,7 +64,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [x] **17. Ajouter Schema.org sur les articles de blog** — ✅ JSON-LD BlogPosting present (headline, datePublished, author, publisher, wordCount).
 
-- [ ] **18. Ajouter Schema.org sur les etudes de cas** — Les pages projets/MDX n'ont pas de JSON-LD CreativeWork.
+- [x] **18. Ajouter Schema.org sur les etudes de cas** — ✅ JSON-LD CreativeWork + BreadcrumbList + Review ajouté dans `wrapper.tsx` (appliqué aux 10 études de cas).
 
 - [ ] **19. Creer `error.tsx`** — Pas de page d'erreur globale (500). Creer `src/app/error.tsx` avec un message utile en espagnol.
 
