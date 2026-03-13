@@ -60,7 +60,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 ### RECOMMANDE — Ameliorations SEO & UX
 
-- [ ] **16. Creer les pages barrios** — L'architecture prevoit des pages locales (Eixample, Gracia, Born, Sarria, Poblenou) pour le SEO local. Liens deja dans le footer.
+- [x] **16. Creer les pages barrios** — 5 pages locales creees : Eixample, Gracia, Born, Sarria, Poblenou. Contenu unique par quartier, Schema.org LocalBusiness, FAQ specifiques.
 
 - [ ] **17. Ajouter Schema.org sur les articles de blog** — Les pages MDX blog n'ont pas de JSON-LD Article/BlogPosting.
 
