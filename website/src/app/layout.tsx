@@ -13,7 +13,9 @@ export const metadata: Metadata = {
     'Colectivo de más de 25 diseñadores de interiores y arquitectos en Barcelona. Diseño de interiores, decoración, home staging, interiorismo comercial y rehabilitación.',
   icons: {
     icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
+  manifest: '/manifest.json',
   openGraph: {
     type: 'website',
     locale: 'es_ES',

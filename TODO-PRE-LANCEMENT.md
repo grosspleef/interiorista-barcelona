@@ -74,7 +74,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [x] **22. Ajouter un banner de consentement cookies** — ✅ Composant `CookieBanner` (client) ajouté dans `RootLayout`. Affiche un banner en bas de page au premier visit, stocke le choix dans `localStorage`, lien vers `/politica-cookies/`.
 
-- [ ] **23. Ajouter favicon et icones** — `favicon.ico` est declare dans le layout mais verifier sa presence. Ajouter `apple-touch-icon`, `manifest.json` pour PWA-readiness.
+- [x] **23. Ajouter favicon et icones** — `favicon.ico` est declare dans le layout mais verifier sa presence. Ajouter `apple-touch-icon`, `manifest.json` pour PWA-readiness.
 
 - [x] **24. Ajouter alt text aux images projets** — ✅ `ProjectShowcase.tsx` : alt dynamique basé sur le titre du projet (fallback `Proyecto de interiorismo: {title}`). `HeroCarousel.tsx` : déjà fonctionnel, tous les MDX passent des alt descriptifs.
 
