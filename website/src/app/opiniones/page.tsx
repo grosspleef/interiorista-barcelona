@@ -350,21 +350,21 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Opiniones',
-          item: 'https://www.interioristabarcelona.com/opiniones/',
+          item: 'https://www.interiorista-barcelona.com/opiniones/',
         },
       ],
     },
     {
       '@type': 'Organization',
-      '@id': 'https://www.interioristabarcelona.com/#organization',
+      '@id': 'https://www.interiorista-barcelona.com/#organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description:
         'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
       address: {
@@ -389,7 +389,7 @@ const schemaOrg = {
     ...testimonials.map((t) => ({
       '@type': 'Review' as const,
       itemReviewed: {
-        '@id': 'https://www.interioristabarcelona.com/#organization',
+        '@id': 'https://www.interiorista-barcelona.com/#organization',
       },
       reviewRating: {
         '@type': 'Rating' as const,

@@ -3,7 +3,7 @@ import { type Metadata } from 'next'
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.interioristabarcelona.com'),
+  metadataBase: new URL('https://www.interiorista-barcelona.com'),
   title: {
     template: '%s - Interiorista Barcelona',
     default:

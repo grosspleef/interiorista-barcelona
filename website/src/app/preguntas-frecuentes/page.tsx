@@ -711,13 +711,13 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Preguntas frecuentes',
-          item: 'https://www.interioristabarcelona.com/preguntas-frecuentes/',
+          item: 'https://www.interiorista-barcelona.com/preguntas-frecuentes/',
         },
       ],
     },
@@ -734,9 +734,9 @@ const schemaOrg = {
     },
     {
       '@type': 'Organization',
-      '@id': 'https://www.interioristabarcelona.com/#organization',
+      '@id': 'https://www.interiorista-barcelona.com/#organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description:
         'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
       address: {

@@ -25,8 +25,8 @@ export default async function CaseStudyLayout({
     (s) => s.title === caseStudy.title,
   )
   const canonicalUrl = currentStudy
-    ? `https://www.interioristabarcelona.com${currentStudy.href}/`
-    : 'https://www.interioristabarcelona.com/proyectos/'
+    ? `https://www.interiorista-barcelona.com${currentStudy.href}/`
+    : 'https://www.interiorista-barcelona.com/proyectos/'
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -38,13 +38,13 @@ export default async function CaseStudyLayout({
             '@type': 'ListItem',
             position: 1,
             name: 'Inicio',
-            item: 'https://www.interioristabarcelona.com/',
+            item: 'https://www.interiorista-barcelona.com/',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Proyectos',
-            item: 'https://www.interioristabarcelona.com/proyectos/',
+            item: 'https://www.interiorista-barcelona.com/proyectos/',
           },
           {
             '@type': 'ListItem',
@@ -72,7 +72,7 @@ export default async function CaseStudyLayout({
         },
         creator: {
           '@type': 'Organization',
-          '@id': 'https://www.interioristabarcelona.com/#organization',
+          '@id': 'https://www.interiorista-barcelona.com/#organization',
         },
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -81,9 +81,9 @@ export default async function CaseStudyLayout({
       },
       {
         '@type': 'Organization',
-        '@id': 'https://www.interioristabarcelona.com/#organization',
+        '@id': 'https://www.interiorista-barcelona.com/#organization',
         name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
+        url: 'https://www.interiorista-barcelona.com',
         description:
           'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
         address: {

@@ -130,13 +130,13 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Sant Cugat',
-          item: 'https://www.interioristabarcelona.com/interiorista-sant-cugat/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-sant-cugat/',
         },
       ],
     },
@@ -145,7 +145,7 @@ const schemaOrg = {
       name: 'Interiorista Barcelona — Sant Cugat del Vallès',
       description:
         'Interioristas en Sant Cugat del Vallès. Miembros del colectivo operan directamente en Sant Cugat: reforma de torres, diseño de casas con jardín y proyectos de alto standing.',
-      url: 'https://www.interioristabarcelona.com/interiorista-sant-cugat/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-sant-cugat/',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Carrer de Mallorca, 237',

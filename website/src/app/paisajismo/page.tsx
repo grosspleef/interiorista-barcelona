@@ -256,33 +256,33 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Nuestros servicios',
-          item: 'https://www.interioristabarcelona.com/servicios/',
+          item: 'https://www.interiorista-barcelona.com/servicios/',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Paisajismo',
-          item: 'https://www.interioristabarcelona.com/paisajismo/',
+          item: 'https://www.interiorista-barcelona.com/paisajismo/',
         },
       ],
     },
     {
       '@type': 'Service',
       '@id':
-        'https://www.interioristabarcelona.com/paisajismo/#service',
+        'https://www.interiorista-barcelona.com/paisajismo/#service',
       name: 'Paisajismo en Barcelona',
       description:
         'Servicio de paisajismo en Barcelona: diseño de jardines, terrazas, áticos y espacios exteriores mediterráneos. Paisajistas profesionales en Barcelona y alrededores.',
       provider: {
         '@type': 'Organization',
         name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
+        url: 'https://www.interiorista-barcelona.com',
       },
       areaServed: [
         { '@type': 'City', name: 'Barcelona' },
@@ -311,7 +311,7 @@ const schemaOrg = {
     {
       '@type': 'Organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description:
         'Colectivo de interioristas y arquitectos de interior en Barcelona',
       address: {
@@ -346,7 +346,7 @@ const schemaOrg = {
       '@type': 'Review' as const,
       itemReviewed: {
         '@id':
-          'https://www.interioristabarcelona.com/paisajismo/#service',
+          'https://www.interiorista-barcelona.com/paisajismo/#service',
       },
       reviewRating: {
         '@type': 'Rating' as const,

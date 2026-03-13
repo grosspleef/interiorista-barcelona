@@ -16,22 +16,22 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Política de privacidad',
-          item: 'https://www.interioristabarcelona.com/politica-privacidad/',
+          item: 'https://www.interiorista-barcelona.com/politica-privacidad/',
         },
       ],
     },
     {
       '@type': 'WebPage',
       name: 'Política de privacidad — Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com/politica-privacidad/',
+      url: 'https://www.interiorista-barcelona.com/politica-privacidad/',
       description:
-        'Política de privacidad del sitio web interioristabarcelona.com, en cumplimiento del RGPD y la Ley Orgánica 3/2018 (LOPDGDD).',
+        'Política de privacidad del sitio web interiorista-barcelona.com, en cumplimiento del RGPD y la Ley Orgánica 3/2018 (LOPDGDD).',
     },
   ],
 }
@@ -39,7 +39,7 @@ const schemaOrg = {
 export const metadata: Metadata = {
   title: 'Política de privacidad',
   description:
-    'Política de privacidad del sitio web interioristabarcelona.com, en cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales (LOPDGDD).',
+    'Política de privacidad del sitio web interiorista-barcelona.com, en cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales (LOPDGDD).',
   alternates: {
     canonical: '/politica-privacidad/',
   },
@@ -56,7 +56,7 @@ export default function PoliticaPrivacidadPage() {
       <PageIntro eyebrow="Legal" title="Política de privacidad">
         <p>
           Información sobre el tratamiento de datos personales en el sitio web
-          interioristabarcelona.com, en cumplimiento del Reglamento (UE)
+          interiorista-barcelona.com, en cumplimiento del Reglamento (UE)
           2016/679 General de Protección de Datos (RGPD) y la Ley Orgánica
           3/2018, de 5 de diciembre, de Protección de Datos Personales y
           garantía de los derechos digitales (LOPDGDD).

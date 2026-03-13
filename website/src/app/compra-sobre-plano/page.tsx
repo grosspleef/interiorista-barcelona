@@ -292,33 +292,33 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Nuestros servicios',
-          item: 'https://www.interioristabarcelona.com/servicios/',
+          item: 'https://www.interiorista-barcelona.com/servicios/',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Compra sobre plano',
-          item: 'https://www.interioristabarcelona.com/compra-sobre-plano/',
+          item: 'https://www.interiorista-barcelona.com/compra-sobre-plano/',
         },
       ],
     },
     {
       '@type': 'Service',
       '@id':
-        'https://www.interioristabarcelona.com/compra-sobre-plano/#service',
+        'https://www.interiorista-barcelona.com/compra-sobre-plano/#service',
       name: 'Compra sobre plano en Barcelona',
       description:
         'Servicio de acompañamiento en la compra sobre plano en Barcelona: revisión de planos, personalización de acabados, seguimiento de obra y verificación de entrega de viviendas de obra nueva.',
       provider: {
         '@type': 'Organization',
         name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
+        url: 'https://www.interiorista-barcelona.com',
       },
       areaServed: [
         { '@type': 'City', name: 'Barcelona' },
@@ -347,7 +347,7 @@ const schemaOrg = {
     {
       '@type': 'Organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description:
         'Colectivo de interioristas y arquitectos de interior en Barcelona',
       address: {
@@ -382,7 +382,7 @@ const schemaOrg = {
       '@type': 'Review' as const,
       itemReviewed: {
         '@id':
-          'https://www.interioristabarcelona.com/compra-sobre-plano/#service',
+          'https://www.interiorista-barcelona.com/compra-sobre-plano/#service',
       },
       reviewRating: {
         '@type': 'Rating' as const,

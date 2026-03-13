@@ -133,13 +133,13 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Gràcia',
-          item: 'https://www.interioristabarcelona.com/interiorista-gracia/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-gracia/',
         },
       ],
     },
@@ -148,7 +148,7 @@ const schemaOrg = {
       name: 'Interiorista Barcelona — Gràcia',
       description:
         'Interioristas especializados en el barrio de Gràcia, Barcelona. Reforma de pisos, optimización de espacios pequeños y diseño funcional.',
-      url: 'https://www.interioristabarcelona.com/interiorista-gracia/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-gracia/',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Carrer de Mallorca, 237',

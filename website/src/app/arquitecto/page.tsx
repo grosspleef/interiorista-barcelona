@@ -311,32 +311,32 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Nuestros servicios',
-          item: 'https://www.interioristabarcelona.com/servicios/',
+          item: 'https://www.interiorista-barcelona.com/servicios/',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Arquitecto',
-          item: 'https://www.interioristabarcelona.com/arquitecto/',
+          item: 'https://www.interiorista-barcelona.com/arquitecto/',
         },
       ],
     },
     {
       '@type': 'Service',
-      '@id': 'https://www.interioristabarcelona.com/arquitecto/#service',
+      '@id': 'https://www.interiorista-barcelona.com/arquitecto/#service',
       name: 'Arquitecto en Barcelona',
       description:
         'Servicio de arquitectura en Barcelona: construcción nueva, rehabilitación y reforma integral por arquitectos colegiados inscritos en el COAC.',
       provider: {
         '@type': 'Organization',
         name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
+        url: 'https://www.interiorista-barcelona.com',
       },
       areaServed: [
         { '@type': 'City', name: 'Barcelona' },
@@ -366,7 +366,7 @@ const schemaOrg = {
     {
       '@type': 'Organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description: 'Colectivo de interioristas y arquitectos en Barcelona',
       address: {
         '@type': 'PostalAddress',
@@ -399,7 +399,7 @@ const schemaOrg = {
     ...serviceTestimonials.map((t) => ({
       '@type': 'Review' as const,
       itemReviewed: {
-        '@id': 'https://www.interioristabarcelona.com/arquitecto/#service',
+        '@id': 'https://www.interiorista-barcelona.com/arquitecto/#service',
       },
       reviewRating: {
         '@type': 'Rating' as const,

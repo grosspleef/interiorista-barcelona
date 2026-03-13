@@ -79,35 +79,35 @@ export default async function AntesYDespuesProject(props: {
                     '@type': 'ListItem',
                     position: 1,
                     name: 'Inicio',
-                    item: 'https://www.interioristabarcelona.com/',
+                    item: 'https://www.interiorista-barcelona.com/',
                   },
                   {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Antes y Después',
-                    item: 'https://www.interioristabarcelona.com/antes-y-despues/',
+                    item: 'https://www.interiorista-barcelona.com/antes-y-despues/',
                   },
                   {
                     '@type': 'ListItem',
                     position: 3,
                     name: caseStudy.title,
-                    item: `https://www.interioristabarcelona.com/antes-y-despues/${slug}/`,
+                    item: `https://www.interiorista-barcelona.com/antes-y-despues/${slug}/`,
                   },
                 ],
               },
               {
                 '@type': 'ImageGallery',
-                '@id': `https://www.interioristabarcelona.com/antes-y-despues/${slug}/#gallery`,
+                '@id': `https://www.interiorista-barcelona.com/antes-y-despues/${slug}/#gallery`,
                 name: `Antes y Después: ${caseStudy.title}`,
                 description: `Fotos comparativas del antes y después de ${caseStudy.title.toLowerCase()}. ${caseStudy.description}`,
-                url: `https://www.interioristabarcelona.com/antes-y-despues/${slug}/`,
+                url: `https://www.interiorista-barcelona.com/antes-y-despues/${slug}/`,
                 dateCreated: caseStudy.date,
                 about: {
                   '@type': 'Service',
                   name: caseStudy.service,
                   provider: {
                     '@id':
-                      'https://www.interioristabarcelona.com/#organization',
+                      'https://www.interiorista-barcelona.com/#organization',
                   },
                 },
                 locationCreated: {
@@ -122,26 +122,26 @@ export default async function AntesYDespuesProject(props: {
                 },
                 creator: {
                   '@id':
-                    'https://www.interioristabarcelona.com/#organization',
+                    'https://www.interiorista-barcelona.com/#organization',
                 },
                 isPartOf: {
                   '@type': 'CollectionPage',
                   '@id':
-                    'https://www.interioristabarcelona.com/antes-y-despues/#page',
+                    'https://www.interiorista-barcelona.com/antes-y-despues/#page',
                 },
                 associatedMedia: {
                   '@type': 'CreativeWork',
-                  '@id': `https://www.interioristabarcelona.com/proyectos/${slug}/#project`,
+                  '@id': `https://www.interiorista-barcelona.com/proyectos/${slug}/#project`,
                   name: caseStudy.title,
-                  url: `https://www.interioristabarcelona.com/proyectos/${slug}/`,
+                  url: `https://www.interiorista-barcelona.com/proyectos/${slug}/`,
                 },
               },
               {
                 '@type': 'Organization',
                 '@id':
-                  'https://www.interioristabarcelona.com/#organization',
+                  'https://www.interiorista-barcelona.com/#organization',
                 name: 'Interiorista Barcelona',
-                url: 'https://www.interioristabarcelona.com',
+                url: 'https://www.interiorista-barcelona.com',
                 description:
                   'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
                 address: {
@@ -166,7 +166,7 @@ export default async function AntesYDespuesProject(props: {
                     {
                       '@type': 'Review',
                       itemReviewed: {
-                        '@id': `https://www.interioristabarcelona.com/antes-y-despues/${slug}/#gallery`,
+                        '@id': `https://www.interiorista-barcelona.com/antes-y-despues/${slug}/#gallery`,
                       },
                       reviewRating: {
                         '@type': 'Rating',

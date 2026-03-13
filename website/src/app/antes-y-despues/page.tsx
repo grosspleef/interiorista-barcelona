@@ -141,44 +141,44 @@ export default async function AntesYDespues() {
                     '@type': 'ListItem',
                     position: 1,
                     name: 'Inicio',
-                    item: 'https://www.interioristabarcelona.com/',
+                    item: 'https://www.interiorista-barcelona.com/',
                   },
                   {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Antes y Después',
-                    item: 'https://www.interioristabarcelona.com/antes-y-despues/',
+                    item: 'https://www.interiorista-barcelona.com/antes-y-despues/',
                   },
                 ],
               },
               {
                 '@type': 'CollectionPage',
                 '@id':
-                  'https://www.interioristabarcelona.com/antes-y-despues/#page',
+                  'https://www.interiorista-barcelona.com/antes-y-despues/#page',
                 name: 'Antes y Después de Reformas en Barcelona',
                 description:
                   'Descubre el antes y después de nuestras reformas e interiorismo en Barcelona. Transformaciones reales de pisos, casas, oficinas y locales comerciales con fotos comparativas.',
-                url: 'https://www.interioristabarcelona.com/antes-y-despues/',
+                url: 'https://www.interiorista-barcelona.com/antes-y-despues/',
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id':
-                    'https://www.interioristabarcelona.com/#website',
+                    'https://www.interiorista-barcelona.com/#website',
                 },
                 about: {
                   '@type': 'Service',
                   name: 'Interiorismo y reformas en Barcelona',
                   provider: {
                     '@id':
-                      'https://www.interioristabarcelona.com/#organization',
+                      'https://www.interiorista-barcelona.com/#organization',
                   },
                 },
               },
               {
                 '@type': 'Organization',
                 '@id':
-                  'https://www.interioristabarcelona.com/#organization',
+                  'https://www.interiorista-barcelona.com/#organization',
                 name: 'Interiorista Barcelona',
-                url: 'https://www.interioristabarcelona.com',
+                url: 'https://www.interiorista-barcelona.com',
                 description:
                   'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
                 address: {

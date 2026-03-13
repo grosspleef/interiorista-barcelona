@@ -304,32 +304,32 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Nuestros servicios',
-          item: 'https://www.interioristabarcelona.com/servicios/',
+          item: 'https://www.interiorista-barcelona.com/servicios/',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Diseño de interiores',
-          item: 'https://www.interioristabarcelona.com/diseno-interiores/',
+          item: 'https://www.interiorista-barcelona.com/diseno-interiores/',
         },
       ],
     },
     {
       '@type': 'Service',
-      '@id': 'https://www.interioristabarcelona.com/diseno-interiores/#service',
+      '@id': 'https://www.interiorista-barcelona.com/diseno-interiores/#service',
       name: 'Diseño de interiores en Barcelona',
       description:
         'Servicio de diseño de interiores en Barcelona: concepción, optimización, reforma parcial o completa de tu interior por diseñadores de interiores titulados.',
       provider: {
         '@type': 'Organization',
         name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
+        url: 'https://www.interiorista-barcelona.com',
       },
       areaServed: [
         { '@type': 'City', name: 'Barcelona' },
@@ -358,7 +358,7 @@ const schemaOrg = {
     {
       '@type': 'Organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description:
         'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
       address: {
@@ -392,7 +392,7 @@ const schemaOrg = {
     ...serviceTestimonials.map((t) => ({
       '@type': 'Review' as const,
       itemReviewed: {
-        '@id': 'https://www.interioristabarcelona.com/diseno-interiores/#service',
+        '@id': 'https://www.interiorista-barcelona.com/diseno-interiores/#service',
       },
       reviewRating: {
         '@type': 'Rating' as const,

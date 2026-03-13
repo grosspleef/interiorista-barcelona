@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://www.interioristabarcelona.com/sitemap.xml',
+    sitemap: 'https://www.interiorista-barcelona.com/sitemap.xml',
   }
 }

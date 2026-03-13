@@ -151,7 +151,7 @@ export async function POST(request: NextRequest) {
           <hr style="border:none;border-top:1px solid #e5e5e5;margin:24px 0" />
           <p style="color:#a3a3a3;font-size:12px">
             Este email ha sido enviado automáticamente desde
-            <a href="https://www.interioristabarcelona.com" style="color:#a3a3a3">interioristabarcelona.com</a>.
+            <a href="https://www.interiorista-barcelona.com" style="color:#a3a3a3">interiorista-barcelona.com</a>.
             No respondas directamente a este mensaje.
           </p>
         </div>

@@ -146,13 +146,13 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Sarrià',
-          item: 'https://www.interioristabarcelona.com/interiorista-sarria/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-sarria/',
         },
       ],
     },
@@ -161,7 +161,7 @@ const schemaOrg = {
       name: 'Interiorista Barcelona — Sarrià-Sant Gervasi',
       description:
         'Interioristas especializados en Sarrià-Sant Gervasi, Barcelona. Diseño de casas unifamiliares, integración jardín-interior y reformas de alto standing.',
-      url: 'https://www.interioristabarcelona.com/interiorista-sarria/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-sarria/',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Carrer de Mallorca, 237',

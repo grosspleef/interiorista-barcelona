@@ -128,20 +128,20 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Sabadell',
-          item: 'https://www.interioristabarcelona.com/interiorista-sabadell/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-sabadell/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'Interiorista Barcelona — Sabadell',
-      url: 'https://www.interioristabarcelona.com/interiorista-sabadell/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-sabadell/',
       description:
         'Interioristas en Sabadell. Profesionales del colectivo operan directamente en el Vallès: reforma de pisos, modernización de viviendas y diseño funcional a precios accesibles.',
       address: {

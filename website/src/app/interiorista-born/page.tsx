@@ -141,24 +141,24 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Born',
-          item: 'https://www.interioristabarcelona.com/interiorista-born/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-born/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       '@id':
-        'https://www.interioristabarcelona.com/interiorista-born/#localbusiness',
+        'https://www.interiorista-barcelona.com/interiorista-born/#localbusiness',
       name: 'Interiorista Barcelona — El Born',
       description:
         'Interioristas especializados en el Born y Ciutat Vella, Barcelona. Rehabilitación de edificios medievales, conversión de locales en lofts y diseño interior con carácter histórico.',
-      url: 'https://www.interioristabarcelona.com/interiorista-born/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-born/',
       telephone: '+34 93 000 00 00',
       address: {
         '@type': 'PostalAddress',

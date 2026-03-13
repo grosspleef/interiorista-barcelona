@@ -62,19 +62,19 @@ function buildSchemaOrg(member: NonNullable<ReturnType<typeof getMemberBySlug>>)
             '@type': 'ListItem',
             position: 1,
             name: 'Inicio',
-            item: 'https://www.interioristabarcelona.com',
+            item: 'https://www.interiorista-barcelona.com',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Quiénes somos',
-            item: 'https://www.interioristabarcelona.com/quienes-somos/',
+            item: 'https://www.interiorista-barcelona.com/quienes-somos/',
           },
           {
             '@type': 'ListItem',
             position: 3,
             name: member.name,
-            item: `https://www.interioristabarcelona.com${member.href}`,
+            item: `https://www.interiorista-barcelona.com${member.href}`,
           },
         ],
       },
@@ -84,7 +84,7 @@ function buildSchemaOrg(member: NonNullable<ReturnType<typeof getMemberBySlug>>)
         jobTitle: member.professionLabel,
         worksFor: {
           '@type': 'Organization',
-          '@id': 'https://www.interioristabarcelona.com/#organization',
+          '@id': 'https://www.interiorista-barcelona.com/#organization',
           name: 'Interiorista Barcelona',
         },
         workLocation: {
@@ -96,7 +96,7 @@ function buildSchemaOrg(member: NonNullable<ReturnType<typeof getMemberBySlug>>)
           '@type': 'EducationalOrganization',
           name: member.training,
         },
-        url: `https://www.interioristabarcelona.com${member.href}`,
+        url: `https://www.interiorista-barcelona.com${member.href}`,
       },
     ],
   }

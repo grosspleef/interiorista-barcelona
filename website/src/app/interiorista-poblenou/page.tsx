@@ -148,20 +148,20 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Poblenou',
-          item: 'https://www.interioristabarcelona.com/interiorista-poblenou/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-poblenou/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'Interiorista Barcelona — Poblenou',
-      url: 'https://www.interioristabarcelona.com/interiorista-poblenou/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-poblenou/',
       description:
         'Interioristas en Poblenou, Barcelona. Reconversión de espacios industriales en lofts, diseño de oficinas y locales comerciales en el distrito @22.',
       address: {

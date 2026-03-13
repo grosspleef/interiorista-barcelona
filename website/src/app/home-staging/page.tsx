@@ -270,33 +270,33 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Nuestros servicios',
-          item: 'https://www.interioristabarcelona.com/servicios/',
+          item: 'https://www.interiorista-barcelona.com/servicios/',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Home staging',
-          item: 'https://www.interioristabarcelona.com/home-staging/',
+          item: 'https://www.interiorista-barcelona.com/home-staging/',
         },
       ],
     },
     {
       '@type': 'Service',
       '@id':
-        'https://www.interioristabarcelona.com/home-staging/#service',
+        'https://www.interiorista-barcelona.com/home-staging/#service',
       name: 'Home staging en Barcelona',
       description:
         'Servicio profesional de home staging en Barcelona: preparación de inmuebles para venta o alquiler con puesta en escena, styling y fotografía profesional.',
       provider: {
         '@type': 'Organization',
         name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
+        url: 'https://www.interiorista-barcelona.com',
       },
       areaServed: [
         { '@type': 'City', name: 'Barcelona' },
@@ -324,7 +324,7 @@ const schemaOrg = {
     {
       '@type': 'Organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description:
         'Colectivo de interioristas y arquitectos de interior en Barcelona',
       address: {
@@ -359,7 +359,7 @@ const schemaOrg = {
       '@type': 'Review' as const,
       itemReviewed: {
         '@id':
-          'https://www.interioristabarcelona.com/home-staging/#service',
+          'https://www.interiorista-barcelona.com/home-staging/#service',
       },
       reviewRating: {
         '@type': 'Rating' as const,

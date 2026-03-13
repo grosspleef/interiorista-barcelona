@@ -15,22 +15,22 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Aviso legal',
-          item: 'https://www.interioristabarcelona.com/aviso-legal/',
+          item: 'https://www.interiorista-barcelona.com/aviso-legal/',
         },
       ],
     },
     {
       '@type': 'WebPage',
       name: 'Aviso legal — Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com/aviso-legal/',
+      url: 'https://www.interiorista-barcelona.com/aviso-legal/',
       description:
-        'Aviso legal e información sobre el titular del sitio web interioristabarcelona.com, en cumplimiento de la LSSI-CE.',
+        'Aviso legal e información sobre el titular del sitio web interiorista-barcelona.com, en cumplimiento de la LSSI-CE.',
     },
   ],
 }
@@ -38,7 +38,7 @@ const schemaOrg = {
 export const metadata: Metadata = {
   title: 'Aviso legal',
   description:
-    'Aviso legal e información sobre el titular del sitio web interioristabarcelona.com, en cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI-CE).',
+    'Aviso legal e información sobre el titular del sitio web interiorista-barcelona.com, en cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI-CE).',
   alternates: {
     canonical: '/aviso-legal/',
   },
@@ -55,7 +55,7 @@ export default function AvisoLegalPage() {
       <PageIntro eyebrow="Legal" title="Aviso legal">
         <p>
           Información legal sobre el titular del sitio web
-          interioristabarcelona.com, en cumplimiento de la Ley 34/2002, de 11 de
+          interiorista-barcelona.com, en cumplimiento de la Ley 34/2002, de 11 de
           julio, de Servicios de la Sociedad de la Información y de Comercio
           Electrónico (LSSI-CE).
         </p>
@@ -93,7 +93,7 @@ export default function AvisoLegalPage() {
             <h2>2. Director de la publicación</h2>
             <p>
               El director de la publicación del sitio web
-              interioristabarcelona.com es Hugo Betscher.
+              interiorista-barcelona.com es Hugo Betscher.
             </p>
 
             <h2>3. Alojamiento</h2>
@@ -120,7 +120,7 @@ export default function AvisoLegalPage() {
 
             <h2>4. Propiedad intelectual e industrial</h2>
             <p>
-              Todos los contenidos del sitio web interioristabarcelona.com,
+              Todos los contenidos del sitio web interiorista-barcelona.com,
               incluyendo textos, fotografías, gráficos, imágenes, iconos,
               tecnología, software, enlaces y demás contenidos audiovisuales o
               sonoros, así como su diseño gráfico y códigos fuente, son propiedad

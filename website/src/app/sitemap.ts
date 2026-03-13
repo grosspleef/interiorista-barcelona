@@ -4,7 +4,7 @@ import { loadArticles, loadCaseStudies } from '@/lib/mdx'
 import { services } from '@/lib/services'
 import { members } from '@/lib/members'
 
-const BASE_URL = 'https://www.interioristabarcelona.com'
+const BASE_URL = 'https://www.interiorista-barcelona.com'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const articles = await loadArticles()

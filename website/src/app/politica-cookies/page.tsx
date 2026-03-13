@@ -15,22 +15,22 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Política de cookies',
-          item: 'https://www.interioristabarcelona.com/politica-cookies/',
+          item: 'https://www.interiorista-barcelona.com/politica-cookies/',
         },
       ],
     },
     {
       '@type': 'WebPage',
       name: 'Política de cookies — Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com/politica-cookies/',
+      url: 'https://www.interiorista-barcelona.com/politica-cookies/',
       description:
-        'Política de cookies del sitio web interioristabarcelona.com, en cumplimiento de la LSSI-CE.',
+        'Política de cookies del sitio web interiorista-barcelona.com, en cumplimiento de la LSSI-CE.',
     },
   ],
 }
@@ -38,7 +38,7 @@ const schemaOrg = {
 export const metadata: Metadata = {
   title: 'Política de cookies',
   description:
-    'Política de cookies del sitio web interioristabarcelona.com, en cumplimiento del artículo 22 de la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI-CE).',
+    'Política de cookies del sitio web interiorista-barcelona.com, en cumplimiento del artículo 22 de la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI-CE).',
   alternates: {
     canonical: '/politica-cookies/',
   },
@@ -55,7 +55,7 @@ export default function PoliticaCookiesPage() {
       <PageIntro eyebrow="Legal" title="Política de cookies">
         <p>
           Información sobre las cookies utilizadas en el sitio web
-          interioristabarcelona.com, en cumplimiento del artículo 22 de la Ley
+          interiorista-barcelona.com, en cumplimiento del artículo 22 de la Ley
           34/2002, de 11 de julio, de Servicios de la Sociedad de la Información
           y de Comercio Electrónico (LSSI-CE).
         </p>

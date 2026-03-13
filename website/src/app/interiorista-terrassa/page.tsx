@@ -128,20 +128,20 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Terrassa',
-          item: 'https://www.interioristabarcelona.com/interiorista-terrassa/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-terrassa/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'Interiorista Barcelona — Terrassa',
-      url: 'https://www.interioristabarcelona.com/interiorista-terrassa/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-terrassa/',
       description:
         'Interioristas en Terrassa. Profesionales del colectivo en el Vallès Occidental: reforma de pisos, rehabilitación de masías y reconversión de espacios industriales.',
       address: {

@@ -130,13 +130,13 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Arquitecto Sitges',
-          item: 'https://www.interioristabarcelona.com/interiorista-sitges/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-sitges/',
         },
       ],
     },
@@ -145,7 +145,7 @@ const schemaOrg = {
       name: 'Interiorista Barcelona — Sitges',
       description:
         'Arquitectos e interioristas en Sitges. Profesionales del colectivo en el Garraf: reforma de casas, villas costeras y alojamientos turísticos con diseño mediterráneo.',
-      url: 'https://www.interioristabarcelona.com/interiorista-sitges/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-sitges/',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Carrer de Mallorca, 237',

@@ -49,7 +49,7 @@ export default function Home() {
             name: 'Interiorista Barcelona',
             description:
               'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
-            url: 'https://www.interioristabarcelona.com',
+            url: 'https://www.interiorista-barcelona.com',
             address: {
               '@type': 'PostalAddress',
               streetAddress: 'Carrer de Mallorca, 237',

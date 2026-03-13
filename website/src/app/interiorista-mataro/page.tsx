@@ -130,20 +130,20 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Mataró',
-          item: 'https://www.interioristabarcelona.com/interiorista-mataro/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-mataro/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'Interiorista Barcelona — Mataró',
-      url: 'https://www.interioristabarcelona.com/interiorista-mataro/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-mataro/',
       description:
         'Interioristas y arquitectos en Mataró. Profesionales del colectivo en el Maresme: reforma de pisos, rehabilitación de edificios modernistas y diseño costero.',
       address: {

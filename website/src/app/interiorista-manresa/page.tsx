@@ -129,20 +129,20 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Manresa',
-          item: 'https://www.interioristabarcelona.com/interiorista-manresa/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-manresa/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'Interiorista Barcelona — Manresa',
-      url: 'https://www.interioristabarcelona.com/interiorista-manresa/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-manresa/',
       description:
         'Interioristas y arquitectos en Manresa. Profesionales del colectivo en el Bages: reforma de pisos, rehabilitación de masías y diseño interior.',
       address: {

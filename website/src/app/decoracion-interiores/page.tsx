@@ -294,32 +294,32 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Nuestros servicios',
-          item: 'https://www.interioristabarcelona.com/servicios/',
+          item: 'https://www.interiorista-barcelona.com/servicios/',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Decoración de interiores',
-          item: 'https://www.interioristabarcelona.com/decoracion-interiores/',
+          item: 'https://www.interiorista-barcelona.com/decoracion-interiores/',
         },
       ],
     },
     {
       '@type': 'Service',
-      '@id': 'https://www.interioristabarcelona.com/decoracion-interiores/#service',
+      '@id': 'https://www.interiorista-barcelona.com/decoracion-interiores/#service',
       name: 'Decoración de interiores en Barcelona',
       description:
         'Servicio de decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra.',
       provider: {
         '@type': 'Organization',
         name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
+        url: 'https://www.interiorista-barcelona.com',
       },
       areaServed: [
         { '@type': 'City', name: 'Barcelona' },
@@ -348,7 +348,7 @@ const schemaOrg = {
     {
       '@type': 'Organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description:
         'Colectivo de interioristas y arquitectos de interior en Barcelona',
       address: {
@@ -382,7 +382,7 @@ const schemaOrg = {
     ...serviceTestimonials.map((t) => ({
       '@type': 'Review' as const,
       itemReviewed: {
-        '@id': 'https://www.interioristabarcelona.com/decoracion-interiores/#service',
+        '@id': 'https://www.interiorista-barcelona.com/decoracion-interiores/#service',
       },
       reviewRating: {
         '@type': 'Rating' as const,

@@ -299,33 +299,33 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Nuestros servicios',
-          item: 'https://www.interioristabarcelona.com/servicios/',
+          item: 'https://www.interiorista-barcelona.com/servicios/',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Licitaciones de arquitectura',
-          item: 'https://www.interioristabarcelona.com/licitaciones-arquitectura/',
+          item: 'https://www.interiorista-barcelona.com/licitaciones-arquitectura/',
         },
       ],
     },
     {
       '@type': 'Service',
       '@id':
-        'https://www.interioristabarcelona.com/licitaciones-arquitectura/#service',
+        'https://www.interiorista-barcelona.com/licitaciones-arquitectura/#service',
       name: 'Licitaciones de arquitectura en Barcelona',
       description:
         'Servicio de arquitectura e interiorismo para licitaciones públicas en Barcelona: concursos de proyectos, equipamientos públicos y contratación pública (LCSP).',
       provider: {
         '@type': 'Organization',
         name: 'Interiorista Barcelona',
-        url: 'https://www.interioristabarcelona.com',
+        url: 'https://www.interiorista-barcelona.com',
       },
       areaServed: [
         { '@type': 'City', name: 'Barcelona' },
@@ -341,7 +341,7 @@ const schemaOrg = {
     {
       '@type': 'Organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description: 'Colectivo de interioristas y arquitectos en Barcelona',
       address: {
         '@type': 'PostalAddress',
@@ -375,7 +375,7 @@ const schemaOrg = {
       '@type': 'Review' as const,
       itemReviewed: {
         '@id':
-          'https://www.interioristabarcelona.com/licitaciones-arquitectura/#service',
+          'https://www.interiorista-barcelona.com/licitaciones-arquitectura/#service',
       },
       reviewRating: {
         '@type': 'Rating' as const,

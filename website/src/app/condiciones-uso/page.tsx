@@ -16,22 +16,22 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Condiciones de uso',
-          item: 'https://www.interioristabarcelona.com/condiciones-uso/',
+          item: 'https://www.interiorista-barcelona.com/condiciones-uso/',
         },
       ],
     },
     {
       '@type': 'WebPage',
       name: 'Condiciones de uso — Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com/condiciones-uso/',
+      url: 'https://www.interiorista-barcelona.com/condiciones-uso/',
       description:
-        'Condiciones generales de uso del sitio web interioristabarcelona.com, plataforma de puesta en relación con profesionales del interiorismo en Barcelona.',
+        'Condiciones generales de uso del sitio web interiorista-barcelona.com, plataforma de puesta en relación con profesionales del interiorismo en Barcelona.',
     },
   ],
 }
@@ -39,7 +39,7 @@ const schemaOrg = {
 export const metadata: Metadata = {
   title: 'Condiciones de uso',
   description:
-    'Condiciones generales de uso del sitio web interioristabarcelona.com, plataforma de puesta en relación con profesionales del interiorismo en Barcelona.',
+    'Condiciones generales de uso del sitio web interiorista-barcelona.com, plataforma de puesta en relación con profesionales del interiorismo en Barcelona.',
   alternates: {
     canonical: '/condiciones-uso/',
   },
@@ -55,7 +55,7 @@ export default function CondicionesUsoPage() {
 
       <PageIntro eyebrow="Legal" title="Condiciones de uso">
         <p>
-          Condiciones generales de uso del sitio web interioristabarcelona.com.
+          Condiciones generales de uso del sitio web interiorista-barcelona.com.
           El acceso y la navegación por este sitio web implican la aceptación
           plena y sin reservas de las presentes condiciones.
         </p>
@@ -66,7 +66,7 @@ export default function CondicionesUsoPage() {
           <div className="typography max-w-3xl">
             <h2>1. Disposiciones generales</h2>
             <p>
-              El sitio web interioristabarcelona.com (en adelante, el
+              El sitio web interiorista-barcelona.com (en adelante, el
               &quot;Sitio&quot;) es una plataforma de puesta en relación entre
               visitantes que buscan servicios de interiorismo, arquitectura de
               interiores, decoración o paisajismo y profesionales independientes
@@ -81,7 +81,7 @@ export default function CondicionesUsoPage() {
             <ul>
               <li>
                 <strong>Sitio:</strong> el sitio web accesible en
-                interioristabarcelona.com y sus subdominios.
+                interiorista-barcelona.com y sus subdominios.
               </li>
               <li>
                 <strong>Titular:</strong> la persona física responsable de la

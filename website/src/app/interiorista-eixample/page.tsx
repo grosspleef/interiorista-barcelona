@@ -137,20 +137,20 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Interiorista Eixample',
-          item: 'https://www.interioristabarcelona.com/interiorista-eixample/',
+          item: 'https://www.interiorista-barcelona.com/interiorista-eixample/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'Interiorista Barcelona — Eixample',
-      url: 'https://www.interioristabarcelona.com/interiorista-eixample/',
+      url: 'https://www.interiorista-barcelona.com/interiorista-eixample/',
       description:
         'Interioristas especializados en el Eixample de Barcelona. Reformas de pisos modernistas, conservación de mosaicos hidráulicos y diseño interior respetando el patrimonio.',
       address: {

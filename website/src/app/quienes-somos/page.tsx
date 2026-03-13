@@ -158,21 +158,21 @@ const schemaOrg = {
           '@type': 'ListItem',
           position: 1,
           name: 'Inicio',
-          item: 'https://www.interioristabarcelona.com',
+          item: 'https://www.interiorista-barcelona.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Quiénes somos',
-          item: 'https://www.interioristabarcelona.com/quienes-somos/',
+          item: 'https://www.interiorista-barcelona.com/quienes-somos/',
         },
       ],
     },
     {
       '@type': 'Organization',
-      '@id': 'https://www.interioristabarcelona.com/#organization',
+      '@id': 'https://www.interiorista-barcelona.com/#organization',
       name: 'Interiorista Barcelona',
-      url: 'https://www.interioristabarcelona.com',
+      url: 'https://www.interiorista-barcelona.com',
       description:
         'Colectivo de mas de 25 interioristas, arquitectos de interior, decoradores y paisajistas titulados y asegurados en Barcelona.',
       address: {
@@ -194,9 +194,9 @@ const schemaOrg = {
     {
       '@type': 'AboutPage',
       name: 'Quiénes somos — Interioristas en Barcelona',
-      url: 'https://www.interioristabarcelona.com/quienes-somos/',
+      url: 'https://www.interiorista-barcelona.com/quienes-somos/',
       about: {
-        '@id': 'https://www.interioristabarcelona.com/#organization',
+        '@id': 'https://www.interiorista-barcelona.com/#organization',
       },
     },
   ],
