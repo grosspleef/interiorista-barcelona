@@ -1,5 +1,4 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { Border } from '@/components/Border'
@@ -13,9 +12,9 @@ import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Blog de interiorismo y reformas en Barcelona',
   description:
-    'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
+    'Consejos, guías y tendencias sobre interiorismo, reformas y decoración en Barcelona. Precios, trámites y claves para transformar tu hogar.',
   alternates: {
     canonical: '/blog/',
   },
@@ -26,10 +25,13 @@ export default async function Blog() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
+      <PageIntro
+        eyebrow="Blog"
+        title="Consejos de interiorismo y reformas"
+      >
         <p>
-          Stay up-to-date with the latest industry news as our marketing teams
-          finds new ways to re-purpose old CSS tricks articles.
+          Guías prácticas, tendencias y precios actualizados para tus proyectos
+          de interiorismo y reforma en Barcelona.
         </p>
       </PageIntro>
 
@@ -45,27 +47,11 @@ export default async function Blog() {
                         <Link href={article.href}>{article.title}</Link>
                       </h2>
                       <dl className="lg:absolute lg:top-0 lg:left-0 lg:w-1/3 lg:px-4">
-                        <dt className="sr-only">Published</dt>
+                        <dt className="sr-only">Publicado</dt>
                         <dd className="absolute top-0 left-0 text-sm text-neutral-950 lg:static">
                           <time dateTime={article.date}>
                             {formatDate(article.date)}
                           </time>
-                        </dd>
-                        <dt className="sr-only">Author</dt>
-                        <dd className="mt-6 flex gap-x-4">
-                          <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
-                            <Image
-                              alt=""
-                              {...article.author.image}
-                              className="h-12 w-12 object-cover"
-                            />
-                          </div>
-                          <div className="text-sm text-neutral-950">
-                            <div className="font-semibold">
-                              {article.author.name}
-                            </div>
-                            <div>{article.author.role}</div>
-                          </div>
                         </dd>
                       </dl>
                       <p className="mt-6 max-w-2xl text-base text-neutral-600">
@@ -76,7 +62,7 @@ export default async function Blog() {
                         aria-label={`Read more: ${article.title}`}
                         className="mt-8"
                       >
-                        Read more
+                        Leer más
                       </Button>
                     </div>
                   </div>

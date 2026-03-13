@@ -35,7 +35,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [x] **9. Ajouter les URLs canoniques** — Seulement 2 pages sur ~30 ont une canonical. Ajouter sur toutes les pages via le metadata Next.js.
 
-- [ ] **10. Remplacer les 3 articles de blog** — Contenu template en anglais ("Component Naming", "Going Back to Office", "Web Development"). Ecrire de vrais articles en espagnol sur le design d'interieur.
+- [x] **10. Remplacer les 3 articles de blog** — ✅ 3 nouveaux articles en espagnol : "Presupuesto reforma cocina", "Licencia de obra Barcelona", "Tendencias decoración 2026".
 
 - [x] **11. Supprimer ou adapter les pages template anglaises** :
   - `/about/` — Supprimee (contenu satirique template, equipe fictive)
@@ -43,7 +43,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
   - `/contact/` — Supprimee (emails et adresses fausses, `/contacto/` existe deja)
   - Decision : pages supprimees — aucun lien interne ne pointait vers elles.
 
-- [x] **12. Corriger les liens footer "Ciudades"** — Section supprimee (liens fictifs vers `#`). A reimplementer quand le collectif s'etend a d'autres villes.
+- [x] **12. Corriger les liens footer "Ciudades"** — ✅ Section renommee "Zonas" avec vrais liens vers les pages barrios (`/interiorista-eixample/`, etc.).
 
 - [ ] **13. Integrer Google Analytics / GTM** — Aucun analytics configure. Ajouter GA4 ou une alternative privacy-friendly (Plausible, Umami).
 
@@ -60,9 +60,9 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 ### RECOMMANDE — Ameliorations SEO & UX
 
-- [x] **16. Creer les pages barrios** — 5 pages locales creees : Eixample, Gracia, Born, Sarria, Poblenou. Contenu unique par quartier, Schema.org LocalBusiness, FAQ specifiques.
+- [x] **16. Creer les pages barrios** — ✅ 11 pages creees : Eixample, Gracia, Born, Sarria, Poblenou + Sant Cugat, Sabadell, Terrassa, Manresa, Sitges, Mataro.
 
-- [ ] **17. Ajouter Schema.org sur les articles de blog** — Les pages MDX blog n'ont pas de JSON-LD Article/BlogPosting.
+- [x] **17. Ajouter Schema.org sur les articles de blog** — ✅ JSON-LD BlogPosting present (headline, datePublished, author, publisher, wordCount).
 
 - [ ] **18. Ajouter Schema.org sur les etudes de cas** — Les pages projets/MDX n'ont pas de JSON-LD CreativeWork.
 
@@ -102,13 +102,13 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 | Page prix | OK | 14 services avec vrais tarifs |
 | Temoignages (40+) | OK | Contenus authentiques |
 | Pages legales | OK | Aviso legal, conditions, cookies, politique de confidentialite |
-| Blog (3 articles) | KO | Contenu template anglais non remplace |
-| Pages EN (about, process, contact) | OK | Supprimees (aucun lien interne, `/contacto/` existe) |
-| SEO technique | OK | robots.txt, sitemap, OG tags, Twitter Cards et canonicals OK |
-| Formulaires | OK | Resend API, validation, honeypot, rate limiting, confirmation client |
-| Analytics | KO | Aucun tracking |
-| Securite | KO | Aucun header de securite |
-| Pages barrios | KO | Non creees (prevues dans l'architecture) |
+| Blog (3 articles) | ✅ OK | 3 articles en espagnol (reforma cocina, licencia obra, tendencias 2026) |
+| Pages EN (about, process, contact) | ✅ OK | Supprimees et remplacees par pages ES |
+| SEO technique | ✅ OK | robots.txt, sitemap, OG tags, Twitter cards, canonicals, headers securite |
+| Formulaires | ✅ OK | API route contact fonctionnelle |
+| Analytics | ⚠️ KO | Aucun tracking |
+| Securite | ✅ OK | Headers configures dans next.config.mjs |
+| Pages barrios | ✅ OK | 11 pages creees (5 barrios + 6 villes) |
 
 ---
 

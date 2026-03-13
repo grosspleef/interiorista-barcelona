@@ -1,0 +1,286 @@
+import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
+import Image from 'next/image'
+import imgLicencia1 from '@/images/licencia-obras-fachada-loft-poblenou-barcelona.jpg'
+import imgLicencia2 from '@/images/direccion-obra-chantier-structural-born-barcelona.jpg'
+import imgLicencia3 from '@/images/estudio-proyecto-diseno-interiores-barcelona-planos.jpg'
+
+export const article = {
+  date: '2026-01-20',
+  title: 'Licencia de obra en Barcelona: tipos, trámites y plazos en 2026',
+  description:
+    'Guía completa sobre las licencias de obra en Barcelona. Te explicamos qué tipo de licencia necesitas, cómo solicitarla al Ajuntament y cuánto tardan los trámites.',
+  author: {
+    name: 'Marc Puig',
+    role: 'Arquitecto',
+    image: { src: imageAngelaFisher },
+  },
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+  openGraph: {
+    type: 'article',
+    title: article.title,
+    description: article.description,
+    publishedTime: article.date,
+  },
+  alternates: {
+    canonical: '/blog/licencia-de-obra-barcelona/',
+  },
+}
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: article.title,
+        description: article.description,
+        datePublished: article.date,
+        dateModified: '2026-03-10',
+        wordCount: 1500,
+        author: {
+          '@type': 'Person',
+          name: 'Marc Puig',
+          jobTitle: 'Arquitecto',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Interiorista Barcelona',
+          url: 'https://www.interioristabarcelona.com',
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://www.interioristabarcelona.com/blog/licencia-de-obra-barcelona/',
+        },
+        image: 'https://www.interioristabarcelona.com/images/licencia-obras-fachada-loft-poblenou-barcelona.jpg',
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.interioristabarcelona.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.interioristabarcelona.com/blog/' },
+          { '@type': 'ListItem', position: 3, name: 'Licencia de obra Barcelona' },
+        ],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '¿Qué tipo de licencia necesito para reformar un piso en Barcelona?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Depende del alcance de la obra. Para cambios menores (pintura, suelos, sanitarios) basta un comunicado previo. Si modificas instalaciones o distribución, necesitas licencia de obra menor. Si afectas la estructura, necesitas licencia de obra mayor.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '¿Cuánto tarda el Ajuntament en conceder una licencia de obra?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'El comunicado previo permite iniciar la obra al día siguiente. La licencia de obra menor tarda entre 1 y 3 meses. La licencia de obra mayor puede tardar entre 2 y 6 meses.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '¿Cuánto cuesta una licencia de obra en Barcelona?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un comunicado previo cuesta entre 100 y 300 €. Una licencia de obra menor cuesta entre 2.300 y 5.700 € en total (tasas + ICIO + proyecto técnico). Una obra mayor, entre 4.000 y 12.000 €.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '¿Qué pasa si hago obra sin licencia en Barcelona?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'El Ajuntament puede paralizar la obra, imponer multas de 3.000 € hasta el 50% del valor de la obra, y obligar a restituir el estado original. Una obra no legalizada también genera problemas para la venta futura del inmueble.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '¿Necesito un arquitecto para solicitar la licencia?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Para el comunicado previo no es necesario. Para licencias de obra menor y mayor sí: necesitas un proyecto técnico visado por el Colegio de Arquitectos de Catalunya (COAC). El coste del proyecto varía entre 1.500 € y 5.000 €.',
+            },
+          },
+        ],
+      },
+    ]),
+  }}
+/>
+
+Antes de empezar cualquier reforma en Barcelona, la primera pregunta debería ser: **¿necesito licencia de obra?** La respuesta depende del tipo de intervención, y equivocarse puede salir caro — tanto en multas como en retrasos. Esta guía resume todo lo que necesitas saber sobre los permisos de obra en Barcelona en 2026.
+
+> **En resumen:** Barcelona distingue tres tipos de permiso: **comunicado previo** (obras cosméticas, desde 100 €, inicio inmediato), **licencia de obra menor** (cambio de instalaciones, 2.300–5.700 €, 1-3 meses) y **licencia de obra mayor** (cambios estructurales, 4.000–12.000 €, 2-6 meses). Hacer obra sin licencia puede acarrear multas de hasta el 50% del valor de la obra. *Fuente: Ordenança reguladora dels procediments d'intervenció municipal en les obres, Ajuntament de Barcelona.*
+
+<Image className="rounded-4xl my-10" src={imgLicencia1} alt="Licencia de obras en fachada de loft en Poblenou, Barcelona" />
+
+## Tipos de licencia de obra en Barcelona
+
+El Ajuntament de Barcelona distingue varios tipos de tramitación según la envergadura de la obra:
+
+### Comunicado previo de obras menores (Comunicat previ)
+
+Es el trámite más sencillo y rápido. Se aplica a obras que **no afectan la estructura, la fachada ni las instalaciones comunitarias** del edificio.
+
+**Ejemplos de obras con comunicado previo:**
+
+- Cambio de suelos y alicatados
+- Pintura y revestimientos interiores
+- Sustitución de sanitarios y grifería
+- Cambio de puertas interiores
+- Renovación de muebles de cocina (sin mover instalaciones)
+
+**Coste**: tasa municipal de aproximadamente 100–300 € según el presupuesto de la obra.
+
+**Plazo**: puedes empezar la obra al día siguiente de presentar el comunicado, aunque el Ajuntament tiene un mes para revisarlo y puede requerir modificaciones.
+
+### Licencia de obra menor (Llicència d'obres menors)
+
+Necesaria cuando la obra afecta instalaciones (agua, electricidad, gas) o modifica la distribución interior sin tocar elementos estructurales.
+
+**Ejemplos:**
+
+- Tirar tabiques no portantes para abrir espacios
+- Redistribuir una cocina o baño (nuevos puntos de agua y desagüe)
+- Renovar la instalación eléctrica completa
+- Instalar aire acondicionado con unidad exterior
+- Cerrar una terraza o balcón (según normativa urbanística de la zona)
+
+**Coste**: tasa municipal entre 300 € y 1.200 € según presupuesto, más el ICIO (Impuesto sobre Construcciones, Instalaciones y Obras) que es el 3,35% del coste material de la obra.
+
+**Plazo de tramitación**: entre 1 y 3 meses.
+
+**Documentación necesaria:**
+
+- Proyecto técnico firmado por un arquitecto o arquitecto técnico
+- Presupuesto detallado de la obra
+- Estudio básico de seguridad y salud
+- Fotografías del estado actual
+
+### Licencia de obra mayor (Llicència d'obres majors)
+
+Obligatoria para intervenciones que afectan la estructura del edificio o modifican la volumetría.
+
+**Ejemplos:**
+
+- Unir dos pisos verticalmente (abrir forjado)
+- Ampliar la superficie construida
+- Rehabilitar la fachada
+- Cambiar el uso del local (de comercial a vivienda)
+- Reforma integral que afecte elementos estructurales (pilares, muros de carga, vigas)
+
+**Coste**: tasas más elevadas (variable según proyecto) + ICIO al 3,35%.
+
+**Plazo de tramitación**: entre 2 y 6 meses, a veces más si hay informe urbanístico desfavorable o se necesitan modificaciones.
+
+## ¿Qué pasa si hago obra sin licencia?
+
+El Ajuntament de Barcelona tiene un servicio de inspección urbanística que puede actuar de oficio o por denuncia de vecinos. Las consecuencias incluyen:
+
+- **Paralización inmediata** de la obra
+- **Multa** que puede ir desde 3.000 € hasta el 50% del valor de la obra
+- **Obligación de restituir** el estado original si la obra no es legalizable
+- **Problemas para vender el piso** — una obra no legalizada aparece en la nota simple del Registro
+
+No es un riesgo teórico: las denuncias entre vecinos por obras sin permiso son frecuentes en comunidades de propietarios de Barcelona.
+
+<Image className="rounded-4xl my-10" src={imgLicencia2} alt="Dirección de obra y chantier estructural en el Born, Barcelona" />
+
+## Paso a paso: cómo tramitar la licencia
+
+### 1. Define el alcance de la obra
+
+Antes de nada, un [arquitecto colegiado](/arquitecto/) debe evaluar qué tipo de intervención necesitas y qué licencia corresponde. Este paso es fundamental: muchos propietarios creen que su reforma es "menor" cuando en realidad requiere una licencia de obra mayor.
+
+### 2. Encarga el proyecto técnico
+
+Para licencias de obra menor y mayor, necesitas un proyecto técnico visado por el Colegio de Arquitectos de Catalunya (COAC). El proyecto incluye:
+
+- Planos del estado actual y del estado reformado
+- Memoria constructiva y descriptiva
+- Presupuesto por capítulos
+- Estudio de seguridad y salud
+
+El coste del proyecto varía según la complejidad: entre 1.500 € y 5.000 € para una reforma interior típica.
+
+### 3. Presenta la solicitud
+
+La tramitación se realiza de forma telemática a través del portal de trámites del Ajuntament de Barcelona. Necesitarás:
+
+- Certificado digital o idCAT Mòbil
+- El proyecto técnico en formato PDF
+- El justificante de pago de las tasas
+- Documentación adicional según el tipo de obra
+
+### 4. Espera la resolución
+
+Una vez presentada, el Ajuntament revisa la documentación. Puede solicitar subsanaciones (correcciones) que alargan el plazo. Es recomendable que tu arquitecto haga seguimiento activo del expediente.
+
+### 5. Inicia la obra
+
+Con la licencia concedida (o tras presentar el comunicado previo), ya puedes empezar. Recuerda:
+
+- Coloca el **cartel de obra** visible desde la vía pública con el número de expediente
+- Respeta los **horarios de obra** (Barcelona: lunes a viernes de 8:00 a 21:00, sábados de 9:00 a 21:00, domingos y festivos prohibido)
+- Si necesitas ocupar la acera con un contenedor, tramita el permiso de **ocupación de vía pública**
+
+## Particularidades por barrio
+
+Barcelona tiene zonas con protección urbanística especial que añaden requisitos:
+
+- **Ciutat Vella** (Gòtic, Born, Raval): muchos edificios están catalogados. Las intervenciones en fachada o elementos comunes requieren informe del Servei de Patrimoni.
+- **Eixample**: los pisos modernistas con mosaicos hidráulicos originales pueden tener protección parcial. Consulta antes de eliminar elementos decorativos.
+- **Sarrià - Sant Gervasi**: zonas con ordenación urbanística específica que limita la edificabilidad.
+
+Nuestros [interioristas especializados por barrio](/interiorista-eixample/) conocen las particularidades normativas de cada zona.
+
+<Image className="rounded-4xl my-10" src={imgLicencia3} alt="Estudio de proyecto y planos de diseño de interiores en Barcelona" />
+
+## ¿Cuánto cuesta en total la tramitación?
+
+Resumen de costes orientativos para una reforma interior de un piso de 80 m² en Barcelona:
+
+| Concepto | Comunicado previo | Obra menor | Obra mayor |
+|----------|:-:|:-:|:-:|
+| Tasa municipal | 100–300 € | 300–1.200 € | 500–2.000 € |
+| ICIO (3,35%) | No aplica | 500–1.500 € | 1.000–5.000 € |
+| Proyecto técnico | No necesario | 1.500–3.000 € | 2.500–5.000 € |
+| **Total tramitación** | **100–300 €** | **2.300–5.700 €** | **4.000–12.000 €** |
+
+Estos importes son adicionales al coste de la obra en sí. *Fuente: tarifas del Ajuntament de Barcelona y tarifas orientativas del COAC (Col·legi d'Arquitectes de Catalunya).*
+
+## Preguntas frecuentes
+
+**¿Qué tipo de licencia necesito para reformar la cocina?**
+Si solo cambias muebles y electrodomésticos sin mover instalaciones, basta un comunicado previo. Si redistribuyes la cocina o mueves puntos de agua/gas, necesitas licencia de obra menor. Consulta nuestra guía de [presupuesto de reforma de cocina](/blog/presupuesto-reforma-cocina/) para los costes.
+
+**¿Cuánto tarda el Ajuntament en responder?**
+El comunicado previo permite iniciar al día siguiente. La licencia menor tarda 1-3 meses, la mayor 2-6 meses. Las subsanaciones pueden alargar estos plazos.
+
+**¿Necesito un arquitecto para el comunicado previo?**
+No. El comunicado previo lo puede presentar el propietario directamente. Solo las licencias de obra menor y mayor requieren proyecto técnico de un [arquitecto colegiado](/arquitecto/).
+
+**¿Las multas por obra sin licencia prescriben?**
+La infracción urbanística prescribe a los 4 años (6 para obra mayor), pero la obligación de legalizar o restituir no prescribe mientras la obra sea visible.
+
+**¿Cuáles son los horarios de obra permitidos en Barcelona?**
+Lunes a viernes de 8:00 a 21:00, sábados de 9:00 a 21:00. Los domingos y festivos están prohibidos. El incumplimiento puede conllevar sanciones adicionales.
+
+## Conclusión
+
+Tramitar la licencia de obra correcta es un paso que no puedes saltarte. Además de evitar multas, una obra legalizada protege tu inversión a largo plazo y facilita la venta futura del inmueble.
+
+Si tienes dudas sobre qué licencia necesita tu reforma, nuestro equipo de [arquitectos en Barcelona](/arquitecto/) puede evaluarlo y gestionar toda la tramitación por ti.
+
+---
+
+*Información actualizada a enero de 2026. Regulación basada en la Ordenança reguladora dels procediments d'intervenció municipal en les obres del Ajuntament de Barcelona y las tarifas del COAC.*

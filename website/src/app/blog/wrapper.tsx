@@ -2,9 +2,10 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { MDXComponents } from '@/components/MDXComponents'
+import { PageLinks } from '@/components/PageLinks'
 import { RootLayout } from '@/components/RootLayout'
 import { formatDate } from '@/lib/formatDate'
-import { type Article, type MDXEntry } from '@/lib/mdx'
+import { type Article, type MDXEntry, loadArticles } from '@/lib/mdx'
 
 export default async function BlogArticleWrapper({
   article,
@@ -13,6 +14,17 @@ export default async function BlogArticleWrapper({
   article: MDXEntry<Article>
   children: React.ReactNode
 }) {
+  let allArticles = await loadArticles()
+  let relatedArticles = allArticles
+    .filter((a) => a.title !== article.title)
+    .slice(0, 2)
+    .map((a) => ({
+      href: a.href,
+      date: a.date,
+      title: a.title,
+      description: a.description,
+    }))
+
   return (
     <RootLayout>
       <Container as="article" className="mt-24 sm:mt-32 lg:mt-40">
@@ -27,9 +39,6 @@ export default async function BlogArticleWrapper({
             >
               {formatDate(article.date)}
             </time>
-            <p className="mt-6 text-sm font-semibold text-neutral-950">
-              by {article.author.name}, {article.author.role}
-            </p>
           </header>
         </FadeIn>
 
@@ -39,6 +48,14 @@ export default async function BlogArticleWrapper({
           </MDXComponents.wrapper>
         </FadeIn>
       </Container>
+
+      {relatedArticles.length > 0 && (
+        <PageLinks
+          className="mt-16 sm:mt-24"
+          title="También te puede interesar"
+          pages={relatedArticles}
+        />
+      )}
 
       <ContactSection />
     </RootLayout>

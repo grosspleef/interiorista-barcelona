@@ -23,6 +23,7 @@ const navigation = [
       { title: 'Quiénes somos', href: '/quienes-somos/' },
       { title: 'Preguntas frecuentes', href: '/preguntas-frecuentes/' },
       { title: 'Contacto', href: '/contacto/' },
+      { title: 'Blog', href: '/blog/' },
     ],
   },
   {
