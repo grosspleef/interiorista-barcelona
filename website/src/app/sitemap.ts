@@ -55,7 +55,34 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'yearly',
       priority: 0.2,
     },
+    {
+      url: `${BASE_URL}/politica-privacidad/`,
+      changeFrequency: 'yearly',
+      priority: 0.2,
+    },
   ]
+
+  const barrioPages: MetadataRoute.Sitemap = [
+    'interiorista-eixample',
+    'interiorista-gracia',
+    'interiorista-born',
+    'interiorista-sarria',
+    'interiorista-poblenou',
+  ].map((slug) => ({
+    url: `${BASE_URL}/${slug}/`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
+  const cityPages: MetadataRoute.Sitemap = [
+    'interiorista-sant-cugat',
+    'interiorista-sabadell',
+    'interiorista-terrassa',
+  ].map((slug) => ({
+    url: `${BASE_URL}/${slug}/`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
     url: `${BASE_URL}${service.href}`,
@@ -96,6 +123,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...staticPages,
     ...servicePages,
+    ...barrioPages,
+    ...cityPages,
     ...memberPages,
     ...blogPages,
     ...projectPages,
