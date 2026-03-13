@@ -26,6 +26,22 @@ const navigation = [
     ],
   },
   {
+    title: 'Zonas',
+    links: [
+      { title: 'Eixample', href: '/interiorista-eixample/' },
+      { title: 'Gràcia', href: '/interiorista-gracia/' },
+      { title: 'El Born', href: '/interiorista-born/' },
+      { title: 'Sarrià-Sant Gervasi', href: '/interiorista-sarria/' },
+      { title: 'Poblenou', href: '/interiorista-poblenou/' },
+      { title: 'Sant Cugat', href: '/interiorista-sant-cugat/' },
+      { title: 'Sabadell', href: '/interiorista-sabadell/' },
+      { title: 'Terrassa', href: '/interiorista-terrassa/' },
+      { title: 'Manresa', href: '/interiorista-manresa/' },
+      { title: 'Sitges', href: '/interiorista-sitges/' },
+      { title: 'Mataró', href: '/interiorista-mataro/' },
+    ],
+  },
+  {
     title: 'Legal',
     links: [
       { title: 'Aviso legal', href: '/aviso-legal/' },
@@ -39,7 +55,7 @@ const navigation = [
 function Navigation() {
   return (
     <nav>
-      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-4">
         {navigation.map((section, sectionIndex) => (
           <li key={sectionIndex}>
             <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
