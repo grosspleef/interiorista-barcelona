@@ -435,15 +435,10 @@ const schemaOrg = {
         description:
           'Ampliación de vivienda desde 800 €/m² (proyecto + ejecución)',
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        bestRating: '5',
-        ratingCount: '3',
-      },
     },
     {
-      '@type': 'Organization',
+      '@type': 'LocalBusiness',
+      '@id': 'https://www.interiorista-barcelona.com/#localbusiness',
       name: 'Interiorista Barcelona',
       url: 'https://www.interiorista-barcelona.com',
       description: 'Colectivo de interioristas y arquitectos en Barcelona',
@@ -463,6 +458,13 @@ const schemaOrg = {
         { '@type': 'City', name: 'Mataró' },
         { '@type': 'City', name: 'Manresa' },
       ],
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        bestRating: '5',
+        ratingCount: '3',
+        reviewCount: '3',
+      },
     },
     {
       '@type': 'FAQPage',
@@ -478,8 +480,9 @@ const schemaOrg = {
     ...serviceTestimonials.map((t) => ({
       '@type': 'Review' as const,
       itemReviewed: {
-        '@id':
-          'https://www.interiorista-barcelona.com/ampliacion-vivienda/#service',
+        '@type': 'LocalBusiness' as const,
+        '@id': 'https://www.interiorista-barcelona.com/#localbusiness',
+        name: 'Interiorista Barcelona',
       },
       reviewRating: {
         '@type': 'Rating' as const,

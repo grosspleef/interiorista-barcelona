@@ -314,15 +314,10 @@ const schemaOrg = {
         price: '990',
         description: 'Home staging residencial desde 990 €',
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        bestRating: '5',
-        ratingCount: '3',
-      },
     },
     {
-      '@type': 'Organization',
+      '@type': 'LocalBusiness',
+      '@id': 'https://www.interiorista-barcelona.com/#localbusiness',
       name: 'Interiorista Barcelona',
       url: 'https://www.interiorista-barcelona.com',
       description:
@@ -343,6 +338,13 @@ const schemaOrg = {
         { '@type': 'City', name: 'Mataró' },
         { '@type': 'City', name: 'Manresa' },
       ],
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        bestRating: '5',
+        ratingCount: '3',
+        reviewCount: '3',
+      },
     },
     {
       '@type': 'FAQPage',
@@ -358,8 +360,9 @@ const schemaOrg = {
     ...serviceTestimonials.map((t) => ({
       '@type': 'Review' as const,
       itemReviewed: {
-        '@id':
-          'https://www.interiorista-barcelona.com/home-staging/#service',
+        '@type': 'LocalBusiness' as const,
+        '@id': 'https://www.interiorista-barcelona.com/#localbusiness',
+        name: 'Interiorista Barcelona',
       },
       reviewRating: {
         '@type': 'Rating' as const,
