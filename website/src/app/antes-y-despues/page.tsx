@@ -131,26 +131,75 @@ export default async function AntesYDespues() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Inicio',
-                  item: 'https://www.interioristabarcelona.com/',
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: 'Inicio',
+                    item: 'https://www.interioristabarcelona.com/',
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: 'Antes y Después',
+                    item: 'https://www.interioristabarcelona.com/antes-y-despues/',
+                  },
+                ],
+              },
+              {
+                '@type': 'CollectionPage',
+                '@id':
+                  'https://www.interioristabarcelona.com/antes-y-despues/#page',
+                name: 'Antes y Después de Reformas en Barcelona',
+                description:
+                  'Descubre el antes y después de nuestras reformas e interiorismo en Barcelona. Transformaciones reales de pisos, casas, oficinas y locales comerciales con fotos comparativas.',
+                url: 'https://www.interioristabarcelona.com/antes-y-despues/',
+                isPartOf: {
+                  '@type': 'WebSite',
+                  '@id':
+                    'https://www.interioristabarcelona.com/#website',
                 },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'Antes y Después',
-                  item: 'https://www.interioristabarcelona.com/antes-y-despues/',
+                about: {
+                  '@type': 'Service',
+                  name: 'Interiorismo y reformas en Barcelona',
+                  provider: {
+                    '@id':
+                      'https://www.interioristabarcelona.com/#organization',
+                  },
                 },
-              ],
-            },
-          ]),
+              },
+              {
+                '@type': 'Organization',
+                '@id':
+                  'https://www.interioristabarcelona.com/#organization',
+                name: 'Interiorista Barcelona',
+                url: 'https://www.interioristabarcelona.com',
+                description:
+                  'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
+                address: {
+                  '@type': 'PostalAddress',
+                  streetAddress: 'Carrer de Mallorca, 237',
+                  addressLocality: 'Barcelona',
+                  postalCode: '08008',
+                  addressCountry: 'ES',
+                },
+                areaServed: [
+                  { '@type': 'City', name: 'Barcelona' },
+                  { '@type': 'City', name: 'Sant Cugat del Vallès' },
+                  { '@type': 'City', name: 'Sabadell' },
+                  { '@type': 'City', name: 'Terrassa' },
+                  { '@type': 'City', name: 'Sitges' },
+                  { '@type': 'City', name: 'Mataró' },
+                  { '@type': 'City', name: 'Manresa' },
+                ],
+              },
+            ],
+          }),
         }}
       />
       <PageIntro

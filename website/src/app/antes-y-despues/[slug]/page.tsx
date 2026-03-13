@@ -69,32 +69,120 @@ export default async function AntesYDespuesProject(props: {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'Inicio',
-                  item: 'https://www.interioristabarcelona.com/',
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: 'Inicio',
+                    item: 'https://www.interioristabarcelona.com/',
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: 'Antes y Después',
+                    item: 'https://www.interioristabarcelona.com/antes-y-despues/',
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 3,
+                    name: caseStudy.title,
+                    item: `https://www.interioristabarcelona.com/antes-y-despues/${slug}/`,
+                  },
+                ],
+              },
+              {
+                '@type': 'ImageGallery',
+                '@id': `https://www.interioristabarcelona.com/antes-y-despues/${slug}/#gallery`,
+                name: `Antes y Después: ${caseStudy.title}`,
+                description: `Fotos comparativas del antes y después de ${caseStudy.title.toLowerCase()}. ${caseStudy.description}`,
+                url: `https://www.interioristabarcelona.com/antes-y-despues/${slug}/`,
+                dateCreated: caseStudy.date,
+                about: {
+                  '@type': 'Service',
+                  name: caseStudy.service,
+                  provider: {
+                    '@id':
+                      'https://www.interioristabarcelona.com/#organization',
+                  },
                 },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: 'Antes y Después',
-                  item: 'https://www.interioristabarcelona.com/antes-y-despues/',
+                locationCreated: {
+                  '@type': 'Place',
+                  name: 'Barcelona',
+                  address: {
+                    '@type': 'PostalAddress',
+                    addressLocality: 'Barcelona',
+                    addressRegion: 'Cataluña',
+                    addressCountry: 'ES',
+                  },
                 },
-                {
-                  '@type': 'ListItem',
-                  position: 3,
+                creator: {
+                  '@id':
+                    'https://www.interioristabarcelona.com/#organization',
+                },
+                isPartOf: {
+                  '@type': 'CollectionPage',
+                  '@id':
+                    'https://www.interioristabarcelona.com/antes-y-despues/#page',
+                },
+                associatedMedia: {
+                  '@type': 'CreativeWork',
+                  '@id': `https://www.interioristabarcelona.com/proyectos/${slug}/#project`,
                   name: caseStudy.title,
-                  item: `https://www.interioristabarcelona.com/antes-y-despues/${slug}/`,
+                  url: `https://www.interioristabarcelona.com/proyectos/${slug}/`,
                 },
-              ],
-            },
-          ]),
+              },
+              {
+                '@type': 'Organization',
+                '@id':
+                  'https://www.interioristabarcelona.com/#organization',
+                name: 'Interiorista Barcelona',
+                url: 'https://www.interioristabarcelona.com',
+                description:
+                  'Colectivo de diseñadores de interiores y arquitectos en Barcelona',
+                address: {
+                  '@type': 'PostalAddress',
+                  streetAddress: 'Carrer de Mallorca, 237',
+                  addressLocality: 'Barcelona',
+                  postalCode: '08008',
+                  addressCountry: 'ES',
+                },
+                areaServed: [
+                  { '@type': 'City', name: 'Barcelona' },
+                  { '@type': 'City', name: 'Sant Cugat del Vallès' },
+                  { '@type': 'City', name: 'Sabadell' },
+                  { '@type': 'City', name: 'Terrassa' },
+                  { '@type': 'City', name: 'Sitges' },
+                  { '@type': 'City', name: 'Mataró' },
+                  { '@type': 'City', name: 'Manresa' },
+                ],
+              },
+              ...(caseStudy.testimonial
+                ? [
+                    {
+                      '@type': 'Review',
+                      itemReviewed: {
+                        '@id': `https://www.interioristabarcelona.com/antes-y-despues/${slug}/#gallery`,
+                      },
+                      reviewRating: {
+                        '@type': 'Rating',
+                        ratingValue: '5',
+                        bestRating: '5',
+                      },
+                      author: {
+                        '@type': 'Person',
+                        name: caseStudy.testimonial.author.name,
+                      },
+                      reviewBody: caseStudy.testimonial.content,
+                    },
+                  ]
+                : []),
+            ],
+          }),
         }}
       />
 
