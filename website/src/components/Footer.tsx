@@ -14,23 +14,6 @@ const navigation = [
     })),
   },
   {
-    title: 'Ciudades',
-    links: [
-      { title: 'Barcelona', href: '/' },
-      { title: 'Madrid', href: '#' },
-      { title: 'Valencia', href: '#' },
-      { title: 'Sevilla', href: '#' },
-      { title: 'Málaga', href: '#' },
-      { title: 'Bilbao', href: '#' },
-      { title: 'Zaragoza', href: '#' },
-      { title: 'Palma de Mallorca', href: '#' },
-      { title: 'Alicante', href: '#' },
-      { title: 'San Sebastián', href: '#' },
-      { title: 'A Coruña', href: '#' },
-      { title: 'Granada', href: '#' },
-    ],
-  },
-  {
     title: 'Recursos',
     links: [
       { title: 'Proyectos', href: '/proyectos/' },
@@ -56,7 +39,7 @@ const navigation = [
 function Navigation() {
   return (
     <nav>
-      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
         {navigation.map((section, sectionIndex) => (
           <li key={sectionIndex}>
             <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
@@ -65,16 +48,12 @@ function Navigation() {
             <ul role="list" className="mt-4 text-sm text-neutral-700">
               {section.links.map((link, linkIndex) => (
                 <li key={linkIndex} className="mt-4">
-                  {section.title === 'Ciudades' ? (
-                    <span>{link.title}</span>
-                  ) : (
-                    <Link
-                      href={link.href}
-                      className="transition hover:text-neutral-950"
-                    >
-                      {link.title}
-                    </Link>
-                  )}
+                  <Link
+                    href={link.href}
+                    className="transition hover:text-neutral-950"
+                  >
+                    {link.title}
+                  </Link>
                 </li>
               ))}
             </ul>

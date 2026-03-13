@@ -43,7 +43,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
   - `/contact/` — Supprimee (emails et adresses fausses, `/contacto/` existe deja)
   - Decision : pages supprimees — aucun lien interne ne pointait vers elles.
 
-- [ ] **12. Corriger les liens footer "Ciudades"** — Madrid, Valencia, Sevilla etc. pointent vers `#`. Soit implementer ces pages, soit retirer les liens.
+- [x] **12. Corriger les liens footer "Ciudades"** — Section supprimee (liens fictifs vers `#`). A reimplementer quand le collectif s'etend a d'autres villes.
 
 - [ ] **13. Integrer Google Analytics / GTM** — Aucun analytics configure. Ajouter GA4 ou une alternative privacy-friendly (Plausible, Umami).
 
