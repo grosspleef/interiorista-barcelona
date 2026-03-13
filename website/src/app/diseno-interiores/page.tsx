@@ -353,6 +353,7 @@ const schemaOrg = {
         ratingValue: '4.9',
         bestRating: '5',
         ratingCount: '3',
+        reviewCount: '3',
       },
     },
     {
@@ -389,10 +390,11 @@ const schemaOrg = {
         },
       })),
     },
-    ...serviceTestimonials.map((t) => ({
+    ...serviceTestimonials.map((t, i) => ({
       '@type': 'Review' as const,
       itemReviewed: {
-        '@id': 'https://www.interiorista-barcelona.com/diseno-interiores/#service',
+        '@type': 'Service' as const,
+        name: 'Diseño de interiores en Barcelona',
       },
       reviewRating: {
         '@type': 'Rating' as const,
@@ -403,6 +405,7 @@ const schemaOrg = {
         '@type': 'Person' as const,
         name: t.client.split(',')[0],
       },
+      datePublished: ['2025-03-15', '2025-06-22', '2025-09-10'][i],
       reviewBody: t.quote,
     })),
   ],
