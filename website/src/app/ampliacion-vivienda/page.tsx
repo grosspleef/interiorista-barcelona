@@ -8,6 +8,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -349,13 +350,20 @@ const faqItems = [
           y en las principales ciudades del área metropolitana.
         </p>
         <p>
-          Intervenimos en los principales barrios de Barcelona: Eixample,
-          Gràcia, Sarrià, Poblenou, Les Corts, Sant Andreu y Sants-Montjuïc.
+          Intervenimos en los principales barrios de Barcelona:{' '}
+          <Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>,{' '}
+          Les Corts, Sant Andreu y Sants-Montjuïc.
         </p>
         <p>
-          También intervenimos en las ciudades del área metropolitana: Sant
-          Cugat, Sabadell, Castelldefels, Sitges, Badalona, L&apos;Hospitalet de
-          Llobregat y alrededores.
+          También intervenimos en las ciudades del área metropolitana:{' '}
+          <Link href="/interiorista-sant-cugat/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sant Cugat</Link>,{' '}
+          <Link href="/interiorista-sabadell/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sabadell</Link>,{' '}
+          Castelldefels,{' '}
+          <Link href="/interiorista-sitges/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sitges</Link>,{' '}
+          Badalona, L&apos;Hospitalet de Llobregat y alrededores.
         </p>
         <p>
           <Link
@@ -409,10 +417,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Ampliación de vivienda',
       offers: {
         '@type': 'Offer',
@@ -441,10 +454,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -481,6 +499,12 @@ export const metadata: Metadata = {
   title: 'Ampliación de vivienda en Barcelona | Más m² sin mudarte — 2026',
   description:
     'Ampliación de vivienda en Barcelona: cerramiento de terraza, unión de pisos, altillo, ático. Interioristas y arquitectos titulados. Proyecto integral desde la licencia de obra hasta la entrega. Presupuesto gratuito.',
+  openGraph: {
+    type: 'website',
+    title: 'Ampliación de vivienda en Barcelona | Más m² sin mudarte — 2026',
+    description:
+      'Ampliación de vivienda en Barcelona: cerramiento de terraza, unión de pisos, altillo, ático. Interioristas y arquitectos titulados. Proyecto integral desde la licencia de obra hasta la entrega. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/ampliacion-vivienda/',
   },
@@ -496,7 +520,11 @@ export default function AmpliacionViviendaPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Ampliación de vivienda en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -520,6 +548,17 @@ export default function AmpliacionViviendaPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Ampliación de vivienda en Barcelona"
+        items={[
+          { label: 'Plazo medio', value: '4 a 8 meses (proyecto + obra)' },
+          { label: 'Zona', value: 'Barcelona y área metropolitana' },
+          { label: 'Tipos', value: 'Unión pisos, altillo, terraza, bajocubierta' },
+          { label: 'Incluye', value: 'Estudio viabilidad, proyecto, licencias, obra' },
+          { label: 'Normativa', value: 'PGM Barcelona y CTE vigente' },
+        ]}
+      />
 
       {/* 2. ¿Por qué ampliar tu vivienda? */}
       <SectionIntro
@@ -595,7 +634,7 @@ export default function AmpliacionViviendaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Estudio de viabilidad urbanística"
-          image={{ src: imageEstudioViabilidad }}
+          image={{ src: imageEstudioViabilidad, alt: 'Estudio de viabilidad de terraza de ático en Sant Gervasi' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -634,7 +673,7 @@ export default function AmpliacionViviendaPage() {
 
         <Section
           title="Proyecto técnico y licencias"
-          image={{ src: imageProyectoTecnico, shape: 1 }}
+          image={{ src: imageProyectoTecnico, shape: 1, alt: 'Proyecto técnico de unión de pisos en Les Corts' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -691,7 +730,7 @@ export default function AmpliacionViviendaPage() {
 
         <Section
           title="Ejecución de obra y entrega"
-          image={{ src: imageChantier, shape: 2 }}
+          image={{ src: imageChantier, shape: 2, alt: 'Obra de altillo en loft de Poble Sec, Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -735,7 +774,7 @@ export default function AmpliacionViviendaPage() {
         description="Proyecto integral de ampliación de vivienda en Barcelona: desde el estudio de viabilidad hasta la entrega de obra con nueva cédula de habitabilidad."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageVerriere, shape: 0 }}
+        image={{ src: imageVerriere, shape: 0, alt: 'Terraza habitable con cristalera en Horta-Guinardó' }}
         showCounter={false}
         tiers={[
           {

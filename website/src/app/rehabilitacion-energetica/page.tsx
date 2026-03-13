@@ -8,6 +8,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -305,14 +306,21 @@ const faqItems = [
           y en las principales ciudades del área metropolitana.
         </p>
         <p>
-          Intervenimos en los principales barrios de Barcelona: Eixample,
-          Gràcia, El Born, Sarrià, Poblenou, Les Corts, Sant Andreu y
-          Sants-Montjuïc.
+          Intervenimos en los principales barrios de Barcelona:{' '}
+          <Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-born/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">El Born</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>,{' '}
+          Les Corts, Sant Andreu y Sants-Montjuïc.
         </p>
         <p>
-          También intervenimos en las ciudades del área metropolitana: Sant
-          Cugat, Sabadell, Castelldefels, Sitges, Badalona, L&apos;Hospitalet de
-          Llobregat y alrededores.
+          También intervenimos en las ciudades del área metropolitana:{' '}
+          <Link href="/interiorista-sant-cugat/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sant Cugat</Link>,{' '}
+          <Link href="/interiorista-sabadell/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sabadell</Link>,{' '}
+          Castelldefels,{' '}
+          <Link href="/interiorista-sitges/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sitges</Link>,{' '}
+          Badalona, L&apos;Hospitalet de Llobregat y alrededores.
         </p>
         <p>
           <Link
@@ -366,10 +374,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Rehabilitación energética',
       offers: {
         '@type': 'Offer',
@@ -398,10 +411,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -438,6 +456,12 @@ export const metadata: Metadata = {
   title: 'Rehabilitación energética en Barcelona | Subvenciones 2026',
   description:
     'Rehabilitación energética en Barcelona: aislamiento térmico, aerotermia, ventanas de altas prestaciones y gestión de subvenciones Next Generation EU. Diagnóstico gratuito por interioristas titulados.',
+  openGraph: {
+    type: 'website',
+    title: 'Rehabilitación energética en Barcelona | Subvenciones 2026',
+    description:
+      'Rehabilitación energética en Barcelona: aislamiento térmico, aerotermia, ventanas de altas prestaciones y gestión de subvenciones Next Generation EU. Diagnóstico gratuito por interioristas titulados.',
+  },
   alternates: {
     canonical: '/rehabilitacion-energetica/',
   },
@@ -453,7 +477,11 @@ export default function RehabilitacionEnergeticaPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Rehabilitación energética en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -470,6 +498,17 @@ export default function RehabilitacionEnergeticaPage() {
           <Button href="/contacto/">Solicitar diagnóstico gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Rehabilitación energética en Barcelona"
+        items={[
+          { label: 'Ahorro energético', value: '30-70% en consumo' },
+          { label: 'Subvenciones', value: 'Next Generation EU hasta 80%' },
+          { label: 'Zona', value: 'Barcelona y área metropolitana' },
+          { label: 'Incluye', value: 'Auditoría, certificado, proyecto, obra' },
+          { label: 'CEE', value: 'Mejora de letra energética garantizada' },
+        ]}
+      />
 
       {/* 2. ¿Cuándo plantearse una rehabilitación energética? */}
       <SectionIntro
@@ -587,7 +626,7 @@ export default function RehabilitacionEnergeticaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Aislamiento térmico y envolvente"
-          image={{ src: imageAislamiento }}
+          image={{ src: imageAislamiento, alt: 'Obra de aislamiento interior con fibra de madera en Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -626,7 +665,7 @@ export default function RehabilitacionEnergeticaPage() {
 
         <Section
           title="Ventanas de altas prestaciones"
-          image={{ src: imageVentanas, shape: 1 }}
+          image={{ src: imageVentanas, shape: 1, alt: 'Ventanas de salón luminoso tras rehabilitación energética' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -670,7 +709,7 @@ export default function RehabilitacionEnergeticaPage() {
 
         <Section
           title="Sistemas de climatización y energía"
-          image={{ src: imageAerotermia, shape: 2 }}
+          image={{ src: imageAerotermia, shape: 2, alt: 'Instalación de aerotermia y paneles solares en terraza' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -823,7 +862,7 @@ export default function RehabilitacionEnergeticaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Diagnóstico energético y visita"
-          image={{ src: imageDiagnostico }}
+          image={{ src: imageDiagnostico, alt: 'Diagnóstico energético con termografía en piso antiguo' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -853,7 +892,7 @@ export default function RehabilitacionEnergeticaPage() {
 
         <Section
           title="Estudio técnico y proyecto de rehabilitación"
-          image={{ src: imageEstudio, shape: 1 }}
+          image={{ src: imageEstudio, shape: 1, alt: 'Estudio técnico de proyecto de rehabilitación energética' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -889,7 +928,7 @@ export default function RehabilitacionEnergeticaPage() {
 
         <Section
           title="Ejecución de obra y certificación"
-          image={{ src: imageFachada, shape: 2 }}
+          image={{ src: imageFachada, shape: 2, alt: 'Rehabilitación energética de fachada SATE en el Eixample' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -922,7 +961,7 @@ export default function RehabilitacionEnergeticaPage() {
         description="Servicio integral de rehabilitación energética para viviendas y comunidades en Barcelona. Desde el diagnóstico gratuito hasta la certificación final, te acompañamos en cada etapa."
         href="/contacto/"
         ctaLabel="Solicitar diagnóstico gratuito"
-        image={{ src: imageResultado, shape: 0 }}
+        image={{ src: imageResultado, shape: 0, alt: 'Resultado final de piso luminoso tras rehabilitación energética' }}
         showCounter={false}
         tiers={[
           {
@@ -947,7 +986,6 @@ export default function RehabilitacionEnergeticaPage() {
         ]}
       />
       </div>
-
       {/* 11. FAQ */}
       <SectionIntro
         eyebrow="FAQ"

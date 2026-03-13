@@ -18,6 +18,7 @@ import imageRestauranteEixample from '@/images/decoracion-restaurante-eixample-b
 import imageSalonSarria from '@/images/decoracion-salon-mediterraneo-sarria-barcelona.jpg'
 import { LatestProjects } from '@/components/LatestProjects'
 import { TestimonialSlider, type TestimonialItem } from '@/components/TestimonialSlider'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { FAQAccordion } from './faq-accordion'
 
 const serviceTestimonials: TestimonialItem[] = [
@@ -128,12 +129,20 @@ const faqItems = [
           y en las principales ciudades del área metropolitana.
         </p>
         <p>
-          Intervenimos en los principales barrios de Barcelona: Eixample,
-          Gràcia, El Born, Sarrià, Poblenou, Les Corts, Sant Andreu y
-          Sants-Montjuïc.
+          Intervenimos en los principales barrios de Barcelona:{' '}
+          <Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-born/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">El Born</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>,{' '}
+          Les Corts, Sant Andreu y Sants-Montjuïc.
         </p>
         <p>
-          También intervenimos en Sant Cugat, Sabadell, Castelldefels, Sitges,
+          También intervenimos en{' '}
+          <Link href="/interiorista-sant-cugat/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sant Cugat</Link>,{' '}
+          <Link href="/interiorista-sabadell/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sabadell</Link>,{' '}
+          Castelldefels,{' '}
+          <Link href="/interiorista-sitges/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sitges</Link>,{' '}
           Badalona, L&apos;Hospitalet de Llobregat y alrededores.
         </p>
         <p>
@@ -312,10 +321,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Decoración de interiores',
       offers: {
         '@type': 'Offer',
@@ -344,10 +358,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -383,6 +402,12 @@ export const metadata: Metadata = {
   title: 'Decoración de interiores en Barcelona | Decoración 2026',
   description:
     'Decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra. Presupuesto gratuito. Tendencias 2026.',
+  openGraph: {
+    type: 'website',
+    title: 'Decoración de interiores en Barcelona | Decoración 2026',
+    description:
+      'Decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra. Presupuesto gratuito. Tendencias 2026.',
+  },
   alternates: {
     canonical: '/decoracion-interiores/',
   },
@@ -398,7 +423,11 @@ export default function DecoracionInterioresPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Decoración de interiores en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -415,6 +444,17 @@ export default function DecoracionInterioresPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Decoración de interiores en Barcelona"
+        items={[
+          { label: 'Plazo medio', value: '2 a 8 semanas' },
+          { label: 'Zona', value: 'Barcelona y área metropolitana' },
+          { label: 'Incluye', value: 'Estudio cromático, shopping list, instalación' },
+          { label: 'Modalidades', value: 'Presencial u online' },
+          { label: 'Garantía', value: 'Seguro RC profesional' },
+        ]}
+      />
 
       {/* 2. ¿Por qué contratar un decorador de interiores en Barcelona? */}
       <SectionIntro
@@ -488,7 +528,7 @@ export default function DecoracionInterioresPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita consejo de decoración"
-          image={{ src: imageSalonSarria }}
+          image={{ src: imageSalonSarria, alt: 'Decoración de salón mediterráneo en Sarrià, Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -521,7 +561,7 @@ export default function DecoracionInterioresPage() {
 
         <Section
           title="Proyecto de decoración"
-          image={{ src: imageCocinaGracia, shape: 1 }}
+          image={{ src: imageCocinaGracia, alt: 'Decoración de cocina abierta en Gràcia, Barcelona', shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -564,7 +604,7 @@ export default function DecoracionInterioresPage() {
 
         <Section
           title="Instalación y styling final"
-          image={{ src: imageRestauranteEixample, shape: 2 }}
+          image={{ src: imageRestauranteEixample, alt: 'Decoración de restaurante en el Eixample, Barcelona', shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -608,7 +648,7 @@ export default function DecoracionInterioresPage() {
         description="Servicio de decoración de interiores para viviendas en Barcelona. Desde la primera consulta hasta la instalación final, te acompañamos para renovar tu hogar sin obras."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageDormitorioBorn, shape: 0 }}
+        image={{ src: imageDormitorioBorn, alt: 'Decoración de dormitorio minimalista en el Born, Barcelona', shape: 0 }}
         showCounter={false}
         tiers={[
           {
@@ -633,7 +673,6 @@ export default function DecoracionInterioresPage() {
         ]}
       />
       </div>
-
       {/* 6. FAQ */}
       <SectionIntro
         eyebrow="FAQ"
@@ -654,7 +693,7 @@ export default function DecoracionInterioresPage() {
       {/* 7. Contact */}
       <ContactSection />
 
-      {/* 8. Proyectos destacados */}
+      {/* 9. Proyectos destacados */}
       <LatestProjects />
 
       {/* 9. Testimonios */}

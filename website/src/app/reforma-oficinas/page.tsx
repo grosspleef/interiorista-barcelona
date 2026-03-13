@@ -21,6 +21,7 @@ import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { FAQAccordion } from './faq-accordion'
 
 const serviceTestimonials: TestimonialItem[] = [
@@ -307,10 +308,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Reforma de oficinas',
       offers: {
         '@type': 'Offer',
@@ -339,10 +345,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -380,6 +391,13 @@ export const metadata: Metadata = {
     'Reforma de oficinas en Barcelona | Diseño de espacios de trabajo 2026',
   description:
     '¿Buscas reformar tu oficina en Barcelona? Diseño de oficinas, coworking y espacios de trabajo. Proyecto integral desde 60 €/m². Space planning, bienestar laboral y dirección de obra.',
+  openGraph: {
+    type: 'website',
+    title:
+      'Reforma de oficinas en Barcelona | Diseño de espacios de trabajo 2026',
+    description:
+      '¿Buscas reformar tu oficina en Barcelona? Diseño de oficinas, coworking y espacios de trabajo. Proyecto integral desde 60 €/m². Space planning, bienestar laboral y dirección de obra.',
+  },
   alternates: {
     canonical: '/reforma-oficinas/',
   },
@@ -395,7 +413,11 @@ export default function ReformaOficinasPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Reforma de oficinas en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -411,6 +433,17 @@ export default function ReformaOficinasPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Reforma de oficinas en Barcelona"
+        items={[
+          { label: 'Plazo medio', value: '6 a 12 semanas' },
+          { label: 'Zona', value: 'Barcelona y área metropolitana' },
+          { label: 'Incluye', value: 'Space planning, proyecto, obra' },
+          { label: 'Normativa', value: 'CTE, accesibilidad, PCI' },
+          { label: 'Garantía', value: 'Seguro RC y seguro decenal' },
+        ]}
+      />
 
       {/* 2. ¿Por qué contratar un especialista en reforma de oficinas? */}
       <SectionIntro
@@ -476,7 +509,7 @@ export default function ReformaOficinasPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita y análisis del espacio de trabajo"
-          image={{ src: imageStartup22 }}
+          image={{ src: imageStartup22, alt: 'Reforma de oficina de startup tech en el 22@, Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -508,7 +541,7 @@ export default function ReformaOficinasPage() {
 
         <Section
           title="Proyecto de reforma de oficina"
-          image={{ src: imageDespachoAbogados, shape: 1 }}
+          image={{ src: imageDespachoAbogados, alt: 'Reforma de despacho de abogados en el Eixample', shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -557,7 +590,7 @@ export default function ReformaOficinasPage() {
 
         <Section
           title="Dirección de obra y entrega"
-          image={{ src: imageCoworkingGracia, shape: 2 }}
+          image={{ src: imageCoworkingGracia, alt: 'Reforma de coworking con terraza en Gràcia', shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -594,7 +627,7 @@ export default function ReformaOficinasPage() {
         description="Servicio integral de reforma de oficinas en Barcelona. Desde la consulta inicial gratuita hasta la dirección de obra y entrega del espacio de trabajo."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageDireccionPME, shape: 0 }}
+        image={{ src: imageDireccionPME, alt: 'Reforma de oficina de dirección para PYME en Sarrià', shape: 0 }}
         showCounter={false}
         tiers={[
           {
@@ -619,7 +652,6 @@ export default function ReformaOficinasPage() {
         ]}
       />
       </div>
-
       {/* 6. FAQ */}
       <SectionIntro
         eyebrow="FAQ"

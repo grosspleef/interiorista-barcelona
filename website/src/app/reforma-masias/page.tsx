@@ -8,6 +8,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -394,10 +395,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -433,6 +439,12 @@ export const metadata: Metadata = {
   title: 'Reforma de masías en Barcelona y Cataluña | Rehabilitación 2026',
   description:
     'Reforma y rehabilitación de masías catalanas: consolidación estructural, restauración de elementos patrimoniales, mejora energética y diseño interior. Presupuesto gratuito por interioristas y arquitectos titulados.',
+  openGraph: {
+    type: 'website',
+    title: 'Reforma de masías en Barcelona y Cataluña | Rehabilitación 2026',
+    description:
+      'Reforma y rehabilitación de masías catalanas: consolidación estructural, restauración de elementos patrimoniales, mejora energética y diseño interior. Presupuesto gratuito por interioristas y arquitectos titulados.',
+  },
   alternates: {
     canonical: '/reforma-masias/',
   },
@@ -448,7 +460,11 @@ export default function ReformaMasiasPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Reforma de masías en Barcelona y Cataluña"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -465,6 +481,17 @@ export default function ReformaMasiasPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Reforma de masías en Cataluña"
+        items={[
+          { label: 'Plazo medio', value: '8 a 18 meses' },
+          { label: 'Zona', value: 'Cataluña (Vallès, Penedès, Empordà, Garrotxa)' },
+          { label: 'Incluye', value: 'Diagnóstico, proyecto, licencias, obra' },
+          { label: 'Patrimonio', value: 'Restauración respetuosa de elementos históricos' },
+          { label: 'Normativa', value: 'Urbanismo rural y patrimonio cultural' },
+        ]}
+      />
 
       {/* 2. ¿Cuándo plantearse la reforma de una masía? */}
       <SectionIntro
@@ -583,7 +610,7 @@ export default function ReformaMasiasPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Muros de piedra y bóvedas catalanas"
-          image={{ src: imageFachada }}
+          image={{ src: imageFachada, alt: 'Fachada de piedra restaurada de masía cerca de Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -628,7 +655,7 @@ export default function ReformaMasiasPage() {
 
         <Section
           title="Vigas de madera y cubiertas tradicionales"
-          image={{ src: imageSalon, shape: 1 }}
+          image={{ src: imageSalon, shape: 1, alt: 'Salón con vigas de madera y bóveda catalana en masía' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -674,7 +701,7 @@ export default function ReformaMasiasPage() {
 
         <Section
           title="Pavimentos, chimeneas y elementos decorativos"
-          image={{ src: imageCocina, shape: 2 }}
+          image={{ src: imageCocina, shape: 2, alt: 'Cocina con chimenea de piedra y suelo de terracota en masía' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -789,7 +816,7 @@ export default function ReformaMasiasPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Evaluación y diagnóstico"
-          image={{ src: imageVistaAerea }}
+          image={{ src: imageVistaAerea, alt: 'Vista aérea de masía con piscina y olivar en el Vallès' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -830,7 +857,7 @@ export default function ReformaMasiasPage() {
 
         <Section
           title="Proyecto y diseño"
-          image={{ src: imageSuite, shape: 1 }}
+          image={{ src: imageSuite, shape: 1, alt: 'Suite bajo techo de piedra y cal con baño abierto en masía' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -870,7 +897,7 @@ export default function ReformaMasiasPage() {
 
         <Section
           title="Ejecución de obra y entrega"
-          image={{ src: imageTerraza, shape: 2 }}
+          image={{ src: imageTerraza, shape: 2, alt: 'Terraza con pérgola y viñedo en masía del Penedès' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -953,7 +980,7 @@ export default function ReformaMasiasPage() {
         description="Servicio integral de reforma y rehabilitación de masías en Barcelona y Cataluña. Desde la visita de diagnóstico hasta la entrega de llaves, te acompañamos en cada etapa de tu proyecto."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageSalonVitree, shape: 0 }}
+        image={{ src: imageSalonVitree, shape: 0, alt: 'Salón con gran ventanal en masía de la campiña catalana' }}
         showCounter={false}
         tiers={[
           {

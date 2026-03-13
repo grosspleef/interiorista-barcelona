@@ -21,6 +21,7 @@ import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { FAQAccordion } from './faq-accordion'
 
 
@@ -204,11 +205,20 @@ const faqItems = [
           y en las principales ciudades del área metropolitana.
         </p>
         <p>
-          Intervenimos en los principales barrios de Barcelona: Eixample, Gràcia,
-          El Born, Sarrià, Poblenou, Les Corts, Sant Andreu y Sants-Montjuïc.
+          Intervenimos en los principales barrios de Barcelona:{' '}
+          <Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-born/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">El Born</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>,{' '}
+          Les Corts, Sant Andreu y Sants-Montjuïc.
         </p>
         <p>
-          También intervenimos en Sant Cugat, Sabadell, Castelldefels, Sitges,
+          También intervenimos en{' '}
+          <Link href="/interiorista-sant-cugat/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sant Cugat</Link>,{' '}
+          <Link href="/interiorista-sabadell/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sabadell</Link>,{' '}
+          Castelldefels,{' '}
+          <Link href="/interiorista-sitges/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sitges</Link>,{' '}
           Badalona, L&apos;Hospitalet de Llobregat y alrededores.
         </p>
         <p>
@@ -288,10 +298,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Home staging',
       offers: {
         '@type': 'Offer',
@@ -319,10 +334,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -359,6 +379,12 @@ export const metadata: Metadata = {
   title: 'Home Staging en Barcelona | Vende tu Piso Más Rápido',
   description:
     'Servicio profesional de home staging en Barcelona. Preparamos tu piso para vender un 50 % más rápido y hasta un 15 % más caro. Presupuesto gratuito.',
+  openGraph: {
+    type: 'website',
+    title: 'Home Staging en Barcelona | Vende tu Piso Más Rápido',
+    description:
+      'Servicio profesional de home staging en Barcelona. Preparamos tu piso para vender un 50 % más rápido y hasta un 15 % más caro. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/home-staging/',
   },
@@ -374,7 +400,11 @@ export default function HomeStagingPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Home Staging en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -391,6 +421,17 @@ export default function HomeStagingPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Home staging en Barcelona"
+        items={[
+          { label: 'ROI medio', value: 'Venta 2-3× más rápida' },
+          { label: 'Plazo', value: '3 a 5 días de montaje' },
+          { label: 'Zona', value: 'Barcelona y costa catalana' },
+          { label: 'Incluye', value: 'Diagnóstico, montaje, reportaje foto' },
+          { label: 'Modalidades', value: 'Estándar, premium, virtual' },
+        ]}
+      />
 
       {/* 2. ¿Por qué hacer home staging en Barcelona? */}
       <SectionIntro
@@ -455,7 +496,7 @@ export default function HomeStagingPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Diagnóstico y plan de staging"
-          image={{ src: imageDiagnostico }}
+          image={{ src: imageDiagnostico, alt: 'Diagnóstico de home staging en piso de Gràcia, Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -483,7 +524,7 @@ export default function HomeStagingPage() {
 
         <Section
           title="Puesta en escena del inmueble"
-          image={{ src: imageSalonStaging, shape: 1 }}
+          image={{ src: imageSalonStaging, alt: 'Salón preparado con home staging en el Eixample', shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -522,7 +563,7 @@ export default function HomeStagingPage() {
 
         <Section
           title="Reportaje fotográfico y entrega"
-          image={{ src: imageReportaje, shape: 2 }}
+          image={{ src: imageReportaje, alt: 'Reportaje fotográfico de home staging en el Born', shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -555,7 +596,7 @@ export default function HomeStagingPage() {
         description="Servicio profesional de home staging para inmuebles en venta o alquiler en Barcelona. Desde la consulta gratuita hasta el reportaje fotográfico final."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageDormitorioPremium, shape: 0 }}
+        image={{ src: imageDormitorioPremium, alt: 'Dormitorio premium con home staging en Sarrià', shape: 0 }}
         showCounter={false}
         tiers={[
           {
@@ -580,7 +621,6 @@ export default function HomeStagingPage() {
         ]}
       />
       </div>
-
       {/* 6. FAQ */}
       <SectionIntro
         eyebrow="FAQ"

@@ -18,6 +18,7 @@ import imagePenthouse from '@/images/diseno-interiores-penthouse-minimalista-bar
 import imageSalonContemporaneo from '@/images/diseno-interiores-salon-contemporaneo-barcelona.jpg'
 import { LatestProjects } from '@/components/LatestProjects'
 import { TestimonialSlider, type TestimonialItem } from '@/components/TestimonialSlider'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { FAQAccordion } from './faq-accordion'
 
 
@@ -92,14 +93,21 @@ const faqItems = [
           y en las principales ciudades del área metropolitana.
         </p>
         <p>
-          Intervenimos en los principales barrios de Barcelona: Eixample,
-          Gràcia, El Born, Sarrià, Poblenou, Les Corts, Sant Andreu y
-          Sants-Montjuïc.
+          Intervenimos en los principales barrios de Barcelona:{' '}
+          <Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-born/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">El Born</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>,{' '}
+          Les Corts, Sant Andreu y Sants-Montjuïc.
         </p>
         <p>
-          También intervenimos en las ciudades del área metropolitana: Sant
-          Cugat, Sabadell, Castelldefels, Sitges, Badalona, L&apos;Hospitalet
-          de Llobregat y alrededores.
+          También intervenimos en las ciudades del área metropolitana:{' '}
+          <Link href="/interiorista-sant-cugat/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sant Cugat</Link>,{' '}
+          <Link href="/interiorista-sabadell/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sabadell</Link>,{' '}
+          Castelldefels,{' '}
+          <Link href="/interiorista-sitges/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sitges</Link>,{' '}
+          Badalona, L&apos;Hospitalet de Llobregat y alrededores.
         </p>
         <p>
           <Link
@@ -323,10 +331,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Diseño de interiores',
       offers: {
         '@type': 'Offer',
@@ -355,10 +368,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -394,6 +412,12 @@ export const metadata: Metadata = {
   title: 'Diseño de interiores en Barcelona | Diseñador de interiores 2026',
   description:
     '¿Buscas un diseñador de interiores en Barcelona? Nuestros interioristas titulados te acompañan en tu proyecto de diseño de interiores, reforma o reestructuración de tu piso o casa en Barcelona y alrededores.',
+  openGraph: {
+    type: 'website',
+    title: 'Diseño de interiores en Barcelona | Diseñador de interiores 2026',
+    description:
+      '¿Buscas un diseñador de interiores en Barcelona? Nuestros interioristas titulados te acompañan en tu proyecto de diseño de interiores, reforma o reestructuración de tu piso o casa en Barcelona y alrededores.',
+  },
   alternates: {
     canonical: '/diseno-interiores/',
   },
@@ -409,7 +433,11 @@ export default function DisenoInterioresPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Diseño de interiores en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -424,6 +452,17 @@ export default function DisenoInterioresPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Diseño de interiores en Barcelona"
+        items={[
+          { label: 'Plazo medio', value: '3 a 6 meses según proyecto' },
+          { label: 'Zona', value: 'Barcelona y área metropolitana' },
+          { label: 'Incluye', value: 'Visita, proyecto, seguimiento de obra' },
+          { label: 'Titulación', value: 'Interioristas colegiados CODIC' },
+          { label: 'Garantía', value: 'Seguro RC profesional' },
+        ]}
+      />
 
       {/* 2. ¿Por qué contratar un diseñador de interiores en Barcelona? */}
       <SectionIntro
@@ -488,7 +527,7 @@ export default function DisenoInterioresPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita consejo con tu diseñador de interiores"
-          image={{ src: imageSalonContemporaneo }}
+          image={{ src: imageSalonContemporaneo, alt: 'Salón contemporáneo diseñado por interiorista en Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -521,7 +560,7 @@ export default function DisenoInterioresPage() {
 
         <Section
           title="Estudio del proyecto de diseño de interiores"
-          image={{ src: imageArtDeco, shape: 1 }}
+          image={{ src: imageArtDeco, alt: 'Diseño de interiores art déco modernista en el Eixample', shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -569,7 +608,7 @@ export default function DisenoInterioresPage() {
 
         <Section
           title="Seguimiento de obra y coordinación de gremios"
-          image={{ src: imageLoftIndustrial, shape: 2 }}
+          image={{ src: imageLoftIndustrial, alt: 'Loft industrial diseñado en Poblenou, Barcelona', shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -606,7 +645,7 @@ export default function DisenoInterioresPage() {
         description="Servicio integral de diseño de interiores para viviendas en Barcelona. Desde la primera consulta gratuita hasta el seguimiento de obra, te acompañamos en cada etapa de tu proyecto."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imagePenthouse, shape: 0 }}
+        image={{ src: imagePenthouse, alt: 'Penthouse minimalista con diseño de interiores en Barcelona', shape: 0 }}
         showCounter={false}
         tiers={[
           {
@@ -631,7 +670,6 @@ export default function DisenoInterioresPage() {
         ]}
       />
       </div>
-
       {/* 6. FAQ */}
       <SectionIntro
         eyebrow="FAQ"
@@ -652,7 +690,7 @@ export default function DisenoInterioresPage() {
       {/* 7. Contact */}
       <ContactSection />
 
-      {/* 8. Proyectos destacados */}
+      {/* 9. Proyectos destacados */}
       <LatestProjects />
 
       {/* 9. Testimonios */}

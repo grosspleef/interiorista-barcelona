@@ -8,6 +8,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -171,9 +172,16 @@ const faqItems = [
           <strong className="font-semibold text-neutral-950">
             Barcelona ciudad
           </strong>{' '}
-          (Eixample, Gràcia, Sarrià, Poblenou, Les Corts) y área metropolitana:
-          Sant Cugat, Sabadell, Castelldefels, Sitges, Badalona,
-          L&apos;Hospitalet y alrededores.
+          (<Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>,{' '}
+          Les Corts) y área metropolitana:{' '}
+          <Link href="/interiorista-sant-cugat/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sant Cugat</Link>,{' '}
+          <Link href="/interiorista-sabadell/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sabadell</Link>,{' '}
+          Castelldefels,{' '}
+          <Link href="/interiorista-sitges/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sitges</Link>,{' '}
+          Badalona, L&apos;Hospitalet y alrededores.
         </p>
         <p>
           <Link
@@ -276,10 +284,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Paisajismo',
       offers: {
         '@type': 'Offer',
@@ -308,10 +321,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -348,6 +366,12 @@ export const metadata: Metadata = {
   title: 'Paisajismo en Barcelona | Diseño de jardines y terrazas 2026',
   description:
     'Paisajismo en Barcelona: diseño de jardines, terrazas, áticos y espacios exteriores mediterráneos. Presupuesto gratuito. Paisajistas profesionales en Barcelona y alrededores.',
+  openGraph: {
+    type: 'website',
+    title: 'Paisajismo en Barcelona | Diseño de jardines y terrazas 2026',
+    description:
+      'Paisajismo en Barcelona: diseño de jardines, terrazas, áticos y espacios exteriores mediterráneos. Presupuesto gratuito. Paisajistas profesionales en Barcelona y alrededores.',
+  },
   alternates: {
     canonical: '/paisajismo/',
   },
@@ -363,7 +387,11 @@ export default function PaisajismoPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Paisajismo en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -380,6 +408,17 @@ export default function PaisajismoPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Paisajismo en Barcelona"
+        items={[
+          { label: 'Plazo medio', value: '4 a 12 semanas' },
+          { label: 'Zona', value: 'Barcelona y área metropolitana' },
+          { label: 'Tipos', value: 'Terrazas, jardines, patios, rooftops' },
+          { label: 'Incluye', value: 'Diseño vegetal, riego, instalación' },
+          { label: 'Enfoque', value: 'Mediterráneo y bajo mantenimiento' },
+        ]}
+      />
 
       {/* 2. ¿Por qué contratar un paisajista en Barcelona? */}
       <SectionIntro
@@ -458,7 +497,7 @@ export default function PaisajismoPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita consejo y análisis del espacio"
-          image={{ src: imageRooftop }}
+          image={{ src: imageRooftop, alt: 'Terraza rooftop con paisajismo en ático del Eixample' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -488,7 +527,7 @@ export default function PaisajismoPage() {
 
         <Section
           title="Proyecto de paisajismo"
-          image={{ src: imageJardin, shape: 1 }}
+          image={{ src: imageJardin, shape: 1, alt: 'Jardín con piscina natural en villa de Sant Cugat' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -536,7 +575,7 @@ export default function PaisajismoPage() {
 
         <Section
           title="Ejecución y coordinación"
-          image={{ src: imagePatio, shape: 2 }}
+          image={{ src: imagePatio, shape: 2, alt: 'Patio interior modernista con paisajismo en Gràcia' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -578,7 +617,7 @@ export default function PaisajismoPage() {
         description="Servicio de paisajismo para viviendas y espacios exteriores en Barcelona. Desde la primera consulta hasta la entrega final con guía de mantenimiento."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageTerrazaJardin, shape: 0 }}
+        image={{ src: imageTerrazaJardin, shape: 0, alt: 'Terraza jardín mediterráneo sostenible en Barcelona' }}
         showCounter={false}
         tiers={[
           {

@@ -8,6 +8,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -96,11 +97,20 @@ const faqItems = [
         </p>
         <p>
           Intervenimos en promociones de obra nueva en los principales
-          barrios: Eixample, Gràcia, El Born, Sarrià, Poblenou, Les Corts,
-          Sant Andreu y Sants-Montjuïc.
+          barrios:{' '}
+          <Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-born/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">El Born</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>,{' '}
+          Les Corts, Sant Andreu y Sants-Montjuïc.
         </p>
         <p>
-          También cubrimos Sant Cugat, Sabadell, Castelldefels, Sitges,
+          También cubrimos{' '}
+          <Link href="/interiorista-sant-cugat/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sant Cugat</Link>,{' '}
+          <Link href="/interiorista-sabadell/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sabadell</Link>,{' '}
+          Castelldefels,{' '}
+          <Link href="/interiorista-sitges/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sitges</Link>,{' '}
           Badalona, L&apos;Hospitalet de Llobregat y alrededores.
         </p>
         <p>
@@ -310,10 +320,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Compra sobre plano',
       offers: {
         '@type': 'Offer',
@@ -342,10 +357,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -383,6 +403,13 @@ export const metadata: Metadata = {
     'Compra sobre plano en Barcelona | Obra nueva personalización 2026',
   description:
     '¿Vas a comprar piso sobre plano en Barcelona? Un interiorista te acompaña: revisión de planos, personalización de acabados y seguimiento de obra. Desde 200 €.',
+  openGraph: {
+    type: 'website',
+    title:
+      'Compra sobre plano en Barcelona | Obra nueva personalización 2026',
+    description:
+      '¿Vas a comprar piso sobre plano en Barcelona? Un interiorista te acompaña: revisión de planos, personalización de acabados y seguimiento de obra. Desde 200 €.',
+  },
   alternates: {
     canonical: '/compra-sobre-plano/',
   },
@@ -398,7 +425,11 @@ export default function CompraSobrePlanoPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Compra sobre plano en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -416,6 +447,17 @@ export default function CompraSobrePlanoPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Asesoría compra sobre plano en Barcelona"
+        items={[
+          { label: 'Plazo', value: 'Acompañamiento hasta la entrega' },
+          { label: 'Zona', value: 'Barcelona y costa catalana' },
+          { label: 'Incluye', value: 'Revisión planos, acabados, inspección entrega' },
+          { label: 'Para quién', value: 'Compradores de obra nueva' },
+          { label: 'Garantía', value: 'Verificación de calidades y defectos' },
+        ]}
+      />
 
       {/* 2. Ventajas */}
       <SectionIntro
@@ -497,7 +539,7 @@ export default function CompraSobrePlanoPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Asesoramiento inicial y revisión de planos"
-          image={{ src: imageRevisionPlanos }}
+          image={{ src: imageRevisionPlanos, alt: 'Revisión de planos de obra nueva en Diagonal Mar' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -525,7 +567,7 @@ export default function CompraSobrePlanoPage() {
 
         <Section
           title="Estudio de personalización y selección de acabados"
-          image={{ src: imageSeleccionAcabados, shape: 1 }}
+          image={{ src: imageSeleccionAcabados, shape: 1, alt: 'Selección de acabados para obra nueva en Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -569,7 +611,7 @@ export default function CompraSobrePlanoPage() {
 
         <Section
           title="Seguimiento de obra y verificación de entrega"
-          image={{ src: imageInspeccionEntrega, shape: 2 }}
+          image={{ src: imageInspeccionEntrega, shape: 2, alt: 'Inspección de pre-entrega de obra nueva en Poblenou' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -612,7 +654,7 @@ export default function CompraSobrePlanoPage() {
         description="Servicio de acompañamiento en la compra sobre plano en Barcelona. Te asesoramos en la personalización de tu vivienda de obra nueva, desde la revisión de planos hasta la inspección de la entrega."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imagePisoObraNueva, shape: 0 }}
+        image={{ src: imagePisoObraNueva, shape: 0, alt: 'Piso de obra nueva personalizado en el Eixample' }}
         showCounter={false}
         tiers={[
           {

@@ -1,18 +1,26 @@
 import clsx from 'clsx'
+import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
+
+export type BreadcrumbItem = {
+  label: string
+  href?: string
+}
 
 export function PageIntro({
   eyebrow,
   title,
   children,
   centered = false,
+  breadcrumbs,
 }: {
   eyebrow: string
   title: string
   children: React.ReactNode
   centered?: boolean
+  breadcrumbs?: BreadcrumbItem[]
 }) {
   return (
     <Container
@@ -20,9 +28,35 @@ export function PageIntro({
     >
       <FadeIn>
         <h1>
-          <span className="block font-display text-base font-semibold text-neutral-950">
-            {eyebrow}
-          </span>
+          {breadcrumbs ? (
+            <nav aria-label="Breadcrumb" className="block">
+              <ol className="flex items-center gap-x-1 font-display text-base font-semibold text-neutral-950">
+                {breadcrumbs.map((item, index) => (
+                  <li key={item.label} className="flex items-center gap-x-1">
+                    {index > 0 && (
+                      <span aria-hidden="true" className="text-neutral-400">
+                        {'>'}
+                      </span>
+                    )}
+                    {item.href ? (
+                      <Link
+                        href={item.href}
+                        className="transition hover:text-neutral-600"
+                      >
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <span aria-current="page">{item.label}</span>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          ) : (
+            <span className="block font-display text-base font-semibold text-neutral-950">
+              {eyebrow}
+            </span>
+          )}
           <span className="sr-only"> - </span>
           <span
             className={clsx(

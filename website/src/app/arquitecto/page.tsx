@@ -8,6 +8,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -97,13 +98,20 @@ const faqItems = [
           y en las principales ciudades del área metropolitana.
         </p>
         <p>
-          Intervenimos en los principales barrios de Barcelona: Eixample,
-          Gràcia, Sarrià, Poblenou, Les Corts, Sant Andreu y Sants-Montjuïc.
+          Intervenimos en los principales barrios de Barcelona:{' '}
+          <Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>,{' '}
+          Les Corts, Sant Andreu y Sants-Montjuïc.
         </p>
         <p>
-          También intervenimos en las ciudades del área metropolitana: Sant
-          Cugat, Sabadell, Castelldefels, Sitges, Badalona, L&apos;Hospitalet de
-          Llobregat y alrededores.
+          También intervenimos en las ciudades del área metropolitana:{' '}
+          <Link href="/interiorista-sant-cugat/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sant Cugat</Link>,{' '}
+          <Link href="/interiorista-sabadell/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sabadell</Link>,{' '}
+          Castelldefels,{' '}
+          <Link href="/interiorista-sitges/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sitges</Link>,{' '}
+          Badalona, L&apos;Hospitalet de Llobregat y alrededores.
         </p>
         <p>
           <Link
@@ -330,10 +338,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Arquitectura',
       offers: {
         '@type': 'Offer',
@@ -362,10 +375,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -401,6 +419,12 @@ export const metadata: Metadata = {
   title: 'Arquitecto en Barcelona | Construcción y Rehabilitación 2026',
   description:
     'Arquitecto colegiado en Barcelona: proyectos de construcción nueva, rehabilitación y dirección facultativa de obra. Inscrito en el COAC. Presupuesto gratuito.',
+  openGraph: {
+    type: 'website',
+    title: 'Arquitecto en Barcelona | Construcción y Rehabilitación 2026',
+    description:
+      'Arquitecto colegiado en Barcelona: proyectos de construcción nueva, rehabilitación y dirección facultativa de obra. Inscrito en el COAC. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/arquitecto/',
   },
@@ -416,7 +440,11 @@ export default function ArquitectoPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Arquitecto en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -440,6 +468,17 @@ export default function ArquitectoPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Arquitecto en Barcelona"
+        items={[
+          { label: 'Plazo medio', value: '6 a 18 meses (proyecto + obra)' },
+          { label: 'Zona', value: 'Barcelona y provincia' },
+          { label: 'Incluye', value: 'Viabilidad, proyecto, licencias, dirección de obra' },
+          { label: 'Titulación', value: 'Arquitectos colegiados COAC' },
+          { label: 'Visado', value: 'Proyecto visado por el COAC' },
+        ]}
+      />
 
       {/* 2. ¿Por qué contar con un arquitecto? */}
       <SectionIntro
@@ -504,7 +543,7 @@ export default function ArquitectoPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita consejo y estudio de viabilidad"
-          image={{ src: imageVisitaViabilidad }}
+          image={{ src: imageVisitaViabilidad, alt: 'Visita de viabilidad de arquitecto en Sarrià, Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -538,7 +577,7 @@ export default function ArquitectoPage() {
 
         <Section
           title="Estudio de viabilidad y anteproyecto"
-          image={{ src: imageAnteproyecto, shape: 1 }}
+          image={{ src: imageAnteproyecto, shape: 1, alt: 'Anteproyecto y maqueta de arquitecto en Gràcia' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -587,7 +626,7 @@ export default function ArquitectoPage() {
 
         <Section
           title="Licencia de obras y tramitación urbanística"
-          image={{ src: imageLicenciaObras, shape: 2 }}
+          image={{ src: imageLicenciaObras, shape: 2, alt: 'Licencia de obras para fachada de loft en Poblenou' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -621,7 +660,7 @@ export default function ArquitectoPage() {
 
         <Section
           title="Consulta a empresas y licitación de obras"
-          image={{ src: imageLicitacion, shape: 1 }}
+          image={{ src: imageLicitacion, shape: 1, alt: 'Planos técnicos de licitación en el Eixample' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -654,7 +693,7 @@ export default function ArquitectoPage() {
 
         <Section
           title="Dirección de obra y recepción"
-          image={{ src: imageDireccionObra, shape: 2 }}
+          image={{ src: imageDireccionObra, shape: 2, alt: 'Dirección de obra estructural en el Born, Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -698,7 +737,7 @@ export default function ArquitectoPage() {
         description="Servicio integral de arquitectura para proyectos de construcción y rehabilitación en Barcelona. Desde la consulta inicial hasta la dirección de obra, te acompañamos en cada etapa."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageVillaContemporanea, shape: 0 }}
+        image={{ src: imageVillaContemporanea, shape: 0, alt: 'Villa contemporánea de doble altura en Pedralbes' }}
         showCounter={false}
         tiers={[
           {
@@ -723,7 +762,6 @@ export default function ArquitectoPage() {
         ]}
       />
       </div>
-
       {/* 6. FAQ */}
       <SectionIntro
         eyebrow="FAQ"
@@ -744,7 +782,7 @@ export default function ArquitectoPage() {
       {/* 7. Contact */}
       <ContactSection />
 
-      {/* 8. Proyectos destacados */}
+      {/* 9. Proyectos destacados */}
       <LatestProjects />
 
       {/* 9. Testimonios */}

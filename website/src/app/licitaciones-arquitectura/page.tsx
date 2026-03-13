@@ -8,6 +8,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -326,10 +327,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Contratación pública de arquitectura',
     },
     {
@@ -344,10 +350,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -385,6 +396,13 @@ export const metadata: Metadata = {
     'Licitaciones de Arquitectura en Barcelona | Concursos Públicos 2026',
   description:
     'Estudio de arquitectura e interiorismo para licitaciones públicas en Barcelona. Concursos de proyectos, equipamientos públicos y contratación pública (LCSP). Presupuesto gratuito.',
+  openGraph: {
+    type: 'website',
+    title:
+      'Licitaciones de Arquitectura en Barcelona | Concursos Públicos 2026',
+    description:
+      'Estudio de arquitectura e interiorismo para licitaciones públicas en Barcelona. Concursos de proyectos, equipamientos públicos y contratación pública (LCSP). Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/licitaciones-arquitectura/',
   },
@@ -400,7 +418,11 @@ export default function LicitacionesArquitecturaPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Licitaciones de arquitectura en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -425,6 +447,18 @@ export default function LicitacionesArquitecturaPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Licitaciones de arquitectura en Barcelona"
+        items={[
+          { label: 'Servicio', value: 'Preparación de ofertas técnicas' },
+          { label: 'Plazo', value: 'Según plazo de licitación (2-6 semanas)' },
+          { label: 'Zona', value: 'Barcelona y Cataluña' },
+          { label: 'Sectores', value: 'Educación, sanidad, cultura, deportes' },
+          { label: 'Incluye', value: 'Memoria técnica, planos, presupuesto' },
+          { label: 'Plataformas', value: 'PSCP, PLACE, contratación pública' },
+        ]}
+      />
 
       {/* 2. ¿Por qué confiar en nuestro colectivo? */}
       <SectionIntro
@@ -495,7 +529,7 @@ export default function LicitacionesArquitecturaPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Análisis del pliego y estrategia de propuesta"
-          image={{ src: imageAyuntamiento }}
+          image={{ src: imageAyuntamiento, alt: 'Licitación de arquitectura para ayuntamiento de Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -533,7 +567,7 @@ export default function LicitacionesArquitecturaPage() {
 
         <Section
           title="Redacción del proyecto y documentación técnica"
-          image={{ src: imageColegio, shape: 1 }}
+          image={{ src: imageColegio, shape: 1, alt: 'Interiorismo de aulas de colegio en Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -588,7 +622,7 @@ export default function LicitacionesArquitecturaPage() {
 
         <Section
           title="Ejecución de obra y dirección facultativa"
-          image={{ src: imageBiblioteca, shape: 2 }}
+          image={{ src: imageBiblioteca, shape: 2, alt: 'Biblioteca municipal moderna en Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -671,7 +705,7 @@ export default function LicitacionesArquitecturaPage() {
         description="Servicio integral para concursos y licitaciones públicas de arquitectura en Barcelona. Desde el análisis del pliego hasta la dirección de obra, adaptamos nuestro equipo a cada proyecto."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imagePolideportivo, shape: 0 }}
+        image={{ src: imagePolideportivo, shape: 0, alt: 'Polideportivo municipal en Barcelona' }}
         showCounter={false}
         tiers={[
           {

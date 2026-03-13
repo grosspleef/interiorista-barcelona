@@ -8,6 +8,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { PricingBlock } from '@/components/PricingBlock'
 import { RootLayout } from '@/components/RootLayout'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -221,12 +222,20 @@ const faqItems = [
           y en las principales ciudades del área metropolitana.
         </p>
         <p>
-          Intervenimos en los principales barrios de Barcelona: Eixample,
-          Gràcia, El Born, Sarrià, Poblenou, Les Corts, Sant Andreu y
-          Sants-Montjuïc.
+          Intervenimos en los principales barrios de Barcelona:{' '}
+          <Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-born/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">El Born</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>,{' '}
+          Les Corts, Sant Andreu y Sants-Montjuïc.
         </p>
         <p>
-          También intervenimos en Sant Cugat, Sabadell, Castelldefels, Sitges,
+          También intervenimos en{' '}
+          <Link href="/interiorista-sant-cugat/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sant Cugat</Link>,{' '}
+          <Link href="/interiorista-sabadell/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sabadell</Link>,{' '}
+          Castelldefels,{' '}
+          <Link href="/interiorista-sitges/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sitges</Link>,{' '}
           Badalona, L&apos;Hospitalet de Llobregat y alrededores. Nos
           desplazamos a cualquier punto accesible en metro o FGC.
         </p>
@@ -314,10 +323,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Interiorismo accesible',
       offers: {
         '@type': 'Offer',
@@ -345,10 +359,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -385,6 +404,12 @@ export const metadata: Metadata = {
   title: 'Interiorismo Accesible en Barcelona | Diseño Adaptado PMR 2026',
   description:
     'Interiorismo accesible en Barcelona: diseño de interiores adaptado a movilidad reducida, baño adaptado, cocina accesible y domótica. Gestión de subvenciones. Presupuesto gratuito.',
+  openGraph: {
+    type: 'website',
+    title: 'Interiorismo Accesible en Barcelona | Diseño Adaptado PMR 2026',
+    description:
+      'Interiorismo accesible en Barcelona: diseño de interiores adaptado a movilidad reducida, baño adaptado, cocina accesible y domótica. Gestión de subvenciones. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/interiorismo-accesible/',
   },
@@ -400,7 +425,11 @@ export default function InteriorismoAccesiblePage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Interiorismo accesible en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -421,6 +450,17 @@ export default function InteriorismoAccesiblePage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Interiorismo accesible en Barcelona"
+        items={[
+          { label: 'Plazo medio', value: '3 a 8 semanas' },
+          { label: 'Zona', value: 'Barcelona y área metropolitana' },
+          { label: 'Incluye', value: 'Evaluación, proyecto, obra adaptada' },
+          { label: 'Normativa', value: 'CTE DB-SUA y Decreto 135/1995' },
+          { label: 'Subvenciones', value: 'Ayudas accesibilidad Generalitat' },
+        ]}
+      />
 
       {/* 2. ¿Por qué recurrir a un interiorista especializado en accesibilidad? */}
       <SectionIntro
@@ -494,7 +534,7 @@ export default function InteriorismoAccesiblePage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita de evaluación de accesibilidad"
-          image={{ src: imageEvaluacion }}
+          image={{ src: imageEvaluacion, alt: 'Evaluación de accesibilidad en piso del Born, Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -523,7 +563,7 @@ export default function InteriorismoAccesiblePage() {
 
         <Section
           title="Estudio del proyecto de adaptación"
-          image={{ src: imageProyectoAdaptacion, shape: 1 }}
+          image={{ src: imageProyectoAdaptacion, shape: 1, alt: 'Proyecto de adaptación accesible en el Eixample' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -568,7 +608,7 @@ export default function InteriorismoAccesiblePage() {
 
         <Section
           title="Seguimiento de obra y entrega"
-          image={{ src: imageBanoAccesible, shape: 2 }}
+          image={{ src: imageBanoAccesible, shape: 2, alt: 'Baño accesible de diseño en Sarrià, Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -600,7 +640,7 @@ export default function InteriorismoAccesiblePage() {
         description="Servicio profesional de interiorismo accesible en Barcelona. Adaptamos tu vivienda o local para personas con movilidad reducida, cumpliendo la normativa y gestionando subvenciones."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageSalonAccesible, shape: 0 }}
+        image={{ src: imageSalonAccesible, shape: 0, alt: 'Salón accesible moderno en Poblenou, Barcelona' }}
         showCounter={false}
         tiers={[
           {

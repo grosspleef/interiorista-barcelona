@@ -21,6 +21,7 @@ import {
   TestimonialSlider,
   type TestimonialItem,
 } from '@/components/TestimonialSlider'
+import { ServiceSummary } from '@/components/ServiceSummary'
 import { FAQAccordion } from './faq-accordion'
 
 const serviceTestimonials: TestimonialItem[] = [
@@ -306,10 +307,15 @@ const schemaOrg = {
         name: 'Interiorista Barcelona',
         url: 'https://www.interioristabarcelona.com',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
       serviceType: 'Interiorismo comercial',
       offers: {
         '@type': 'Offer',
@@ -338,10 +344,15 @@ const schemaOrg = {
         postalCode: '08008',
         addressCountry: 'ES',
       },
-      areaServed: {
-        '@type': 'City',
-        name: 'Barcelona',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Barcelona' },
+        { '@type': 'City', name: 'Sant Cugat del Vallès' },
+        { '@type': 'City', name: 'Sabadell' },
+        { '@type': 'City', name: 'Terrassa' },
+        { '@type': 'City', name: 'Sitges' },
+        { '@type': 'City', name: 'Mataró' },
+        { '@type': 'City', name: 'Manresa' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -378,6 +389,12 @@ export const metadata: Metadata = {
   title: 'Interiorismo comercial en Barcelona | Diseño de locales 2026',
   description:
     '¿Buscas un interiorista comercial en Barcelona? Diseño de restaurantes, hoteles, tiendas y locales comerciales. Proyecto integral desde 70 €/m². Gestión de licencias incluida.',
+  openGraph: {
+    type: 'website',
+    title: 'Interiorismo comercial en Barcelona | Diseño de locales 2026',
+    description:
+      '¿Buscas un interiorista comercial en Barcelona? Diseño de restaurantes, hoteles, tiendas y locales comerciales. Proyecto integral desde 70 €/m². Gestión de licencias incluida.',
+  },
   alternates: {
     canonical: '/interiorismo-comercial/',
   },
@@ -393,7 +410,11 @@ export default function InteriorismoComercialPage() {
 
       {/* 1. Hero */}
       <PageIntro
-        eyebrow="Inicio > Nuestros servicios"
+        eyebrow="Nuestros servicios"
+        breadcrumbs={[
+          { label: 'Inicio', href: '/' },
+          { label: 'Nuestros servicios' },
+        ]}
         title="Interiorismo comercial en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
@@ -410,6 +431,17 @@ export default function InteriorismoComercialPage() {
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>
         </div>
       </PageIntro>
+
+      <ServiceSummary
+        title="En resumen: Interiorismo comercial en Barcelona"
+        items={[
+          { label: 'Plazo medio', value: '2 a 4 meses' },
+          { label: 'Zona', value: 'Barcelona y área metropolitana' },
+          { label: 'Sectores', value: 'Restauración, retail, hoteles, oficinas' },
+          { label: 'Incluye', value: 'Concepto, proyecto, licencias, obra' },
+          { label: 'Licencias', value: 'Gestión integral ante el Ajuntament' },
+        ]}
+      />
 
       {/* 2. ¿Por qué contratar un interiorista comercial en Barcelona? */}
       <SectionIntro
@@ -475,7 +507,7 @@ export default function InteriorismoComercialPage() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title="Visita al local y briefing comercial"
-          image={{ src: imageRestaurante }}
+          image={{ src: imageRestaurante, alt: 'Interiorismo de restaurante gastronómico en el Born, Barcelona' }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -508,7 +540,7 @@ export default function InteriorismoComercialPage() {
 
         <Section
           title="Diseño del proyecto comercial"
-          image={{ src: imageHotelLobby, shape: 1 }}
+          image={{ src: imageHotelLobby, alt: 'Interiorismo de lobby de hotel boutique en el Eixample', shape: 1 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -551,7 +583,7 @@ export default function InteriorismoComercialPage() {
 
         <Section
           title="Dirección de obra y apertura"
-          image={{ src: imageFlagshipStore, shape: 2 }}
+          image={{ src: imageFlagshipStore, alt: 'Interiorismo de flagship store en Passeig de Gràcia', shape: 2 }}
         >
           <div className="space-y-6 text-base text-neutral-600">
             <p>
@@ -590,7 +622,7 @@ export default function InteriorismoComercialPage() {
         description="Servicio integral de interiorismo comercial en Barcelona. Desde la consulta inicial gratuita hasta la dirección de obra y apertura del local."
         href="/contacto/"
         ctaLabel="Solicitar presupuesto gratuito"
-        image={{ src: imageCafePanaderia, shape: 0 }}
+        image={{ src: imageCafePanaderia, alt: 'Interiorismo de café y panadería artesanal en Gràcia', shape: 0 }}
         showCounter={false}
         tiers={[
           {
@@ -615,7 +647,6 @@ export default function InteriorismoComercialPage() {
         ]}
       />
       </div>
-
       {/* 6. FAQ */}
       <SectionIntro
         eyebrow="FAQ"
