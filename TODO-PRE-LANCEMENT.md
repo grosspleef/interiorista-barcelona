@@ -66,13 +66,13 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [x] **18. Ajouter Schema.org sur les etudes de cas** — ✅ JSON-LD CreativeWork + BreadcrumbList + Review ajouté dans `wrapper.tsx` (appliqué aux 10 études de cas).
 
-- [ ] **19. Creer `error.tsx`** — Pas de page d'erreur globale (500). Creer `src/app/error.tsx` avec un message utile en espagnol.
+- [x] **19. Creer `error.tsx`** — ✅ Page d'erreur globale (500) creee dans `src/app/error.tsx` avec message en espagnol, bouton "Intentar de nuevo" (reset), lien retour accueil, et lien vers contacto.
 
 - [ ] **20. Ajouter les balises hreflang** — Le site vise ES/EN mais aucune balise d'alternance linguistique. Important si les pages EN restent.
 
-- [ ] **21. Optimiser le chargement des fonts** — `font-display: block` dans base.css. Passer a `font-display: swap` pour eviter le FOIT (Flash of Invisible Text).
+- [x] **21. Optimiser le chargement des fonts** — ✅ `font-display: swap` dans base.css (remplace `block`) pour eviter le FOIT (Flash of Invisible Text).
 
-- [ ] **22. Ajouter un banner de consentement cookies** — Meme si le site n'utilise que des cookies techniques, un banner est une bonne pratique UX/RGPD. Obligatoire si analytics ajoute.
+- [x] **22. Ajouter un banner de consentement cookies** — ✅ Composant `CookieBanner` (client) ajouté dans `RootLayout`. Affiche un banner en bas de page au premier visit, stocke le choix dans `localStorage`, lien vers `/politica-cookies/`.
 
 - [ ] **23. Ajouter favicon et icones** — `favicon.ico` est declare dans le layout mais verifier sa presence. Ajouter `apple-touch-icon`, `manifest.json` pour PWA-readiness.
 

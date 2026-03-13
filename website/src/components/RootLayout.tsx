@@ -19,6 +19,7 @@ import {
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import { CookieBanner } from '@/components/CookieBanner'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
@@ -282,6 +283,8 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           <Footer />
         </div>
       </div>
+
+      <CookieBanner />
     </MotionConfig>
   )
 }
