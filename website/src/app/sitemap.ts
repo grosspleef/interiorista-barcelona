@@ -78,6 +78,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'interiorista-sant-cugat',
     'interiorista-sabadell',
     'interiorista-terrassa',
+    'interiorista-manresa',
+    'interiorista-sitges',
+    'interiorista-mataro',
   ].map((slug) => ({
     url: `${BASE_URL}/${slug}/`,
     changeFrequency: 'monthly' as const,
