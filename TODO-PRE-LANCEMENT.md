@@ -47,7 +47,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [ ] **13. Integrer Google Analytics / GTM** — Aucun analytics configure. Ajouter GA4 ou une alternative privacy-friendly (Plausible, Umami).
 
-- [ ] **14. Configurer Google Search Console** — Aucune verification. Ajouter le fichier de verification ou la meta tag.
+- [x] **14. Configurer Google Search Console** — ✅ Vérifié via DNS TXT (Vercel). Sitemap soumis. Domaine corrigé dans 46 fichiers (interioristabarcelona.com → interiorista-barcelona.com).
 
 - [x] **15. Ajouter les headers de securite** — Headers configures dans `next.config.mjs`:
   - `X-Frame-Options: DENY`

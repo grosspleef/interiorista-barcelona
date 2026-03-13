@@ -118,8 +118,8 @@ export function ContactSection() {
                     Solicitud enviada correctamente
                   </p>
                   <p className="mt-2 text-sm text-green-700">
-                    Nos pondremos en contacto contigo en las próximas 24-48
-                    horas.
+                    Hemos recibido tu solicitud. Nos pondremos en contacto
+                    contigo muy pronto.
                   </p>
                   <button
                     type="button"
