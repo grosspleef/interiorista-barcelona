@@ -1,7 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+function getResend() {
+  if (!process.env.RESEND_API_KEY) {
+    throw new Error('RESEND_API_KEY environment variable is not set')
+  }
+  return new Resend(process.env.RESEND_API_KEY)
+}
 
 const RATE_LIMIT_WINDOW = 60 * 1000 // 1 minute
 const RATE_LIMIT_MAX = 3
@@ -87,7 +92,7 @@ export async function POST(request: NextRequest) {
     const source = body.source || 'Formulario de contacto'
 
     // Email to the team
-    const { error: resendError } = await resend.emails.send({
+    const { error: resendError } = await getResend().emails.send({
       from: 'Interiorista Barcelona <onboarding@resend.dev>',
       to: process.env.CONTACT_EMAIL_TO!,
       replyTo: body.email.trim(),
@@ -120,7 +125,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Confirmation email to the client
-    await resend.emails.send({
+    await getResend().emails.send({
       from: 'Interiorista Barcelona <onboarding@resend.dev>',
       to: body.email.trim(),
       subject: 'Hemos recibido tu solicitud — Interiorista Barcelona',
