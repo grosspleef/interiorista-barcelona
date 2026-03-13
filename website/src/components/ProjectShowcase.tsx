@@ -11,6 +11,7 @@ export type Project = {
   year: string
   category: string
   image?: ImageProps['src']
+  alt?: string
   href?: string
 }
 
@@ -48,7 +49,7 @@ export function ProjectShowcase({
                 {project.image && (
                   <Image
                     src={project.image}
-                    alt=""
+                    alt={project.alt || `Proyecto de interiorismo: ${project.title}`}
                     className="aspect-[16/9] w-full object-cover"
                   />
                 )}

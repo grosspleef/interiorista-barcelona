@@ -76,7 +76,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [ ] **23. Ajouter favicon et icones** — `favicon.ico` est declare dans le layout mais verifier sa presence. Ajouter `apple-touch-icon`, `manifest.json` pour PWA-readiness.
 
-- [ ] **24. Ajouter alt text aux images projets** — `ProjectShowcase.tsx` et `HeroCarousel.tsx` ont des alt="" vides sur certaines images.
+- [x] **24. Ajouter alt text aux images projets** — ✅ `ProjectShowcase.tsx` : alt dynamique basé sur le titre du projet (fallback `Proyecto de interiorismo: {title}`). `HeroCarousel.tsx` : déjà fonctionnel, tous les MDX passent des alt descriptifs.
 
 - [x] **25. Lien politique de confidentialite dans le footer** — Ajouter le lien vers `/politica-privacidad/` une fois la page creee.
 
