@@ -49,7 +49,7 @@ Analyse complète du site avant mise en ligne et indexation Google. Le site est 
 
 - [ ] **14. Configurer Google Search Console** — Aucune verification. Ajouter le fichier de verification ou la meta tag.
 
-- [ ] **15. Ajouter les headers de securite** — Aucun header de securite configure. Ajouter dans `next.config.mjs` ou `middleware.ts`:
+- [x] **15. Ajouter les headers de securite** — Headers configures dans `next.config.mjs`:
   - `X-Frame-Options: DENY`
   - `X-Content-Type-Options: nosniff`
   - `Referrer-Policy: strict-origin-when-cross-origin`
