@@ -80,8 +80,8 @@ export default async function CaseStudyLayout({
         },
       },
       {
-        '@type': 'Organization',
-        '@id': 'https://www.interiorista-barcelona.com/#organization',
+        '@type': 'LocalBusiness',
+        '@id': 'https://www.interiorista-barcelona.com/#localbusiness',
         name: 'Interiorista Barcelona',
         url: 'https://www.interiorista-barcelona.com',
         description:
@@ -108,7 +108,10 @@ export default async function CaseStudyLayout({
             {
               '@type': 'Review',
               itemReviewed: {
-                '@id': `${canonicalUrl}#project`,
+                '@type': 'LocalBusiness',
+                '@id':
+                  'https://www.interiorista-barcelona.com/#localbusiness',
+                name: 'Interiorista Barcelona',
               },
               reviewRating: {
                 '@type': 'Rating',
