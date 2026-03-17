@@ -107,7 +107,7 @@ export default async function AntesYDespuesProject(props: {
                   name: caseStudy.service,
                   provider: {
                     '@id':
-                      'https://www.interiorista-barcelona.com/#organization',
+                      'https://www.interiorista-barcelona.com/#localbusiness',
                   },
                 },
                 locationCreated: {
@@ -122,7 +122,7 @@ export default async function AntesYDespuesProject(props: {
                 },
                 creator: {
                   '@id':
-                    'https://www.interiorista-barcelona.com/#organization',
+                    'https://www.interiorista-barcelona.com/#localbusiness',
                 },
                 isPartOf: {
                   '@type': 'CollectionPage',
@@ -137,9 +137,9 @@ export default async function AntesYDespuesProject(props: {
                 },
               },
               {
-                '@type': 'Organization',
+                '@type': 'LocalBusiness',
                 '@id':
-                  'https://www.interiorista-barcelona.com/#organization',
+                  'https://www.interiorista-barcelona.com/#localbusiness',
                 name: 'Interiorista Barcelona',
                 url: 'https://www.interiorista-barcelona.com',
                 description:
@@ -166,7 +166,10 @@ export default async function AntesYDespuesProject(props: {
                     {
                       '@type': 'Review',
                       itemReviewed: {
-                        '@id': `https://www.interiorista-barcelona.com/antes-y-despues/${slug}/#gallery`,
+                        '@type': 'LocalBusiness',
+                        '@id':
+                          'https://www.interiorista-barcelona.com/#localbusiness',
+                        name: 'Interiorista Barcelona',
                       },
                       reviewRating: {
                         '@type': 'Rating',
