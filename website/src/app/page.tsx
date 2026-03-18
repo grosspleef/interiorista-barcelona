@@ -85,11 +85,11 @@ export default function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-6xl">
-            Tu colectivo de interioristas en Barcelona.
+            Encuentra tu interiorista en Barcelona.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Más de 25 profesionales especializados en interiorismo,
-            decoración, home staging, interiorismo comercial y rehabilitación.
+            Te encontramos al profesional ideal para tu proyecto. Más de 25
+            interioristas y arquitectos especializados.
           </p>
         </FadeIn>
       </Container>

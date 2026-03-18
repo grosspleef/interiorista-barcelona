@@ -14,7 +14,8 @@ export function NeighborhoodsSection() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            Un acompañamiento de la A a la Z
+            Un acompañamiento de la A a la Z. Servicio gratuito y sin
+            compromiso.
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
