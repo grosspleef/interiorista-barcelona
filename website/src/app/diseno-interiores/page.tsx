@@ -155,6 +155,43 @@ const faqItems = [
   },
   {
     question:
+      '¿Cuánto cuesta una reforma integral de piso en Barcelona?',
+    schemaAnswer:
+      'El precio de una reforma integral en Barcelona oscila entre 800 y 1.500 €/m² para un piso estándar. Para un piso de 80 m², el presupuesto total se sitúa entre 64.000 y 120.000 €. El coste varía según el barrio, el estado del inmueble y la calidad de los acabados. En el Eixample, los precios oscilan entre 800 y 1.500 €/m² debido a los elementos modernistas a conservar. En Gràcia, los pisos más pequeños permiten presupuestos desde 48.000 €. Contacta con nosotros para un presupuesto personalizado y gratuito.',
+    answer: (
+      <>
+        <p>
+          El precio de una reforma integral en Barcelona oscila entre{' '}
+          <strong className="font-semibold text-neutral-950">
+            800 y 1.500&nbsp;€/m²
+          </strong>{' '}
+          para un piso estándar. Para un piso de 80&nbsp;m², el presupuesto
+          total se sitúa entre 64.000 y 120.000&nbsp;€.
+        </p>
+        <p>
+          El coste varía según el barrio, el estado del inmueble y la calidad de
+          los acabados. Consulta nuestras páginas por barrio para precios más
+          precisos:{' '}
+          <Link href="/interiorista-eixample/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Eixample</Link>,{' '}
+          <Link href="/interiorista-gracia/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Gràcia</Link>,{' '}
+          <Link href="/interiorista-sarria/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Sarrià</Link>,{' '}
+          <Link href="/interiorista-born/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Born</Link>,{' '}
+          <Link href="/interiorista-poblenou/" className="font-semibold text-neutral-950 underline hover:text-neutral-700">Poblenou</Link>.
+        </p>
+        <p>
+          <Link
+            href="/contacto/"
+            className="font-semibold text-neutral-950 underline hover:text-neutral-700"
+          >
+            Contacta con nosotros
+          </Link>{' '}
+          para un presupuesto personalizado y gratuito.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
       '¿Un interiorista puede encargarse de un proyecto de ampliación?',
     schemaAnswer:
       'Sí, un interiorista puede encargarse de proyectos de ampliación de menos de 20 m²: extensiones, sobrelevaciones, modificaciones de fachada o cambios de destino del local. En Barcelona, estos proyectos están sujetos a la normativa urbanística del Plan General Metropolitano (PGM) y pueden requerir licencias específicas del Ayuntamiento. Tu interiorista se encarga de verificar la viabilidad y gestionar los trámites necesarios. Consulta nuestras tarifas de diseño de interiores.',
@@ -415,14 +452,14 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Diseño de interiores en Barcelona | Diseñador de interiores 2026',
+  title: 'Diseño de interiores en Barcelona | Reforma integral de pisos',
   description:
-    '¿Buscas un diseñador de interiores en Barcelona? Nuestros interioristas titulados te acompañan en tu proyecto de diseño de interiores, reforma o reestructuración de tu piso o casa en Barcelona y alrededores.',
+    '¿Buscas un interiorista en Barcelona para tu reforma integral? Nuestros diseñadores de interiores titulados te acompañan en tu proyecto de reforma de piso o vivienda en Barcelona y alrededores. Presupuesto gratuito.',
   openGraph: {
     type: 'website',
-    title: 'Diseño de interiores en Barcelona | Diseñador de interiores 2026',
+    title: 'Diseño de interiores en Barcelona | Reforma integral de pisos',
     description:
-      '¿Buscas un diseñador de interiores en Barcelona? Nuestros interioristas titulados te acompañan en tu proyecto de diseño de interiores, reforma o reestructuración de tu piso o casa en Barcelona y alrededores.',
+      '¿Buscas un interiorista en Barcelona para tu reforma integral? Nuestros diseñadores de interiores titulados te acompañan en tu proyecto de reforma de piso o vivienda en Barcelona y alrededores. Presupuesto gratuito.',
   },
   alternates: {
     canonical: '/diseno-interiores/',
@@ -447,12 +484,13 @@ export default function DisenoInterioresPage() {
         title="Diseño de interiores en Barcelona"
       >
         <p className="font-display text-2xl font-medium tracking-tight text-neutral-950">
-          Transformación estructural de espacios con visión arquitectónica
+          Reforma integral de pisos y viviendas con visión arquitectónica
         </p>
         <p className="mt-6">
           Desde 2006, los interioristas y diseñadores de interiores del colectivo
-          te asisten en tu proyecto de diseño de interiores, reforma o reestructuración
-          de tu piso o casa en Barcelona y alrededores.
+          te acompañan en tu proyecto de reforma integral de piso o vivienda
+          en Barcelona y alrededores: redistribución de espacios, selección de
+          materiales, coordinación de gremios y seguimiento de obra.
         </p>
         <div className="mt-8">
           <Button href="/contacto/">Solicitar presupuesto gratuito</Button>

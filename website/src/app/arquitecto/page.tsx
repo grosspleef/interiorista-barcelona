@@ -420,14 +420,14 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Arquitecto en Barcelona | Construcción y Rehabilitación 2026',
+  title: 'Arquitecto en Barcelona | Obra nueva y dirección de obra',
   description:
-    'Arquitecto colegiado en Barcelona: proyectos de construcción nueva, rehabilitación y dirección facultativa de obra. Inscrito en el COAC. Presupuesto gratuito.',
+    'Arquitecto colegiado en Barcelona: proyectos de obra nueva, dirección facultativa y rehabilitación estructural. Inscrito en el COAC. Presupuesto gratuito.',
   openGraph: {
     type: 'website',
-    title: 'Arquitecto en Barcelona | Construcción y Rehabilitación 2026',
+    title: 'Arquitecto en Barcelona | Obra nueva y dirección de obra',
     description:
-      'Arquitecto colegiado en Barcelona: proyectos de construcción nueva, rehabilitación y dirección facultativa de obra. Inscrito en el COAC. Presupuesto gratuito.',
+      'Arquitecto colegiado en Barcelona: proyectos de obra nueva, dirección facultativa y rehabilitación estructural. Inscrito en el COAC. Presupuesto gratuito.',
   },
   alternates: {
     canonical: '/arquitecto/',

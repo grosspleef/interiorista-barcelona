@@ -177,9 +177,9 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Interiorista en Gràcia | Diseño de Interiores Gràcia Barcelona',
+  title: 'Reforma de Pisos en Gràcia | Interiorista Gràcia Barcelona',
   description:
-    'Interioristas en Gràcia, Barcelona. Reforma de pisos en edificios de los años 60-80, optimización de espacios pequeños y diseño funcional. Presupuesto gratuito.',
+    'Reforma de pisos en Gràcia, Barcelona. Optimización de espacios pequeños en edificios de los años 60-80 y diseño funcional. Interioristas especializados en Gràcia. Presupuesto gratuito.',
   alternates: {
     canonical: '/interiorista-gracia/',
   },

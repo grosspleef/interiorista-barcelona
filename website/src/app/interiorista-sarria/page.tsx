@@ -191,9 +191,9 @@ const schemaOrg = {
 
 export const metadata: Metadata = {
   title:
-    'Interiorista en Sarrià | Diseño de Interiores Sarrià-Sant Gervasi Barcelona',
+    'Casas en Sarrià-Sant Gervasi | Interiorista y Arquitecto Barcelona',
   description:
-    'Interioristas en Sarrià-Sant Gervasi, Barcelona. Diseño de casas unifamiliares, integración jardín-interior y reformas de alto standing. Presupuesto gratuito.',
+    'Casas y reformas de alto standing en Sarrià-Sant Gervasi, Barcelona. Diseño de casas unifamiliares, integración jardín-interior y proyectos exclusivos. Presupuesto gratuito.',
   alternates: {
     canonical: '/interiorista-sarria/',
   },

@@ -180,9 +180,9 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Interiorista en Eixample | Diseño de Interiores Eixample Barcelona',
+  title: 'Reforma de Pisos en el Eixample | Interiorista Eixample Barcelona',
   description:
-    'Interioristas especializados en el Eixample de Barcelona. Reformas de pisos modernistas, conservación de mosaicos hidráulicos y diseño interior respetando el patrimonio. Presupuesto gratuito.',
+    'Reforma de pisos en el Eixample de Barcelona: conservación de mosaicos hidráulicos, molduras y elementos modernistas. Interioristas especializados en el patrimonio del Eixample. Presupuesto gratuito.',
   alternates: {
     canonical: '/interiorista-eixample/',
   },

@@ -191,9 +191,10 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Interiorista en Poblenou | Diseño de Interiores Poblenou Barcelona',
+  title:
+    'Lofts en Poblenou | Reforma Industrial y Oficinas 22@ Barcelona',
   description:
-    'Interioristas en Poblenou, Barcelona. Reconversión de espacios industriales en lofts, diseño de oficinas y locales comerciales en el distrito @22. Presupuesto gratuito.',
+    'Lofts y espacios industriales en Poblenou, Barcelona. Reconversión de fábricas en lofts, diseño de oficinas en el distrito 22@ y locales comerciales. Presupuesto gratuito.',
   alternates: {
     canonical: '/interiorista-poblenou/',
   },

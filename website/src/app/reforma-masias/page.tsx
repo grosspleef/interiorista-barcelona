@@ -440,14 +440,14 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Reforma de masías en Barcelona y Cataluña | Rehabilitación 2026',
+  title: 'Reforma de masías en Barcelona y Cataluña | Restauración rural',
   description:
-    'Reforma y rehabilitación de masías catalanas: consolidación estructural, restauración de elementos patrimoniales, mejora energética y diseño interior. Presupuesto gratuito por interioristas y arquitectos titulados.',
+    'Reforma y restauración de masías catalanas: consolidación estructural, restauración de elementos patrimoniales, mejora energética y diseño interior. Presupuesto gratuito por interioristas y arquitectos titulados.',
   openGraph: {
     type: 'website',
-    title: 'Reforma de masías en Barcelona y Cataluña | Rehabilitación 2026',
+    title: 'Reforma de masías en Barcelona y Cataluña | Restauración rural',
     description:
-      'Reforma y rehabilitación de masías catalanas: consolidación estructural, restauración de elementos patrimoniales, mejora energética y diseño interior. Presupuesto gratuito por interioristas y arquitectos titulados.',
+      'Reforma y restauración de masías catalanas: consolidación estructural, restauración de elementos patrimoniales, mejora energética y diseño interior. Presupuesto gratuito por interioristas y arquitectos titulados.',
   },
   alternates: {
     canonical: '/reforma-masias/',

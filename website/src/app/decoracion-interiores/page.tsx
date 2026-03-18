@@ -255,29 +255,34 @@ const faqItems = [
   },
   {
     question:
-      '¿Cuáles son las tendencias de decoración en Barcelona en 2026?',
+      '¿Cuánto tiempo dura un proyecto de decoración de interiores?',
     schemaAnswer:
-      'Las principales tendencias de decoración en Barcelona en 2026 incluyen: el estilo mediterráneo contemporáneo con materiales naturales (madera, piedra, lino, cerámica artesanal), paletas cálidas inspiradas en la costa catalana, iluminación ambiental con luminarias de diseño, integración de plantas y elementos biofílicos, y mobiliario de líneas orgánicas que combina funcionalidad con estética. También destaca el interés creciente por piezas de artesanía local y materiales sostenibles.',
+      'Un proyecto de decoración de interiores en Barcelona dura entre 2 y 8 semanas según la superficie y la complejidad del encargo. La consulta inicial y el moodboard se entregan en la primera semana. El proyecto completo (plano de mobiliario, shopping list y presupuesto) se finaliza en 1 a 3 semanas adicionales. La fase de compras, entrega e instalación del mobiliario varía según la disponibilidad de las piezas seleccionadas. Descubre las tendencias actuales de decoración en nuestro blog.',
     answer: (
       <>
         <p>
-          Las principales tendencias de decoración en Barcelona en 2026
-          incluyen: el{' '}
+          Un proyecto de decoración de interiores en Barcelona dura entre{' '}
           <strong className="font-semibold text-neutral-950">
-            estilo mediterráneo contemporáneo
+            2 y 8 semanas
           </strong>{' '}
-          con materiales naturales (madera, piedra, lino, cerámica artesanal),
-          paletas cálidas inspiradas en la costa catalana, iluminación ambiental
-          con luminarias de diseño.
+          según la superficie y la complejidad del encargo.
         </p>
         <p>
-          También destaca la integración de{' '}
-          <strong className="font-semibold text-neutral-950">
-            plantas y elementos biofílicos
-          </strong>
-          , mobiliario de líneas orgánicas que combina funcionalidad con
-          estética, y el interés creciente por piezas de artesanía local y
-          materiales sostenibles.
+          La consulta inicial y el moodboard se entregan en la primera semana.
+          El proyecto completo (plano de mobiliario, shopping list y
+          presupuesto) se finaliza en 1 a 3 semanas adicionales. La fase de
+          compras, entrega e instalación del mobiliario varía según la
+          disponibilidad de las piezas seleccionadas.
+        </p>
+        <p>
+          Descubre las{' '}
+          <Link
+            href="/blog/tendencias-decoracion-2026/"
+            className="font-semibold text-neutral-950 underline hover:text-neutral-700"
+          >
+            tendencias actuales de decoración
+          </Link>{' '}
+          en nuestro blog.
         </p>
       </>
     ),
@@ -403,14 +408,14 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Decoración de interiores en Barcelona | Decoración 2026',
+  title: 'Decoración de interiores en Barcelona | Decorador profesional',
   description:
-    'Decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra. Presupuesto gratuito. Tendencias 2026.',
+    'Decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra. Presupuesto gratuito.',
   openGraph: {
     type: 'website',
-    title: 'Decoración de interiores en Barcelona | Decoración 2026',
+    title: 'Decoración de interiores en Barcelona | Decorador profesional',
     description:
-      'Decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra. Presupuesto gratuito. Tendencias 2026.',
+      'Decoración de interiores en Barcelona: selección de mobiliario, textiles, colores e iluminación para renovar tu hogar sin obra. Presupuesto gratuito.',
   },
   alternates: {
     canonical: '/decoracion-interiores/',
