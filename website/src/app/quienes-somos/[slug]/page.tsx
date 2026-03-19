@@ -520,7 +520,7 @@ export default async function MemberProfilePage({
               <Image
                 src={member.image}
                 alt={`${member.name} - ${member.professionLabel} en Barcelona`}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover grayscale"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
             </div>
