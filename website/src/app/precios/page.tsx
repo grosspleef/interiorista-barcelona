@@ -308,6 +308,12 @@ export const metadata: Metadata = {
   title: 'Interiorista Barcelona Precios | Tarifas transparentes de interiorismo',
   description:
     '¿Cuánto cobra un interiorista en Barcelona? Precios orientativos y transparentes para diseño de interiores, decoración, home staging, interiorismo comercial y arquitectura. Presupuesto sin compromiso.',
+  openGraph: {
+    title:
+      'Interiorista Barcelona Precios | Tarifas transparentes de interiorismo',
+    description:
+      '¿Cuánto cobra un interiorista en Barcelona? Precios orientativos y transparentes para diseño de interiores, decoración, home staging, interiorismo comercial y arquitectura.',
+  },
   alternates: {
     canonical: '/precios/',
   },
@@ -352,6 +358,17 @@ export default function Precios() {
                   name: 'Barcelona',
                 },
                 url: `https://www.interiorista-barcelona.com${service.href}`,
+                offers: service.tiers
+                  .filter(
+                    (t) =>
+                      t.price !== 'Gratuita' && t.price !== 'Consultar',
+                  )
+                  .map((t) => ({
+                    '@type': 'Offer',
+                    priceCurrency: 'EUR',
+                    description: `${t.name}: ${t.price}`,
+                    availability: 'https://schema.org/InStock',
+                  })),
               })),
             ],
           }),

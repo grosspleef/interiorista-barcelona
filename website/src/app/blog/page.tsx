@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: 'Blog de interiorismo y reformas en Barcelona',
   description:
     'Consejos, guías y tendencias sobre interiorismo, reformas y decoración en Barcelona. Precios, trámites y claves para transformar tu hogar.',
+  openGraph: {
+    title: 'Blog de interiorismo y reformas en Barcelona',
+    description:
+      'Consejos, guías y tendencias sobre interiorismo, reformas y decoración en Barcelona. Precios, trámites y claves para transformar tu hogar.',
+  },
   alternates: {
     canonical: '/blog/',
   },
@@ -25,6 +30,49 @@ export default async function Blog() {
 
   return (
     <RootLayout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: 'Inicio',
+                    item: 'https://www.interiorista-barcelona.com',
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: 'Blog',
+                    item: 'https://www.interiorista-barcelona.com/blog/',
+                  },
+                ],
+              },
+              {
+                '@type': 'CollectionPage',
+                name: 'Blog de interiorismo y reformas en Barcelona',
+                url: 'https://www.interiorista-barcelona.com/blog/',
+                description:
+                  'Consejos, guías y tendencias sobre interiorismo, reformas y decoración en Barcelona.',
+                mainEntity: {
+                  '@type': 'ItemList',
+                  itemListElement: articles.map((article, i) => ({
+                    '@type': 'ListItem',
+                    position: i + 1,
+                    url: `https://www.interiorista-barcelona.com${article.href}`,
+                  })),
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
       <PageIntro
         eyebrow="Blog"
         title="Consejos de interiorismo y reformas"
