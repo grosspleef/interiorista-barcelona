@@ -406,13 +406,13 @@ const schemaOrg = {
 
 export const metadata: Metadata = {
   title:
-    'Asesoramiento compra vivienda en Barcelona | Informe técnico vivienda 2026',
+    'Asesoramiento compra vivienda en Barcelona | Informe técnico vivienda',
   description:
     'Asesoramiento compra vivienda en Barcelona: contravisita con un interiorista para detectar vicios ocultos, evaluar el potencial del inmueble y estimar el coste de reforma. Desde 150 €.',
   openGraph: {
     type: 'website',
     title:
-      'Asesoramiento compra vivienda en Barcelona | Informe técnico vivienda 2026',
+      'Asesoramiento compra vivienda en Barcelona | Informe técnico vivienda',
     description:
       'Asesoramiento compra vivienda en Barcelona: contravisita con un interiorista para detectar vicios ocultos, evaluar el potencial del inmueble y estimar el coste de reforma. Desde 150 €.',
   },

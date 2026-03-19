@@ -402,13 +402,13 @@ const schemaOrg = {
 
 export const metadata: Metadata = {
   title:
-    'Licitaciones de Arquitectura en Barcelona | Concursos Públicos 2026',
+    'Licitaciones de Arquitectura en Barcelona | Concursos Públicos',
   description:
     'Estudio de arquitectura e interiorismo para licitaciones públicas en Barcelona. Concursos de proyectos, equipamientos públicos y contratación pública (LCSP). Presupuesto gratuito.',
   openGraph: {
     type: 'website',
     title:
-      'Licitaciones de Arquitectura en Barcelona | Concursos Públicos 2026',
+      'Licitaciones de Arquitectura en Barcelona | Concursos Públicos',
     description:
       'Estudio de arquitectura e interiorismo para licitaciones públicas en Barcelona. Concursos de proyectos, equipamientos públicos y contratación pública (LCSP). Presupuesto gratuito.',
   },

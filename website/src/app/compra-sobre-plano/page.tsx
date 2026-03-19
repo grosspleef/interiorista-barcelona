@@ -403,13 +403,13 @@ const schemaOrg = {
 
 export const metadata: Metadata = {
   title:
-    'Compra sobre plano en Barcelona | Obra nueva personalización 2026',
+    'Compra sobre plano en Barcelona | Obra nueva personalización',
   description:
     '¿Vas a comprar piso sobre plano en Barcelona? Un interiorista te acompaña: revisión de planos, personalización de acabados y seguimiento de obra. Desde 200 €.',
   openGraph: {
     type: 'website',
     title:
-      'Compra sobre plano en Barcelona | Obra nueva personalización 2026',
+      'Compra sobre plano en Barcelona | Obra nueva personalización',
     description:
       '¿Vas a comprar piso sobre plano en Barcelona? Un interiorista te acompaña: revisión de planos, personalización de acabados y seguimiento de obra. Desde 200 €.',
   },

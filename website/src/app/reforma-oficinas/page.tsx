@@ -391,13 +391,13 @@ const schemaOrg = {
 
 export const metadata: Metadata = {
   title:
-    'Reforma de oficinas en Barcelona | Diseño de espacios de trabajo 2026',
+    'Reforma de oficinas en Barcelona | Diseño de espacios de trabajo',
   description:
     '¿Buscas reformar tu oficina en Barcelona? Diseño de oficinas, coworking y espacios de trabajo. Proyecto integral desde 60 €/m². Space planning, bienestar laboral y dirección de obra.',
   openGraph: {
     type: 'website',
     title:
-      'Reforma de oficinas en Barcelona | Diseño de espacios de trabajo 2026',
+      'Reforma de oficinas en Barcelona | Diseño de espacios de trabajo',
     description:
       '¿Buscas reformar tu oficina en Barcelona? Diseño de oficinas, coworking y espacios de trabajo. Proyecto integral desde 60 €/m². Space planning, bienestar laboral y dirección de obra.',
   },

@@ -499,12 +499,12 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Ampliación de vivienda en Barcelona | Más m² sin mudarte — 2026',
+  title: 'Ampliación de vivienda en Barcelona | Más m² sin mudarte',
   description:
     'Ampliación de vivienda en Barcelona: cerramiento de terraza, unión de pisos, altillo, ático. Interioristas y arquitectos titulados. Proyecto integral desde la licencia de obra hasta la entrega. Presupuesto gratuito.',
   openGraph: {
     type: 'website',
-    title: 'Ampliación de vivienda en Barcelona | Más m² sin mudarte — 2026',
+    title: 'Ampliación de vivienda en Barcelona | Más m² sin mudarte',
     description:
       'Ampliación de vivienda en Barcelona: cerramiento de terraza, unión de pisos, altillo, ático. Interioristas y arquitectos titulados. Proyecto integral desde la licencia de obra hasta la entrega. Presupuesto gratuito.',
   },

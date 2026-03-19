@@ -389,12 +389,12 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Interiorismo comercial en Barcelona | Diseño de locales 2026',
+  title: 'Interiorismo comercial en Barcelona | Diseño de locales',
   description:
     '¿Buscas un interiorista comercial en Barcelona? Diseño de restaurantes, hoteles, tiendas y locales comerciales. Proyecto integral desde 70 €/m². Gestión de licencias incluida.',
   openGraph: {
     type: 'website',
-    title: 'Interiorismo comercial en Barcelona | Diseño de locales 2026',
+    title: 'Interiorismo comercial en Barcelona | Diseño de locales',
     description:
       '¿Buscas un interiorista comercial en Barcelona? Diseño de restaurantes, hoteles, tiendas y locales comerciales. Proyecto integral desde 70 €/m². Gestión de licencias incluida.',
   },

@@ -456,12 +456,12 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Rehabilitación energética en Barcelona | Subvenciones 2026',
+  title: 'Rehabilitación energética en Barcelona | Subvenciones',
   description:
     'Rehabilitación energética en Barcelona: aislamiento térmico, aerotermia, ventanas de altas prestaciones y gestión de subvenciones Next Generation EU. Diagnóstico gratuito por interioristas titulados.',
   openGraph: {
     type: 'website',
-    title: 'Rehabilitación energética en Barcelona | Subvenciones 2026',
+    title: 'Rehabilitación energética en Barcelona | Subvenciones',
     description:
       'Rehabilitación energética en Barcelona: aislamiento térmico, aerotermia, ventanas de altas prestaciones y gestión de subvenciones Next Generation EU. Diagnóstico gratuito por interioristas titulados.',
   },

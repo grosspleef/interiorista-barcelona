@@ -366,12 +366,12 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Paisajismo en Barcelona | Diseño de jardines y terrazas 2026',
+  title: 'Paisajismo en Barcelona | Diseño de jardines y terrazas',
   description:
     'Paisajismo en Barcelona: diseño de jardines, terrazas, áticos y espacios exteriores mediterráneos. Presupuesto gratuito. Paisajistas profesionales en Barcelona y alrededores.',
   openGraph: {
     type: 'website',
-    title: 'Paisajismo en Barcelona | Diseño de jardines y terrazas 2026',
+    title: 'Paisajismo en Barcelona | Diseño de jardines y terrazas',
     description:
       'Paisajismo en Barcelona: diseño de jardines, terrazas, áticos y espacios exteriores mediterráneos. Presupuesto gratuito. Paisajistas profesionales en Barcelona y alrededores.',
   },
