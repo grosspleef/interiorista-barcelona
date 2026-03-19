@@ -305,9 +305,9 @@ const servicePricing: ServicePricing[] = [
 const tocItems = servicePricing.map(({ id, name }) => ({ id, name }))
 
 export const metadata: Metadata = {
-  title: 'Precios interiorismo Barcelona | Tarifas transparentes',
+  title: 'Interiorista Barcelona Precios | Tarifas transparentes de interiorismo',
   description:
-    'Descubre los precios de nuestros servicios de interiorismo y arquitectura en Barcelona. Tarifas transparentes para interiorismo, decoración, home staging, interiorismo comercial y rehabilitación.',
+    '¿Cuánto cobra un interiorista en Barcelona? Precios orientativos y transparentes para diseño de interiores, decoración, home staging, interiorismo comercial y arquitectura. Presupuesto sin compromiso.',
   alternates: {
     canonical: '/precios/',
   },
@@ -360,15 +360,15 @@ export default function Precios() {
 
       <PageIntro
         eyebrow="Precios"
-        title="Tarifas transparentes para tu proyecto"
+        title="Precios de interiorista en Barcelona: tarifas orientativas y transparentes"
       >
         <p>
-          Creemos en la transparencia. Aquí encontrarás las tarifas orientativas
-          de cada uno de nuestros servicios de interiorismo y arquitectura en
-          Barcelona. Como colectivo de profesionales independientes, los precios
-          pueden variar ligeramente de un arquitecto o interiorista a otro. Cada
-          proyecto es único: los precios definitivos se concretan tras una
-          primera toma de contacto.
+          ¿Cuánto cuesta un interiorista en Barcelona? Aquí encontrarás los
+          precios orientativos de cada uno de nuestros servicios de diseño de
+          interiores y arquitectura. Como colectivo de profesionales
+          independientes, las tarifas pueden variar ligeramente de un arquitecto
+          o interiorista a otro. Cada proyecto es único: los precios definitivos
+          se concretan tras una primera toma de contacto.
         </p>
       </PageIntro>
 
