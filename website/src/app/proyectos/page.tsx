@@ -118,9 +118,14 @@ const testimonials = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Nuestros Proyectos | Reformas e Interiorismo en Barcelona',
+  title: 'Nuestros Proyectos y Portfolio | Reformas e Interiorismo en Barcelona',
   description:
     'Descubre nuestros proyectos de reforma integral, interiorismo residencial y diseño comercial en Barcelona. Resultados reales con opiniones de clientes satisfechos.',
+  openGraph: {
+    title: 'Nuestros Proyectos y Portfolio | Reformas e Interiorismo en Barcelona',
+    description:
+      'Descubre nuestros proyectos de reforma integral, interiorismo residencial y diseño comercial en Barcelona. Resultados reales con opiniones de clientes satisfechos.',
+  },
   alternates: {
     canonical: '/proyectos/',
   },

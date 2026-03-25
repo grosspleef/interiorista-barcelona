@@ -31,6 +31,11 @@ const testimonials = [
 export const metadata: Metadata = {
   description:
     'Colectivo de más de 25 interioristas y arquitectos en Barcelona. Interiorismo, decoración, home staging, interiorismo comercial y rehabilitación.',
+  openGraph: {
+    title: 'Interiorista Barcelona — Colectivo de Interioristas y Arquitectos',
+    description:
+      'Colectivo de más de 25 interioristas y arquitectos en Barcelona. Interiorismo, decoración, home staging, interiorismo comercial y rehabilitación.',
+  },
   alternates: {
     canonical: '/',
   },

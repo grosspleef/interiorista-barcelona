@@ -177,6 +177,11 @@ export const metadata: Metadata = {
   title: 'Arquitecto e Interiorista en Sitges | Diseño de Interiores Sitges',
   description:
     'Arquitectos e interioristas en Sitges. Profesionales del colectivo en el Garraf: reforma de casas, villas costeras y alojamientos turísticos con diseño mediterráneo. Presupuesto gratuito.',
+  openGraph: {
+    title: 'Arquitecto e Interiorista en Sitges | Diseño de Interiores Sitges',
+    description:
+      'Arquitectos e interioristas en Sitges. Profesionales del colectivo en el Garraf: reforma de casas, villas costeras y alojamientos turísticos con diseño mediterráneo. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/interiorista-sitges/',
   },

@@ -174,6 +174,11 @@ export const metadata: Metadata = {
   title: 'Interiorista en Sabadell | Diseño de Interiores Sabadell',
   description:
     'Interioristas en Sabadell. Profesionales del colectivo operan directamente en el Vallès: reforma de pisos, modernización de viviendas y diseño funcional a precios accesibles. Presupuesto gratuito.',
+  openGraph: {
+    title: 'Interiorista en Sabadell | Diseño de Interiores Sabadell',
+    description:
+      'Interioristas en Sabadell. Profesionales del colectivo operan directamente en el Vallès: reforma de pisos, modernización de viviendas y diseño funcional a precios accesibles. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/interiorista-sabadell/',
   },

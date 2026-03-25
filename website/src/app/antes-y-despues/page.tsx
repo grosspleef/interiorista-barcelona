@@ -117,7 +117,13 @@ export const metadata: Metadata = {
   title:
     'Antes y Después de Reformas en Barcelona | Interiorista Barcelona',
   description:
-    'Descubre el antes y después de nuestras reformas e interiorismo en Barcelona. Transformaciones reales de pisos, casas, oficinas y locales comerciales con fotos comparativas.',
+    'Descubre el antes y después de nuestras reformas e interiorismo en Barcelona. Más de 10 transformaciones reales de pisos, casas, oficinas y locales comerciales con fotos comparativas.',
+  openGraph: {
+    title:
+      'Antes y Después de Reformas en Barcelona | Interiorista Barcelona',
+    description:
+      'Descubre el antes y después de nuestras reformas e interiorismo en Barcelona. Más de 10 transformaciones reales de pisos, casas, oficinas y locales comerciales con fotos comparativas.',
+  },
   alternates: {
     canonical: '/antes-y-despues/',
   },
@@ -157,7 +163,7 @@ export default async function AntesYDespues() {
                   'https://www.interiorista-barcelona.com/antes-y-despues/#page',
                 name: 'Antes y Después de Reformas en Barcelona',
                 description:
-                  'Descubre el antes y después de nuestras reformas e interiorismo en Barcelona. Transformaciones reales de pisos, casas, oficinas y locales comerciales con fotos comparativas.',
+                  'Descubre el antes y después de nuestras reformas e interiorismo en Barcelona. Más de 10 transformaciones reales de pisos, casas, oficinas y locales comerciales con fotos comparativas.',
                 url: 'https://www.interiorista-barcelona.com/antes-y-despues/',
                 isPartOf: {
                   '@type': 'WebSite',

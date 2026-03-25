@@ -206,6 +206,11 @@ export const metadata: Metadata = {
   title: 'Quiénes somos — Interioristas en Barcelona',
   description:
     'Conoce al equipo del colectivo Interiorista Barcelona: más de 25 arquitectos, interioristas, decoradores y paisajistas titulados y asegurados en Barcelona.',
+  openGraph: {
+    title: 'Quiénes somos — Interioristas en Barcelona',
+    description:
+      'Conoce al equipo del colectivo Interiorista Barcelona: más de 25 arquitectos, interioristas, decoradores y paisajistas titulados y asegurados en Barcelona.',
+  },
   alternates: {
     canonical: '/quienes-somos/',
   },

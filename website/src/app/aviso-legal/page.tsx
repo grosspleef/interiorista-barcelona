@@ -39,6 +39,7 @@ export const metadata: Metadata = {
   title: 'Aviso legal',
   description:
     'Aviso legal e información sobre el titular del sitio web interiorista-barcelona.com, en cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI-CE).',
+  robots: { index: false, follow: true },
   alternates: {
     canonical: '/aviso-legal/',
   },

@@ -407,10 +407,14 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title:
-    'Opiniones de clientes | Interiorista Barcelona — Diseño de interiores 2026',
+  title: 'Opiniones de clientes | Interiorista Barcelona',
   description:
     'Descubre las opiniones de nuestros clientes sobre nuestros servicios de diseño de interiores, reformas y decoración. Más de 45 testimonios reales de proyectos realizados por nuestro colectivo de interioristas.',
+  openGraph: {
+    title: 'Opiniones de clientes | Interiorista Barcelona',
+    description:
+      'Descubre las opiniones de nuestros clientes sobre nuestros servicios de diseño de interiores, reformas y decoración. Más de 45 testimonios reales de proyectos realizados por nuestro colectivo de interioristas.',
+  },
   alternates: {
     canonical: '/opiniones/',
   },

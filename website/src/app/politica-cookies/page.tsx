@@ -39,6 +39,7 @@ export const metadata: Metadata = {
   title: 'Política de cookies',
   description:
     'Política de cookies del sitio web interiorista-barcelona.com, en cumplimiento del artículo 22 de la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI-CE).',
+  robots: { index: false, follow: true },
   alternates: {
     canonical: '/politica-cookies/',
   },

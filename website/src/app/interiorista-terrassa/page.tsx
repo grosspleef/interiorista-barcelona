@@ -173,6 +173,11 @@ export const metadata: Metadata = {
   title: 'Interiorista en Terrassa | Diseño de Interiores Terrassa',
   description:
     'Interioristas en Terrassa. Profesionales del colectivo en el Vallès Occidental: reforma de pisos, rehabilitación de masías y reconversión de espacios industriales. Presupuesto gratuito.',
+  openGraph: {
+    title: 'Interiorista en Terrassa | Diseño de Interiores Terrassa',
+    description:
+      'Interioristas en Terrassa. Profesionales del colectivo en el Vallès Occidental: reforma de pisos, rehabilitación de masías y reconversión de espacios industriales. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/interiorista-terrassa/',
   },

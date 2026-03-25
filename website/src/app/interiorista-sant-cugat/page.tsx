@@ -178,6 +178,12 @@ export const metadata: Metadata = {
     'Interiorista en Sant Cugat del Vallès | Diseño de Interiores Sant Cugat',
   description:
     'Interioristas en Sant Cugat del Vallès. Miembros del colectivo operan directamente en Sant Cugat: reforma de torres, diseño de casas con jardín y proyectos de alto standing. Presupuesto gratuito.',
+  openGraph: {
+    title:
+      'Interiorista en Sant Cugat del Vallès | Diseño de Interiores Sant Cugat',
+    description:
+      'Interioristas en Sant Cugat del Vallès. Miembros del colectivo operan directamente en Sant Cugat: reforma de torres, diseño de casas con jardín y proyectos de alto standing. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/interiorista-sant-cugat/',
   },

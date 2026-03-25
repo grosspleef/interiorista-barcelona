@@ -174,6 +174,11 @@ export const metadata: Metadata = {
   title: 'Interiorista y Arquitecto en Manresa | Diseño de Interiores Manresa',
   description:
     'Interioristas y arquitectos en Manresa. Profesionales del colectivo en el Bages: reforma de pisos, rehabilitación de masías y diseño interior. Presupuesto gratuito.',
+  openGraph: {
+    title: 'Interiorista y Arquitecto en Manresa | Diseño de Interiores Manresa',
+    description:
+      'Interioristas y arquitectos en Manresa. Profesionales del colectivo en el Bages: reforma de pisos, rehabilitación de masías y diseño interior. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/interiorista-manresa/',
   },

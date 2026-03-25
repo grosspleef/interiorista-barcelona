@@ -305,12 +305,12 @@ const servicePricing: ServicePricing[] = [
 const tocItems = servicePricing.map(({ id, name }) => ({ id, name }))
 
 export const metadata: Metadata = {
-  title: 'Interiorista Barcelona Precios | Tarifas transparentes de interiorismo',
+  title: 'Precios de interiorismo en Barcelona | Tarifas transparentes 2026',
   description:
     '¿Cuánto cobra un interiorista en Barcelona? Precios orientativos y transparentes para diseño de interiores, decoración, home staging, interiorismo comercial y arquitectura. Presupuesto sin compromiso.',
   openGraph: {
     title:
-      'Interiorista Barcelona Precios | Tarifas transparentes de interiorismo',
+      'Precios de interiorismo en Barcelona | Tarifas transparentes 2026',
     description:
       '¿Cuánto cobra un interiorista en Barcelona? Precios orientativos y transparentes para diseño de interiores, decoración, home staging, interiorismo comercial y arquitectura.',
   },

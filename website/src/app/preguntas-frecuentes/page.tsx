@@ -774,6 +774,12 @@ export const metadata: Metadata = {
     'Preguntas frecuentes sobre interiorismo | Interiorista Barcelona',
   description:
     'Respuestas a las preguntas más frecuentes sobre interiorismo, arquitectura de interiores y decoración en Barcelona. Funcionamiento, servicios, tarifas y profesionales.',
+  openGraph: {
+    title:
+      'Preguntas frecuentes sobre interiorismo | Interiorista Barcelona',
+    description:
+      'Respuestas a las preguntas más frecuentes sobre interiorismo, arquitectura de interiores y decoración en Barcelona. Funcionamiento, servicios, tarifas y profesionales.',
+  },
   alternates: {
     canonical: '/preguntas-frecuentes/',
   },

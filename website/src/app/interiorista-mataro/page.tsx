@@ -175,6 +175,11 @@ export const metadata: Metadata = {
   title: 'Interiorista y Arquitecto en Mataró | Diseño de Interiores Maresme',
   description:
     'Interioristas y arquitectos en Mataró. Profesionales del colectivo en el Maresme: reforma de pisos, rehabilitación de edificios modernistas y diseño costero. Presupuesto gratuito.',
+  openGraph: {
+    title: 'Interiorista y Arquitecto en Mataró | Diseño de Interiores Maresme',
+    description:
+      'Interioristas y arquitectos en Mataró. Profesionales del colectivo en el Maresme: reforma de pisos, rehabilitación de edificios modernistas y diseño costero. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/interiorista-mataro/',
   },

@@ -188,9 +188,14 @@ const schemaOrg = {
 }
 
 export const metadata: Metadata = {
-  title: 'Lofts en el Born | Interiorista Ciutat Vella Barcelona',
+  title: 'Interiorista en el Born, Barcelona | Lofts y Restauración Histórica',
   description:
     'Interiorista en el Born y Ciutat Vella, Barcelona. Conversión de locales en lofts, restauración de edificios medievales y diseño interior con carácter histórico. Presupuesto gratuito.',
+  openGraph: {
+    title: 'Interiorista en el Born, Barcelona | Lofts y Restauración Histórica',
+    description:
+      'Interiorista en el Born y Ciutat Vella, Barcelona. Conversión de locales en lofts, restauración de edificios medievales y diseño interior con carácter histórico. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/interiorista-born/',
   },

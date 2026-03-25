@@ -191,9 +191,15 @@ const schemaOrg = {
 
 export const metadata: Metadata = {
   title:
-    'Casas en Sarrià-Sant Gervasi | Interiorista y Arquitecto Barcelona',
+    'Interiorista en Sarrià-Sant Gervasi | Casas y Alto Standing Barcelona',
   description:
     'Casas y reformas de alto standing en Sarrià-Sant Gervasi, Barcelona. Diseño de casas unifamiliares, integración jardín-interior y proyectos exclusivos. Presupuesto gratuito.',
+  openGraph: {
+    title:
+      'Interiorista en Sarrià-Sant Gervasi | Casas y Alto Standing Barcelona',
+    description:
+      'Casas y reformas de alto standing en Sarrià-Sant Gervasi, Barcelona. Diseño de casas unifamiliares, integración jardín-interior y proyectos exclusivos. Presupuesto gratuito.',
+  },
   alternates: {
     canonical: '/interiorista-sarria/',
   },
