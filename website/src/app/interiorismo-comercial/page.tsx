@@ -132,7 +132,14 @@ const faqItems = [
         </p>
         <p>
           Nuestro equipo gestiona toda la documentación y tramitación ante el
-          Ayuntamiento de Barcelona.
+          Ayuntamiento de Barcelona. Consulta nuestra{' '}
+          <Link
+            href="/blog/licencia-de-obra-barcelona/"
+            className="font-semibold text-neutral-950 underline hover:text-neutral-700"
+          >
+            guía sobre licencias de obra
+          </Link>{' '}
+          para conocer los tipos y plazos.
         </p>
       </>
     ),

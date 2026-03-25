@@ -144,7 +144,14 @@ const faqItems = [
           >
             arquitectos colegiados
           </Link>{' '}
-          se encargan de toda la tramitación.
+          se encargan de toda la tramitación. Descubre{' '}
+          <Link
+            href="/blog/licencia-de-obra-barcelona/"
+            className="font-semibold text-neutral-950 underline hover:text-neutral-700"
+          >
+            todo sobre la licencia de obra mayor en Barcelona
+          </Link>
+          .
         </p>
       </>
     ),

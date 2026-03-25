@@ -138,6 +138,13 @@ const faqItems = [
           >
             interiorismo comercial
           </Link>
+          . También puedes consultar nuestra{' '}
+          <Link
+            href="/blog/licencia-de-obra-barcelona/"
+            className="font-semibold text-neutral-950 underline hover:text-neutral-700"
+          >
+            guía de licencias de obra en Barcelona
+          </Link>
           .
         </p>
       </>

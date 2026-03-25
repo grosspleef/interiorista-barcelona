@@ -262,7 +262,14 @@ const faqItems = [
         </p>
         <p>
           La licencia tiene una validez de 1 año para iniciar las obras y 3 años
-          para finalizarlas.
+          para finalizarlas. Descubre todos los detalles en nuestra{' '}
+          <Link
+            href="/blog/licencia-de-obra-barcelona/"
+            className="font-semibold text-neutral-950 underline hover:text-neutral-700"
+          >
+            guía completa de licencias de obra en Barcelona
+          </Link>
+          .
         </p>
       </>
     ),

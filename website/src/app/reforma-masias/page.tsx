@@ -144,6 +144,16 @@ const faqItems = [
           restricciones adicionales. Nuestro equipo gestiona toda la tramitación
           urbanística.
         </p>
+        <p>
+          Consulta nuestra{' '}
+          <Link
+            href="/blog/licencia-de-obra-barcelona/"
+            className="font-semibold text-neutral-950 underline hover:text-neutral-700"
+          >
+            guía completa sobre licencias de obra en Barcelona
+          </Link>{' '}
+          para conocer los tipos, trámites y plazos.
+        </p>
       </>
     ),
   },
