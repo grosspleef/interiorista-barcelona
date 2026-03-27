@@ -51,6 +51,7 @@ export function ProjectShowcase({
                     src={project.image}
                     alt={project.alt || `Proyecto de interiorismo: ${project.title}`}
                     className="aspect-[16/9] w-full object-cover"
+                    sizes="(min-width: 1024px) 33vw, 100vw"
                   />
                 )}
                 <div className="p-6 sm:p-8">

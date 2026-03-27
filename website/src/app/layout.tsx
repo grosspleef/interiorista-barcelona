@@ -38,6 +38,15 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" className="h-full bg-neutral-950 text-base antialiased">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/Mona-Sans.var.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
   )

@@ -66,6 +66,7 @@ function ServiceCard({
           src={serviceImageOverrides[service.id] ?? serviceImages[index % serviceImages.length]}
           alt=""
           className="aspect-[16/9] w-full object-cover"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         />
         <div className="p-6 sm:p-8">
           <h3>
