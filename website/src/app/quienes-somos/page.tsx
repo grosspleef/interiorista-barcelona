@@ -347,6 +347,7 @@ export default function QuienesSomosPage() {
                       alt={`${member.name} - ${member.professionLabel} en Barcelona`}
                       src={member.image}
                       className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     />
                     <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black to-black/0 to-40% p-6">
                       <p className="font-display text-base/6 font-semibold tracking-wide text-white">

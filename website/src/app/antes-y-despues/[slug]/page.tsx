@@ -210,6 +210,7 @@ export default async function AntesYDespuesProject(props: {
                         src={antesImage}
                         alt={`Antes: ${altText}`}
                         className="aspect-[4/3] w-full object-cover"
+                        sizes="(min-width: 768px) 50vw, 100vw"
                       />
                       <span className="absolute left-4 top-4 rounded-full bg-neutral-950/70 px-4 py-1.5 text-sm font-semibold text-white">
                         Antes
@@ -224,6 +225,7 @@ export default async function AntesYDespuesProject(props: {
                         src={img.src}
                         alt={`Después: ${altText}`}
                         className="aspect-[4/3] w-full object-cover"
+                        sizes="(min-width: 768px) 50vw, 100vw"
                       />
                       <span className="absolute left-4 top-4 rounded-full bg-neutral-950/70 px-4 py-1.5 text-sm font-semibold text-white">
                         Después

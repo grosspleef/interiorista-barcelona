@@ -41,6 +41,7 @@ function CaseStudies({
                         src={caseStudy.image.src}
                         alt={caseStudy.client}
                         className="aspect-[3/2] w-full rounded-xl object-cover"
+                        sizes="(min-width: 1024px) 33vw, 100vw"
                       />
                       <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
                         {caseStudy.client}
